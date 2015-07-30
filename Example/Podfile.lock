@@ -1,0 +1,14 @@
+PODS:
+  - ForecastIO (0.1.0)
+
+DEPENDENCIES:
+  - ForecastIO (from `../`)
+
+EXTERNAL SOURCES:
+  ForecastIO:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ForecastIO: c2a93b8c72d7bd9edbab3ac332caea97412e2fa8
+
+COCOAPODS: 0.38.2
