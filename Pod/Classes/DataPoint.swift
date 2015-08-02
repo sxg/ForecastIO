@@ -11,7 +11,7 @@ import Foundation
 public struct DataPoint {
     public let time: NSDate
     public let summary: String?
-    public let icon: Icon
+    public let icon: Icon?
     public let sunriseTime: NSDate?
     public let sunsetTime: NSDate?
     public let moonPhase: Float?
@@ -45,7 +45,9 @@ public struct DataPoint {
     init(fromJSON json: NSDictionary) {
         time = NSDate(timeIntervalSince1970: json["time"] as! Double)
         summary = json["summary"] as? String
-        icon = Icon(rawValue: json["icon"] as! String)!
+        if let jsonIcon = json["icon"] as? String {
+            icon = Icon(rawValue: jsonIcon)
+        }
         if let jsonSunriseTime = json["sunriseTime"] as? Double {
             sunriseTime = NSDate(timeIntervalSince1970: jsonSunriseTime)
         } else {
