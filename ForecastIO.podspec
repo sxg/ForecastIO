@@ -7,7 +7,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 
-Pod::Spec.new do |s|
+Pod::Spec.new Ldo |s|
   s.name             = "ForecastIO"
   s.version          = "0.1.0"
   s.summary          = "A short description of ForecastIO."

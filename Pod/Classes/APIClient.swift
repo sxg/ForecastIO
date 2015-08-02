@@ -17,13 +17,13 @@ public class APIClient : NSObject {
         apiKey = key
     }
     
-    public func getForecast(latitude lat: Float, longitude lon: Float, completion: (forecast: Forecast!, error: NSError!) -> Void) {
+    public func getForecast(latitude lat: Double, longitude lon: Double, completion: (forecast: Forecast!, error: NSError!) -> Void) {
         var path = "https://api.forecast.io/forecast/" + apiKey + "/\(lat),\(lon)"
         let url = NSURL(string: path)!
         getForecast(url, completion: completion)
     }
     
-    public func getForecast(latitude lat: Float, longitude lon: Float, time: NSDate, completion: (forecast: Forecast!, error: NSError!) -> Void) {
+    public func getForecast(latitude lat: Double, longitude lon: Double, time: NSDate, completion: (forecast: Forecast!, error: NSError!) -> Void) {
         let timeString = String(format: "%.0f", time.timeIntervalSince1970)
         var path = "https://api.forecast.io/forecast/" + apiKey + "/\(lat),\(lon),\(timeString)"
         let url = NSURL(string: path)!
