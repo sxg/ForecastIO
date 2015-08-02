@@ -47,6 +47,8 @@ public struct DataPoint {
         summary = json["summary"] as? String
         if let jsonIcon = json["icon"] as? String {
             icon = Icon(rawValue: jsonIcon)
+        } else {
+            icon = nil
         }
         if let jsonSunriseTime = json["sunriseTime"] as? Double {
             sunriseTime = NSDate(timeIntervalSince1970: jsonSunriseTime)
