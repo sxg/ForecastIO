@@ -30,9 +30,9 @@ public class APIClient : NSObject {
     }
     
     private func getForecast(url: NSURL, completion: (forecast: Forecast!, error: NSError!) -> Void) {
-        let task = self.session.dataTaskWithURL(url, completionHandler: { (data: NSData!, response, err: NSError!) -> Void in
+        let task = self.session.dataTaskWithURL(url, completionHandler: { (data: NSData?, response, err: NSError?) -> Void in
             var error: NSError? = nil
-            let json = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &error) as! NSDictionary
+            let json = (try! NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers)) as! NSDictionary
             let forecast = Forecast(fromJSON: json)
             completion(forecast: forecast, error: error)
         })
