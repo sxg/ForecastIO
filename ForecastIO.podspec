@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ForecastIO"
-  s.version          = "0.1.11"
+  s.version          = "0.2.0"
   s.summary          = "A short description of ForecastIO."
   s.description      = <<-DESC
                        An optional longer description of ForecastIO

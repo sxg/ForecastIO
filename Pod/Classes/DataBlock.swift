@@ -11,21 +11,29 @@ import Foundation
 public struct DataBlock {
     public let summary: String?
     public let icon: Icon?
-    public let data: Array<DataPoint>
+    public let data: Array<DataPoint>?
     
     init(fromJSON json: NSDictionary) {
-        summary = json["summary"] as? String
         
+        if let jsonSummary = json["summary"] as? String {
+            summary = jsonSummary
+        } else {
+            summary = nil
+        }
         if let jsonIcon = json["icon"] as? String {
             icon = Icon(rawValue: jsonIcon)
         } else {
             icon = nil
         }
         
-        var tempData = [DataPoint]()
-        for jsonDataPoint in json["data"] as! Array<NSDictionary> {
-            tempData.append(DataPoint(fromJSON: jsonDataPoint))
+        if let jsonData = json["data"] as? Array<NSDictionary> {
+            var tempData = [DataPoint]()
+            for jsonDataPoint in jsonData {
+                tempData.append(DataPoint(fromJSON: jsonDataPoint))
+            }
+            data = tempData
+        } else {
+            data = nil
         }
-        data = tempData
     }
 }

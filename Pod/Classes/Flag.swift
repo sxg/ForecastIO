@@ -17,7 +17,7 @@ public struct Flag {
     public let metarStations: Array<String>?
     public let metnoLicense: Bool?
     public let sources: Array<String>?
-    public let units: String
+    public let units: String?
     
     init(fromJSON json: NSDictionary) {
         darkSkyUnavailable = json["darksky-unavailable"] as? Bool
@@ -28,6 +28,6 @@ public struct Flag {
         metarStations = json["metar-stations"] as? Array<String>
         metnoLicense = json["metno-license"] as? Bool
         sources = json["sources"] as? Array<String>
-        units = json["units"] as! String
+        units = json["units"] as? String
     }
 }

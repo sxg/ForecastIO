@@ -13,7 +13,7 @@ public struct Forecast {
     public let latitude: Float
     public let longitude: Float
     public let timezone: String
-    public let offset: Int
+    public let offset: Int?
     
     //  Forecast data
     public let currently: DataPoint?
@@ -28,8 +28,12 @@ public struct Forecast {
         latitude = json["latitude"] as! Float
         longitude = json["longitude"] as! Float
         timezone = json["timezone"] as! String
-        offset = json["offset"] as! Int
         
+        if let jsonOffset = json["offset"] as? Int {
+            offset = jsonOffset
+        } else {
+            offset = nil
+        }
         if let jsonCurrently = json["currently"] as? NSDictionary {
             currently = DataPoint(fromJSON: jsonCurrently)
         } else {
