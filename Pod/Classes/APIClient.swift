@@ -12,20 +12,20 @@ public class APIClient : NSObject {
     
     private let apiKey: String
     private let session = NSURLSession.sharedSession()
-    private static let path = "https://api.forecast.io/forecast/"
+    private static let forecastIOURL = "https://api.forecast.io/forecast/"
     
     public init(apiKey key: String) {
         apiKey = key
     }
     
     public func getForecast(latitude lat: Double, longitude lon: Double, completion: (forecast: Forecast?, error: NSError?) -> Void) {
-        let url = NSURL(string: "https://api.forecast.io/forecast/" + apiKey + "/\(lat),\(lon)")!
+        let url = NSURL(string: APIClient.forecastIOURL + apiKey + "/\(lat),\(lon)")!
         getForecast(url, completion: completion)
     }
     
     public func getForecast(latitude lat: Double, longitude lon: Double, time: NSDate, completion: (forecast: Forecast?, error: NSError?) -> Void) {
         let timeString = String(format: "%.0f", time.timeIntervalSince1970)
-        let url = NSURL(string: "https://api.forecast.io/forecast/" + apiKey + "/\(lat),\(lon),\(timeString)")!
+        let url = NSURL(string: APIClient.forecastIOURL + apiKey + "/\(lat),\(lon),\(timeString)")!
         getForecast(url, completion: completion)
     }
     
