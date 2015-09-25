@@ -12,29 +12,32 @@ public class APIClient : NSObject {
     
     private let apiKey: String
     private let session = NSURLSession.sharedSession()
-    private let path = "https://api.forecast.io/forecast/"
+    private static let path = "https://api.forecast.io/forecast/"
     
     public init(apiKey key: String) {
         apiKey = key
     }
     
-    public func getForecast(latitude lat: Double, longitude lon: Double, completion: (forecast: Forecast!, error: NSError!) -> Void) {
+    public func getForecast(latitude lat: Double, longitude lon: Double, completion: (forecast: Forecast?, error: NSError?) -> Void) {
         let url = NSURL(string: "https://api.forecast.io/forecast/" + apiKey + "/\(lat),\(lon)")!
         getForecast(url, completion: completion)
     }
     
-    public func getForecast(latitude lat: Double, longitude lon: Double, time: NSDate, completion: (forecast: Forecast!, error: NSError!) -> Void) {
+    public func getForecast(latitude lat: Double, longitude lon: Double, time: NSDate, completion: (forecast: Forecast?, error: NSError?) -> Void) {
         let timeString = String(format: "%.0f", time.timeIntervalSince1970)
         let url = NSURL(string: "https://api.forecast.io/forecast/" + apiKey + "/\(lat),\(lon),\(timeString)")!
         getForecast(url, completion: completion)
     }
     
-    private func getForecast(url: NSURL, completion: (forecast: Forecast!, error: NSError!) -> Void) {
+    private func getForecast(url: NSURL, completion: (forecast: Forecast?, error: NSError?) -> Void) {
         let task = self.session.dataTaskWithURL(url, completionHandler: { (data: NSData?, response, err: NSError?) -> Void in
-            let error: NSError? = nil
-            let json = (try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers)) as! NSDictionary
-            let forecast = Forecast(fromJSON: json)
-            completion(forecast: forecast, error: error)
+            if err != nil {
+                completion(forecast: nil, error: err)
+            } else {
+                let json = (try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers)) as! NSDictionary
+                let forecast = Forecast(fromJSON: json)
+                completion(forecast: forecast, error: err)
+            }
         })
         task.resume()
     }
