@@ -11,14 +11,15 @@ Pod::Spec.new do |s|
   s.name             = "ForecastIO"
   s.version          = "1.0.3"
   s.summary          = "ForecastIO is a Swift library for interfacing with the Dark Sky forecast API."
-  s.homepage         = "https://github.com/sghodas/ForecastIO"
+  s.homepage         = "https://github.com/ghodasara/ForecastIO"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Satyam Ghodasara" => "sghodas@gmail.com" }
-  s.source           = { :git => "https://github.com/sghodas/ForecastIO.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/ghodasara/ForecastIO.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/_Satyam_'
 
-  s.platform     = :ios, '8.0'
+  s.ios.deployment_target = '8.0'
+  s.watchos.deployment_target = '2.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
