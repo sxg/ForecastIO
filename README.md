@@ -26,7 +26,7 @@ let forecastClient = APIClient(apiKey: YOUR_API_KEY)
 The ForecastIO API client only has two public methods, so it's simple and easy to use. The first method gets the current forecast for a given latitude and longitude:
 
 ```swift
-forecastClient.getForecast(latitude: myLat, longitude: myLon) { (currentForecast, error) -> Void in
+forecastClient.getForecast(latitude: myLat, longitude: myLon) { (currentForecast, err) -> Void in
     if err != nil {
         //  Uh-oh! We have an error!
     } else {
@@ -38,7 +38,7 @@ forecastClient.getForecast(latitude: myLat, longitude: myLon) { (currentForecast
 The second method gets the forecast at a given time (past, present, or future) for a given latitude and longitude:
 
 ```swift
-forecastClient.getForecast(latitude: myLat, longitude: myLon, time: myTime) { (forecast, error) -> Void in
+forecastClient.getForecast(latitude: myLat, longitude: myLon, time: myTime) { (forecast, err) -> Void in
     if err != nil {
         //  Uh-oh! We have an error!
     } else {
