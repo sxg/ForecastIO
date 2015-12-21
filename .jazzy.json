@@ -1,0 +1,9 @@
+{
+  "output": "Documentation",
+  "xcodebuild_arguments": [
+    "-workspace",
+    "Example/ForecastIO.xcworkspace",
+    "-scheme",
+    "ForecastIO"
+  ]
+}
