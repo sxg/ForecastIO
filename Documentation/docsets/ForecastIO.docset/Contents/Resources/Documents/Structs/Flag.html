@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flag Struct Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Flag" class="dashAnchor"></a>
+    <a title="Flag Struct Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">ForecastIO Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">ForecastIO Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Flag Struct Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/APIClient.html">APIClient</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Icon.html">Icon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Precipitation.html">Precipitation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Alert.html">Alert</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DataBlock.html">DataBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DataPoint.html">DataPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Flag.html">Flag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Forecast.html">Forecast</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Flag</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Flag</span></code></pre>
+
+                </div>
+              </div>
+            <p>A class that contains various metadata information related to a <code><a href="../Structs/Forecast.html">Forecast</a></code> request.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV10ForecastIO4Flag18darkSkyUnavailableGSqSb_"></a>
+                    <a name="//apple_ref/swift/Property/darkSkyUnavailable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV10ForecastIO4Flag18darkSkyUnavailableGSqSb_">darkSkyUnavailable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The presence of this property indicates that the Dark Sky data source supports the <code><a href="../Structs/Forecast.html">Forecast</a></code>&rsquo;s location, but a temporary error (such as a radar station being down for maintenance) has made the data unavailable.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">darkSkyUnavailable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV10ForecastIO4Flag15darkSkyStationsGSqGSaSS__"></a>
+                    <a name="//apple_ref/swift/Property/darkSkyStations" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV10ForecastIO4Flag15darkSkyStationsGSqGSaSS__">darkSkyStations</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Contains the IDs for each radar station used in servicing the <code><a href="../Structs/Forecast.html">Forecast</a></code> request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">darkSkyStations</span><span class="p">:</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV10ForecastIO4Flag17dataPointStationsGSqGSaSS__"></a>
+                    <a name="//apple_ref/swift/Property/dataPointStations" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV10ForecastIO4Flag17dataPointStationsGSqGSaSS__">dataPointStations</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Contains the IDs for each <code><a href="../Structs/DataPoint.html">DataPoint</a></code> station used in servicing this request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">dataPointStations</span><span class="p">:</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV10ForecastIO4Flag11isdStationsGSqGSaSS__"></a>
+                    <a name="//apple_ref/swift/Property/isdStations" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV10ForecastIO4Flag11isdStationsGSqGSaSS__">isdStations</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Contains the IDs for each ISD station used in servicing this request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">isdStations</span><span class="p">:</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV10ForecastIO4Flag12lampStationsGSqGSaSS__"></a>
+                    <a name="//apple_ref/swift/Property/lampStations" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV10ForecastIO4Flag12lampStationsGSqGSaSS__">lampStations</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Contains the IDs for each LAMP station used in servicing this request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">lampStations</span><span class="p">:</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV10ForecastIO4Flag13metarStationsGSqGSaSS__"></a>
+                    <a name="//apple_ref/swift/Property/metarStations" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV10ForecastIO4Flag13metarStationsGSqGSaSS__">metarStations</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Contains the IDs for each METAR station used in servicing this request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">metarStations</span><span class="p">:</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV10ForecastIO4Flag12metnoLicenseGSqSb_"></a>
+                    <a name="//apple_ref/swift/Property/metnoLicense" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV10ForecastIO4Flag12metnoLicenseGSqSb_">metnoLicense</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The presence of this property indicates that data from api.met.no was used to facilitate this request (as per their license agreement with Forecast.io).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">metnoLicense</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV10ForecastIO4Flag7sourcesGSqGSaSS__"></a>
+                    <a name="//apple_ref/swift/Property/sources" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV10ForecastIO4Flag7sourcesGSqGSaSS__">sources</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Contains the IDs for each data station used in servicing this request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">sources</span><span class="p">:</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV10ForecastIO4Flag5unitsGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/units" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV10ForecastIO4Flag5unitsGSqSS_">units</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The presence of this property indicates which units were used for the data in this request. <q>US</q> units are default.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">units</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV10ForecastIO4FlagcFMS0_FT8fromJSONCSo12NSDictionary_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(fromJSON:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV10ForecastIO4FlagcFMS0_FT8fromJSONCSo12NSDictionary_S0_">init(fromJSON:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new <code><a href="../Structs/Flag.html">Flag</a></code> from a JSON object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">fromJSON</span> <span class="nv">json</span><span class="p">:</span> <span class="kt">NSDictionary</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fromJSON</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A JSON object with keys corresponding to the <code>Flag</code>&rsquo;s properties.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new <code><a href="../Structs/Flag.html">Flag</a></code> filled with data from the given JSON object.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2015 <a class="link" href="https://github.com/ghodasara/ForecastIO" target="_blank" rel="external">Satyam Ghodasara</a>. All rights reserved. (Last updated: 2015-12-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.4.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
