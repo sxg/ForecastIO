@@ -77,38 +77,39 @@
 <a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation'>Installation</h2>
 
 <p>ForecastIO is available through <a href="http://cocoapods.org">CocoaPods</a>. To install
-it, simply add the following line to your Podfile:</p>
-<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s2">"ForecastIO"</span>
-</code></pre>
+it, simply add the following line to your Podfile:
+<code>ruby
+pod &quot;ForecastIO&quot;
+</code></p>
 <a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
 
-<p>To use ForecastIO, first initialize the APIClient:</p>
-<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">ForecastIO</span>
-<span class="o">...</span>
-<span class="k">let</span> <span class="nv">forecastClient</span> <span class="o">=</span> <span class="kt">APIClient</span><span class="p">(</span><span class="nv">apiKey</span><span class="p">:</span> <span class="kt">YOUR_API_KEY</span><span class="p">)</span>
-</code></pre>
-
-<p>The ForecastIO API client only has two public methods, so it&rsquo;s simple and easy to use. The first method gets the current forecast for a given latitude and longitude:</p>
-<pre class="highlight swift"><code><span class="n">forecastClient</span><span class="o">.</span><span class="nf">getForecast</span><span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="n">myLat</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="n">myLon</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">currentForecast</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span>
-    <span class="k">if</span> <span class="n">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
-        <span class="c1">//  Uh-oh! We have an error!</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="c1">//  Do something with the currentForecast</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre>
-
-<p>The second method gets the forecast at a given time (past, present, or future) for a given latitude and longitude:</p>
-<pre class="highlight swift"><code><span class="n">forecastClient</span><span class="o">.</span><span class="nf">getForecast</span><span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="n">myLat</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="n">myLon</span><span class="p">,</span> <span class="nv">time</span><span class="p">:</span> <span class="n">myTime</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">forecast</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span>
-    <span class="k">if</span> <span class="n">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
-        <span class="c1">//  Uh-oh! We have an error!</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="c1">//  Do something with the forecast</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre>
-
-<p>ForecastIO supports all models described by the <a href="https://developer.forecast.io/docs/v2">Dark Sky API</a>. This includes forecasts, data blocks, data points, alerts, and flags. For more details on the implementations of the models&rsquo; properties, check the files located in <a href="https://github.com/sghodas/ForecastIO/tree/master/Pod/Classes">ForecastIO/Pod/Classes</a>.</p>
+<p>To use ForecastIO, first initialize the APIClient:
+<code>swift
+import ForecastIO
+...
+let forecastClient = APIClient(apiKey: YOUR_API_KEY)
+</code>
+The ForecastIO API client only has two public methods, so it&rsquo;s simple and easy to use. The first method gets the current forecast for a given latitude and longitude:
+<code>swift
+forecastClient.getForecast(latitude: myLat, longitude: myLon) { (currentForecast, err) -&gt; Void in
+    if err != nil {
+        //  Uh-oh! We have an error!
+    } else {
+        //  Do something with the currentForecast
+    }
+}
+</code>
+The second method gets the forecast at a given time (past, present, or future) for a given latitude and longitude:
+<code>swift
+forecastClient.getForecast(latitude: myLat, longitude: myLon, time: myTime) { (forecast, err) -&gt; Void in
+    if err != nil {
+        //  Uh-oh! We have an error!
+    } else {
+        //  Do something with the forecast
+    }
+}
+</code>
+ForecastIO supports all models described by the <a href="https://developer.forecast.io/docs/v2">Dark Sky API</a>. This includes forecasts, data blocks, data points, alerts, and flags.</p>
 <a href='#author' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='author'>Author</h2>
 
 <p>Satyam Ghodasara, <a href="mailto:sghodas@gmail.com">sghodas@gmail.com</a></p>
