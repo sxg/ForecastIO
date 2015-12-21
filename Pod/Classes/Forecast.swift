@@ -10,7 +10,7 @@ import Foundation
 
 /// The weather data for a location at a specific time.
 public struct Forecast {
-    /// # Metadata
+    /// MARK: - Metadata
     
     /// The requested latitude.
     public let latitude: Float
@@ -24,13 +24,13 @@ public struct Forecast {
     /// The current timezone offset in hours from GMT.
     public let offset: Int?
     
-    /// Severe weather Alerts issued by a governmental weather authority for the requested location.
+    /// Severe weather `Alert`s issued by a governmental weather authority for the requested location.
     public let alerts: Array<Alert>?
     
     /// Metadata for the request.
     public let flags: Flag?
     
-    /// # Forecast data
+    /// MARK: - Forecast data
     
     /// The current weather conditions at the requested location.
     public let currently: DataPoint?
@@ -45,11 +45,11 @@ public struct Forecast {
     public let daily: DataBlock?
     
     /**
-        Creates a new Forecast from a JSON object.
+        Creates a new `Forecast` from a JSON object.
      
-        - parameter fromJSON: A JSON object with keys corresponding to the Forecast's properties.
+        - parameter fromJSON: A JSON object with keys corresponding to the `Forecast`'s properties.
      
-        - returns: A new Forecast filled with data from the given JSON object.
+        - returns: A new `Forecast` filled with data from the given JSON object.
      */
     public init(fromJSON json: NSDictionary) {
         latitude = json["latitude"] as! Float

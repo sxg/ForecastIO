@@ -8,16 +8,16 @@
 
 import Foundation
 
-/// A class that contains various metadata information related to a Forecast request.
+/// A class that contains various metadata information related to a `Forecast` request.
 public struct Flag {
     
-    /// The presence of this property indicates that the Dark Sky data source supports the Forecast's location, but a temporary error (such as a radar station being down for maintenance) has made the data unavailable.
+    /// The presence of this property indicates that the Dark Sky data source supports the `Forecast`'s location, but a temporary error (such as a radar station being down for maintenance) has made the data unavailable.
     public let darkSkyUnavailable: Bool?
     
-    /// Contains the IDs for each radar station used in servicing the Forecast request.
+    /// Contains the IDs for each radar station used in servicing the `Forecast` request.
     public let darkSkyStations: Array<String>?
     
-    /// Contains the IDs for each DataPoint station used in servicing this request.
+    /// Contains the IDs for each `DataPoint` station used in servicing this request.
     public let dataPointStations: Array<String>?
     
     /// Contains the IDs for each ISD station used in servicing this request.
@@ -39,11 +39,11 @@ public struct Flag {
     public let units: String?
     
     /**
-        Creates a new Flag from a JSON object.
+        Creates a new `Flag` from a JSON object.
      
-        - parameter fromJSON: A JSON object with keys corresponding to the Flag's properties.
+        - parameter fromJSON: A JSON object with keys corresponding to the `Flag`'s properties.
      
-        - returns: A new Flag filled with data from the given JSON object.
+        - returns: A new `Flag` filled with data from the given JSON object.
     */
     public init(fromJSON json: NSDictionary) {
         darkSkyUnavailable = json["darksky-unavailable"] as? Bool

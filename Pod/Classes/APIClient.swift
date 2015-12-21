@@ -16,22 +16,22 @@ public class APIClient : NSObject {
     private static let forecastIOURL = "https://api.forecast.io/forecast/"
     
     /**
-        Creates a new APIClient to interact with Forecast.io's Dark Sky API.
+        Creates a new `APIClient` to interact with Forecast.io's Dark Sky API.
      
         - parameter apiKey: Your Dark Sky API key.
      
-        - returns: A new APIClient.
+        - returns: A new `APIClient` configured to interact with Forecast.io's Dark Sky API with your API key.
     */
     public init(apiKey key: String) {
         apiKey = key
     }
     
     /**
-        Gets the current Forecast at a specified latitude and longitude and returns it in a block.
+        Gets the current `Forecast` at a specified latitude and longitude and returns it in a block.
      
-        - parameter latitude:   Latitude at which to get the Forecast.
-        - parameter longitude:  Longitude at which to get the Forecast.
-        - parameter completion: A block that returns the Forecast at the latitude and longitude you specified or an error.
+        - parameter latitude:   Latitude at which to get the `Forecast`.
+        - parameter longitude:  Longitude at which to get the `Forecast`.
+        - parameter completion: A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
     public func getForecast(latitude lat: Double, longitude lon: Double, completion: (forecast: Forecast?, error: NSError?) -> Void) {
         let url = NSURL(string: APIClient.forecastIOURL + apiKey + "/\(lat),\(lon)")!
@@ -39,12 +39,12 @@ public class APIClient : NSObject {
     }
     
     /**
-        Gets the Forecast at a specified latitude, longitude, and time, and returns it in a block.
+        Gets the `Forecast` at a specified latitude, longitude, and time, and returns it in a block.
      
-        - parameter latitude:   Latitude at which to get the Forecast.
-        - parameter longitude:  Longitude at which to get the Forecast.
-        - parameter time:       Time at which to get the Forecast. If no timezone is specified, local time (at the specified latitude and longitude) will be assumed.
-        - parameter completion: A block that returns the Forecast at the latitude and longitude you specified or an error.
+        - parameter latitude:   Latitude at which to get the `Forecast`.
+        - parameter longitude:  Longitude at which to get the `Forecast`.
+        - parameter time:       Time at which to get the `Forecast`. If no timezone is specified, local time (at the specified latitude and longitude) will be assumed.
+        - parameter completion: A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
     public func getForecast(latitude lat: Double, longitude lon: Double, time: NSDate, completion: (forecast: Forecast?, error: NSError?) -> Void) {
         let timeString = String(format: "%.0f", time.timeIntervalSince1970)

@@ -1,29 +1,3 @@
 DataBlock.swift
 	public struct DataBlock
 	public struct DataBlock
-Icon.swift
-	case Rain = "rain"
-	case Snow = "snow"
-	case Sleet = "sleet"
-	case Wind = "wind"
-	case Fog = "fog"
-	case Cloudy = "cloudy"
-	case PartlyCloudyDay = "partly-cloudy-day"
-	case PartlyCloudyNight = "partly-cloudy-night"
-	case Rain = "rain"
-	case Snow = "snow"
-	case Sleet = "sleet"
-	case Wind = "wind"
-	case Fog = "fog"
-	case Cloudy = "cloudy"
-	case PartlyCloudyDay = "partly-cloudy-day"
-	case PartlyCloudyNight = "partly-cloudy-night"
-Precipitation.swift
-	case Rain = "rain"
-	case Snow = "snow"
-	case Sleet = "sleet"
-	case Hail = "hail"
-	case Rain = "rain"
-	case Snow = "snow"
-	case Sleet = "sleet"
-	case Hail = "hail"
