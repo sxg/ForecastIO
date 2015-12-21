@@ -26,11 +26,11 @@ public struct Alert {
     /**
         Creates a new Alert from a JSON object.
      
-        - Parameter fromJSON: A JSON object with keys corresponding to the Alert's properties.
+        - parameter fromJSON: A JSON object with keys corresponding to the Alert's properties.
      
-        - Returns: A new Alert filled with data from the given JSON object.
+        - returns: A new Alert filled with data from the given JSON object.
     */
-    init(fromJSON json: NSDictionary) {
+    public init(fromJSON json: NSDictionary) {
         title = json["title"] as! String
         expires = NSDate(timeIntervalSince1970: json["expires"] as! Double)
         uri = NSURL(string: json["uri"] as! String)!

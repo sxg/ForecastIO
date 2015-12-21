@@ -41,11 +41,11 @@ public struct Flag {
     /**
         Creates a new Flag from a JSON object.
      
-        - Parameter fromJSON: A JSON object with keys corresponding to the Flag's properties.
+        - parameter fromJSON: A JSON object with keys corresponding to the Flag's properties.
      
-        - Returns: A new Flag filled with data from the given JSON object.
+        - returns: A new Flag filled with data from the given JSON object.
     */
-    init(fromJSON json: NSDictionary) {
+    public init(fromJSON json: NSDictionary) {
         darkSkyUnavailable = json["darksky-unavailable"] as? Bool
         darkSkyStations = json["darksky-stations"] as? Array<String>
         dataPointStations = json["datapoint-stations"] as? Array<String>

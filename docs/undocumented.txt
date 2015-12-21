@@ -2,8 +2,6 @@ DataBlock.swift
 	public struct DataBlock
 	public struct DataBlock
 Icon.swift
-	case ClearDay = "clear-day"
-	case ClearNight = "clear-night"
 	case Rain = "rain"
 	case Snow = "snow"
 	case Sleet = "sleet"
@@ -12,8 +10,6 @@ Icon.swift
 	case Cloudy = "cloudy"
 	case PartlyCloudyDay = "partly-cloudy-day"
 	case PartlyCloudyNight = "partly-cloudy-night"
-	case ClearDay = "clear-day"
-	case ClearNight = "clear-night"
 	case Rain = "rain"
 	case Snow = "snow"
 	case Sleet = "sleet"

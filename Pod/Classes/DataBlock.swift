@@ -23,11 +23,11 @@ public struct DataBlock {
     /**
         Creates a new DataBlock from a JSON object.
      
-        - Parameter fromJSON: A JSON object with keys corresponding to the DataBlock's properties.
+        - parameter fromJSON: A JSON object with keys corresponding to the DataBlock's properties.
      
-        - Returns: A new DataBlock filled with data from the given JSON object.
+        - returns: A new DataBlock filled with data from the given JSON object.
     */
-    init(fromJSON json: NSDictionary) {
+    public init(fromJSON json: NSDictionary) {
         
         if let jsonSummary = json["summary"] as? String {
             summary = jsonSummary

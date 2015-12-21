@@ -110,11 +110,11 @@ public struct DataPoint {
     /**
         Creates a new DataPoint from a JSON object.
      
-        - Parameter fromJSON: A JSON object with keys corresponding to the DataPoint's properties.
+        - parameter fromJSON: A JSON object with keys corresponding to the DataPoint's properties.
      
-        - Returns: A new DataPoint filled with data from the given JSON object.
+        - returns: A new DataPoint filled with data from the given JSON object.
     */
-    init(fromJSON json: NSDictionary) {
+    public init(fromJSON json: NSDictionary) {
         time = NSDate(timeIntervalSince1970: json["time"] as! Double)
         summary = json["summary"] as? String
         if let jsonIcon = json["icon"] as? String {

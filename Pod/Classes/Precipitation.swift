@@ -10,15 +10,17 @@ import Foundation
 
 /**
     Types of precipitation.
- 
-    - Rain: Rainy.
-    - Snow: Snowy.
-    - Sleet: Sleety, freezing rain, ice pellets, or wintery mix.
-    - Hail: Haily.
 */
 public enum Precipitation: String {
+    /// Rainy.
     case Rain = "rain"
+    
+    /// Snowy.
     case Snow = "snow"
+    
+    /// Sleety, freezing rain, ice pellets, or wintery mix.
     case Sleet = "sleet"
+    
+    /// Haily.
     case Hail = "hail"
 }

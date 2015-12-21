@@ -139,12 +139,12 @@
 		80C2B8CF48E527874FC8826F49203AC8 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				8E9C66B36B0096D6C239D0D0265AE8B6 /* Classes */,
+				8E9C66B36B0096D6C239D0D0265AE8B6 /* Classes & Structs */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
 		};
-		8E9C66B36B0096D6C239D0D0265AE8B6 /* Classes */ = {
+		8E9C66B36B0096D6C239D0D0265AE8B6 /* Classes & Structs */ = {
 			isa = PBXGroup;
 			children = (
 				D42BD83D1B69D34E00F48743 /* Alert.swift */,
@@ -156,6 +156,7 @@
 				D42BD8431B69D34E00F48743 /* Icon.swift */,
 				D4D278921C27AF410002C0C5 /* Precipitation.swift */,
 			);
+			name = "Classes & Structs";
 			path = Classes;
 			sourceTree = "<group>";
 		};

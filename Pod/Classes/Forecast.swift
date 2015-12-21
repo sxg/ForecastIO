@@ -47,11 +47,11 @@ public struct Forecast {
     /**
         Creates a new Forecast from a JSON object.
      
-        - Parameter fromJSON: A JSON object with keys corresponding to the Forecast's properties.
+        - parameter fromJSON: A JSON object with keys corresponding to the Forecast's properties.
      
-        - Returns: A new Forecast filled with data from the given JSON object.
+        - returns: A new Forecast filled with data from the given JSON object.
      */
-    init(fromJSON json: NSDictionary) {
+    public init(fromJSON json: NSDictionary) {
         latitude = json["latitude"] as! Float
         longitude = json["longitude"] as! Float
         timezone = json["timezone"] as! String
