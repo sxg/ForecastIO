@@ -29,8 +29,8 @@ public class APIClient : NSObject {
     /**
         Gets the current Forecast at a specified latitude and longitude and returns it in a block.
      
-        - Parameter latitude: Latitude at which to get the Forecast.
-        - Parameter longitude: Longitude at which to get the Forecast.
+        - Parameter latitude:   Latitude at which to get the Forecast.
+        - Parameter longitude:  Longitude at which to get the Forecast.
         - Parameter completion: A block that returns the Forecast at the latitude and longitude you specified or an error.
     */
     public func getForecast(latitude lat: Double, longitude lon: Double, completion: (forecast: Forecast?, error: NSError?) -> Void) {
@@ -41,9 +41,9 @@ public class APIClient : NSObject {
     /**
         Gets the Forecast at a specified latitude, longitude, and time, and returns it in a block.
      
-        - Parameter latitude: Latitude at which to get the Forecast.
-        - Parameter longitude: Longitude at which to get the Forecast.
-        - Parameter time: Time at which to get the Forecast. If no timezone is specified, local time (at the specified latitude and longitude) will be assumed.
+        - Parameter latitude:   Latitude at which to get the Forecast.
+        - Parameter longitude:  Longitude at which to get the Forecast.
+        - Parameter time:       Time at which to get the Forecast. If no timezone is specified, local time (at the specified latitude and longitude) will be assumed.
         - Parameter completion: A block that returns the Forecast at the latitude and longitude you specified or an error.
     */
     public func getForecast(latitude lat: Double, longitude lon: Double, time: NSDate, completion: (forecast: Forecast?, error: NSError?) -> Void) {
