@@ -35,13 +35,13 @@ public struct Forecast {
     /// The current weather conditions at the requested location.
     public let currently: DataPoint?
     
-    /// The minute-by-minute weather conditions at the requested location for the next hour.
+    /// The minute-by-minute weather conditions at the requested location for the next hour aligned to the nearest minute.
     public let minutely: DataBlock?
     
-    /// The hourly weather conditions at the requested location for the next two days.
+    /// The hourly weather conditions at the requested location for the next two days aligned to the top of the hour.
     public let hourly: DataBlock?
     
-    /// The daily weather conditions at the requested location for the next week.
+    /// The daily weather conditions at the requested location for the next week aligned to midnight of the day.
     public let daily: DataBlock?
     
     /**
