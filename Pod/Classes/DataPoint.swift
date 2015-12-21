@@ -113,7 +113,7 @@ public struct DataPoint {
         - Parameter fromJSON: A JSON object with keys corresponding to the DataPoint's properties.
      
         - Returns: A new DataPoint filled with data from the given JSON object.
-     */
+    */
     init(fromJSON json: NSDictionary) {
         time = NSDate(timeIntervalSince1970: json["time"] as! Double)
         summary = json["summary"] as? String

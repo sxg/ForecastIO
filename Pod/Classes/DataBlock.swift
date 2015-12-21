@@ -9,10 +9,24 @@
 import Foundation
 
 public struct DataBlock {
+    
+    /// A human-readable text summary.
     public let summary: String?
+    
+    /// A machine-readable summary of the weather suitable for selecting an icon for display.
     public let icon: Icon?
+    
+    /// DataPoints ordered by time, which describe the weather conditions at the requested location over time.
     public let data: Array<DataPoint>?
     
+    
+    /**
+        Creates a new DataBlock from a JSON object.
+     
+        - Parameter fromJSON: A JSON object with keys corresponding to the DataBlock's properties.
+     
+        - Returns: A new DataBlock filled with data from the given JSON object.
+    */
     init(fromJSON json: NSDictionary) {
         
         if let jsonSummary = json["summary"] as? String {
