@@ -9,7 +9,7 @@
 import Foundation
 
 /**
-    Different types of weather conditions. Additional values may be defined in the future, so be sure to use a default.
+    Types of weather conditions. Additional values may be defined in the future, so be sure to use a default.
  
     - ClearDay: A clear day.
     - ClearNight: A clear night.
