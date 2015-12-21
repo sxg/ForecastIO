@@ -47,8 +47,8 @@ public struct DataPoint {
     /// Value between `0` and `1` (inclusive) representing the probability of precipitation occurring at the given time.
     public let precipProbability: Float?
     
-    ///
-    public let precipType: String?
+    /// Type of precipitation occurring at the given time. If `precipIntensity` is `0`, then this will be `nil`.
+    public let precipType: Precipitation?
     
     /// The amount of snowfall accumulation expected to occur on the given day, in inches. This will be `nil` if no accumulation is expected. Only defined on Forecast's `hourly` and `daily` DataPoints.
     public let precipAccumulation: Float?
@@ -143,7 +143,11 @@ public struct DataPoint {
             precipIntensityMaxTime = nil
         }
         precipProbability = json["precipProbability"] as? Float
-        precipType = json["precipType"] as? String
+        if let jsonPrecipType = json["precipType"] as? String {
+            precipType = Precipitation(rawValue: jsonPrecipType)
+        } else {
+            precipType = nil
+        }
         precipAccumulation = json["precipAccumulation"] as? Float
         temperature = json["temperature"] as? Float
         temperatureMin = json["temperatureMin"] as? Float

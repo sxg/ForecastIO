@@ -19,6 +19,7 @@
 		D42BD8481B69D34E00F48743 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42BD8411B69D34E00F48743 /* Flag.swift */; };
 		D42BD8491B69D34E00F48743 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42BD8421B69D34E00F48743 /* Forecast.swift */; };
 		D42BD84A1B69D34E00F48743 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42BD8431B69D34E00F48743 /* Icon.swift */; };
+		D4D278931C27AF410002C0C5 /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D278921C27AF410002C0C5 /* Precipitation.swift */; };
 		E8FB8230A8FDD44D41A8AA8AF55AFCE6 /* Pods-ForecastIO_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD550B90BAA5FCA6A68FFF6518DD0225 /* Pods-ForecastIO_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB66DB4439499A324A2F6954277DE353 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8158695CEE3DB26F08ADC82498BE0DEF /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		D42BD8411B69D34E00F48743 /* Flag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
 		D42BD8421B69D34E00F48743 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		D42BD8431B69D34E00F48743 /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		D4D278921C27AF410002C0C5 /* Precipitation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Precipitation.swift; sourceTree = "<group>"; };
 		E0445B2740850349D18A588449C968CF /* Pods-ForecastIO_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ForecastIO_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,7 @@
 				D42BD8411B69D34E00F48743 /* Flag.swift */,
 				D42BD8421B69D34E00F48743 /* Forecast.swift */,
 				D42BD8431B69D34E00F48743 /* Icon.swift */,
+				D4D278921C27AF410002C0C5 /* Precipitation.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			files = (
 				D42BD8441B69D34E00F48743 /* Alert.swift in Sources */,
 				D42BD8481B69D34E00F48743 /* Flag.swift in Sources */,
+				D4D278931C27AF410002C0C5 /* Precipitation.swift in Sources */,
 				D42BD8491B69D34E00F48743 /* Forecast.swift in Sources */,
 				9E1BC23695BF997C71A36596BF3BE80C /* ForecastIO-dummy.m in Sources */,
 				D42BD8471B69D34E00F48743 /* DataPoint.swift in Sources */,
