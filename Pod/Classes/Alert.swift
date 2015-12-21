@@ -24,7 +24,7 @@ public struct Alert {
     public let uri: NSURL
     
     /**
-        Creates an Alert from a JSON object.
+        Creates a new Alert from a JSON object.
      
         - Parameter fromJSON: A JSON object with keys corresponding to the Alert's properties.
      
