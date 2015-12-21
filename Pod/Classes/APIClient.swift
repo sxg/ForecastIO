@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// A class to interact with Forecast.io's Dark Sky API.
 public class APIClient : NSObject {
     
     private let apiKey: String
