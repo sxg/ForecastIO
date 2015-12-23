@@ -5,11 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/ForecastIO.svg?style=flat)](http://cocoapods.org/pods/ForecastIO)
 [![Platform](https://img.shields.io/cocoapods/p/ForecastIO.svg?style=flat)](http://cocoapods.org/pods/ForecastIO)
 
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
+
+To use ForecastIO, all you need is an API key for the [Dark Sky API](https://developer.forecast.io/).
 
 ## Installation
 
@@ -18,6 +16,42 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "ForecastIO"
+```
+
+## Usage
+
+The full documentation for ForecastIO is available on [CocoaDocs](http://cocoadocs.org/docsets/ForecastIO).
+
+First, create an `APIClient` with your API key.
+
+```swift
+import ForecastIO
+...
+let forecastIOClient = APIClient(apiKey: "YOUR_API_KEY_HERE")
+```
+
+With the `APIClient`, you can make two kinds of requests. The first will get the current `Forecast` for a particular location:
+
+```swift
+forecastIOClient.getForecast(latitude: myLat, longitude: myLon) { (currentForecast, error) -> Void in
+  if let currentForecast = currentForecast {
+    //  We got the current forecast!
+  } else if let error = error {
+    //  Uh-oh we have an error!
+  }
+}
+```
+
+The second kind of request will get a `Forecast` for a particular location at a particular time:
+
+```swift
+forecastIOClient.getForecast(latitude: myLat, longitude: myLon, time: myTime) { (forecast, error) -> Void in
+  if let forecast = forecast {
+    //  We got the forecast!
+  } else if let error = error {
+    //  Uh-oh we have an error!
+  }
+}
 ```
 
 ## Author

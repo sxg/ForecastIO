@@ -205,8 +205,8 @@
 		F44AB3438062228EE882FD6244885BD5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D41964511C2A82A300386CC4 /* Alert.swift */,
 				D41964521C2A82A300386CC4 /* APIClient.swift */,
+				D41964511C2A82A300386CC4 /* Alert.swift */,
 				D41964531C2A82A300386CC4 /* DataBlock.swift */,
 				D41964541C2A82A300386CC4 /* DataPoint.swift */,
 				D41964551C2A82A300386CC4 /* Flag.swift */,
