@@ -11,14 +11,14 @@
 		263845420D6884EB70631F45347FF561 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		99DDEA407AFC1B8A6B7DA975EC9F410C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		B889F257B1097A3A7718A058EF01D403 /* ForecastIO.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 159C6F0EB225E10472F43DFE6FBE6E9F /* ForecastIO.bundle */; };
-		D41964391C2A7FF700386CC4 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964311C2A7FF700386CC4 /* Alert.swift */; };
-		D419643A1C2A7FF700386CC4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964321C2A7FF700386CC4 /* APIClient.swift */; };
-		D419643B1C2A7FF700386CC4 /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964331C2A7FF700386CC4 /* DataBlock.swift */; };
-		D419643C1C2A7FF700386CC4 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964341C2A7FF700386CC4 /* DataPoint.swift */; };
-		D419643D1C2A7FF700386CC4 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964351C2A7FF700386CC4 /* Flag.swift */; };
-		D419643E1C2A7FF700386CC4 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964361C2A7FF700386CC4 /* Forecast.swift */; };
-		D419643F1C2A7FF700386CC4 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964371C2A7FF700386CC4 /* Icon.swift */; };
-		D41964401C2A7FF700386CC4 /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964381C2A7FF700386CC4 /* Precipitation.swift */; };
+		D41964491C2A817100386CC4 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964411C2A817100386CC4 /* Alert.swift */; };
+		D419644A1C2A817100386CC4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964421C2A817100386CC4 /* APIClient.swift */; };
+		D419644B1C2A817100386CC4 /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964431C2A817100386CC4 /* DataBlock.swift */; };
+		D419644C1C2A817100386CC4 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964441C2A817100386CC4 /* DataPoint.swift */; };
+		D419644D1C2A817100386CC4 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964451C2A817100386CC4 /* Flag.swift */; };
+		D419644E1C2A817100386CC4 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964461C2A817100386CC4 /* Forecast.swift */; };
+		D419644F1C2A817100386CC4 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964471C2A817100386CC4 /* Icon.swift */; };
+		D41964501C2A817100386CC4 /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964481C2A817100386CC4 /* Precipitation.swift */; };
 		F180E99B2322C35A6EF2DAAEDDB5CD18 /* Pods-ForecastIO_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32351A3E3B8333B7F3F535C6CE5377B3 /* Pods-ForecastIO_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6266B8AC4E9F24BAFB4897F797B6A4A /* ForecastIO-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 086DCEA52BC611DF841EFFA90C192104 /* ForecastIO-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -47,36 +47,28 @@
 		159C6F0EB225E10472F43DFE6FBE6E9F /* ForecastIO.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForecastIO.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		19EE416232CA94F2867B7B2BFA03CD1F /* Pods-ForecastIO_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ForecastIO_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1B041566592C50F0B719E4E8E5FBF576 /* Pods-ForecastIO_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ForecastIO_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		29C7AE7C302A6F93F26AEA0802C8B105 /* APIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		32351A3E3B8333B7F3F535C6CE5377B3 /* Pods-ForecastIO_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ForecastIO_Tests-umbrella.h"; sourceTree = "<group>"; };
 		337A10E99167C9110BBE1632B020297C /* Pods-ForecastIO_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ForecastIO_Tests-resources.sh"; sourceTree = "<group>"; };
 		37C0AAF154B7E82E9459B85BB385E439 /* ForecastIO-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ForecastIO-dummy.m"; sourceTree = "<group>"; };
-		37D35688E57542F6BDAE41941AE53B98 /* DataBlock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataBlock.swift; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4E37A457F6965B50848575FC6E594ADE /* ForecastIO-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ForecastIO-prefix.pch"; sourceTree = "<group>"; };
-		5255FD24233B13D569D58BE2A93B9B22 /* Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57519F7752054BF4D4FC75063D5D3254 /* Precipitation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Precipitation.swift; sourceTree = "<group>"; };
 		5C85020B95E0B2EEA0183C39EE295015 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6761E3D3E4D8E91942DE8C1197D9ADA5 /* DataPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataPoint.swift; sourceTree = "<group>"; };
 		682C8162BA3FB5DECA9B092DF2DA1009 /* Pods-ForecastIO_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ForecastIO_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D7F7B10BD4650B105959B552E43CDB0 /* ForecastIO.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ForecastIO.modulemap; sourceTree = "<group>"; };
 		9507FAA7518022B5716C4A8FA9EB5C8F /* Pods-ForecastIO_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ForecastIO_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		A056B66B5B8D2661246F52D5A7007E3C /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
-		B29F20472451A60FA74F0B282FD0D4A1 /* Forecast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = Example/Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BA770BF681D7D1C70BBE88633BCF9413 /* Pods_ForecastIO_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastIO_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DD64D12CC47D5B2ECCB1551ED21F8F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D41964281C2A7F9700386CC4 /* ForecastIO.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ForecastIO.xcconfig; sourceTree = "<group>"; };
-		D41964311C2A7FF700386CC4 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = Pod/Classes/Alert.swift; sourceTree = "<group>"; };
-		D41964321C2A7FF700386CC4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = Pod/Classes/APIClient.swift; sourceTree = "<group>"; };
-		D41964331C2A7FF700386CC4 /* DataBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataBlock.swift; path = Pod/Classes/DataBlock.swift; sourceTree = "<group>"; };
-		D41964341C2A7FF700386CC4 /* DataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataPoint.swift; path = Pod/Classes/DataPoint.swift; sourceTree = "<group>"; };
-		D41964351C2A7FF700386CC4 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Flag.swift; path = Pod/Classes/Flag.swift; sourceTree = "<group>"; };
-		D41964361C2A7FF700386CC4 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Forecast.swift; path = Pod/Classes/Forecast.swift; sourceTree = "<group>"; };
-		D41964371C2A7FF700386CC4 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Pod/Classes/Icon.swift; sourceTree = "<group>"; };
-		D41964381C2A7FF700386CC4 /* Precipitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Precipitation.swift; path = Pod/Classes/Precipitation.swift; sourceTree = "<group>"; };
-		EF3CD2EF8B908FEE3D0B293B392B4717 /* Flag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		D41964411C2A817100386CC4 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = ../../../Satyam.io/ForecastIO/Pod/Classes/Alert.swift; sourceTree = "<group>"; };
+		D41964421C2A817100386CC4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = ../../../Satyam.io/ForecastIO/Pod/Classes/APIClient.swift; sourceTree = "<group>"; };
+		D41964431C2A817100386CC4 /* DataBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataBlock.swift; path = ../../../Satyam.io/ForecastIO/Pod/Classes/DataBlock.swift; sourceTree = "<group>"; };
+		D41964441C2A817100386CC4 /* DataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataPoint.swift; path = ../../../Satyam.io/ForecastIO/Pod/Classes/DataPoint.swift; sourceTree = "<group>"; };
+		D41964451C2A817100386CC4 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Flag.swift; path = ../../../Satyam.io/ForecastIO/Pod/Classes/Flag.swift; sourceTree = "<group>"; };
+		D41964461C2A817100386CC4 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Forecast.swift; path = ../../../Satyam.io/ForecastIO/Pod/Classes/Forecast.swift; sourceTree = "<group>"; };
+		D41964471C2A817100386CC4 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = ../../../Satyam.io/ForecastIO/Pod/Classes/Icon.swift; sourceTree = "<group>"; };
+		D41964481C2A817100386CC4 /* Precipitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Precipitation.swift; path = ../../../Satyam.io/ForecastIO/Pod/Classes/Precipitation.swift; sourceTree = "<group>"; };
 		F6F12F3D7E2A1E1CEBCFBA32D50B413A /* Pods-ForecastIO_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ForecastIO_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,14 +136,6 @@
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				D41964311C2A7FF700386CC4 /* Alert.swift */,
-				D41964321C2A7FF700386CC4 /* APIClient.swift */,
-				D41964331C2A7FF700386CC4 /* DataBlock.swift */,
-				D41964341C2A7FF700386CC4 /* DataPoint.swift */,
-				D41964351C2A7FF700386CC4 /* Flag.swift */,
-				D41964361C2A7FF700386CC4 /* Forecast.swift */,
-				D41964371C2A7FF700386CC4 /* Icon.swift */,
-				D41964381C2A7FF700386CC4 /* Precipitation.swift */,
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				4617C46CA1912CF0ECFF7DC596DC784C /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
@@ -221,14 +205,14 @@
 		F44AB3438062228EE882FD6244885BD5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5255FD24233B13D569D58BE2A93B9B22 /* Alert.swift */,
-				29C7AE7C302A6F93F26AEA0802C8B105 /* APIClient.swift */,
-				37D35688E57542F6BDAE41941AE53B98 /* DataBlock.swift */,
-				6761E3D3E4D8E91942DE8C1197D9ADA5 /* DataPoint.swift */,
-				EF3CD2EF8B908FEE3D0B293B392B4717 /* Flag.swift */,
-				B29F20472451A60FA74F0B282FD0D4A1 /* Forecast.swift */,
-				A056B66B5B8D2661246F52D5A7007E3C /* Icon.swift */,
-				57519F7752054BF4D4FC75063D5D3254 /* Precipitation.swift */,
+				D41964411C2A817100386CC4 /* Alert.swift */,
+				D41964421C2A817100386CC4 /* APIClient.swift */,
+				D41964431C2A817100386CC4 /* DataBlock.swift */,
+				D41964441C2A817100386CC4 /* DataPoint.swift */,
+				D41964451C2A817100386CC4 /* Flag.swift */,
+				D41964461C2A817100386CC4 /* Forecast.swift */,
+				D41964471C2A817100386CC4 /* Icon.swift */,
+				D41964481C2A817100386CC4 /* Precipitation.swift */,
 			);
 			name = Classes;
 			path = Pod/Classes;
@@ -376,14 +360,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D41964391C2A7FF700386CC4 /* Alert.swift in Sources */,
-				D419643A1C2A7FF700386CC4 /* APIClient.swift in Sources */,
-				D419643B1C2A7FF700386CC4 /* DataBlock.swift in Sources */,
-				D419643C1C2A7FF700386CC4 /* DataPoint.swift in Sources */,
-				D419643D1C2A7FF700386CC4 /* Flag.swift in Sources */,
-				D419643E1C2A7FF700386CC4 /* Forecast.swift in Sources */,
-				D419643F1C2A7FF700386CC4 /* Icon.swift in Sources */,
-				D41964401C2A7FF700386CC4 /* Precipitation.swift in Sources */,
+				D41964491C2A817100386CC4 /* Alert.swift in Sources */,
+				D419644A1C2A817100386CC4 /* APIClient.swift in Sources */,
+				D419644B1C2A817100386CC4 /* DataBlock.swift in Sources */,
+				D419644C1C2A817100386CC4 /* DataPoint.swift in Sources */,
+				D419644D1C2A817100386CC4 /* Flag.swift in Sources */,
+				D419644E1C2A817100386CC4 /* Forecast.swift in Sources */,
+				D419644F1C2A817100386CC4 /* Icon.swift in Sources */,
+				D41964501C2A817100386CC4 /* Precipitation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
