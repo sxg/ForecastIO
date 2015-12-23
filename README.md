@@ -18,9 +18,11 @@ it, simply add the following line to your Podfile:
 pod "ForecastIO"
 ```
 
-## Usage
+## Documentation
 
 The full documentation for ForecastIO is available on [CocoaDocs](http://cocoadocs.org/docsets/ForecastIO).
+
+## Usage
 
 First, create an `APIClient` with your API key.
 
