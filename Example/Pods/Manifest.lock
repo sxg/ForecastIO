@@ -1,5 +1,5 @@
 PODS:
-  - ForecastIO (0.1.0)
+  - ForecastIO (1.2.6)
 
 DEPENDENCIES:
   - ForecastIO (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ForecastIO: eeef6a043a385e9a8fd466466c27d26abe763df6
+  ForecastIO: 494ba9b1f318254eb174632a97419291248fa743
 
 COCOAPODS: 0.39.0
