@@ -46,7 +46,7 @@ public enum Units: String, CustomStringConvertible {
     /**
         Returns the `String` value of the enum variant.
      
-        return: `String` value of the enum variant.
+        - returns: `String` value of the enum variant.
     */
     public var description: String {
         return rawValue
