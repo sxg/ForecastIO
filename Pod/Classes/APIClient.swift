@@ -60,9 +60,20 @@ public class APIClient : NSObject {
             if err != nil {
                 completion(forecast: nil, error: err)
             } else {
-                let json = (try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers)) as! NSDictionary
-                let forecast = Forecast(fromJSON: json)
-                completion(forecast: forecast, error: err)
+                if let data = data {
+                    do {
+                        let jsonObject = try NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers)
+                        if let json = jsonObject as? NSDictionary {
+                            let forecast = Forecast(fromJSON: json)
+                            completion(forecast: forecast, error: err)
+                            return
+                        }
+                    } catch _ {
+                        completion(forecast: nil, error: nil)
+                    }
+                    
+                }
+                completion(forecast: nil, error: nil)
             }
         })
         task.resume()

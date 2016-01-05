@@ -43,6 +43,11 @@ public enum Units: String, CustomStringConvertible {
     /// Automatically use the appropriate units based on the location for which you are requesting data.
     case auto = "auto"
     
+    /**
+        Returns the `String` value of the enum variant.
+     
+        return: `String` value of the enum variant.
+    */
     public var description: String {
         return rawValue
     }
