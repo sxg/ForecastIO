@@ -32,6 +32,14 @@ import ForecastIO
 let forecastIOClient = APIClient(apiKey: "YOUR_API_KEY_HERE")
 ```
 
+You can choose units that you want Forecast responds with
+
+```swift
+...
+forecastIOClient.units = .SI
+...
+```
+
 With the `APIClient`, you can make two kinds of requests. The first will get the current `Forecast` for a particular location:
 
 ```swift
