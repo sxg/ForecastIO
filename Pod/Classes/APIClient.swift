@@ -15,6 +15,9 @@ public class APIClient : NSObject {
     private let session = NSURLSession.sharedSession()
     private static let forecastIOURL = "https://api.forecast.io/forecast/"
     
+    /// units: Units in which the response will be provided. US is default as per Forecast.io Docs
+    public var units = Units.US
+    
     /**
         Creates a new `APIClient` to interact with Forecast.io's Dark Sky API.
      
@@ -34,7 +37,7 @@ public class APIClient : NSObject {
         - parameter completion: A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
     public func getForecast(latitude lat: Double, longitude lon: Double, completion: (forecast: Forecast?, error: NSError?) -> Void) {
-        let url = NSURL(string: APIClient.forecastIOURL + apiKey + "/\(lat),\(lon)")!
+        let url = NSURL(string: APIClient.forecastIOURL + apiKey + "/\(lat),\(lon)?units=\(units)")!
         getForecast(url, completion: completion)
     }
     
@@ -48,7 +51,7 @@ public class APIClient : NSObject {
     */
     public func getForecast(latitude lat: Double, longitude lon: Double, time: NSDate, completion: (forecast: Forecast?, error: NSError?) -> Void) {
         let timeString = String(format: "%.0f", time.timeIntervalSince1970)
-        let url = NSURL(string: APIClient.forecastIOURL + apiKey + "/\(lat),\(lon),\(timeString)")!
+        let url = NSURL(string: APIClient.forecastIOURL + apiKey + "/\(lat),\(lon),\(timeString)?units=\(units)")!
         getForecast(url, completion: completion)
     }
     
@@ -57,9 +60,20 @@ public class APIClient : NSObject {
             if err != nil {
                 completion(forecast: nil, error: err)
             } else {
-                let json = (try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers)) as! NSDictionary
-                let forecast = Forecast(fromJSON: json)
-                completion(forecast: forecast, error: err)
+                if let data = data {
+                    do {
+                        let jsonObject = try NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers)
+                        if let json = jsonObject as? NSDictionary {
+                            let forecast = Forecast(fromJSON: json)
+                            completion(forecast: forecast, error: err)
+                            return
+                        }
+                    } catch _ {
+                        completion(forecast: nil, error: nil)
+                    }
+                    
+                }
+                completion(forecast: nil, error: nil)
             }
         })
         task.resume()
