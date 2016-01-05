@@ -32,7 +32,7 @@ import ForecastIO
 let forecastIOClient = APIClient(apiKey: "YOUR_API_KEY_HERE")
 ```
 
-You can choose units that you want Forecast responds with
+You can choose units that you want `Forecast` responses with:
 
 ```swift
 ...
