@@ -15,7 +15,7 @@ public class APIClient : NSObject {
     private let session = NSURLSession.sharedSession()
     private static let forecastIOURL = "https://api.forecast.io/forecast/"
     
-    /// units: Units in which the response will be provided. US is default as per Forecast.io Docs
+    /// Units in which the response will be provided. US is default as per Forecast.io docs.
     public var units = Units.US
     
     /**

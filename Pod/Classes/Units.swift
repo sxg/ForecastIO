@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Units in which the Forecast.io data may be returned
+/// Units in which the Forecast.io data may be returned.
 public enum Units: String, CustomStringConvertible {
     case SI = "si"
     case US = "us"
