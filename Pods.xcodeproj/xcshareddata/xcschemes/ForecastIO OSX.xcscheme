@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "39ED6CDC99672303F992B722C0ABD571"
+               BlueprintIdentifier = "D4446E6F1C51538000FBC8A8"
                BuildableName = "ForecastIO.framework"
-               BlueprintName = "ForecastIO iOS"
+               BlueprintName = "ForecastIO OSX"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D4DE2AAE1C513C040063A7CA"
-               BuildableName = "ForecastIO iOS Tests.xctest"
-               BlueprintName = "ForecastIO iOS Tests"
+               BlueprintIdentifier = "D4446E781C51538000FBC8A8"
+               BuildableName = "ForecastIO OSX Tests.xctest"
+               BlueprintName = "ForecastIO OSX Tests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "39ED6CDC99672303F992B722C0ABD571"
+            BlueprintIdentifier = "D4446E6F1C51538000FBC8A8"
             BuildableName = "ForecastIO.framework"
-            BlueprintName = "ForecastIO iOS"
+            BlueprintName = "ForecastIO OSX"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "39ED6CDC99672303F992B722C0ABD571"
+            BlueprintIdentifier = "D4446E6F1C51538000FBC8A8"
             BuildableName = "ForecastIO.framework"
-            BlueprintName = "ForecastIO iOS"
+            BlueprintName = "ForecastIO OSX"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "39ED6CDC99672303F992B722C0ABD571"
+            BlueprintIdentifier = "D4446E6F1C51538000FBC8A8"
             BuildableName = "ForecastIO.framework"
-            BlueprintName = "ForecastIO iOS"
+            BlueprintName = "ForecastIO OSX"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -41,7 +41,7 @@ public enum Units: String, CustomStringConvertible {
     case UK2 = "uk2"
     
     /// Automatically use the appropriate units based on the location for which you are requesting data.
-    case auto = "auto"
+    case Auto = "auto"
     
     /**
         Returns the `String` value of the enum variant.
