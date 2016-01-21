@@ -4,6 +4,6 @@ use_frameworks!
 
 target 'ForecastIO_Tests', :exclusive => true do
   pod "ForecastIO", :path => "../"
-
+  pod "Nimble", "~> 3.1"
   
 end
