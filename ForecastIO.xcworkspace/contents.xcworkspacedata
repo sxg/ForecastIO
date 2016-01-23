@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/sdg46/Documents/Code/Satyam.io/ForecastIO/ForecastIO.xcodeproj">
+      location = "group:Source/ForecastIO.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/sdg46/Documents/Code/Satyam.io/ForecastIO/iOS Example.xcodeproj">
+      location = "group:Example/iOS Example.xcodeproj">
    </FileRef>
 </Workspace>

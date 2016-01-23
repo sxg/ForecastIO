@@ -7,79 +7,103 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F830F601C3BEE140062D714 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F830F5F1C3BEE140062D714 /* Units.swift */; };
 		99DDEA407AFC1B8A6B7DA975EC9F410C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		D41964591C2A82A300386CC4 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964511C2A82A300386CC4 /* Alert.swift */; };
-		D419645A1C2A82A300386CC4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964521C2A82A300386CC4 /* APIClient.swift */; };
-		D419645B1C2A82A300386CC4 /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964531C2A82A300386CC4 /* DataBlock.swift */; };
-		D419645C1C2A82A300386CC4 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964541C2A82A300386CC4 /* DataPoint.swift */; };
-		D419645D1C2A82A300386CC4 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964551C2A82A300386CC4 /* Flag.swift */; };
-		D419645E1C2A82A300386CC4 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964561C2A82A300386CC4 /* Forecast.swift */; };
-		D419645F1C2A82A300386CC4 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964571C2A82A300386CC4 /* Icon.swift */; };
-		D41964601C2A82A300386CC4 /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964581C2A82A300386CC4 /* Precipitation.swift */; };
 		D4446E7A1C51538000FBC8A8 /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4446E701C51538000FBC8A8 /* ForecastIO.framework */; };
-		D4446E871C51542C00FBC8A8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964521C2A82A300386CC4 /* APIClient.swift */; };
-		D4446E881C51542C00FBC8A8 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964511C2A82A300386CC4 /* Alert.swift */; };
-		D4446E891C51542C00FBC8A8 /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964531C2A82A300386CC4 /* DataBlock.swift */; };
-		D4446E8A1C51542C00FBC8A8 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964541C2A82A300386CC4 /* DataPoint.swift */; };
-		D4446E8B1C51542C00FBC8A8 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964551C2A82A300386CC4 /* Flag.swift */; };
-		D4446E8C1C51542C00FBC8A8 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964561C2A82A300386CC4 /* Forecast.swift */; };
-		D4446E8D1C51542C00FBC8A8 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964571C2A82A300386CC4 /* Icon.swift */; };
-		D4446E8E1C51542C00FBC8A8 /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964581C2A82A300386CC4 /* Precipitation.swift */; };
-		D4446E8F1C51542C00FBC8A8 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F830F5F1C3BEE140062D714 /* Units.swift */; };
 		D4446E911C51543900FBC8A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4446E901C51543900FBC8A8 /* Foundation.framework */; };
 		D4446E921C51544A00FBC8A8 /* ForecastIO_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DE2AD81C513F5B0063A7CA /* ForecastIO_Tests.swift */; };
-		D4A480681C507CE70053EB05 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964511C2A82A300386CC4 /* Alert.swift */; };
-		D4A480691C507CE70053EB05 /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964581C2A82A300386CC4 /* Precipitation.swift */; };
-		D4A4806A1C507CE70053EB05 /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964531C2A82A300386CC4 /* DataBlock.swift */; };
-		D4A4806B1C507CE70053EB05 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964571C2A82A300386CC4 /* Icon.swift */; };
-		D4A4806C1C507CE70053EB05 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964551C2A82A300386CC4 /* Flag.swift */; };
-		D4A4806D1C507CE70053EB05 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964541C2A82A300386CC4 /* DataPoint.swift */; };
-		D4A4806E1C507CE70053EB05 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964561C2A82A300386CC4 /* Forecast.swift */; };
-		D4A4806F1C507CE70053EB05 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F830F5F1C3BEE140062D714 /* Units.swift */; };
-		D4A480701C507CE70053EB05 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964521C2A82A300386CC4 /* APIClient.swift */; };
 		D4A480721C507CE70053EB05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		D4A480811C507D730053EB05 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964511C2A82A300386CC4 /* Alert.swift */; };
-		D4A480821C507D730053EB05 /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964581C2A82A300386CC4 /* Precipitation.swift */; };
-		D4A480831C507D730053EB05 /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964531C2A82A300386CC4 /* DataBlock.swift */; };
-		D4A480841C507D730053EB05 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964571C2A82A300386CC4 /* Icon.swift */; };
-		D4A480851C507D730053EB05 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964551C2A82A300386CC4 /* Flag.swift */; };
-		D4A480861C507D730053EB05 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964541C2A82A300386CC4 /* DataPoint.swift */; };
-		D4A480871C507D730053EB05 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964561C2A82A300386CC4 /* Forecast.swift */; };
-		D4A480881C507D730053EB05 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F830F5F1C3BEE140062D714 /* Units.swift */; };
-		D4A480891C507D730053EB05 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964521C2A82A300386CC4 /* APIClient.swift */; };
 		D4A4808B1C507D730053EB05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		D4B85DAF1C533A7B00BD2FCD /* ForecastIO.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D4B85DAC1C533A7B00BD2FCD /* ForecastIO.podspec */; };
-		D4B85DB01C533A7B00BD2FCD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D4B85DAD1C533A7B00BD2FCD /* LICENSE */; };
-		D4B85DB11C533A7B00BD2FCD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DAE1C533A7B00BD2FCD /* README.md */; };
+		D4B85DD71C533F7400BD2FCD /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCD1C533F7400BD2FCD /* Alert.swift */; };
+		D4B85DD81C533F7400BD2FCD /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCD1C533F7400BD2FCD /* Alert.swift */; };
+		D4B85DD91C533F7400BD2FCD /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCD1C533F7400BD2FCD /* Alert.swift */; };
+		D4B85DDA1C533F7400BD2FCD /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCD1C533F7400BD2FCD /* Alert.swift */; };
+		D4B85DDB1C533F7400BD2FCD /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCD1C533F7400BD2FCD /* Alert.swift */; };
+		D4B85DDC1C533F7400BD2FCD /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCD1C533F7400BD2FCD /* Alert.swift */; };
+		D4B85DDD1C533F7400BD2FCD /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCD1C533F7400BD2FCD /* Alert.swift */; };
+		D4B85DDE1C533F7400BD2FCD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCE1C533F7400BD2FCD /* APIClient.swift */; };
+		D4B85DDF1C533F7400BD2FCD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCE1C533F7400BD2FCD /* APIClient.swift */; };
+		D4B85DE01C533F7400BD2FCD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCE1C533F7400BD2FCD /* APIClient.swift */; };
+		D4B85DE11C533F7400BD2FCD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCE1C533F7400BD2FCD /* APIClient.swift */; };
+		D4B85DE21C533F7400BD2FCD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCE1C533F7400BD2FCD /* APIClient.swift */; };
+		D4B85DE31C533F7400BD2FCD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCE1C533F7400BD2FCD /* APIClient.swift */; };
+		D4B85DE41C533F7400BD2FCD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCE1C533F7400BD2FCD /* APIClient.swift */; };
+		D4B85DE51C533F7400BD2FCD /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCF1C533F7400BD2FCD /* DataBlock.swift */; };
+		D4B85DE61C533F7400BD2FCD /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCF1C533F7400BD2FCD /* DataBlock.swift */; };
+		D4B85DE71C533F7400BD2FCD /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCF1C533F7400BD2FCD /* DataBlock.swift */; };
+		D4B85DE81C533F7400BD2FCD /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCF1C533F7400BD2FCD /* DataBlock.swift */; };
+		D4B85DE91C533F7400BD2FCD /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCF1C533F7400BD2FCD /* DataBlock.swift */; };
+		D4B85DEA1C533F7400BD2FCD /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCF1C533F7400BD2FCD /* DataBlock.swift */; };
+		D4B85DEB1C533F7400BD2FCD /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DCF1C533F7400BD2FCD /* DataBlock.swift */; };
+		D4B85DEC1C533F7400BD2FCD /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD01C533F7400BD2FCD /* DataPoint.swift */; };
+		D4B85DED1C533F7400BD2FCD /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD01C533F7400BD2FCD /* DataPoint.swift */; };
+		D4B85DEE1C533F7400BD2FCD /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD01C533F7400BD2FCD /* DataPoint.swift */; };
+		D4B85DEF1C533F7400BD2FCD /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD01C533F7400BD2FCD /* DataPoint.swift */; };
+		D4B85DF01C533F7400BD2FCD /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD01C533F7400BD2FCD /* DataPoint.swift */; };
+		D4B85DF11C533F7400BD2FCD /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD01C533F7400BD2FCD /* DataPoint.swift */; };
+		D4B85DF21C533F7400BD2FCD /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD01C533F7400BD2FCD /* DataPoint.swift */; };
+		D4B85DF31C533F7400BD2FCD /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD11C533F7400BD2FCD /* Flag.swift */; };
+		D4B85DF41C533F7400BD2FCD /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD11C533F7400BD2FCD /* Flag.swift */; };
+		D4B85DF51C533F7400BD2FCD /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD11C533F7400BD2FCD /* Flag.swift */; };
+		D4B85DF61C533F7400BD2FCD /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD11C533F7400BD2FCD /* Flag.swift */; };
+		D4B85DF71C533F7400BD2FCD /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD11C533F7400BD2FCD /* Flag.swift */; };
+		D4B85DF81C533F7400BD2FCD /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD11C533F7400BD2FCD /* Flag.swift */; };
+		D4B85DF91C533F7400BD2FCD /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD11C533F7400BD2FCD /* Flag.swift */; };
+		D4B85DFA1C533F7400BD2FCD /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD21C533F7400BD2FCD /* Forecast.swift */; };
+		D4B85DFB1C533F7400BD2FCD /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD21C533F7400BD2FCD /* Forecast.swift */; };
+		D4B85DFC1C533F7400BD2FCD /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD21C533F7400BD2FCD /* Forecast.swift */; };
+		D4B85DFD1C533F7400BD2FCD /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD21C533F7400BD2FCD /* Forecast.swift */; };
+		D4B85DFE1C533F7400BD2FCD /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD21C533F7400BD2FCD /* Forecast.swift */; };
+		D4B85DFF1C533F7400BD2FCD /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD21C533F7400BD2FCD /* Forecast.swift */; };
+		D4B85E001C533F7400BD2FCD /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD21C533F7400BD2FCD /* Forecast.swift */; };
+		D4B85E011C533F7400BD2FCD /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD31C533F7400BD2FCD /* Icon.swift */; };
+		D4B85E021C533F7400BD2FCD /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD31C533F7400BD2FCD /* Icon.swift */; };
+		D4B85E031C533F7400BD2FCD /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD31C533F7400BD2FCD /* Icon.swift */; };
+		D4B85E041C533F7400BD2FCD /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD31C533F7400BD2FCD /* Icon.swift */; };
+		D4B85E051C533F7400BD2FCD /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD31C533F7400BD2FCD /* Icon.swift */; };
+		D4B85E061C533F7400BD2FCD /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD31C533F7400BD2FCD /* Icon.swift */; };
+		D4B85E071C533F7400BD2FCD /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD31C533F7400BD2FCD /* Icon.swift */; };
+		D4B85E0F1C533F7400BD2FCD /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD51C533F7400BD2FCD /* Precipitation.swift */; };
+		D4B85E101C533F7400BD2FCD /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD51C533F7400BD2FCD /* Precipitation.swift */; };
+		D4B85E111C533F7400BD2FCD /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD51C533F7400BD2FCD /* Precipitation.swift */; };
+		D4B85E121C533F7400BD2FCD /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD51C533F7400BD2FCD /* Precipitation.swift */; };
+		D4B85E131C533F7400BD2FCD /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD51C533F7400BD2FCD /* Precipitation.swift */; };
+		D4B85E141C533F7400BD2FCD /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD51C533F7400BD2FCD /* Precipitation.swift */; };
+		D4B85E151C533F7400BD2FCD /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD51C533F7400BD2FCD /* Precipitation.swift */; };
+		D4B85E161C533F7400BD2FCD /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD61C533F7400BD2FCD /* Units.swift */; };
+		D4B85E171C533F7400BD2FCD /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD61C533F7400BD2FCD /* Units.swift */; };
+		D4B85E181C533F7400BD2FCD /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD61C533F7400BD2FCD /* Units.swift */; };
+		D4B85E191C533F7400BD2FCD /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD61C533F7400BD2FCD /* Units.swift */; };
+		D4B85E1A1C533F7400BD2FCD /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD61C533F7400BD2FCD /* Units.swift */; };
+		D4B85E1B1C533F7400BD2FCD /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD61C533F7400BD2FCD /* Units.swift */; };
+		D4B85E1C1C533F7400BD2FCD /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DD61C533F7400BD2FCD /* Units.swift */; };
+		D4B85E1D1C533F9B00BD2FCD /* ForecastIO_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DE2AD81C513F5B0063A7CA /* ForecastIO_Tests.swift */; };
 		D4DE2AB41C513C040063A7CA /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
 		D4DE2ACF1C513EA00063A7CA /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
 		D4DE2ADF1C513FBE0063A7CA /* ForecastIO_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DE2AD81C513F5B0063A7CA /* ForecastIO_Tests.swift */; };
-		D4DE2AE11C513FBF0063A7CA /* ForecastIO_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DE2AD81C513F5B0063A7CA /* ForecastIO_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4F830F5F1C3BEE140062D714 /* Units.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Units.swift; path = Source/Units.swift; sourceTree = SOURCE_ROOT; };
 		52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D41964511C2A82A300386CC4 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = Source/Alert.swift; sourceTree = SOURCE_ROOT; };
-		D41964521C2A82A300386CC4 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = Source/APIClient.swift; sourceTree = SOURCE_ROOT; };
-		D41964531C2A82A300386CC4 /* DataBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataBlock.swift; path = Source/DataBlock.swift; sourceTree = SOURCE_ROOT; };
-		D41964541C2A82A300386CC4 /* DataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataPoint.swift; path = Source/DataPoint.swift; sourceTree = SOURCE_ROOT; };
-		D41964551C2A82A300386CC4 /* Flag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flag.swift; path = Source/Flag.swift; sourceTree = SOURCE_ROOT; };
-		D41964561C2A82A300386CC4 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Forecast.swift; path = Source/Forecast.swift; sourceTree = SOURCE_ROOT; };
-		D41964571C2A82A300386CC4 /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Source/Icon.swift; sourceTree = SOURCE_ROOT; };
-		D41964581C2A82A300386CC4 /* Precipitation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Precipitation.swift; path = Source/Precipitation.swift; sourceTree = SOURCE_ROOT; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D4446E701C51538000FBC8A8 /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4446E791C51538000FBC8A8 /* ForecastIO OSX Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO OSX Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4446E901C51543900FBC8A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D44F74E61C5324E4002F701A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../../Source/Info.plist; sourceTree = "<group>"; };
 		D4A4807A1C507CE70053EB05 /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A480931C507D730053EB05 /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4B85DAC1C533A7B00BD2FCD /* ForecastIO.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ForecastIO.podspec; sourceTree = "<group>"; };
-		D4B85DAD1C533A7B00BD2FCD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		D4B85DAE1C533A7B00BD2FCD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D4B85DAC1C533A7B00BD2FCD /* ForecastIO.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ForecastIO.podspec; path = ../ForecastIO.podspec; sourceTree = "<group>"; };
+		D4B85DAD1C533A7B00BD2FCD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D4B85DAE1C533A7B00BD2FCD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D4B85DCD1C533F7400BD2FCD /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = ForecastIO/Alert.swift; sourceTree = "<group>"; };
+		D4B85DCE1C533F7400BD2FCD /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = ForecastIO/APIClient.swift; sourceTree = "<group>"; };
+		D4B85DCF1C533F7400BD2FCD /* DataBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataBlock.swift; path = ForecastIO/DataBlock.swift; sourceTree = "<group>"; };
+		D4B85DD01C533F7400BD2FCD /* DataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataPoint.swift; path = ForecastIO/DataPoint.swift; sourceTree = "<group>"; };
+		D4B85DD11C533F7400BD2FCD /* Flag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flag.swift; path = ForecastIO/Flag.swift; sourceTree = "<group>"; };
+		D4B85DD21C533F7400BD2FCD /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Forecast.swift; path = ForecastIO/Forecast.swift; sourceTree = "<group>"; };
+		D4B85DD31C533F7400BD2FCD /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = ForecastIO/Icon.swift; sourceTree = "<group>"; };
+		D4B85DD41C533F7400BD2FCD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ForecastIO/Info.plist; sourceTree = "<group>"; };
+		D4B85DD51C533F7400BD2FCD /* Precipitation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Precipitation.swift; path = ForecastIO/Precipitation.swift; sourceTree = "<group>"; };
+		D4B85DD61C533F7400BD2FCD /* Units.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Units.swift; path = ForecastIO/Units.swift; sourceTree = "<group>"; };
 		D4DE2AAF1C513C040063A7CA /* ForecastIO iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DE2AD41C513EA00063A7CA /* ForecastIO tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DE2AD81C513F5B0063A7CA /* ForecastIO_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastIO_Tests.swift; path = Tests/ForecastIO_Tests.swift; sourceTree = SOURCE_ROOT; };
@@ -146,32 +170,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4617C46CA1912CF0ECFF7DC596DC784C /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				63829531F57E96AF69A2F52E3496771A /* ForecastIO */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		63829531F57E96AF69A2F52E3496771A /* ForecastIO */ = {
-			isa = PBXGroup;
-			children = (
-				7AF9FE7F90FE262E944D6B956A21C5EC /* Pod */,
-				80898B75239A63D0065BDE68F2B0A2A0 /* Support Files */,
-			);
-			name = ForecastIO;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		7AF9FE7F90FE262E944D6B956A21C5EC /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				F44AB3438062228EE882FD6244885BD5 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -179,20 +177,11 @@
 				D4B85DAD1C533A7B00BD2FCD /* LICENSE */,
 				D4B85DAE1C533A7B00BD2FCD /* README.md */,
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				4617C46CA1912CF0ECFF7DC596DC784C /* Development Pods */,
+				D4B85DCC1C533F5800BD2FCD /* Source */,
 				D4DE2AB01C513C040063A7CA /* Tests */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				8B40303E341216B1C5CF6E57ADE54857 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		80898B75239A63D0065BDE68F2B0A2A0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D44F74E61C5324E4002F701A /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Satyam.io/ForecastIO/Example/Pods/Target Support Files/ForecastIO";
 			sourceTree = "<group>";
 		};
 		8B40303E341216B1C5CF6E57ADE54857 /* Products */ = {
@@ -226,30 +215,31 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		D4B85DCC1C533F5800BD2FCD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D4B85DCD1C533F7400BD2FCD /* Alert.swift */,
+				D4B85DCE1C533F7400BD2FCD /* APIClient.swift */,
+				D4B85DCF1C533F7400BD2FCD /* DataBlock.swift */,
+				D4B85DD01C533F7400BD2FCD /* DataPoint.swift */,
+				D4B85DD11C533F7400BD2FCD /* Flag.swift */,
+				D4B85DD21C533F7400BD2FCD /* Forecast.swift */,
+				D4B85DD31C533F7400BD2FCD /* Icon.swift */,
+				D4B85DD41C533F7400BD2FCD /* Info.plist */,
+				D4B85DD51C533F7400BD2FCD /* Precipitation.swift */,
+				D4B85DD61C533F7400BD2FCD /* Units.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
 		D4DE2AB01C513C040063A7CA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				D4DE2AD81C513F5B0063A7CA /* ForecastIO_Tests.swift */,
 				D4DE2AD91C513F5B0063A7CA /* Info.plist */,
 			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		F44AB3438062228EE882FD6244885BD5 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				D41964521C2A82A300386CC4 /* APIClient.swift */,
-				D41964511C2A82A300386CC4 /* Alert.swift */,
-				D41964531C2A82A300386CC4 /* DataBlock.swift */,
-				D41964541C2A82A300386CC4 /* DataPoint.swift */,
-				D41964551C2A82A300386CC4 /* Flag.swift */,
-				D41964561C2A82A300386CC4 /* Forecast.swift */,
-				D41964571C2A82A300386CC4 /* Icon.swift */,
-				D41964581C2A82A300386CC4 /* Precipitation.swift */,
-				4F830F5F1C3BEE140062D714 /* Units.swift */,
-			);
-			name = Classes;
-			path = Pod/Classes;
+			name = Tests;
+			path = ../Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,8 +447,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4B85DB01C533A7B00BD2FCD /* LICENSE in Resources */,
-				D4B85DAF1C533A7B00BD2FCD /* ForecastIO.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,15 +499,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4446E871C51542C00FBC8A8 /* APIClient.swift in Sources */,
-				D4446E881C51542C00FBC8A8 /* Alert.swift in Sources */,
-				D4446E891C51542C00FBC8A8 /* DataBlock.swift in Sources */,
-				D4446E8A1C51542C00FBC8A8 /* DataPoint.swift in Sources */,
-				D4446E8B1C51542C00FBC8A8 /* Flag.swift in Sources */,
-				D4446E8C1C51542C00FBC8A8 /* Forecast.swift in Sources */,
-				D4446E8D1C51542C00FBC8A8 /* Icon.swift in Sources */,
-				D4446E8E1C51542C00FBC8A8 /* Precipitation.swift in Sources */,
-				D4446E8F1C51542C00FBC8A8 /* Units.swift in Sources */,
+				D4B85DF01C533F7400BD2FCD /* DataPoint.swift in Sources */,
+				D4B85DF71C533F7400BD2FCD /* Flag.swift in Sources */,
+				D4B85E131C533F7400BD2FCD /* Precipitation.swift in Sources */,
+				D4B85DFE1C533F7400BD2FCD /* Forecast.swift in Sources */,
+				D4B85E1A1C533F7400BD2FCD /* Units.swift in Sources */,
+				D4B85DE21C533F7400BD2FCD /* APIClient.swift in Sources */,
+				D4B85DE91C533F7400BD2FCD /* DataBlock.swift in Sources */,
+				D4B85DDB1C533F7400BD2FCD /* Alert.swift in Sources */,
+				D4B85E051C533F7400BD2FCD /* Icon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,7 +515,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B85DDC1C533F7400BD2FCD /* Alert.swift in Sources */,
+				D4B85DF81C533F7400BD2FCD /* Flag.swift in Sources */,
+				D4B85E141C533F7400BD2FCD /* Precipitation.swift in Sources */,
+				D4B85E1B1C533F7400BD2FCD /* Units.swift in Sources */,
+				D4B85DFF1C533F7400BD2FCD /* Forecast.swift in Sources */,
 				D4446E921C51544A00FBC8A8 /* ForecastIO_Tests.swift in Sources */,
+				D4B85DF11C533F7400BD2FCD /* DataPoint.swift in Sources */,
+				D4B85DE31C533F7400BD2FCD /* APIClient.swift in Sources */,
+				D4B85E061C533F7400BD2FCD /* Icon.swift in Sources */,
+				D4B85DEA1C533F7400BD2FCD /* DataBlock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,15 +532,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A480681C507CE70053EB05 /* Alert.swift in Sources */,
-				D4A480691C507CE70053EB05 /* Precipitation.swift in Sources */,
-				D4A4806A1C507CE70053EB05 /* DataBlock.swift in Sources */,
-				D4A4806B1C507CE70053EB05 /* Icon.swift in Sources */,
-				D4A4806C1C507CE70053EB05 /* Flag.swift in Sources */,
-				D4A4806D1C507CE70053EB05 /* DataPoint.swift in Sources */,
-				D4A4806E1C507CE70053EB05 /* Forecast.swift in Sources */,
-				D4A4806F1C507CE70053EB05 /* Units.swift in Sources */,
-				D4A480701C507CE70053EB05 /* APIClient.swift in Sources */,
+				D4B85DF21C533F7400BD2FCD /* DataPoint.swift in Sources */,
+				D4B85DF91C533F7400BD2FCD /* Flag.swift in Sources */,
+				D4B85E151C533F7400BD2FCD /* Precipitation.swift in Sources */,
+				D4B85E001C533F7400BD2FCD /* Forecast.swift in Sources */,
+				D4B85E1C1C533F7400BD2FCD /* Units.swift in Sources */,
+				D4B85DE41C533F7400BD2FCD /* APIClient.swift in Sources */,
+				D4B85DEB1C533F7400BD2FCD /* DataBlock.swift in Sources */,
+				D4B85DDD1C533F7400BD2FCD /* Alert.swift in Sources */,
+				D4B85E071C533F7400BD2FCD /* Icon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,15 +548,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A480811C507D730053EB05 /* Alert.swift in Sources */,
-				D4A480821C507D730053EB05 /* Precipitation.swift in Sources */,
-				D4A480831C507D730053EB05 /* DataBlock.swift in Sources */,
-				D4A480841C507D730053EB05 /* Icon.swift in Sources */,
-				D4A480851C507D730053EB05 /* Flag.swift in Sources */,
-				D4A480861C507D730053EB05 /* DataPoint.swift in Sources */,
-				D4A480871C507D730053EB05 /* Forecast.swift in Sources */,
-				D4A480881C507D730053EB05 /* Units.swift in Sources */,
-				D4A480891C507D730053EB05 /* APIClient.swift in Sources */,
+				D4B85DEE1C533F7400BD2FCD /* DataPoint.swift in Sources */,
+				D4B85DF51C533F7400BD2FCD /* Flag.swift in Sources */,
+				D4B85E111C533F7400BD2FCD /* Precipitation.swift in Sources */,
+				D4B85DFC1C533F7400BD2FCD /* Forecast.swift in Sources */,
+				D4B85E181C533F7400BD2FCD /* Units.swift in Sources */,
+				D4B85DE01C533F7400BD2FCD /* APIClient.swift in Sources */,
+				D4B85DE71C533F7400BD2FCD /* DataBlock.swift in Sources */,
+				D4B85DD91C533F7400BD2FCD /* Alert.swift in Sources */,
+				D4B85E031C533F7400BD2FCD /* Icon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,7 +564,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B85DD81C533F7400BD2FCD /* Alert.swift in Sources */,
+				D4B85DF41C533F7400BD2FCD /* Flag.swift in Sources */,
+				D4B85E101C533F7400BD2FCD /* Precipitation.swift in Sources */,
+				D4B85E171C533F7400BD2FCD /* Units.swift in Sources */,
+				D4B85DFB1C533F7400BD2FCD /* Forecast.swift in Sources */,
 				D4DE2ADF1C513FBE0063A7CA /* ForecastIO_Tests.swift in Sources */,
+				D4B85DED1C533F7400BD2FCD /* DataPoint.swift in Sources */,
+				D4B85DDF1C533F7400BD2FCD /* APIClient.swift in Sources */,
+				D4B85E021C533F7400BD2FCD /* Icon.swift in Sources */,
+				D4B85DE61C533F7400BD2FCD /* DataBlock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,7 +581,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4DE2AE11C513FBF0063A7CA /* ForecastIO_Tests.swift in Sources */,
+				D4B85E1D1C533F9B00BD2FCD /* ForecastIO_Tests.swift in Sources */,
+				D4B85DDA1C533F7400BD2FCD /* Alert.swift in Sources */,
+				D4B85DF61C533F7400BD2FCD /* Flag.swift in Sources */,
+				D4B85E121C533F7400BD2FCD /* Precipitation.swift in Sources */,
+				D4B85E191C533F7400BD2FCD /* Units.swift in Sources */,
+				D4B85DFD1C533F7400BD2FCD /* Forecast.swift in Sources */,
+				D4B85DEF1C533F7400BD2FCD /* DataPoint.swift in Sources */,
+				D4B85DE11C533F7400BD2FCD /* APIClient.swift in Sources */,
+				D4B85E041C533F7400BD2FCD /* Icon.swift in Sources */,
+				D4B85DE81C533F7400BD2FCD /* DataBlock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,16 +598,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D41964591C2A82A300386CC4 /* Alert.swift in Sources */,
-				D41964601C2A82A300386CC4 /* Precipitation.swift in Sources */,
-				D4B85DB11C533A7B00BD2FCD /* README.md in Sources */,
-				D419645B1C2A82A300386CC4 /* DataBlock.swift in Sources */,
-				D419645F1C2A82A300386CC4 /* Icon.swift in Sources */,
-				D419645D1C2A82A300386CC4 /* Flag.swift in Sources */,
-				D419645C1C2A82A300386CC4 /* DataPoint.swift in Sources */,
-				D419645E1C2A82A300386CC4 /* Forecast.swift in Sources */,
-				4F830F601C3BEE140062D714 /* Units.swift in Sources */,
-				D419645A1C2A82A300386CC4 /* APIClient.swift in Sources */,
+				D4B85DFA1C533F7400BD2FCD /* Forecast.swift in Sources */,
+				D4B85E011C533F7400BD2FCD /* Icon.swift in Sources */,
+				D4B85DF31C533F7400BD2FCD /* Flag.swift in Sources */,
+				D4B85E0F1C533F7400BD2FCD /* Precipitation.swift in Sources */,
+				D4B85E161C533F7400BD2FCD /* Units.swift in Sources */,
+				D4B85DE51C533F7400BD2FCD /* DataBlock.swift in Sources */,
+				D4B85DD71C533F7400BD2FCD /* Alert.swift in Sources */,
+				D4B85DEC1C533F7400BD2FCD /* DataPoint.swift in Sources */,
+				D4B85DDE1C533F7400BD2FCD /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,7 +625,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Example/Pods/Target Support Files/ForecastIO/ForecastIO-prefix.pch";
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = ForecastIO/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -679,7 +693,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Example/Pods/Target Support Files/ForecastIO/ForecastIO-prefix.pch";
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = ForecastIO/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -760,7 +774,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = ForecastIO/Info.plist;
 				INFOPLIST_OUTPUT_FORMAT = binary;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -795,7 +809,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = ForecastIO/Info.plist;
 				INFOPLIST_OUTPUT_FORMAT = binary;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -870,7 +884,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Example/Pods/Target Support Files/ForecastIO/ForecastIO-prefix.pch";
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = ForecastIO/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -902,7 +916,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Example/Pods/Target Support Files/ForecastIO/ForecastIO-prefix.pch";
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = ForecastIO/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -933,7 +947,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Example/Pods/Target Support Files/ForecastIO/ForecastIO-prefix.pch";
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = ForecastIO/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -965,7 +979,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Example/Pods/Target Support Files/ForecastIO/ForecastIO-prefix.pch";
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = ForecastIO/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
