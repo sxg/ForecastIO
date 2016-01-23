@@ -7,7 +7,7 @@
 
 ## Requirements
 
-To use ForecastIO, all you need is an API key for the [Dark Sky API](https://developer.forecast.io/).
+To use ForecastIO, all you need is an API key for the [Dark Sky API](https://developer.forecast.io/). ForecastIO supports iOS, OSX, watchOS, and tvOS.
 
 ## Installation
 
@@ -32,13 +32,18 @@ import ForecastIO
 let forecastIOClient = APIClient(apiKey: "YOUR_API_KEY_HERE")
 ```
 
-You can choose units that you want `Forecast` responses with:
+You can choose units that you want `Forecast` responses to use:
 
 ```swift
-...
 forecastIOClient.units = .SI
-...
 ```
+
+The following units are supported:
+- SI
+- US (default)
+- Canadian
+- UK
+- Auto (uses the local units for the location for which you are requesting weather data)
 
 With the `APIClient`, you can make two kinds of requests. The first will get the current `Forecast` for a particular location:
 
@@ -63,6 +68,10 @@ forecastIOClient.getForecast(latitude: myLat, longitude: myLon, time: myTime) { 
   }
 }
 ```
+
+The `Forecast` you receive will have metadata as well as `DataPoint`s and `DataBlock`s associated with it. A `DataPoint` such as the `currently` property on `Forecast` represents various weather phenomena occurring at a specific instant of time. A `DataBlock` such as the `minutely`, `hourly`, and `daily` properties on `Forecast` represent the various weather phenomena occurring over a period of time. `DataBlock`s possess a `data` property, which holds an array of `DataPoint`s.
+
+For a full list of properties defined on all models, consult the [full documentation on CocoaDocs](http://cocoadocs.org/docsets/ForecastIO).
 
 ## Author
 

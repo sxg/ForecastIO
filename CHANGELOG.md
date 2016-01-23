@@ -9,6 +9,8 @@ Released on Jan 23, 2016.
 #### Added
 - This CHANGELOG file
 - Package.swift manifest file for Swift Package Manager
+- List of supported units in README
+- Description of `Forecast`'s `DataPoint`s and `DataBlock`s in README
 
 #### Updated
 - Restructured project hierarchy for Swift Package Manager
