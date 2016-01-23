@@ -6,4 +6,19 @@
 //
 //
 
-import Foundation
+import XCTest
+import Nimble
+import ForecastIO
+
+class APIClientTests: XCTestCase {
+    
+    func testInit() {
+        //  Given
+        //  When
+        let client = APIClient(apiKey: "FAKE API KEY")
+        
+        //  Then
+        expect(client).toNot(beNil())
+    }
+    
+}

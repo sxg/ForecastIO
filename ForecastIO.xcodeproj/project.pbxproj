@@ -99,6 +99,9 @@
 		D4D9F2D41C54454100A4A02F /* UnitsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D31C54454100A4A02F /* UnitsTest.swift */; };
 		D4D9F2D51C54454100A4A02F /* UnitsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D31C54454100A4A02F /* UnitsTest.swift */; };
 		D4D9F2D61C54454100A4A02F /* UnitsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D31C54454100A4A02F /* UnitsTest.swift */; };
+		D4D9F2D81C54462A00A4A02F /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */; };
+		D4D9F2D91C54462A00A4A02F /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */; };
+		D4D9F2DA1C54462A00A4A02F /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */; };
 		D4DE2AB41C513C040063A7CA /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
 		D4DE2ACF1C513EA00063A7CA /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
 /* End PBXBuildFile section */
@@ -142,6 +145,7 @@
 		D4D9F2CB1C54410300A4A02F /* DataPointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataPointTests.swift; path = Tests/DataPointTests.swift; sourceTree = SOURCE_ROOT; };
 		D4D9F2CF1C5442C400A4A02F /* DataBlockTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataBlockTests.swift; path = Tests/DataBlockTests.swift; sourceTree = SOURCE_ROOT; };
 		D4D9F2D31C54454100A4A02F /* UnitsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnitsTest.swift; path = Tests/UnitsTest.swift; sourceTree = SOURCE_ROOT; };
+		D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClientTests.swift; path = Tests/APIClientTests.swift; sourceTree = SOURCE_ROOT; };
 		D4DE2AAF1C513C040063A7CA /* ForecastIO iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DE2AD41C513EA00063A7CA /* ForecastIO tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74D9845E75B46DD215D94C0 /* Pods-ForecastIO OSX Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO OSX Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO OSX Tests/Pods-ForecastIO OSX Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -311,6 +315,7 @@
 			children = (
 				D4D9F2B31C54060800A4A02F /* Resources */,
 				D4D9F2C31C543ED900A4A02F /* AlertTests.swift */,
+				D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */,
 				D4D9F2CF1C5442C400A4A02F /* DataBlockTests.swift */,
 				D4D9F2CB1C54410300A4A02F /* DataPointTests.swift */,
 				D4D9F2C71C54400700A4A02F /* FlagTests.swift */,
@@ -756,6 +761,7 @@
 				D4D9F2D21C5442C400A4A02F /* DataBlockTests.swift in Sources */,
 				D4564FDA1C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FCC1C53F52000CB7548 /* APIClient.swift in Sources */,
+				D4D9F2DA1C54462A00A4A02F /* APIClientTests.swift in Sources */,
 				D4564FEF1C53F52000CB7548 /* Icon.swift in Sources */,
 				D4D9F2BB1C5434B800A4A02F /* ForecastTests.swift in Sources */,
 				D4564FD31C53F52000CB7548 /* DataBlock.swift in Sources */,
@@ -810,6 +816,7 @@
 				D4D9F2D01C5442C400A4A02F /* DataBlockTests.swift in Sources */,
 				D4564FD61C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FC81C53F52000CB7548 /* APIClient.swift in Sources */,
+				D4D9F2D81C54462A00A4A02F /* APIClientTests.swift in Sources */,
 				D4564FEB1C53F52000CB7548 /* Icon.swift in Sources */,
 				D4D9F2B91C5434B800A4A02F /* ForecastTests.swift in Sources */,
 				D4564FCF1C53F52000CB7548 /* DataBlock.swift in Sources */,
@@ -832,6 +839,7 @@
 				D4D9F2D11C5442C400A4A02F /* DataBlockTests.swift in Sources */,
 				D4564FD81C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FCA1C53F52000CB7548 /* APIClient.swift in Sources */,
+				D4D9F2D91C54462A00A4A02F /* APIClientTests.swift in Sources */,
 				D4564FED1C53F52000CB7548 /* Icon.swift in Sources */,
 				D4D9F2BA1C5434B800A4A02F /* ForecastTests.swift in Sources */,
 				D4564FD11C53F52000CB7548 /* DataBlock.swift in Sources */,
