@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "ForecastIO_Example.app"
-               BlueprintName = "ForecastIO_Example"
-               ReferencedContainer = "container:ForecastIO.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "ForecastIO_Tests.xctest"
-               BlueprintName = "ForecastIO_Tests"
+               BlueprintIdentifier = "39ED6CDC99672303F992B722C0ABD571"
+               BuildableName = "ForecastIO.framework"
+               BlueprintName = "ForecastIO iOS"
                ReferencedContainer = "container:ForecastIO.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "ForecastIO_Tests.xctest"
-               BlueprintName = "ForecastIO_Tests"
+               BlueprintIdentifier = "D4DE2AAE1C513C040063A7CA"
+               BuildableName = "ForecastIO iOS Tests.xctest"
+               BlueprintName = "ForecastIO iOS Tests"
                ReferencedContainer = "container:ForecastIO.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "ForecastIO_Example.app"
-            BlueprintName = "ForecastIO_Example"
+            BlueprintIdentifier = "39ED6CDC99672303F992B722C0ABD571"
+            BuildableName = "ForecastIO.framework"
+            BlueprintName = "ForecastIO iOS"
             ReferencedContainer = "container:ForecastIO.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -75,16 +61,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "ForecastIO_Example.app"
-            BlueprintName = "ForecastIO_Example"
+            BlueprintIdentifier = "39ED6CDC99672303F992B722C0ABD571"
+            BuildableName = "ForecastIO.framework"
+            BlueprintName = "ForecastIO iOS"
             ReferencedContainer = "container:ForecastIO.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -94,16 +79,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "ForecastIO_Example.app"
-            BlueprintName = "ForecastIO_Example"
+            BlueprintIdentifier = "39ED6CDC99672303F992B722C0ABD571"
+            BuildableName = "ForecastIO.framework"
+            BlueprintName = "ForecastIO iOS"
             ReferencedContainer = "container:ForecastIO.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

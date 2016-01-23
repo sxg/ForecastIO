@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/sdg46/Documents/Code/Satyam.io/ForecastIO/ForecastIO.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/sdg46/Documents/Code/Satyam.io/ForecastIO/iOS Example.xcodeproj">
+   </FileRef>
+</Workspace>

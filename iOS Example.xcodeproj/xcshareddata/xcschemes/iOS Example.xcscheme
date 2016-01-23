@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D4A480641C507CE70053EB05"
-               BuildableName = "ForecastIO.framework"
-               BlueprintName = "ForecastIO watchOS"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "D4B85D7D1C53324600BD2FCD"
+               BuildableName = "iOS Example.app"
+               BlueprintName = "iOS Example"
+               ReferencedContainer = "container:iOS Example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,14 +28,34 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D4B85D901C53324600BD2FCD"
+               BuildableName = "iOS ExampleTests.xctest"
+               BlueprintName = "iOS ExampleTests"
+               ReferencedContainer = "container:iOS Example.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D4B85D9B1C53324600BD2FCD"
+               BuildableName = "iOS ExampleUITests.xctest"
+               BlueprintName = "iOS ExampleUITests"
+               ReferencedContainer = "container:iOS Example.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4A480641C507CE70053EB05"
-            BuildableName = "ForecastIO.framework"
-            BlueprintName = "ForecastIO watchOS"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "D4B85D7D1C53324600BD2FCD"
+            BuildableName = "iOS Example.app"
+            BlueprintName = "iOS Example"
+            ReferencedContainer = "container:iOS Example.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -51,15 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4A480641C507CE70053EB05"
-            BuildableName = "ForecastIO.framework"
-            BlueprintName = "ForecastIO watchOS"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "D4B85D7D1C53324600BD2FCD"
+            BuildableName = "iOS Example.app"
+            BlueprintName = "iOS Example"
+            ReferencedContainer = "container:iOS Example.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -69,15 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4A480641C507CE70053EB05"
-            BuildableName = "ForecastIO.framework"
-            BlueprintName = "ForecastIO watchOS"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "D4B85D7D1C53324600BD2FCD"
+            BuildableName = "iOS Example.app"
+            BlueprintName = "iOS Example"
+            ReferencedContainer = "container:iOS Example.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
