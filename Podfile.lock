@@ -1,0 +1,17 @@
+PODS:
+  - ForecastIO (1.4.2)
+  - Nimble (3.1.0)
+
+DEPENDENCIES:
+  - ForecastIO (from `./`)
+  - Nimble (~> 3.1)
+
+EXTERNAL SOURCES:
+  ForecastIO:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  ForecastIO: df00d429f348f578fa486417d4b43c4d8875dcd0
+  Nimble: 79d40f4d69d47314229bbabacaa02b8838c779b9
+
+COCOAPODS: 0.39.0

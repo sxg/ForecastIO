@@ -8,6 +8,7 @@
 
 import XCTest
 import ForecastIO
+import Nimble
 
 class ForecastIO_Tests: XCTestCase {
     
@@ -27,6 +28,7 @@ class ForecastIO_Tests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        expect(1 + 1).to(equal(2))
     }
     
     func testPerformanceExample() {
