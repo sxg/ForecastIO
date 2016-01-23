@@ -15,51 +15,51 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D4B85DBE1C533F0E00BD2FCD /* PBXContainerItemProxy */ = {
+		D4B85E291C53428900BD2FCD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D4B85DB41C533F0E00BD2FCD /* ForecastIO.xcodeproj */;
+			containerPortal = D4B85E1F1C53428800BD2FCD /* ForecastIO.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 52F3D67303609FDA6D12254CB10EDE7C;
 			remoteInfo = "ForecastIO iOS";
 		};
-		D4B85DC01C533F0E00BD2FCD /* PBXContainerItemProxy */ = {
+		D4B85E2B1C53428900BD2FCD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D4B85DB41C533F0E00BD2FCD /* ForecastIO.xcodeproj */;
+			containerPortal = D4B85E1F1C53428800BD2FCD /* ForecastIO.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D4DE2AAF1C513C040063A7CA;
 			remoteInfo = "ForecastIO iOS Tests";
 		};
-		D4B85DC21C533F0E00BD2FCD /* PBXContainerItemProxy */ = {
+		D4B85E2D1C53428900BD2FCD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D4B85DB41C533F0E00BD2FCD /* ForecastIO.xcodeproj */;
+			containerPortal = D4B85E1F1C53428800BD2FCD /* ForecastIO.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D4A480931C507D730053EB05;
 			remoteInfo = "ForecastIO tvOS";
 		};
-		D4B85DC41C533F0E00BD2FCD /* PBXContainerItemProxy */ = {
+		D4B85E2F1C53428900BD2FCD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D4B85DB41C533F0E00BD2FCD /* ForecastIO.xcodeproj */;
+			containerPortal = D4B85E1F1C53428800BD2FCD /* ForecastIO.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D4DE2AD41C513EA00063A7CA;
 			remoteInfo = "ForecastIO tvOS Tests";
 		};
-		D4B85DC61C533F0E00BD2FCD /* PBXContainerItemProxy */ = {
+		D4B85E311C53428900BD2FCD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D4B85DB41C533F0E00BD2FCD /* ForecastIO.xcodeproj */;
+			containerPortal = D4B85E1F1C53428800BD2FCD /* ForecastIO.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D4446E701C51538000FBC8A8;
 			remoteInfo = "ForecastIO OSX";
 		};
-		D4B85DC81C533F0E00BD2FCD /* PBXContainerItemProxy */ = {
+		D4B85E331C53428900BD2FCD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D4B85DB41C533F0E00BD2FCD /* ForecastIO.xcodeproj */;
+			containerPortal = D4B85E1F1C53428800BD2FCD /* ForecastIO.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D4446E791C51538000FBC8A8;
 			remoteInfo = "ForecastIO OSX Tests";
 		};
-		D4B85DCA1C533F0E00BD2FCD /* PBXContainerItemProxy */ = {
+		D4B85E351C53428900BD2FCD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D4B85DB41C533F0E00BD2FCD /* ForecastIO.xcodeproj */;
+			containerPortal = D4B85E1F1C53428800BD2FCD /* ForecastIO.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D4A4807A1C507CE70053EB05;
 			remoteInfo = "ForecastIO watchOS";
@@ -74,7 +74,7 @@
 		D4B85D871C53324600BD2FCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4B85D8A1C53324600BD2FCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4B85D8C1C53324600BD2FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4B85DB41C533F0E00BD2FCD /* ForecastIO.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ForecastIO.xcodeproj; path = ../Source/ForecastIO.xcodeproj; sourceTree = "<group>"; };
+		D4B85E1F1C53428800BD2FCD /* ForecastIO.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ForecastIO.xcodeproj; path = ../ForecastIO.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 			children = (
 				D4B85D7F1C53324600BD2FCD /* iOS Example */,
 				607FACD11AFB9204008FA782 /* Products */,
-				D4B85DB41C533F0E00BD2FCD /* ForecastIO.xcodeproj */,
+				D4B85E1F1C53428800BD2FCD /* ForecastIO.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,16 +118,16 @@
 			path = "iOS Example";
 			sourceTree = "<group>";
 		};
-		D4B85DB51C533F0E00BD2FCD /* Products */ = {
+		D4B85E201C53428800BD2FCD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4B85DBF1C533F0E00BD2FCD /* ForecastIO.framework */,
-				D4B85DC11C533F0E00BD2FCD /* ForecastIO iOS Tests.xctest */,
-				D4B85DC31C533F0E00BD2FCD /* ForecastIO.framework */,
-				D4B85DC51C533F0E00BD2FCD /* ForecastIO tvOS Tests.xctest */,
-				D4B85DC71C533F0E00BD2FCD /* ForecastIO.framework */,
-				D4B85DC91C533F0E00BD2FCD /* ForecastIO OSX Tests.xctest */,
-				D4B85DCB1C533F0E00BD2FCD /* ForecastIO.framework */,
+				D4B85E2A1C53428900BD2FCD /* ForecastIO.framework */,
+				D4B85E2C1C53428900BD2FCD /* ForecastIO iOS Tests.xctest */,
+				D4B85E2E1C53428900BD2FCD /* ForecastIO.framework */,
+				D4B85E301C53428900BD2FCD /* ForecastIO tvOS Tests.xctest */,
+				D4B85E321C53428900BD2FCD /* ForecastIO.framework */,
+				D4B85E341C53428900BD2FCD /* ForecastIO OSX Tests.xctest */,
+				D4B85E361C53428900BD2FCD /* ForecastIO.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,8 +180,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D4B85DB51C533F0E00BD2FCD /* Products */;
-					ProjectRef = D4B85DB41C533F0E00BD2FCD /* ForecastIO.xcodeproj */;
+					ProductGroup = D4B85E201C53428800BD2FCD /* Products */;
+					ProjectRef = D4B85E1F1C53428800BD2FCD /* ForecastIO.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -192,53 +192,53 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D4B85DBF1C533F0E00BD2FCD /* ForecastIO.framework */ = {
+		D4B85E2A1C53428900BD2FCD /* ForecastIO.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ForecastIO.framework;
-			remoteRef = D4B85DBE1C533F0E00BD2FCD /* PBXContainerItemProxy */;
+			remoteRef = D4B85E291C53428900BD2FCD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D4B85DC11C533F0E00BD2FCD /* ForecastIO iOS Tests.xctest */ = {
+		D4B85E2C1C53428900BD2FCD /* ForecastIO iOS Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "ForecastIO iOS Tests.xctest";
-			remoteRef = D4B85DC01C533F0E00BD2FCD /* PBXContainerItemProxy */;
+			remoteRef = D4B85E2B1C53428900BD2FCD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D4B85DC31C533F0E00BD2FCD /* ForecastIO.framework */ = {
+		D4B85E2E1C53428900BD2FCD /* ForecastIO.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ForecastIO.framework;
-			remoteRef = D4B85DC21C533F0E00BD2FCD /* PBXContainerItemProxy */;
+			remoteRef = D4B85E2D1C53428900BD2FCD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D4B85DC51C533F0E00BD2FCD /* ForecastIO tvOS Tests.xctest */ = {
+		D4B85E301C53428900BD2FCD /* ForecastIO tvOS Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "ForecastIO tvOS Tests.xctest";
-			remoteRef = D4B85DC41C533F0E00BD2FCD /* PBXContainerItemProxy */;
+			remoteRef = D4B85E2F1C53428900BD2FCD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D4B85DC71C533F0E00BD2FCD /* ForecastIO.framework */ = {
+		D4B85E321C53428900BD2FCD /* ForecastIO.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ForecastIO.framework;
-			remoteRef = D4B85DC61C533F0E00BD2FCD /* PBXContainerItemProxy */;
+			remoteRef = D4B85E311C53428900BD2FCD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D4B85DC91C533F0E00BD2FCD /* ForecastIO OSX Tests.xctest */ = {
+		D4B85E341C53428900BD2FCD /* ForecastIO OSX Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "ForecastIO OSX Tests.xctest";
-			remoteRef = D4B85DC81C533F0E00BD2FCD /* PBXContainerItemProxy */;
+			remoteRef = D4B85E331C53428900BD2FCD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D4B85DCB1C533F0E00BD2FCD /* ForecastIO.framework */ = {
+		D4B85E361C53428900BD2FCD /* ForecastIO.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ForecastIO.framework;
-			remoteRef = D4B85DCA1C533F0E00BD2FCD /* PBXContainerItemProxy */;
+			remoteRef = D4B85E351C53428900BD2FCD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
