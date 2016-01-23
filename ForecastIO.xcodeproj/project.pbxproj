@@ -81,6 +81,9 @@
 		D456500A1C53F53800CB7548 /* ForecastIO_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45650061C53F53800CB7548 /* ForecastIO_Tests.swift */; };
 		D4A480721C507CE70053EB05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		D4A4808B1C507D730053EB05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		D4D9F2B51C54061600A4A02F /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = D4D9F2B41C54061600A4A02F /* forecast.json */; };
+		D4D9F2B61C54061600A4A02F /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = D4D9F2B41C54061600A4A02F /* forecast.json */; };
+		D4D9F2B71C54061600A4A02F /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = D4D9F2B41C54061600A4A02F /* forecast.json */; };
 		D4DE2AB41C513C040063A7CA /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
 		D4DE2ACF1C513EA00063A7CA /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
 /* End PBXBuildFile section */
@@ -118,6 +121,7 @@
 		D4B85DAD1C533A7B00BD2FCD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D4B85DAE1C533A7B00BD2FCD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D4D9F2B01C53F76500A4A02F /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		D4D9F2B41C54061600A4A02F /* forecast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = forecast.json; path = Tests/Resources/forecast.json; sourceTree = SOURCE_ROOT; };
 		D4DE2AAF1C513C040063A7CA /* ForecastIO iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DE2AD41C513EA00063A7CA /* ForecastIO tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74D9845E75B46DD215D94C0 /* Pods-ForecastIO OSX Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO OSX Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO OSX Tests/Pods-ForecastIO OSX Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -274,9 +278,18 @@
 			name = Metadata;
 			sourceTree = "<group>";
 		};
+		D4D9F2B31C54060800A4A02F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4D9F2B41C54061600A4A02F /* forecast.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		D4DE2AB01C513C040063A7CA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D4D9F2B31C54060800A4A02F /* Resources */,
 				D45650061C53F53800CB7548 /* ForecastIO_Tests.swift */,
 				D45650071C53F53800CB7548 /* Info.plist */,
 			);
@@ -512,6 +525,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D9F2B71C54061600A4A02F /* forecast.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +547,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D9F2B51C54061600A4A02F /* forecast.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +555,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D9F2B61C54061600A4A02F /* forecast.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
