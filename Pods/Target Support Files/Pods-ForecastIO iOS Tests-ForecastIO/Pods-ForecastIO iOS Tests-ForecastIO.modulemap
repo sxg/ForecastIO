@@ -1,5 +1,5 @@
 framework module ForecastIO {
-  umbrella header "ForecastIO-umbrella.h"
+  umbrella header "Pods-ForecastIO iOS Tests-ForecastIO-umbrella.h"
 
   export *
   module * { export * }

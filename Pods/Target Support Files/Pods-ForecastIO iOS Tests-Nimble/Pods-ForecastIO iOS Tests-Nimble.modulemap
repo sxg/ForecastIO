@@ -1,5 +1,5 @@
 framework module Nimble {
-  umbrella header "Nimble-umbrella.h"
+  umbrella header "Pods-ForecastIO iOS Tests-Nimble-umbrella.h"
 
   export *
   module * { export * }

@@ -5,5 +5,5 @@ LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_pa
 OTHER_CFLAGS = $(inherited) -iquote "$PODS_FRAMEWORK_BUILD_PATH/ForecastIO.framework/Headers" -iquote "$PODS_FRAMEWORK_BUILD_PATH/Nimble.framework/Headers"
 OTHER_LDFLAGS = $(inherited) -framework "ForecastIO" -framework "Nimble"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
-PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-ForecastIO iOS Tests
+PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-ForecastIO tvOS Tests
 PODS_ROOT = ${SRCROOT}/Pods
