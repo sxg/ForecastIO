@@ -178,10 +178,7 @@
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				D4B85DAC1C533A7B00BD2FCD /* ForecastIO.podspec */,
-				D4B85DAD1C533A7B00BD2FCD /* LICENSE */,
-				D4B85DAE1C533A7B00BD2FCD /* README.md */,
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				D4B85E4C1C53466000BD2FCD /* Metadata */,
 				D4B85DCC1C533F5800BD2FCD /* ForecastIO */,
 				D4DE2AB01C513C040063A7CA /* Tests */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
@@ -246,6 +243,17 @@
 				D4B85DD61C533F7400BD2FCD /* Units.swift */,
 			);
 			name = ForecastIO;
+			sourceTree = "<group>";
+		};
+		D4B85E4C1C53466000BD2FCD /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				D4B85DAC1C533A7B00BD2FCD /* ForecastIO.podspec */,
+				D4B85DAD1C533A7B00BD2FCD /* LICENSE */,
+				D4B85DAE1C533A7B00BD2FCD /* README.md */,
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+			);
+			name = Metadata;
 			sourceTree = "<group>";
 		};
 		D4DE2AB01C513C040063A7CA /* Tests */ = {
