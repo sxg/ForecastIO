@@ -117,6 +117,7 @@
 		D4B85DAC1C533A7B00BD2FCD /* ForecastIO.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ForecastIO.podspec; sourceTree = "<group>"; };
 		D4B85DAD1C533A7B00BD2FCD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D4B85DAE1C533A7B00BD2FCD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D4D9F2B01C53F76500A4A02F /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		D4DE2AAF1C513C040063A7CA /* ForecastIO iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DE2AD41C513EA00063A7CA /* ForecastIO tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74D9845E75B46DD215D94C0 /* Pods-ForecastIO OSX Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO OSX Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO OSX Tests/Pods-ForecastIO OSX Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -264,6 +265,7 @@
 		D4B85E4C1C53466000BD2FCD /* Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				D4D9F2B01C53F76500A4A02F /* Package.swift */,
 				D4B85DAC1C533A7B00BD2FCD /* ForecastIO.podspec */,
 				D4B85DAD1C533A7B00BD2FCD /* LICENSE */,
 				D4B85DAE1C533A7B00BD2FCD /* README.md */,
