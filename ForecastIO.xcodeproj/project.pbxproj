@@ -49,6 +49,9 @@
 		D4A480881C507D730053EB05 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F830F5F1C3BEE140062D714 /* Units.swift */; };
 		D4A480891C507D730053EB05 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41964521C2A82A300386CC4 /* APIClient.swift */; };
 		D4A4808B1C507D730053EB05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		D4B85DAF1C533A7B00BD2FCD /* ForecastIO.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D4B85DAC1C533A7B00BD2FCD /* ForecastIO.podspec */; };
+		D4B85DB01C533A7B00BD2FCD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D4B85DAD1C533A7B00BD2FCD /* LICENSE */; };
+		D4B85DB11C533A7B00BD2FCD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D4B85DAE1C533A7B00BD2FCD /* README.md */; };
 		D4DE2AB41C513C040063A7CA /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
 		D4DE2ACF1C513EA00063A7CA /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
 		D4DE2ADF1C513FBE0063A7CA /* ForecastIO_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DE2AD81C513F5B0063A7CA /* ForecastIO_Tests.swift */; };
@@ -74,6 +77,9 @@
 		D44F74E61C5324E4002F701A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../../Source/Info.plist; sourceTree = "<group>"; };
 		D4A4807A1C507CE70053EB05 /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A480931C507D730053EB05 /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4B85DAC1C533A7B00BD2FCD /* ForecastIO.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ForecastIO.podspec; sourceTree = "<group>"; };
+		D4B85DAD1C533A7B00BD2FCD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D4B85DAE1C533A7B00BD2FCD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D4DE2AAF1C513C040063A7CA /* ForecastIO iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DE2AD41C513EA00063A7CA /* ForecastIO tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DE2AD81C513F5B0063A7CA /* ForecastIO_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastIO_Tests.swift; path = Tests/ForecastIO_Tests.swift; sourceTree = SOURCE_ROOT; };
@@ -169,6 +175,9 @@
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
+				D4B85DAC1C533A7B00BD2FCD /* ForecastIO.podspec */,
+				D4B85DAD1C533A7B00BD2FCD /* LICENSE */,
+				D4B85DAE1C533A7B00BD2FCD /* README.md */,
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				4617C46CA1912CF0ECFF7DC596DC784C /* Development Pods */,
 				D4DE2AB01C513C040063A7CA /* Tests */,
@@ -448,6 +457,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B85DB01C533A7B00BD2FCD /* LICENSE in Resources */,
+				D4B85DAF1C533A7B00BD2FCD /* ForecastIO.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +585,7 @@
 			files = (
 				D41964591C2A82A300386CC4 /* Alert.swift in Sources */,
 				D41964601C2A82A300386CC4 /* Precipitation.swift in Sources */,
+				D4B85DB11C533A7B00BD2FCD /* README.md in Sources */,
 				D419645B1C2A82A300386CC4 /* DataBlock.swift in Sources */,
 				D419645F1C2A82A300386CC4 /* Icon.swift in Sources */,
 				D419645D1C2A82A300386CC4 /* Flag.swift in Sources */,
