@@ -1,6 +1,6 @@
 # ForecastIO
 
-[![CI Status](http://img.shields.io/travis/Satyam Ghodasara/ForecastIO.svg?style=flat)](https://travis-ci.org/Satyam Ghodasara/ForecastIO)
+[![CI Status](http://img.shields.io/travis/sxg/ForecastIO.svg?style=flat)](https://travis-ci.org/sxg/ForecastIO)
 [![Version](https://img.shields.io/cocoapods/v/ForecastIO.svg?style=flat)](http://cocoapods.org/pods/ForecastIO)
 [![License](https://img.shields.io/cocoapods/l/ForecastIO.svg?style=flat)](http://cocoapods.org/pods/ForecastIO)
 [![Platform](https://img.shields.io/cocoapods/p/ForecastIO.svg?style=flat)](http://cocoapods.org/pods/ForecastIO)
