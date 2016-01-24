@@ -4,6 +4,8 @@ use_frameworks!
 def testing_pods
     pod "ForecastIO", :path => "./"
     pod "Nimble", "~> 3.1"
+    pod "OHHTTPStubs", "~> 4.7"
+    pod "OHHTTPStubs/Swift", "~> 4.7"
 end
 
 target 'ForecastIO iOS Tests' do

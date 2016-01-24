@@ -1,0 +1,6 @@
+framework module OHHTTPStubs {
+  umbrella header "Pods-ForecastIO OSX Tests-OHHTTPStubs-umbrella.h"
+
+  export *
+  module * { export * }
+}
