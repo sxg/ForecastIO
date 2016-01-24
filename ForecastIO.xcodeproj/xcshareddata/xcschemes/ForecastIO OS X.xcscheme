@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4446E6F1C51538000FBC8A8"
                BuildableName = "ForecastIO.framework"
-               BlueprintName = "ForecastIO OSX"
+               BlueprintName = "ForecastIO OS X"
                ReferencedContainer = "container:ForecastIO.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,8 +34,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4446E781C51538000FBC8A8"
-               BuildableName = "ForecastIO OSX Tests.xctest"
-               BlueprintName = "ForecastIO OSX Tests"
+               BuildableName = "ForecastIO OS X Tests.xctest"
+               BlueprintName = "ForecastIO OS X Tests"
                ReferencedContainer = "container:ForecastIO.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -45,7 +45,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4446E6F1C51538000FBC8A8"
             BuildableName = "ForecastIO.framework"
-            BlueprintName = "ForecastIO OSX"
+            BlueprintName = "ForecastIO OS X"
             ReferencedContainer = "container:ForecastIO.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,7 +67,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4446E6F1C51538000FBC8A8"
             BuildableName = "ForecastIO.framework"
-            BlueprintName = "ForecastIO OSX"
+            BlueprintName = "ForecastIO OS X"
             ReferencedContainer = "container:ForecastIO.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -85,7 +85,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4446E6F1C51538000FBC8A8"
             BuildableName = "ForecastIO.framework"
-            BlueprintName = "ForecastIO OSX"
+            BlueprintName = "ForecastIO OS X"
             ReferencedContainer = "container:ForecastIO.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

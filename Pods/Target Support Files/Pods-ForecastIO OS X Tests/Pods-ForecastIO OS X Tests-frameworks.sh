@@ -84,12 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-ForecastIO OSX Tests/ForecastIO.framework"
-  install_framework "Pods-ForecastIO OSX Tests/Nimble.framework"
-  install_framework "Pods-ForecastIO OSX Tests/OHHTTPStubs.framework"
+  install_framework "Pods-ForecastIO OS X Tests/ForecastIO.framework"
+  install_framework "Pods-ForecastIO OS X Tests/Nimble.framework"
+  install_framework "Pods-ForecastIO OS X Tests/OHHTTPStubs.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-ForecastIO OSX Tests/ForecastIO.framework"
-  install_framework "Pods-ForecastIO OSX Tests/Nimble.framework"
-  install_framework "Pods-ForecastIO OSX Tests/OHHTTPStubs.framework"
+  install_framework "Pods-ForecastIO OS X Tests/ForecastIO.framework"
+  install_framework "Pods-ForecastIO OS X Tests/Nimble.framework"
+  install_framework "Pods-ForecastIO OS X Tests/OHHTTPStubs.framework"
 fi

@@ -1,6 +1,0 @@
-framework module ForecastIO {
-  umbrella header "Pods-ForecastIO OSX Tests-ForecastIO-umbrella.h"
-
-  export *
-  module * { export * }
-}

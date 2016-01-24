@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10EF91F393E24BE20B0357F5 /* Pods_ForecastIO_OSX_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E491C97CCEECCD16FE6E39B /* Pods_ForecastIO_OSX_Tests.framework */; };
 		77901CB80A5A77396A76F8AC /* Pods_ForecastIO_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2057CF5F810CCF2503DBD5C6 /* Pods_ForecastIO_iOS_Tests.framework */; };
 		936587FBEB8386951094F42E /* Pods_ForecastIO_tvOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2C01F587A790F22C5D2989 /* Pods_ForecastIO_tvOS_Tests.framework */; };
 		99DDEA407AFC1B8A6B7DA975EC9F410C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
@@ -104,7 +103,32 @@
 		D4D9F2DA1C54462A00A4A02F /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */; };
 		D4DE2AB41C513C040063A7CA /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
 		D4DE2ACF1C513EA00063A7CA /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
+		ECD357B2BDBA63D968176CD0 /* Pods_ForecastIO_OS_X_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DDF94C960B65DBEC96F918 /* Pods_ForecastIO_OS_X_Tests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D474A13C1C553F730094BBFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4446E6F1C51538000FBC8A8;
+			remoteInfo = "ForecastIO OS X";
+		};
+		D474A13E1C553F8F0094BBFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4A4807D1C507D730053EB05;
+			remoteInfo = "ForecastIO tvOS";
+		};
+		D474A1401C553F940094BBFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39ED6CDC99672303F992B722C0ABD571;
+			remoteInfo = "ForecastIO iOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		142F0FC17E3D5C1EFC34EAEB /* Pods-ForecastIO iOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO iOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,14 +136,15 @@
 		2E491C97CCEECCD16FE6E39B /* Pods_ForecastIO_OSX_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastIO_OSX_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F29BE8869D8CF5FC5B88A7A /* Pods-ForecastIO OS X Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO OS X Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO OS X Tests/Pods-ForecastIO OS X Tests.release.xcconfig"; sourceTree = "<group>"; };
+		74DDF94C960B65DBEC96F918 /* Pods_ForecastIO_OS_X_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastIO_OS_X_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2C01F587A790F22C5D2989 /* Pods_ForecastIO_tvOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastIO_tvOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D76855DAC491B4DB18A6AED /* Pods-ForecastIO OSX Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO OSX Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO OSX Tests/Pods-ForecastIO OSX Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F2361C56879BE2A972D2C32 /* Pods-ForecastIO iOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO iOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		93CED996ACCFEEC8E2F45B3F /* Pods-ForecastIO tvOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO tvOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO tvOS Tests/Pods-ForecastIO tvOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CD160B557E705D1F64CB488D /* Pods-ForecastIO tvOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO tvOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO tvOS Tests/Pods-ForecastIO tvOS Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D4446E701C51538000FBC8A8 /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4446E791C51538000FBC8A8 /* ForecastIO OSX Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO OSX Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4446E791C51538000FBC8A8 /* ForecastIO OS X Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO OS X Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4446E901C51543900FBC8A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D4564FB61C53F52000CB7548 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = Source/Alert.swift; sourceTree = "<group>"; };
 		D4564FB71C53F52000CB7548 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = Source/APIClient.swift; sourceTree = "<group>"; };
@@ -148,7 +173,7 @@
 		D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClientTests.swift; path = Tests/APIClientTests.swift; sourceTree = SOURCE_ROOT; };
 		D4DE2AAF1C513C040063A7CA /* ForecastIO iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DE2AD41C513EA00063A7CA /* ForecastIO tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E74D9845E75B46DD215D94C0 /* Pods-ForecastIO OSX Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO OSX Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO OSX Tests/Pods-ForecastIO OSX Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D52BD9E1A492DC1579E5C90F /* Pods-ForecastIO OS X Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO OS X Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO OS X Tests/Pods-ForecastIO OS X Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4446E7A1C51538000FBC8A8 /* ForecastIO.framework in Frameworks */,
-				10EF91F393E24BE20B0357F5 /* Pods_ForecastIO_OSX_Tests.framework in Frameworks */,
+				ECD357B2BDBA63D968176CD0 /* Pods_ForecastIO_OS_X_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +260,7 @@
 				D4DE2AAF1C513C040063A7CA /* ForecastIO iOS Tests.xctest */,
 				D4DE2AD41C513EA00063A7CA /* ForecastIO tvOS Tests.xctest */,
 				D4446E701C51538000FBC8A8 /* ForecastIO.framework */,
-				D4446E791C51538000FBC8A8 /* ForecastIO OSX Tests.xctest */,
+				D4446E791C51538000FBC8A8 /* ForecastIO OS X Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,10 +270,10 @@
 			children = (
 				8F2361C56879BE2A972D2C32 /* Pods-ForecastIO iOS Tests.debug.xcconfig */,
 				142F0FC17E3D5C1EFC34EAEB /* Pods-ForecastIO iOS Tests.release.xcconfig */,
-				7D76855DAC491B4DB18A6AED /* Pods-ForecastIO OSX Tests.debug.xcconfig */,
-				E74D9845E75B46DD215D94C0 /* Pods-ForecastIO OSX Tests.release.xcconfig */,
 				93CED996ACCFEEC8E2F45B3F /* Pods-ForecastIO tvOS Tests.debug.xcconfig */,
 				CD160B557E705D1F64CB488D /* Pods-ForecastIO tvOS Tests.release.xcconfig */,
+				D52BD9E1A492DC1579E5C90F /* Pods-ForecastIO OS X Tests.debug.xcconfig */,
+				6F29BE8869D8CF5FC5B88A7A /* Pods-ForecastIO OS X Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -261,6 +286,7 @@
 				2057CF5F810CCF2503DBD5C6 /* Pods_ForecastIO_iOS_Tests.framework */,
 				2E491C97CCEECCD16FE6E39B /* Pods_ForecastIO_OSX_Tests.framework */,
 				7D2C01F587A790F22C5D2989 /* Pods_ForecastIO_tvOS_Tests.framework */,
+				74DDF94C960B65DBEC96F918 /* Pods_ForecastIO_OS_X_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -379,9 +405,9 @@
 			productReference = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D4446E6F1C51538000FBC8A8 /* ForecastIO OSX */ = {
+		D4446E6F1C51538000FBC8A8 /* ForecastIO OS X */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4446E851C51538000FBC8A8 /* Build configuration list for PBXNativeTarget "ForecastIO OSX" */;
+			buildConfigurationList = D4446E851C51538000FBC8A8 /* Build configuration list for PBXNativeTarget "ForecastIO OS X" */;
 			buildPhases = (
 				D4446E6B1C51538000FBC8A8 /* Sources */,
 				D4446E6C1C51538000FBC8A8 /* Frameworks */,
@@ -392,14 +418,14 @@
 			);
 			dependencies = (
 			);
-			name = "ForecastIO OSX";
+			name = "ForecastIO OS X";
 			productName = "ForecastIO OSX 2";
 			productReference = D4446E701C51538000FBC8A8 /* ForecastIO.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D4446E781C51538000FBC8A8 /* ForecastIO OSX Tests */ = {
+		D4446E781C51538000FBC8A8 /* ForecastIO OS X Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4446E861C51538000FBC8A8 /* Build configuration list for PBXNativeTarget "ForecastIO OSX Tests" */;
+			buildConfigurationList = D4446E861C51538000FBC8A8 /* Build configuration list for PBXNativeTarget "ForecastIO OS X Tests" */;
 			buildPhases = (
 				59E3848677CC47D1A8641073 /* Check Pods Manifest.lock */,
 				D4446E751C51538000FBC8A8 /* Sources */,
@@ -411,10 +437,11 @@
 			buildRules = (
 			);
 			dependencies = (
+				D474A13D1C553F730094BBFE /* PBXTargetDependency */,
 			);
-			name = "ForecastIO OSX Tests";
+			name = "ForecastIO OS X Tests";
 			productName = "ForecastIO OSX 2Tests";
-			productReference = D4446E791C51538000FBC8A8 /* ForecastIO OSX Tests.xctest */;
+			productReference = D4446E791C51538000FBC8A8 /* ForecastIO OS X Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		D4A480641C507CE70053EB05 /* ForecastIO watchOS */ = {
@@ -467,6 +494,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D474A1411C553F940094BBFE /* PBXTargetDependency */,
 			);
 			name = "ForecastIO iOS Tests";
 			productName = "ForecastIO iOS Tests";
@@ -487,6 +515,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D474A13F1C553F8F0094BBFE /* PBXTargetDependency */,
 			);
 			name = "ForecastIO tvOS Tests";
 			productName = "ForecastIO iOS Tests";
@@ -529,8 +558,8 @@
 				D4DE2AAE1C513C040063A7CA /* ForecastIO iOS Tests */,
 				D4A4807D1C507D730053EB05 /* ForecastIO tvOS */,
 				D4DE2AC91C513EA00063A7CA /* ForecastIO tvOS Tests */,
-				D4446E6F1C51538000FBC8A8 /* ForecastIO OSX */,
-				D4446E781C51538000FBC8A8 /* ForecastIO OSX Tests */,
+				D4446E6F1C51538000FBC8A8 /* ForecastIO OS X */,
+				D4446E781C51538000FBC8A8 /* ForecastIO OS X Tests */,
 				D4A480641C507CE70053EB05 /* ForecastIO watchOS */,
 			);
 		};
@@ -619,7 +648,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO OSX Tests/Pods-ForecastIO OSX Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO OS X Tests/Pods-ForecastIO OS X Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		50C44DEA17DFF1177BF0D145 /* Check Pods Manifest.lock */ = {
@@ -724,7 +753,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO OSX Tests/Pods-ForecastIO OSX Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO OS X Tests/Pods-ForecastIO OS X Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -864,6 +893,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D474A13D1C553F730094BBFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4446E6F1C51538000FBC8A8 /* ForecastIO OS X */;
+			targetProxy = D474A13C1C553F730094BBFE /* PBXContainerItemProxy */;
+		};
+		D474A13F1C553F8F0094BBFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4A4807D1C507D730053EB05 /* ForecastIO tvOS */;
+			targetProxy = D474A13E1C553F8F0094BBFE /* PBXContainerItemProxy */;
+		};
+		D474A1411C553F940094BBFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39ED6CDC99672303F992B722C0ABD571 /* ForecastIO iOS */;
+			targetProxy = D474A1401C553F940094BBFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		00D7EA52FE21C9939012A94A39080C6A /* Release */ = {
@@ -1081,7 +1128,7 @@
 		};
 		D4446E831C51538000FBC8A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D76855DAC491B4DB18A6AED /* Pods-ForecastIO OSX Tests.debug.xcconfig */;
+			baseConfigurationReference = D52BD9E1A492DC1579E5C90F /* Pods-ForecastIO OS X Tests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
@@ -1106,7 +1153,7 @@
 		};
 		D4446E841C51538000FBC8A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E74D9845E75B46DD215D94C0 /* Pods-ForecastIO OSX Tests.release.xcconfig */;
+			baseConfigurationReference = 6F29BE8869D8CF5FC5B88A7A /* Pods-ForecastIO OS X Tests.release.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
@@ -1368,7 +1415,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4446E851C51538000FBC8A8 /* Build configuration list for PBXNativeTarget "ForecastIO OSX" */ = {
+		D4446E851C51538000FBC8A8 /* Build configuration list for PBXNativeTarget "ForecastIO OS X" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4446E811C51538000FBC8A8 /* Debug */,
@@ -1377,7 +1424,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4446E861C51538000FBC8A8 /* Build configuration list for PBXNativeTarget "ForecastIO OSX Tests" */ = {
+		D4446E861C51538000FBC8A8 /* Build configuration list for PBXNativeTarget "ForecastIO OS X Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4446E831C51538000FBC8A8 /* Debug */,
