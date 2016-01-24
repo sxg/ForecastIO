@@ -5,8 +5,8 @@
 language: objective-c
 # cache: cocoapods
 # podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
+before_install:
+- gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
 - set -o pipefail && xcodebuild test -workspace ForecastIO.xcworkspace -scheme "ForecastIO arm" -destination "OS=9.2,name=iPhone 6S Plus" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
