@@ -12,7 +12,8 @@ Released on Jan 23, 2016.
 - List of supported units in README
 - Description of `Forecast`'s `DataPoint`s and `DataBlock`s in README
 - Unit tests
-- Travis CI
+- [Travis CI](https://travis-ci.org/sxg/ForecastIO)
 
 #### Updated
 - Restructured project hierarchy for Swift Package Manager
+- Units.Auto enum variant is now capitalized in consistency with Swift style guides
