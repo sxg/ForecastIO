@@ -4,7 +4,7 @@ ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
 ## 1.5.0
 
-Released on Jan 23, 2016.
+Released on Jan 24, 2016.
 
 #### Added
 - This CHANGELOG file
@@ -16,4 +16,4 @@ Released on Jan 23, 2016.
 
 #### Updated
 - Restructured project hierarchy for Swift Package Manager
-- Units.Auto enum variant is now capitalized in consistency with Swift style guides
+- `Units.Auto` enum variant is now capitalized in consistency with Swift style guides
