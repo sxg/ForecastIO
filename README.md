@@ -18,6 +18,12 @@ it, simply add the following line to your Podfile:
 pod "ForecastIO"
 ```
 
+To integrate using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "sxg/ForecastIO"
+```
+
 ## Documentation
 
 The full documentation for ForecastIO is available on [CocoaDocs](http://cocoadocs.org/docsets/ForecastIO).
