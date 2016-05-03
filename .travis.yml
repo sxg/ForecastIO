@@ -2,7 +2,7 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
-language: swift
+language: objective-c
 osx_image: xcode7.3
 # cache: cocoapods
 # podfile: Example/Podfile
@@ -60,4 +60,4 @@ script:
     - if [ $BUILD_EXAMPLE == "YES" ]; then
         xcodebuild -workspace "$WORKSPACE" -scheme "$EXAMPLE_SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
       fi
-    - pod lib lint
+    # - pod lib lint
