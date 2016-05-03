@@ -12,13 +12,13 @@ To use ForecastIO, all you need is an API key for the [Dark Sky API](https://dev
 ## Installation
 
 ForecastIO is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+it, simply add the following line to your `Podfile`:
 
 ```ruby
 pod "ForecastIO"
 ```
 
-To integrate using Carthage, specify it in your `Cartfile`:
+To integrate using [Carthage](https://github.com/Carthage/Carthage), specify it in your `Cartfile`:
 
 ```ogdl
 github "sxg/ForecastIO"
