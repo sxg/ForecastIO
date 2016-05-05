@@ -60,20 +60,21 @@ public class APIClient : NSObject {
             if err != nil {
                 completion(forecast: nil, error: err)
             } else {
-                if let data = data {
-                    do {
-                        let jsonObject = try NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers)
-                        if let json = jsonObject as? NSDictionary {
-                            let forecast = Forecast(fromJSON: json)
-                            completion(forecast: forecast, error: err)
-                            return
-                        }
-                    } catch _ {
-                        completion(forecast: nil, error: nil)
+                do {
+                    let jsonObject = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers)
+                    if let json = jsonObject as? NSDictionary {
+                        let forecast = Forecast(fromJSON: json)
+                        completion(forecast: forecast, error: err)
                     }
-                    
+                } catch _ {
+                    let badJSONErrorUserInfo = [
+                        NSLocalizedDescriptionKey : "Failed to read JSON from the Forecast.io API.",
+                        NSLocalizedRecoverySuggestionErrorKey : "Make sure the body of a GET request to \(url.absoluteString) returns properly formatted JSON.",
+                        NSLocalizedFailureReasonErrorKey : "Could not parse data received from \(url.absoluteString)."
+                    ]
+                    let badJSONError = NSError(domain: ForecastIOErrorDomain, code: ForecastIOErrorBadJSON, userInfo: badJSONErrorUserInfo)
+                    completion(forecast: nil, error: badJSONError)
                 }
-                completion(forecast: nil, error: nil)
             }
         })
         task.resume()
