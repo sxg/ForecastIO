@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A14A6F21CDAA80D00D4C108 /* forecast_bare.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */; };
+		4A14A6F41CDAA80E00D4C108 /* forecast_bare.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */; };
+		4A14A6F51CDAA80F00D4C108 /* forecast_bare.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */; };
+		4A14A6F71CDAB41B00D4C108 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14A6F61CDAB41B00D4C108 /* Constant.swift */; };
+		4A14A6F81CDABBF200D4C108 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14A6F61CDAB41B00D4C108 /* Constant.swift */; };
+		4A14A6F91CDABBF200D4C108 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14A6F61CDAB41B00D4C108 /* Constant.swift */; };
+		4A14A6FA1CDABBF300D4C108 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14A6F61CDAB41B00D4C108 /* Constant.swift */; };
+		4A14A6FB1CDABBF300D4C108 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14A6F61CDAB41B00D4C108 /* Constant.swift */; };
+		4A14A6FC1CDABBF300D4C108 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14A6F61CDAB41B00D4C108 /* Constant.swift */; };
+		4A14A6FD1CDABBF400D4C108 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14A6F61CDAB41B00D4C108 /* Constant.swift */; };
+		4A3364671CD9712000775650 /* forecast_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A3364661CD9712000775650 /* forecast_no_optionals.json */; };
+		4A3364681CD9712000775650 /* forecast_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A3364661CD9712000775650 /* forecast_no_optionals.json */; };
+		4A3364691CD9712000775650 /* forecast_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A3364661CD9712000775650 /* forecast_no_optionals.json */; };
 		77901CB80A5A77396A76F8AC /* Pods_ForecastIO_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2057CF5F810CCF2503DBD5C6 /* Pods_ForecastIO_iOS_Tests.framework */; };
 		936587FBEB8386951094F42E /* Pods_ForecastIO_tvOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2C01F587A790F22C5D2989 /* Pods_ForecastIO_tvOS_Tests.framework */; };
 		99DDEA407AFC1B8A6B7DA975EC9F410C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
@@ -135,6 +148,9 @@
 		2057CF5F810CCF2503DBD5C6 /* Pods_ForecastIO_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastIO_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E491C97CCEECCD16FE6E39B /* Pods_ForecastIO_OSX_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastIO_OSX_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = forecast_bare.json; path = Tests/Resources/forecast_bare.json; sourceTree = SOURCE_ROOT; };
+		4A14A6F61CDAB41B00D4C108 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Source/Constant.swift; sourceTree = "<group>"; };
+		4A3364661CD9712000775650 /* forecast_no_optionals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = forecast_no_optionals.json; path = Tests/Resources/forecast_no_optionals.json; sourceTree = SOURCE_ROOT; };
 		52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F29BE8869D8CF5FC5B88A7A /* Pods-ForecastIO OS X Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO OS X Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO OS X Tests/Pods-ForecastIO OS X Tests.release.xcconfig"; sourceTree = "<group>"; };
 		74DDF94C960B65DBEC96F918 /* Pods_ForecastIO_OS_X_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastIO_OS_X_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -312,6 +328,7 @@
 				D4564FBD1C53F52000CB7548 /* Info.plist */,
 				D4564FBE1C53F52000CB7548 /* Precipitation.swift */,
 				D4564FBF1C53F52000CB7548 /* Units.swift */,
+				4A14A6F61CDAB41B00D4C108 /* Constant.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -331,7 +348,9 @@
 		D4D9F2B31C54060800A4A02F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */,
 				D4D9F2B41C54061600A4A02F /* forecast.json */,
+				4A3364661CD9712000775650 /* forecast_no_optionals.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -585,6 +604,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4D9F2B71C54061600A4A02F /* forecast.json in Resources */,
+				4A3364691CD9712000775650 /* forecast_no_optionals.json in Resources */,
+				4A14A6F51CDAA80F00D4C108 /* forecast_bare.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +628,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4D9F2B51C54061600A4A02F /* forecast.json in Resources */,
+				4A3364671CD9712000775650 /* forecast_no_optionals.json in Resources */,
+				4A14A6F21CDAA80D00D4C108 /* forecast_bare.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +638,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4D9F2B61C54061600A4A02F /* forecast.json in Resources */,
+				4A3364681CD9712000775650 /* forecast_no_optionals.json in Resources */,
+				4A14A6F41CDAA80E00D4C108 /* forecast_bare.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,6 +795,7 @@
 				D4564FE01C53F52000CB7548 /* Flag.swift in Sources */,
 				D4564FD91C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE71C53F52000CB7548 /* Forecast.swift in Sources */,
+				4A14A6FB1CDABBF300D4C108 /* Constant.swift in Sources */,
 				D45650031C53F52100CB7548 /* Units.swift in Sources */,
 				D4564FCB1C53F52000CB7548 /* APIClient.swift in Sources */,
 			);
@@ -780,6 +806,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4D9F2C61C543ED900A4A02F /* AlertTests.swift in Sources */,
+				4A14A6FC1CDABBF300D4C108 /* Constant.swift in Sources */,
 				D4D9F2CE1C54410300A4A02F /* DataPointTests.swift in Sources */,
 				D4D9F2D61C54454100A4A02F /* UnitsTest.swift in Sources */,
 				D4564FC51C53F52000CB7548 /* Alert.swift in Sources */,
@@ -809,6 +836,7 @@
 				D4564FE21C53F52000CB7548 /* Flag.swift in Sources */,
 				D4564FDB1C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE91C53F52000CB7548 /* Forecast.swift in Sources */,
+				4A14A6FD1CDABBF400D4C108 /* Constant.swift in Sources */,
 				D45650051C53F52100CB7548 /* Units.swift in Sources */,
 				D4564FCD1C53F52000CB7548 /* APIClient.swift in Sources */,
 			);
@@ -825,6 +853,7 @@
 				D4564FDE1C53F52000CB7548 /* Flag.swift in Sources */,
 				D4564FD71C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE51C53F52000CB7548 /* Forecast.swift in Sources */,
+				4A14A6F91CDABBF200D4C108 /* Constant.swift in Sources */,
 				D45650011C53F52000CB7548 /* Units.swift in Sources */,
 				D4564FC91C53F52000CB7548 /* APIClient.swift in Sources */,
 			);
@@ -835,6 +864,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4D9F2C41C543ED900A4A02F /* AlertTests.swift in Sources */,
+				4A14A6F81CDABBF200D4C108 /* Constant.swift in Sources */,
 				D4D9F2CC1C54410300A4A02F /* DataPointTests.swift in Sources */,
 				D4D9F2D41C54454100A4A02F /* UnitsTest.swift in Sources */,
 				D4564FC11C53F52000CB7548 /* Alert.swift in Sources */,
@@ -858,6 +888,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4D9F2C51C543ED900A4A02F /* AlertTests.swift in Sources */,
+				4A14A6FA1CDABBF300D4C108 /* Constant.swift in Sources */,
 				D4D9F2CD1C54410300A4A02F /* DataPointTests.swift in Sources */,
 				D4D9F2D51C54454100A4A02F /* UnitsTest.swift in Sources */,
 				D4564FC31C53F52000CB7548 /* Alert.swift in Sources */,
@@ -887,6 +918,7 @@
 				D4564FDC1C53F52000CB7548 /* Flag.swift in Sources */,
 				D4564FD51C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE31C53F52000CB7548 /* Forecast.swift in Sources */,
+				4A14A6F71CDAB41B00D4C108 /* Constant.swift in Sources */,
 				D4564FFF1C53F52000CB7548 /* Units.swift in Sources */,
 				D4564FC71C53F52000CB7548 /* APIClient.swift in Sources */,
 			);
