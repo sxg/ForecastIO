@@ -24,9 +24,10 @@ To integrate using [Carthage](https://github.com/Carthage/Carthage), specify it 
 github "sxg/ForecastIO"
 ```
 
-## Documentation
+## Documentation & Unit Tests
 
 The full documentation for ForecastIO is available on [CocoaDocs](http://cocoadocs.org/docsets/ForecastIO).
+ForecastIO includes a full suite of unit tests with 100% code coverage.
 
 ## Usage
 
