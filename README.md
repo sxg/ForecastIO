@@ -27,11 +27,12 @@ github "sxg/ForecastIO"
 ## Documentation & Unit Tests
 
 The full documentation for ForecastIO is available on [CocoaDocs](http://cocoadocs.org/docsets/ForecastIO).
+
 ForecastIO includes a full suite of unit tests with 100% code coverage.
 
 ## Usage
 
-First, create an `APIClient` with your API key.
+First, create an `APIClient` with your API key:
 
 ```swift
 import ForecastIO
