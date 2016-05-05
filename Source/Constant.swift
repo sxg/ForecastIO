@@ -11,5 +11,5 @@ import Foundation
 /// The ForecastIO NSError domain.
 public let ForecastIOErrorDomain = "ForecastIOErrorDomain"
 
-/// Indicates malformed JSON was received from the Forecast.io API.
+/// Indicates malformed JSON was received from Forecast.io's Dark Sky API.
 public let ForecastIOErrorBadJSON = 1
