@@ -2,15 +2,32 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.6.0
+
+Released on May 4, 2016.
+
+#### Added
+- `ForecastIOErrorDomain` error domain
+- `ForecastIOErrorBadJSON` error type
+
+#### Updated
+- `APIClient` methods provide more detailed errors
+- Unit tests have 100% code coverage
+- Carthage installation section in `README.md`
+- Unit test section in `README.md`
+- Travis CI unit tests run on latest versions of iOS, watchOS, and tvOS
+- CocoaPod dependencies for unit tests
+- Lowered the example project's deployment target to iOS 8.0
+
 ## 1.5.0
 
 Released on Jan 24, 2016.
 
 #### Added
-- This CHANGELOG file
-- Package.swift manifest file for Swift Package Manager
-- List of supported units in README
-- Description of `Forecast`'s `DataPoint`s and `DataBlock`s in README
+- This `CHANGELOG.md` file
+- `Package.swift` manifest file for Swift Package Manager
+- List of supported units in `README.md`
+- Description of `Forecast`'s `DataPoint`s and `DataBlock`s in `README.md`
 - Unit tests
 - [Travis CI](https://travis-ci.org/sxg/ForecastIO)
 
