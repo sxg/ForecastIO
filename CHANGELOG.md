@@ -2,6 +2,15 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.6.1
+
+Released on May 12, 2016.
+
+#### Updated
+- Fixed issue where the project's interval version number wasn't updated
+- Carthage installation section in `README.md`
+- Unit test section in `README.md`
+
 ## 1.6.0
 
 Released on May 4, 2016.
@@ -13,8 +22,6 @@ Released on May 4, 2016.
 #### Updated
 - `APIClient` methods provide more detailed errors
 - Unit tests have 100% code coverage
-- Carthage installation section in `README.md`
-- Unit test section in `README.md`
 - Travis CI unit tests run on latest versions of iOS, watchOS, and tvOS
 - CocoaPod dependencies for unit tests
 - Lowered the example project's deployment target to iOS 8.0
