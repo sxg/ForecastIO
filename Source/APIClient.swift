@@ -8,16 +8,18 @@
 
 import Foundation
 
+
 /// A class to interact with Forecast.io's Dark Sky API.
 public class APIClient : NSObject {
     
     private let apiKey: String
     private let session = NSURLSession.sharedSession()
     private static let forecastIOURL = "https://api.forecast.io/forecast/"
+    private var _hourlyExtension = ""
     
     /// Units in which the response will be provided. US is default as per Forecast.io docs.
     public var units = Units.US
-    
+    public var extendHourly: Bool = false
     /**
         Creates a new `APIClient` to interact with Forecast.io's Dark Sky API.
      
@@ -55,6 +57,27 @@ public class APIClient : NSObject {
         getForecast(url, completion: completion)
     }
     
+    /**
+        Gets the `Forecast` at a specified latitude, logitude and excludes blocks as well as the option to extend hourly for 168 hours of data. 
+        - parameter latitude:        Latitude at which to get the `Forecast`.
+        - parameter longitude:       Longitude at which to get the `Forecast`.
+        - parameter excludeBlocks:   Excludes blocks that are not important to the user.
+        - parameter extendhourly:    Allows for the extension of hourly to give 168 hours of data.
+    */
+
+    public func getForecast(latitude lat: Double, longitude lon: Double, excludeBlocks blocks:[WeatherBlocks], completion: (forecast: Forecast?, error: NSError?) -> Void) {
+
+        if extendHourly {
+             _hourlyExtension = "&extend=hourly"
+        }
+        
+        let URLString = APIClient.forecastIOURL + apiKey + "/\(lat),\(lon)?exclude=\(blocks.description)&units=\(units)\(_hourlyExtension)"
+        guard let encodedURLString = URLString.stringByAddingPercentEncoding() else {print("Bad encoding"); return}
+        guard let url = NSURL(string:encodedURLString) else {print("Bad URL request"); return}
+        getForecast(url, completion: completion)
+    }
+    
+    
     private func getForecast(url: NSURL, completion: (forecast: Forecast?, error: NSError?) -> Void) {
         let task = self.session.dataTaskWithURL(url, completionHandler: { (data: NSData?, response, err: NSError?) -> Void in
             if err != nil {
@@ -80,3 +103,15 @@ public class APIClient : NSObject {
         task.resume()
     }
 }
+
+
+//Extension that allows for adding Percent Encoding to to allow for the exclusion block to be properly made.
+extension String {
+    func stringByAddingPercentEncoding() -> String? {
+        let unreserved = "/:=&.?,"
+        let allowed = NSMutableCharacterSet.alphanumericCharacterSet()
+        allowed.addCharactersInString(unreserved)
+        return stringByAddingPercentEncodingWithAllowedCharacters(allowed)
+    }
+}
+
