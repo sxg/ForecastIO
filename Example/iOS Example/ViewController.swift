@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let client = APIClient(apiKey: "Test API")
+        let client = APIClient(apiKey: "Test Key")
         client.units = .Auto
         client.getForecast(latitude: 30, longitude: 30, excludeBlocks: [WeatherBlocks.Alerts,.Currently,.Daily,.Flags,.Minutely]) { (forecast, error) in
             print(forecast?.hourly?.data)
