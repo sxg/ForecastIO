@@ -28,92 +28,34 @@ public class APIClient : NSObject {
     public init(apiKey key: String) {
         apiKey = key
     }
-    
-    public func getForecast(latitude lat: Double, longitude lon: Double, time: NSDate? = nil, extendHourly: Bool = false, excludeForecastFields: [ForecastField] = [], completion: (forecast: Forecast?, error: NSError?) -> Void) {
-        //  Build URL path
-        var urlString = APIClient.forecastIOURL + apiKey + "/\(lat),\(lon)"
-        if let time = time {
-            let timeString = String(format: "%.0f", time.timeIntervalSince1970)
-            urlString.appendContentsOf(",\(timeString)")
-        }
-        
-        //  Build URL query parameters
-        let urlBuilder = NSURLComponents(string: urlString)
-        var queryItems: [NSURLQueryItem] = []
-        if let units = self.units {
-            queryItems.append(NSURLQueryItem(name: "units", value: units.description))
-        }
-        if extendHourly {
-            queryItems.append(NSURLQueryItem(name: "extend", value: "hourly"))
-        }
-        if !excludeForecastFields.isEmpty {
-            var excludeForecastFieldsString = ""
-            for forecastField in excludeForecastFields {
-                if excludeForecastFieldsString != "" {
-                    excludeForecastFieldsString.appendContentsOf(",")
-                }
-                excludeForecastFieldsString.appendContentsOf("\(forecastField.description)")
-            }
-            queryItems.append(NSURLQueryItem(name: "exclude", value: excludeForecastFieldsString))
-        }
-        urlBuilder?.queryItems = queryItems
-        
-        //  Get the URL and make the API request
-        guard let url = urlBuilder?.URL!
-            else {
-                print("Failed to generate URL")
-                dump(urlBuilder)
-                return
-        }
+
+    /**
+        Gets the current `Forecast` at a specified latitude and longitude and returns it in a block.
+     
+        - parameter latitude:               Latitude at which to get the `Forecast`.
+        - parameter longitude:              Longitude at which to get the `Forecast`.
+        - parameter extendHourly:           If `true`, extends the amount of data in `hourly` to 168 hours from 48 hours. Warning: this massively increases the amount of data returned. Defaults to `false`.
+        - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response.
+        - parameter completion:             A block that returns the `Forecast` at the latitude and longitude you specified or an error.
+    */
+    public func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeForecastFields: [ForecastField] = [], completion: (forecast: Forecast?, error: NSError?) -> Void) {
+        let url = buildForecastURL(latitude: lat, longitude: lon, time: nil, extendHourly: extendHourly, excludeForecastFields: excludeForecastFields)
         getForecast(url, completion: completion)
     }
     
     /**
-        Gets the current `Forecast` at a specified latitude and longitude and returns it in a block.
-     
-        - parameter latitude:   Latitude at which to get the `Forecast`.
-        - parameter longitude:  Longitude at which to get the `Forecast`.
-        - parameter completion: A block that returns the `Forecast` at the latitude and longitude you specified or an error.
-    */
-//    public func getForecast(latitude lat: Double, longitude lon: Double, completion: (forecast: Forecast?, error: NSError?) -> Void) {
-//        let url = NSURL(string: APIClient.forecastIOURL + apiKey + "/\(lat),\(lon)?units=\(units)")!
-//        getForecast(url, completion: completion)
-//    }
-    
-    /**
         Gets the `Forecast` at a specified latitude, longitude, and time, and returns it in a block.
      
-        - parameter latitude:   Latitude at which to get the `Forecast`.
-        - parameter longitude:  Longitude at which to get the `Forecast`.
-        - parameter time:       Time at which to get the `Forecast`. If no timezone is specified, local time (at the specified latitude and longitude) will be assumed.
-        - parameter completion: A block that returns the `Forecast` at the latitude and longitude you specified or an error.
+        - parameter latitude:               Latitude at which to get the `Forecast`.
+        - parameter longitude:              Longitude at which to get the `Forecast`.
+        - parameter time:                   Time at which to get the `Forecast`. If no timezone is specified, local time (at the specified latitude and longitude) will be assumed.
+        - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response.
+        - parameter completion:             A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
-//    public func getForecast(latitude lat: Double, longitude lon: Double, time: NSDate, completion: (forecast: Forecast?, error: NSError?) -> Void) {
-//        let timeString = String(format: "%.0f", time.timeIntervalSince1970)
-//        let url = NSURL(string: APIClient.forecastIOURL + apiKey + "/\(lat),\(lon),\(timeString)?units=\(units)")!
-//        getForecast(url, completion: completion)
-//    }
-    
-    /**
-        Gets the `Forecast` at a specified latitude and longitude and excludes blocks as well as the option to extend hourly for 168 hours of data. 
-        - parameter latitude:        Latitude at which to get the `Forecast`.
-        - parameter longitude:       Longitude at which to get the `Forecast`.
-        - parameter excludeBlocks:   Excludes blocks that are not important to the user.
-        - parameter extendhourly:    Allows for the extension of hourly to give 168 hours of data.
-    */
-
-//    public func getForecast(latitude lat: Double, longitude lon: Double, excludeBlocks blocks:[WeatherBlocks], completion: (forecast: Forecast?, error: NSError?) -> Void) {
-//
-//        if extendHourly {
-//             _hourlyExtension = "&extend=hourly"
-//        }
-//        
-//        let URLString = APIClient.forecastIOURL + apiKey + "/\(lat),\(lon)?exclude=\(blocks.description)&units=\(units)\(_hourlyExtension)"
-//        guard let encodedURLString = URLString.stringByAddingPercentEncoding() else {print("Bad encoding"); return}
-//        guard let url = NSURL(string:encodedURLString) else {print("Bad URL request"); return}
-//        getForecast(url, completion: completion)
-//    }
-    
+    public func getForecast(latitude lat: Double, longitude lon: Double, time: NSDate, excludeForecastFields: [ForecastField] = [], completion: (forecast: Forecast?, error: NSError?) -> Void) {
+        let url = buildForecastURL(latitude: lat, longitude: lon, time: time, extendHourly: false, excludeForecastFields: excludeForecastFields)
+        getForecast(url, completion: completion)
+    }
     
     private func getForecast(url: NSURL, completion: (forecast: Forecast?, error: NSError?) -> Void) {
         let task = self.session.dataTaskWithURL(url, completionHandler: { (data: NSData?, response, err: NSError?) -> Void in
@@ -139,16 +81,36 @@ public class APIClient : NSObject {
         })
         task.resume()
     }
+    
+    private func buildForecastURL(latitude lat: Double, longitude lon: Double, time: NSDate?, extendHourly: Bool, excludeForecastFields: [ForecastField]) -> NSURL {
+        //  Build URL path
+        var urlString = APIClient.forecastIOURL + apiKey + "/\(lat),\(lon)"
+        if let time = time {
+            let timeString = String(format: "%.0f", time.timeIntervalSince1970)
+            urlString.appendContentsOf(",\(timeString)")
+        }
+        
+        //  Build URL query parameters
+        let urlBuilder = NSURLComponents(string: urlString)!
+        var queryItems: [NSURLQueryItem] = []
+        if let units = self.units {
+            queryItems.append(NSURLQueryItem(name: "units", value: units.description))
+        }
+        if extendHourly {
+            queryItems.append(NSURLQueryItem(name: "extend", value: "hourly"))
+        }
+        if !excludeForecastFields.isEmpty {
+            var excludeForecastFieldsString = ""
+            for forecastField in excludeForecastFields {
+                if excludeForecastFieldsString != "" {
+                    excludeForecastFieldsString.appendContentsOf(",")
+                }
+                excludeForecastFieldsString.appendContentsOf("\(forecastField.description)")
+            }
+            queryItems.append(NSURLQueryItem(name: "exclude", value: excludeForecastFieldsString))
+        }
+        urlBuilder.queryItems = queryItems
+    
+        return urlBuilder.URL!
+    }
 }
-
-
-//Extension that allows for adding Percent Encoding to to allow for the exclusion block to be properly made.
-//extension String {
-//    func stringByAddingPercentEncoding() -> String? {
-//        let unreserved = "/:=&.?,"
-//        let allowed = NSMutableCharacterSet.alphanumericCharacterSet()
-//        allowed.addCharactersInString(unreserved)
-//        return stringByAddingPercentEncodingWithAllowedCharacters(allowed)
-//    }
-//}
-
