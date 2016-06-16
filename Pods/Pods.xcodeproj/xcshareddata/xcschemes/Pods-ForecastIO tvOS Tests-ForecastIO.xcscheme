@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '40F5E502E537965E2FE74658'
+               BlueprintIdentifier = '3DBA345E69B0725B55CFC4A8'
                BlueprintName = 'Pods-ForecastIO tvOS Tests-ForecastIO'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'ForecastIO.framework'>

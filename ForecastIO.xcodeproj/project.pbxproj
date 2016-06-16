@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0F7A481D133DE80002B704 /* ForecastField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87606051D1080CB0079DE67 /* ForecastField.swift */; };
 		4A14A6F21CDAA80D00D4C108 /* forecast_bare.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */; };
 		4A14A6F41CDAA80E00D4C108 /* forecast_bare.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */; };
 		4A14A6F51CDAA80F00D4C108 /* forecast_bare.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */; };
@@ -116,7 +117,6 @@
 		D4D9F2DA1C54462A00A4A02F /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */; };
 		D4DE2AB41C513C040063A7CA /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
 		D4DE2ACF1C513EA00063A7CA /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
-		E87606061D1080CB0079DE67 /* ForecastField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87606051D1080CB0079DE67 /* ForecastField.swift */; };
 		E87606071D1084B10079DE67 /* ForecastField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87606051D1080CB0079DE67 /* ForecastField.swift */; };
 		E87606081D1084B20079DE67 /* ForecastField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87606051D1080CB0079DE67 /* ForecastField.swift */; };
 		E87606091D1084B30079DE67 /* ForecastField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87606051D1080CB0079DE67 /* ForecastField.swift */; };
@@ -197,7 +197,7 @@
 		D4DE2AAF1C513C040063A7CA /* ForecastIO iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DE2AD41C513EA00063A7CA /* ForecastIO tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52BD9E1A492DC1579E5C90F /* Pods-ForecastIO OS X Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO OS X Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO OS X Tests/Pods-ForecastIO OS X Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E87606051D1080CB0079DE67 /* ForecastField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastField.swift; sourceTree = "<group>"; };
+		E87606051D1080CB0079DE67 /* ForecastField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastField.swift; path = Source/ForecastField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -926,6 +926,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0F7A481D133DE80002B704 /* ForecastField.swift in Sources */,
 				D4564FC01C53F52000CB7548 /* Alert.swift in Sources */,
 				D4564FF81C53F52000CB7548 /* Precipitation.swift in Sources */,
 				D4564FCE1C53F52000CB7548 /* DataBlock.swift in Sources */,
@@ -935,7 +936,6 @@
 				D4564FE31C53F52000CB7548 /* Forecast.swift in Sources */,
 				4A14A6F71CDAB41B00D4C108 /* Constant.swift in Sources */,
 				D4564FFF1C53F52000CB7548 /* Units.swift in Sources */,
-				E87606061D1080CB0079DE67 /* ForecastField.swift in Sources */,
 				D4564FC71C53F52000CB7548 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
