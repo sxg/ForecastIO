@@ -11,7 +11,7 @@ import Foundation
 /**
     Types of precipitation.
 */
-public enum Precipitation: String {
+public enum Precipitation: String, CustomStringConvertible {
     /// Rainy.
     case Rain = "rain"
     
@@ -23,4 +23,13 @@ public enum Precipitation: String {
     
     /// Haily.
     case Hail = "hail"
+    
+    /**
+        Returns the `String` value of the enum variant.
+     
+        - returns: `String` value of the enum variant.
+    */
+    public var description: String {
+        return rawValue
+    }
 }
