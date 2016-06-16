@@ -1,6 +1,6 @@
 //
 //  DataPoint.swift
-//  Forecast.io
+//  ForecastIO
 //
 //  Created by Satyam Ghodasara on 7/10/15.
 //  Copyright (c) 2015 Satyam. All rights reserved.

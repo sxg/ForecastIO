@@ -1,6 +1,6 @@
 //
 //  Units.swift
-//  Forecast.io
+//  ForecastIO
 //
 //  Created by Wojciech Rutkowski on 05/01/2016.
 //

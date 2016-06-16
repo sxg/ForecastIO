@@ -1,13 +1,12 @@
 //
 //  APIClient.swift
-//  Forecast.io
+//  ForecastIO
 //
 //  Created by Satyam Ghodasara on 7/22/15.
 //  Copyright (c) 2015 Satyam. All rights reserved.
 //
 
 import Foundation
-
 
 /// A class to interact with Forecast.io's Dark Sky API.
 public class APIClient : NSObject {
