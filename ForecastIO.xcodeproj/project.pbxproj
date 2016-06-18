@@ -21,6 +21,9 @@
 		4A3364671CD9712000775650 /* forecast_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A3364661CD9712000775650 /* forecast_no_optionals.json */; };
 		4A3364681CD9712000775650 /* forecast_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A3364661CD9712000775650 /* forecast_no_optionals.json */; };
 		4A3364691CD9712000775650 /* forecast_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A3364661CD9712000775650 /* forecast_no_optionals.json */; };
+		4A3640F61D15001E005602A7 /* ForecastFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3640F41D150000005602A7 /* ForecastFieldTests.swift */; };
+		4A3640F71D15001F005602A7 /* ForecastFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3640F41D150000005602A7 /* ForecastFieldTests.swift */; };
+		4A3640F81D150020005602A7 /* ForecastFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3640F41D150000005602A7 /* ForecastFieldTests.swift */; };
 		77901CB80A5A77396A76F8AC /* Pods_ForecastIO_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2057CF5F810CCF2503DBD5C6 /* Pods_ForecastIO_iOS_Tests.framework */; };
 		936587FBEB8386951094F42E /* Pods_ForecastIO_tvOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2C01F587A790F22C5D2989 /* Pods_ForecastIO_tvOS_Tests.framework */; };
 		99DDEA407AFC1B8A6B7DA975EC9F410C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
@@ -158,6 +161,7 @@
 		4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = forecast_bare.json; path = Tests/Resources/forecast_bare.json; sourceTree = SOURCE_ROOT; };
 		4A14A6F61CDAB41B00D4C108 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Source/Constant.swift; sourceTree = "<group>"; };
 		4A3364661CD9712000775650 /* forecast_no_optionals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = forecast_no_optionals.json; path = Tests/Resources/forecast_no_optionals.json; sourceTree = SOURCE_ROOT; };
+		4A3640F41D150000005602A7 /* ForecastFieldTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastFieldTests.swift; path = Tests/ForecastFieldTests.swift; sourceTree = SOURCE_ROOT; };
 		52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F29BE8869D8CF5FC5B88A7A /* Pods-ForecastIO OS X Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO OS X Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO OS X Tests/Pods-ForecastIO OS X Tests.release.xcconfig"; sourceTree = "<group>"; };
 		74DDF94C960B65DBEC96F918 /* Pods_ForecastIO_OS_X_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastIO_OS_X_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -374,6 +378,7 @@
 				D4D9F2CB1C54410300A4A02F /* DataPointTests.swift */,
 				D4D9F2C71C54400700A4A02F /* FlagTests.swift */,
 				D4D9F2B81C5434B800A4A02F /* ForecastTests.swift */,
+				4A3640F41D150000005602A7 /* ForecastFieldTests.swift */,
 				D4D9F2D31C54454100A4A02F /* UnitsTest.swift */,
 				D45650071C53F53800CB7548 /* Info.plist */,
 			);
@@ -817,6 +822,7 @@
 			files = (
 				D4D9F2C61C543ED900A4A02F /* AlertTests.swift in Sources */,
 				4A14A6FC1CDABBF300D4C108 /* Constant.swift in Sources */,
+				4A3640F81D150020005602A7 /* ForecastFieldTests.swift in Sources */,
 				D4D9F2CE1C54410300A4A02F /* DataPointTests.swift in Sources */,
 				D4D9F2D61C54454100A4A02F /* UnitsTest.swift in Sources */,
 				D4564FC51C53F52000CB7548 /* Alert.swift in Sources */,
@@ -878,6 +884,7 @@
 			files = (
 				D4D9F2C41C543ED900A4A02F /* AlertTests.swift in Sources */,
 				4A14A6F81CDABBF200D4C108 /* Constant.swift in Sources */,
+				4A3640F61D15001E005602A7 /* ForecastFieldTests.swift in Sources */,
 				D4D9F2CC1C54410300A4A02F /* DataPointTests.swift in Sources */,
 				D4D9F2D41C54454100A4A02F /* UnitsTest.swift in Sources */,
 				D4564FC11C53F52000CB7548 /* Alert.swift in Sources */,
@@ -903,6 +910,7 @@
 			files = (
 				D4D9F2C51C543ED900A4A02F /* AlertTests.swift in Sources */,
 				4A14A6FA1CDABBF300D4C108 /* Constant.swift in Sources */,
+				4A3640F71D15001F005602A7 /* ForecastFieldTests.swift in Sources */,
 				D4D9F2CD1C54410300A4A02F /* DataPointTests.swift in Sources */,
 				D4D9F2D51C54454100A4A02F /* UnitsTest.swift in Sources */,
 				D4564FC31C53F52000CB7548 /* Alert.swift in Sources */,

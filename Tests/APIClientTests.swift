@@ -56,6 +56,7 @@ class APIClientTests: XCTestCase {
             return fixture(forecastJSONPath!, headers: ["Content-Type": "application/json"])
         }
         let client = APIClient(apiKey: "FAKE-API-KEY")
+        client.units = .SI
         var forecast: Forecast?
         var err: NSError?
         
@@ -68,6 +69,70 @@ class APIClientTests: XCTestCase {
         //  Then
         expect(forecast).toEventuallyNot(beNil())
         expect(err).toEventually(beNil())
+    }
+    
+    func testGetForecastWithSIUnits() {
+        //  Given
+        stub(isHost("api.forecast.io")) { _ in
+            let forecastJSONPath = OHPathForFile("forecast.json", self.dynamicType)
+            return fixture(forecastJSONPath!, headers: ["Content-Type": "application/json"])
+        }
+        let client = APIClient(apiKey: "FAKE-API-KEY")
+        var forecast: Forecast?
+        var err: NSError?
+        
+        //  When
+        client.getForecast(latitude: 41.499320, longitude: -81.694361, time: NSDate()) { (aForecast, error) -> Void in
+            forecast = aForecast
+            err = error
+        }
+        
+        //  Then
+        expect(forecast).toEventuallyNot(beNil())
+        expect(err).toEventually(beNil())
+    }
+    
+    func testGetForecastWithExtendedHourly() {
+        //  Given
+        stub(isHost("api.forecast.io")) { _ in
+            let forecastJSONPath = OHPathForFile("forecast.json", self.dynamicType)
+            return fixture(forecastJSONPath!, headers: ["Content-Type": "application/json"])
+        }
+        let client = APIClient(apiKey: "FAKE-API-KEY")
+        var forecast: Forecast?
+        var err: NSError?
+        
+        //  When
+        client.getForecast(latitude: 41.499320, longitude: -81.694361, extendHourly: true) { (aForecast, error) -> Void in
+            forecast = aForecast
+            err = error
+        }
+        
+        //  Then
+        expect(forecast).toEventuallyNot(beNil())
+        expect(err).toEventually(beNil())
+    }
+    
+    func testGetForecastWithExcludedForecastFields() {
+        //  Given
+        stub(isHost("api.forecast.io")) { _ in
+            let forecastJSONPath = OHPathForFile("forecast.json", self.dynamicType)
+            return fixture(forecastJSONPath!, headers: ["Content-Type": "application/json"])
+        }
+        let client = APIClient(apiKey: "FAKE-API-KEY")
+        var forecast: Forecast?
+        var err: NSError?
+        
+        //  When
+        client.getForecast(latitude: 41.499320, longitude: -81.694361, excludeForecastFields: [.Minutely, .Daily]) { (aForecast, error) -> Void in
+            forecast = aForecast
+            err = error
+        }
+        
+        //  Then
+        expect(forecast).toEventuallyNot(beNil())
+        expect(err).toEventually(beNil())
+
     }
     
     func testGetForecastWithoutInternet() {
