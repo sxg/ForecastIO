@@ -77,7 +77,7 @@ forecastIOClient.getForecast(latitude: myLat, longitude: myLon, time: myTime) { 
 }
 ```
 
-The `Forecast` you receive will have metadata as well as `DataPoint`s and `DataBlock`s associated with it. A `DataPoint` such as the `currently` property on `Forecast` represents various weather phenomena occurring at a specific instant of time. A `DataBlock` such as the `minutely`, `hourly`, and `daily` properties on `Forecast` represent the various weather phenomena occurring over a period of time. `DataBlock`s possess a `data` property, which holds an array of `DataPoint`s.
+The `Forecast` you receive will have metadata as well as `DataPoint`s and `DataBlock`s associated with it. A `DataPoint` such as the `currently` property on `Forecast` represents various weather phenomena occurring at a specific instant in time. A `DataBlock` such as the `minutely`, `hourly`, and `daily` properties on `Forecast` represent the various weather phenomena occurring over a period of time and are represented by an array of `DataPoint`s. `DataPoint`s and `DataBlock`s contain a large amount of information, and any of these fields can be excluded from the API response through the `excludeForecastFields` parameter of the `getForecast` methods. This field is optional and defaults to an empty array, meaning no data will be excluded from the API response.
 
 For a full list of properties defined on all models, consult the [full documentation on CocoaDocs](http://cocoadocs.org/docsets/ForecastIO).
 
