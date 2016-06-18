@@ -34,8 +34,8 @@ public class APIClient : NSObject {
      
         - parameter latitude:               Latitude at which to get the `Forecast`.
         - parameter longitude:              Longitude at which to get the `Forecast`.
-        - parameter extendHourly:           If `true`, extends the amount of data in `hourly` to 168 hours from 48 hours. Warning: this massively increases the amount of data returned. Defaults to `false`.
-        - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response.
+        - parameter extendHourly:           If `true`, extends the amount of data in the `hourly` property of `Forecast` to 168 hours from 48 hours. Warning: this massively increases the amount of data returned. Defaults to `false`.
+        - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
         - parameter completion:             A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
     public func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeForecastFields: [ForecastField] = [], completion: (forecast: Forecast?, error: NSError?) -> Void) {
@@ -49,7 +49,7 @@ public class APIClient : NSObject {
         - parameter latitude:               Latitude at which to get the `Forecast`.
         - parameter longitude:              Longitude at which to get the `Forecast`.
         - parameter time:                   Time at which to get the `Forecast`. If no timezone is specified, local time (at the specified latitude and longitude) will be assumed.
-        - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response.
+        - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
         - parameter completion:             A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
     public func getForecast(latitude lat: Double, longitude lon: Double, time: NSDate, excludeForecastFields: [ForecastField] = [], completion: (forecast: Forecast?, error: NSError?) -> Void) {
