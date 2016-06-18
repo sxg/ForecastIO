@@ -40,7 +40,7 @@ public class APIClient : NSObject {
     */
     public func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeForecastFields: [ForecastField] = [], completion: (forecast: Forecast?, error: NSError?) -> Void) {
         let url = buildForecastURL(latitude: lat, longitude: lon, time: nil, extendHourly: extendHourly, excludeForecastFields: excludeForecastFields)
-        getForecast(url, completion: completion)
+        getForecast(url: url, completion: completion)
     }
     
     /**
@@ -54,10 +54,10 @@ public class APIClient : NSObject {
     */
     public func getForecast(latitude lat: Double, longitude lon: Double, time: NSDate, excludeForecastFields: [ForecastField] = [], completion: (forecast: Forecast?, error: NSError?) -> Void) {
         let url = buildForecastURL(latitude: lat, longitude: lon, time: time, extendHourly: false, excludeForecastFields: excludeForecastFields)
-        getForecast(url, completion: completion)
+        getForecast(url: url, completion: completion)
     }
     
-    private func getForecast(url: NSURL, completion: (forecast: Forecast?, error: NSError?) -> Void) {
+    private func getForecast(url url: NSURL, completion: (forecast: Forecast?, error: NSError?) -> Void) {
         let task = self.session.dataTaskWithURL(url, completionHandler: { (data: NSData?, response, err: NSError?) -> Void in
             if err != nil {
                 completion(forecast: nil, error: err)
