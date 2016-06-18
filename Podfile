@@ -19,6 +19,6 @@ target 'ForecastIO tvOS Tests' do
 end
 
 target 'ForecastIO OS X Tests' do
-    platform :osx, '10.9'
+    platform :osx, '10.10'
     testing_pods
 end
