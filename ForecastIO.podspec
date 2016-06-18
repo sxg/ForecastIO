@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ForecastIO"
-  s.version          = "1.6.1"
+  s.version          = "1.7.0"
   s.summary          = "ForecastIO is a Swift library for interfacing with the Dark Sky forecast API."
   s.homepage         = "https://github.com/sxg/ForecastIO"
   s.license          = 'MIT'
