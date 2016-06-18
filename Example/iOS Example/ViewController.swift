@@ -17,9 +17,8 @@ class ViewController: UIViewController {
         
         let client = APIClient(apiKey: "Test Key")
         client.units = .Auto
-        client.getForecast(latitude: 30, longitude: 30, excludeBlocks: [WeatherBlocks.Alerts,.Currently,.Daily,.Flags,.Minutely]) { (forecast, error) in
+        client.getForecast(latitude: 30, longitude: 30, excludeBlocks: [.Alerts, .Currently, .Daily, .Flags, .Minutely]) { (forecast, error) in
             print(forecast?.hourly?.data)
-            
         }
     }
 
