@@ -13,6 +13,10 @@ import OHHTTPStubs
 
 class APIClientTests: XCTestCase {
     
+    let apiKey = "FAKE-API-KEY"
+    let latitude = 41.499320
+    let longitude = -81.694361
+    
     override func tearDown() {
         OHHTTPStubs.removeAllStubs()
         
@@ -22,7 +26,7 @@ class APIClientTests: XCTestCase {
     func testInit() {
         //  Given
         //  When
-        let client = APIClient(apiKey: "FAKE-API-KEY")
+        let client = APIClient(apiKey: apiKey)
         
         //  Then
         expect(client).toNot(beNil())
@@ -30,16 +34,20 @@ class APIClientTests: XCTestCase {
     
     func testGetForecast() {
         //  Given
-        stub(isHost("api.forecast.io")) { _ in
+        let hostStub = isHost("api.forecast.io")
+        let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
+        let methodStub = isMethodGET()
+        let schemeStub = isScheme("https")
+        stub(hostStub && pathStub && methodStub && schemeStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", self.dynamicType)
             return fixture(forecastJSONPath!, headers: ["Content-Type": "application/json"])
         }
-        let client = APIClient(apiKey: "FAKE-API-KEY")
+        let client = APIClient(apiKey: apiKey)
         var forecast: Forecast?
         var err: NSError?
         
         //  When
-        client.getForecast(latitude: 41.499320, longitude: -81.694361) { (currentForecast, error) -> Void in
+        client.getForecast(latitude: latitude, longitude: longitude) { (currentForecast, error) -> Void in
             forecast = currentForecast
             err = error
         }
@@ -51,7 +59,13 @@ class APIClientTests: XCTestCase {
     
     func testGetForecastAtTime() {
         //  Given
-        stub(isHost("api.forecast.io")) { _ in
+        let time = NSDate()
+        let timeString = String(format: "%.0f", time.timeIntervalSince1970)
+        let hostStub = isHost("api.forecast.io")
+        let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude),\(timeString)")
+        let methodStub = isMethodGET()
+        let schemeStub = isScheme("https")
+        stub(hostStub && pathStub && methodStub && schemeStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", self.dynamicType)
             return fixture(forecastJSONPath!, headers: ["Content-Type": "application/json"])
         }
@@ -61,7 +75,7 @@ class APIClientTests: XCTestCase {
         var err: NSError?
         
         //  When
-        client.getForecast(latitude: 41.499320, longitude: -81.694361, time: NSDate()) { (aForecast, error) -> Void in
+        client.getForecast(latitude: latitude, longitude: longitude, time: time) { (aForecast, error) -> Void in
             forecast = aForecast
             err = error
         }
@@ -73,16 +87,22 @@ class APIClientTests: XCTestCase {
     
     func testGetForecastWithSIUnits() {
         //  Given
-        stub(isHost("api.forecast.io")) { _ in
+        let hostStub = isHost("api.forecast.io")
+        let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
+        let methodStub = isMethodGET()
+        let schemeStub = isScheme("https")
+        let queryStub = containsQueryParams(["units": "si"])
+        stub(hostStub && pathStub && methodStub && schemeStub && queryStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", self.dynamicType)
             return fixture(forecastJSONPath!, headers: ["Content-Type": "application/json"])
         }
         let client = APIClient(apiKey: "FAKE-API-KEY")
+        client.units = .SI
         var forecast: Forecast?
         var err: NSError?
         
         //  When
-        client.getForecast(latitude: 41.499320, longitude: -81.694361, time: NSDate()) { (aForecast, error) -> Void in
+        client.getForecast(latitude: latitude, longitude: longitude) { (aForecast, error) -> Void in
             forecast = aForecast
             err = error
         }
@@ -94,7 +114,12 @@ class APIClientTests: XCTestCase {
     
     func testGetForecastWithExtendedHourly() {
         //  Given
-        stub(isHost("api.forecast.io")) { _ in
+        let hostStub = isHost("api.forecast.io")
+        let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
+        let methodStub = isMethodGET()
+        let schemeStub = isScheme("https")
+        let queryStub = containsQueryParams(["extend": "hourly"])
+        stub(hostStub && pathStub && methodStub && schemeStub && queryStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", self.dynamicType)
             return fixture(forecastJSONPath!, headers: ["Content-Type": "application/json"])
         }
@@ -103,7 +128,7 @@ class APIClientTests: XCTestCase {
         var err: NSError?
         
         //  When
-        client.getForecast(latitude: 41.499320, longitude: -81.694361, extendHourly: true) { (aForecast, error) -> Void in
+        client.getForecast(latitude: latitude, longitude: longitude, extendHourly: true) { (aForecast, error) -> Void in
             forecast = aForecast
             err = error
         }
@@ -115,7 +140,12 @@ class APIClientTests: XCTestCase {
     
     func testGetForecastWithExcludedForecastFields() {
         //  Given
-        stub(isHost("api.forecast.io")) { _ in
+        let hostStub = isHost("api.forecast.io")
+        let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
+        let methodStub = isMethodGET()
+        let schemeStub = isScheme("https")
+        let queryStub = containsQueryParams(["exclude": "minutely,daily"])
+        stub(hostStub && pathStub && methodStub && schemeStub && queryStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", self.dynamicType)
             return fixture(forecastJSONPath!, headers: ["Content-Type": "application/json"])
         }
@@ -124,7 +154,7 @@ class APIClientTests: XCTestCase {
         var err: NSError?
         
         //  When
-        client.getForecast(latitude: 41.499320, longitude: -81.694361, excludeForecastFields: [.Minutely, .Daily]) { (aForecast, error) -> Void in
+        client.getForecast(latitude: latitude, longitude: longitude, excludeForecastFields: [.Minutely, .Daily]) { (aForecast, error) -> Void in
             forecast = aForecast
             err = error
         }
@@ -146,7 +176,7 @@ class APIClientTests: XCTestCase {
         var err: NSError?
         
         //  When
-        client.getForecast(latitude: 41.499320, longitude: -81.694361, time: NSDate()) { (aForecast, error) -> Void in
+        client.getForecast(latitude: latitude, longitude: longitude) { (aForecast, error) -> Void in
             forecast = aForecast
             err = error
         }
@@ -159,6 +189,7 @@ class APIClientTests: XCTestCase {
     func testGetForecastWithBadJSON() {
         //  Given
         stub(isHost("api.forecast.io")) { _ in
+            //  Return empty body instead of JSON
             return fixture("", headers: ["Content-Type": "application/json"])
         }
         let client = APIClient(apiKey: "FAKE-API-KEY")
@@ -166,7 +197,7 @@ class APIClientTests: XCTestCase {
         var err: NSError?
         
         //  When
-        client.getForecast(latitude: 41.499320, longitude: -81.694361, time: NSDate()) { (aForecast, error) -> Void in
+        client.getForecast(latitude: latitude, longitude: longitude) { (aForecast, error) -> Void in
             forecast = aForecast
             err = error
         }
