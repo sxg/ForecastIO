@@ -2,6 +2,11 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+
+### Updated
+- Unit tests are stricter in checking for a valid URL
+
 ## 2.0.0
 
 Released on June 18, 2016.
