@@ -87,4 +87,4 @@ Satyam Ghodasara, sghodas@gmail.com
 
 ## License
 
-ForecastIO is available under the MIT license. See the LICENSE file for more info.
+ForecastIO is available under the MIT license. See the `LICENSE` file for more info.
