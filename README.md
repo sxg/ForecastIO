@@ -1,5 +1,6 @@
 # ForecastIO
 
+[![Documentation](https://img.shields.io/cocoapods/metrics/doc-percent/ForecastIO.svg)](http://cocoadocs.org/decsets/ForecastIO/)
 [![CI Status](http://img.shields.io/travis/sxg/ForecastIO.svg?style=flat)](https://travis-ci.org/sxg/ForecastIO)
 [![Version](https://img.shields.io/cocoapods/v/ForecastIO.svg?style=flat)](http://cocoapods.org/pods/ForecastIO)
 [![License](https://img.shields.io/cocoapods/l/ForecastIO.svg?style=flat)](http://cocoapods.org/pods/ForecastIO)
