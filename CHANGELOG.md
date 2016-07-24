@@ -11,6 +11,7 @@ Released on July 24, 2016.
 - More unit tests for enums
 - More platforms for unit testing on Travis CI
 - CocoaDocs and Carthage badges to `README.md`
+- Codecov.io integration
 
 ### Updated
 - Unit tests are stricter in checking for a valid URL

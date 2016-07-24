@@ -30,7 +30,7 @@ github "sxg/ForecastIO"
 
 The full documentation for ForecastIO is available on [CocoaDocs](http://cocoadocs.org/docsets/ForecastIO).
 
-ForecastIO includes a full suite of unit tests with 100% code coverage.
+ForecastIO includes a full suite of unit tests with [100% code coverage](https://codecov.io/gh/sxg/ForecastIO).
 
 ## Usage
 
