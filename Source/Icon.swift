@@ -11,7 +11,7 @@ import Foundation
 /**
     Types of weather conditions. Additional values may be defined in the future, so be sure to use a default.
 */
-public enum Icon: String {
+public enum Icon: String, CustomStringConvertible {
     /// A clear day.
     case ClearDay = "clear-day"
     
@@ -41,4 +41,13 @@ public enum Icon: String {
     
     /// A partly cloudy night.
     case PartlyCloudyNight = "partly-cloudy-night"
+    
+    /**
+     Returns the `String` value of the enum variant.
+     
+     - returns: `String` value of the enum variant.
+     */
+    public var description: String {
+        return rawValue
+    }
 }
