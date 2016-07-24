@@ -18,7 +18,7 @@ public class APIClient : NSObject {
     /// Units in which the `Forecast` response will be provided. US is the default if no units are specified as per the Dark Sky API docs.
     public var units: Units?
     
-    /// Language in which the `Forecast` response's `summary` property will be provided. English is the default if no language is specified as per the Dark Sky API docs.
+    /// Language in which the `Forecast` response's `DataBlock` and `DataPoint`'s `summary` properties will be provided. English is the default if no language is specified as per the Dark Sky API docs.
     public var language: Language?
     
     /**
