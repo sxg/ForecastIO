@@ -34,8 +34,10 @@
 		4A8B235C1D44807E00ACBAA8 /* forecast_bare.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */; };
 		4A8B235D1D44807E00ACBAA8 /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = D4D9F2B41C54061600A4A02F /* forecast.json */; };
 		4A8B235E1D44807E00ACBAA8 /* forecast_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A3364661CD9712000775650 /* forecast_no_optionals.json */; };
+		4AF9825A1D45024100081BC8 /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
 		5ABCACFE76610D1BA9085803 /* Pods_ForecastIO_macOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F290BC03424BDFA86DFE07 /* Pods_ForecastIO_macOS_Tests.framework */; };
 		99DDEA407AFC1B8A6B7DA975EC9F410C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		CA656EA4338E2B321D69779D /* Pods_ForecastIO_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9013E1F9BED826EE6957782 /* Pods_ForecastIO_iOS_Tests.framework */; };
 		D4446E7A1C51538000FBC8A8 /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4446E701C51538000FBC8A8 /* ForecastIO.framework */; };
 		D4446E911C51543900FBC8A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4446E901C51543900FBC8A8 /* Foundation.framework */; };
 		D4564FC21C53F52000CB7548 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB61C53F52000CB7548 /* Alert.swift */; };
@@ -126,7 +128,7 @@
 		D4564FB71C53F52000CB7548 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = APIClient.swift; path = Source/APIClient.swift; sourceTree = "<group>"; };
 		D4564FB81C53F52000CB7548 /* DataBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = DataBlock.swift; path = Source/DataBlock.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D4564FB91C53F52000CB7548 /* DataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = DataPoint.swift; path = Source/DataPoint.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		D4564FBA1C53F52000CB7548 /* Flag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = Flag.swift; path = Source/Flag.swift; sourceTree = "<group>"; };
+		D4564FBA1C53F52000CB7548 /* Flag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = Flag.swift; path = Source/Flag.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D4564FBB1C53F52000CB7548 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = Forecast.swift; path = Source/Forecast.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D4564FBC1C53F52000CB7548 /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = Icon.swift; path = Source/Icon.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D4564FBD1C53F52000CB7548 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
@@ -152,6 +154,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A2AB66E7AAEBD170430F30A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF9825A1D45024100081BC8 /* ForecastIO.framework in Frameworks */,
+				CA656EA4338E2B321D69779D /* Pods_ForecastIO_iOS_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4446E6C1C51538000FBC8A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,7 +289,6 @@
 				D4564FBD1C53F52000CB7548 /* Info.plist */,
 				D4564FBE1C53F52000CB7548 /* Precipitation.swift */,
 				E87606051D1080CB0079DE67 /* ForecastField.swift */,
-				4A56CEB11D44770C00751AF6 /* Language.swift */,
 				D4564FBF1C53F52000CB7548 /* Units.swift */,
 				4A14A6F61CDAB41B00D4C108 /* Constant.swift */,
 			);
@@ -382,9 +392,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A8B23591D447FB300ACBAA8 /* Build configuration list for PBXNativeTarget "ForecastIO iOS Tests" */;
 			buildPhases = (
+				6454F655B03EA5266A4E7163 /* [CP] Check Pods Manifest.lock */,
 				4A8B234D1D447FB300ACBAA8 /* Sources */,
 				4A8B234F1D447FB300ACBAA8 /* Resources */,
 				4A61E8DC1D4485FC000DDEC6 /* [CP] Embed Pods Frameworks */,
+				A2AB66E7AAEBD170430F30A9 /* Frameworks */,
+				A78386AA9D119F648E9AA85D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -654,7 +667,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${SRCROOT}/Pods/Target\\ Support\\ Files/Pods-ForecastIO\\ iOS\\ Tests/Pods-ForecastIO\\ iOS\\ Tests-frameworks.sh\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests-frameworks.sh\"\n";
 		};
 		6206FF6BF0A4AEA3C3961B22 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -671,6 +684,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6454F655B03EA5266A4E7163 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		A51261E0D39E71E840F0BE03 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -684,6 +712,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO tvOS Tests/Pods-ForecastIO tvOS Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A78386AA9D119F648E9AA85D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D567B01DC0F135735DE83125 /* [CP] Embed Pods Frameworks */ = {
