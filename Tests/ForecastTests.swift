@@ -8,7 +8,7 @@
 
 import XCTest
 import Nimble
-import ForecastIO
+@testable import ForecastIO
 
 class ForecastTests: XCTestCase {
     

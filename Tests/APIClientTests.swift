@@ -8,7 +8,7 @@
 
 import XCTest
 import Nimble
-import ForecastIO
+@testable import ForecastIO
 import OHHTTPStubs
 
 class APIClientTests: XCTestCase {
