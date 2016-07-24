@@ -51,7 +51,6 @@
 		4A56CEBB1D447BD000751AF6 /* ForecastField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87606051D1080CB0079DE67 /* ForecastField.swift */; };
 		4A56CEBD1D447BD000751AF6 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FBF1C53F52000CB7548 /* Units.swift */; };
 		4A56CEBE1D447BD000751AF6 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14A6F61CDAB41B00D4C108 /* Constant.swift */; };
-		4A56CEC41D447E8F00751AF6 /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
 		4A56CEC51D447F4900751AF6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A56CEB11D44770C00751AF6 /* Language.swift */; };
 		4A56CEC61D447F4A00751AF6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A56CEB11D44770C00751AF6 /* Language.swift */; };
 		4A56CEC71D447F4B00751AF6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A56CEB11D44770C00751AF6 /* Language.swift */; };
@@ -226,7 +225,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4A480721C507CE70053EB05 /* Foundation.framework in Frameworks */,
-				4A56CEC41D447E8F00751AF6 /* ForecastIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
