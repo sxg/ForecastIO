@@ -58,6 +58,18 @@
 		4A8B235C1D44807E00ACBAA8 /* forecast_bare.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */; };
 		4A8B235D1D44807E00ACBAA8 /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = D4D9F2B41C54061600A4A02F /* forecast.json */; };
 		4A8B235E1D44807E00ACBAA8 /* forecast_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A3364661CD9712000775650 /* forecast_no_optionals.json */; };
+		4AB7086D1D45230F005D1E8E /* LanguageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB7086C1D45230F005D1E8E /* LanguageTests.swift */; };
+		4AB7086E1D45230F005D1E8E /* LanguageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB7086C1D45230F005D1E8E /* LanguageTests.swift */; };
+		4AB7086F1D45230F005D1E8E /* LanguageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB7086C1D45230F005D1E8E /* LanguageTests.swift */; };
+		4AB708711D45246C005D1E8E /* IconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB708701D45246C005D1E8E /* IconTests.swift */; };
+		4AB708721D45246C005D1E8E /* IconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB708701D45246C005D1E8E /* IconTests.swift */; };
+		4AB708731D45246C005D1E8E /* IconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB708701D45246C005D1E8E /* IconTests.swift */; };
+		4AB708751D452539005D1E8E /* PrecipitationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB708741D452539005D1E8E /* PrecipitationTests.swift */; };
+		4AB708761D452539005D1E8E /* PrecipitationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB708741D452539005D1E8E /* PrecipitationTests.swift */; };
+		4AB708771D452539005D1E8E /* PrecipitationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB708741D452539005D1E8E /* PrecipitationTests.swift */; };
+		4AB708791D4525C7005D1E8E /* ConstantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB708781D4525C7005D1E8E /* ConstantTests.swift */; };
+		4AB7087A1D4525C7005D1E8E /* ConstantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB708781D4525C7005D1E8E /* ConstantTests.swift */; };
+		4AB7087B1D4525C7005D1E8E /* ConstantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB708781D4525C7005D1E8E /* ConstantTests.swift */; };
 		4AF9825A1D45024100081BC8 /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
 		5ABCACFE76610D1BA9085803 /* Pods_ForecastIO_macOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F290BC03424BDFA86DFE07 /* Pods_ForecastIO_macOS_Tests.framework */; };
 		99DDEA407AFC1B8A6B7DA975EC9F410C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
@@ -138,6 +150,10 @@
 		4A3640F91D150EAA005602A7 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		4A56CEB11D44770C00751AF6 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Source/Language.swift; sourceTree = "<group>"; };
 		4A8B23511D447FB300ACBAA8 /* ForecastIO iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AB7086C1D45230F005D1E8E /* LanguageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LanguageTests.swift; path = Tests/LanguageTests.swift; sourceTree = SOURCE_ROOT; };
+		4AB708701D45246C005D1E8E /* IconTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconTests.swift; path = Tests/IconTests.swift; sourceTree = SOURCE_ROOT; };
+		4AB708741D452539005D1E8E /* PrecipitationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrecipitationTests.swift; path = Tests/PrecipitationTests.swift; sourceTree = SOURCE_ROOT; };
+		4AB708781D4525C7005D1E8E /* ConstantTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstantTests.swift; path = Tests/ConstantTests.swift; sourceTree = SOURCE_ROOT; };
 		52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F290BC03424BDFA86DFE07 /* Pods_ForecastIO_macOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastIO_macOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1B356DACA6D8F6203D8BA3 /* Pods-ForecastIO macOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO macOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -306,17 +322,17 @@
 			children = (
 				D4564FB61C53F52000CB7548 /* Alert.swift */,
 				D4564FB71C53F52000CB7548 /* APIClient.swift */,
+				4A14A6F61CDAB41B00D4C108 /* Constant.swift */,
 				D4564FB81C53F52000CB7548 /* DataBlock.swift */,
 				D4564FB91C53F52000CB7548 /* DataPoint.swift */,
 				D4564FBA1C53F52000CB7548 /* Flag.swift */,
 				D4564FBB1C53F52000CB7548 /* Forecast.swift */,
+				E87606051D1080CB0079DE67 /* ForecastField.swift */,
 				D4564FBC1C53F52000CB7548 /* Icon.swift */,
-				D4564FBD1C53F52000CB7548 /* Info.plist */,
 				4A10DB7A1D4510A900E304C5 /* Language.swift */,
 				D4564FBE1C53F52000CB7548 /* Precipitation.swift */,
-				E87606051D1080CB0079DE67 /* ForecastField.swift */,
 				D4564FBF1C53F52000CB7548 /* Units.swift */,
-				4A14A6F61CDAB41B00D4C108 /* Constant.swift */,
+				D4564FBD1C53F52000CB7548 /* Info.plist */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -350,11 +366,15 @@
 				D4D9F2B31C54060800A4A02F /* Resources */,
 				D4D9F2C31C543ED900A4A02F /* AlertTests.swift */,
 				D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */,
+				4AB708781D4525C7005D1E8E /* ConstantTests.swift */,
 				D4D9F2CF1C5442C400A4A02F /* DataBlockTests.swift */,
 				D4D9F2CB1C54410300A4A02F /* DataPointTests.swift */,
 				D4D9F2C71C54400700A4A02F /* FlagTests.swift */,
 				D4D9F2B81C5434B800A4A02F /* ForecastTests.swift */,
 				4A3640F41D150000005602A7 /* ForecastFieldTests.swift */,
+				4AB708701D45246C005D1E8E /* IconTests.swift */,
+				4AB7086C1D45230F005D1E8E /* LanguageTests.swift */,
+				4AB708741D452539005D1E8E /* PrecipitationTests.swift */,
 				D4D9F2D31C54454100A4A02F /* UnitsTest.swift */,
 				D45650071C53F53800CB7548 /* Info.plist */,
 			);
@@ -781,8 +801,12 @@
 				4A10DB721D45103900E304C5 /* AlertTests.swift in Sources */,
 				4A10DB761D45103900E304C5 /* FlagTests.swift in Sources */,
 				4A10DB751D45103900E304C5 /* DataPointTests.swift in Sources */,
+				4AB708711D45246C005D1E8E /* IconTests.swift in Sources */,
+				4AB7086D1D45230F005D1E8E /* LanguageTests.swift in Sources */,
 				4A10DB771D45103900E304C5 /* ForecastTests.swift in Sources */,
+				4AB708791D4525C7005D1E8E /* ConstantTests.swift in Sources */,
 				4A10DB791D45103900E304C5 /* UnitsTest.swift in Sources */,
+				4AB708751D452539005D1E8E /* PrecipitationTests.swift in Sources */,
 				4A10DB731D45103900E304C5 /* APIClientTests.swift in Sources */,
 				4A10DB781D45103900E304C5 /* ForecastFieldTests.swift in Sources */,
 			);
@@ -815,8 +839,12 @@
 				4A10DB621D45103700E304C5 /* AlertTests.swift in Sources */,
 				4A10DB661D45103700E304C5 /* FlagTests.swift in Sources */,
 				4A10DB651D45103700E304C5 /* DataPointTests.swift in Sources */,
+				4AB708731D45246C005D1E8E /* IconTests.swift in Sources */,
+				4AB7086F1D45230F005D1E8E /* LanguageTests.swift in Sources */,
 				4A10DB671D45103700E304C5 /* ForecastTests.swift in Sources */,
+				4AB7087B1D4525C7005D1E8E /* ConstantTests.swift in Sources */,
 				4A10DB691D45103700E304C5 /* UnitsTest.swift in Sources */,
+				4AB708771D452539005D1E8E /* PrecipitationTests.swift in Sources */,
 				4A10DB631D45103700E304C5 /* APIClientTests.swift in Sources */,
 				4A10DB681D45103700E304C5 /* ForecastFieldTests.swift in Sources */,
 			);
@@ -868,8 +896,12 @@
 				4A10DB6A1D45103800E304C5 /* AlertTests.swift in Sources */,
 				4A10DB6E1D45103800E304C5 /* FlagTests.swift in Sources */,
 				4A10DB6D1D45103800E304C5 /* DataPointTests.swift in Sources */,
+				4AB708721D45246C005D1E8E /* IconTests.swift in Sources */,
+				4AB7086E1D45230F005D1E8E /* LanguageTests.swift in Sources */,
 				4A10DB6F1D45103800E304C5 /* ForecastTests.swift in Sources */,
+				4AB7087A1D4525C7005D1E8E /* ConstantTests.swift in Sources */,
 				4A10DB711D45103800E304C5 /* UnitsTest.swift in Sources */,
+				4AB708761D452539005D1E8E /* PrecipitationTests.swift in Sources */,
 				4A10DB6B1D45103800E304C5 /* APIClientTests.swift in Sources */,
 				4A10DB701D45103800E304C5 /* ForecastFieldTests.swift in Sources */,
 			);
