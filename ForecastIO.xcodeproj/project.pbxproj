@@ -24,6 +24,7 @@
 		4A3640F61D15001E005602A7 /* ForecastFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3640F41D150000005602A7 /* ForecastFieldTests.swift */; };
 		4A3640F71D15001F005602A7 /* ForecastFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3640F41D150000005602A7 /* ForecastFieldTests.swift */; };
 		4A3640F81D150020005602A7 /* ForecastFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3640F41D150000005602A7 /* ForecastFieldTests.swift */; };
+		4A56CEB21D44770C00751AF6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A56CEB11D44770C00751AF6 /* Language.swift */; };
 		77901CB80A5A77396A76F8AC /* Pods_ForecastIO_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2057CF5F810CCF2503DBD5C6 /* Pods_ForecastIO_iOS_Tests.framework */; };
 		936587FBEB8386951094F42E /* Pods_ForecastIO_tvOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2C01F587A790F22C5D2989 /* Pods_ForecastIO_tvOS_Tests.framework */; };
 		99DDEA407AFC1B8A6B7DA975EC9F410C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
@@ -162,6 +163,7 @@
 		4A14A6F61CDAB41B00D4C108 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Source/Constant.swift; sourceTree = "<group>"; };
 		4A3364661CD9712000775650 /* forecast_no_optionals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = forecast_no_optionals.json; path = Tests/Resources/forecast_no_optionals.json; sourceTree = SOURCE_ROOT; };
 		4A3640F41D150000005602A7 /* ForecastFieldTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastFieldTests.swift; path = Tests/ForecastFieldTests.swift; sourceTree = SOURCE_ROOT; };
+		4A56CEB11D44770C00751AF6 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Source/Language.swift; sourceTree = "<group>"; };
 		52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F29BE8869D8CF5FC5B88A7A /* Pods-ForecastIO OS X Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO OS X Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO OS X Tests/Pods-ForecastIO OS X Tests.release.xcconfig"; sourceTree = "<group>"; };
 		74DDF94C960B65DBEC96F918 /* Pods_ForecastIO_OS_X_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastIO_OS_X_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,7 +179,7 @@
 		D4564FB71C53F52000CB7548 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = APIClient.swift; path = Source/APIClient.swift; sourceTree = "<group>"; };
 		D4564FB81C53F52000CB7548 /* DataBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = DataBlock.swift; path = Source/DataBlock.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D4564FB91C53F52000CB7548 /* DataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = DataPoint.swift; path = Source/DataPoint.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		D4564FBA1C53F52000CB7548 /* Flag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = Flag.swift; path = Source/Flag.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D4564FBA1C53F52000CB7548 /* Flag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = Flag.swift; path = Source/Flag.swift; sourceTree = "<group>"; };
 		D4564FBB1C53F52000CB7548 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = Forecast.swift; path = Source/Forecast.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D4564FBC1C53F52000CB7548 /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = Icon.swift; path = Source/Icon.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D4564FBD1C53F52000CB7548 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
@@ -340,6 +342,7 @@
 				D4564FBD1C53F52000CB7548 /* Info.plist */,
 				D4564FBE1C53F52000CB7548 /* Precipitation.swift */,
 				E87606051D1080CB0079DE67 /* ForecastField.swift */,
+				4A56CEB11D44770C00751AF6 /* Language.swift */,
 				D4564FBF1C53F52000CB7548 /* Units.swift */,
 				4A14A6F61CDAB41B00D4C108 /* Constant.swift */,
 			);
@@ -943,6 +946,7 @@
 				D4564FD51C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE31C53F52000CB7548 /* Forecast.swift in Sources */,
 				4A14A6F71CDAB41B00D4C108 /* Constant.swift in Sources */,
+				4A56CEB21D44770C00751AF6 /* Language.swift in Sources */,
 				D4564FFF1C53F52000CB7548 /* Units.swift in Sources */,
 				D4564FC71C53F52000CB7548 /* APIClient.swift in Sources */,
 			);

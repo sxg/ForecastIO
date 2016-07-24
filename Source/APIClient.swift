@@ -15,7 +15,7 @@ public class APIClient : NSObject {
     private let session = NSURLSession.sharedSession()
     private static let forecastIOURL = "https://api.forecast.io/forecast/"
     
-    /// Units in which the response will be provided. US is the default if no units are specified as per Forecast.io docs.
+    /// Units in which the response will be provided. US is the default if no units are specified as per Dark Sky API docs.
     public var units: Units?
     
     /**
@@ -70,7 +70,7 @@ public class APIClient : NSObject {
                     }
                 } catch _ {
                     let badJSONErrorUserInfo = [
-                        NSLocalizedDescriptionKey : "Failed to read JSON from the Forecast.io API.",
+                        NSLocalizedDescriptionKey : "Failed to read JSON from the Dark Sky API.",
                         NSLocalizedRecoverySuggestionErrorKey : "Make sure the body of a GET request to \(url.absoluteString) returns properly formatted JSON.",
                         NSLocalizedFailureReasonErrorKey : "Could not parse data received from \(url.absoluteString)."
                     ]

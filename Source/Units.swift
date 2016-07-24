@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Units in which the Forecast.io data may be returned.
+/// Units in which the Dark Sky API data may be returned.
 public enum Units: String, CustomStringConvertible {
     /**
          SI units. `Forecast` properties will become the following:
@@ -34,7 +34,7 @@ public enum Units: String, CustomStringConvertible {
     /// Canadian units. Identical to `.SI` except `windSpeed` is in kilometers per hour.
     case CA = "ca"
     
-    /// UK units. Deprecated by the Forecast.io API. Use `.UK2` instead. Identical to `.SI` except `windSpeed` is in miles per hour.
+    /// UK units. Deprecated by the Dark Sky API. Use `.UK2` instead. Identical to `.SI` except `windSpeed` is in miles per hour.
     case UK = "uk"
     
     /// UK units. Identical to `.SI` except `windSpeed` is in miles per hour, and `nearestStormDistance` and `visibility` are in miles.
