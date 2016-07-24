@@ -58,7 +58,7 @@ The following units are supported:
 You can also choose the language that you want `Forecast` responses to use:
 
 ```swift
-forecastIOClient.units = .English
+forecastIOClient.language = .English
 ```
 
 Many languages are supported (a full list is available [here](https://developer.forecast.io/docs/v2#options)). If no language is specified, English is used as the default.
