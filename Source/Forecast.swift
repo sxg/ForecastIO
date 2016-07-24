@@ -10,8 +10,6 @@ import Foundation
 
 /// The weather data for a location at a specific time.
 public struct Forecast {
-    /// MARK: - Metadata
-    
     /// The requested latitude.
     public let latitude: Float
     
@@ -29,8 +27,6 @@ public struct Forecast {
     
     /// Metadata for the request.
     public let flags: Flag?
-    
-    /// MARK: - Forecast data
     
     /// The current weather conditions at the requested location.
     public let currently: DataPoint?
