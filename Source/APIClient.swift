@@ -15,8 +15,11 @@ public class APIClient : NSObject {
     private let session = NSURLSession.sharedSession()
     private static let forecastIOURL = "https://api.forecast.io/forecast/"
     
-    /// Units in which the response will be provided. US is the default if no units are specified as per Dark Sky API docs.
+    /// Units in which the `Forecast` response will be provided. US is the default if no units are specified as per the Dark Sky API docs.
     public var units: Units?
+    
+    /// Language in which the `Forecast` response's `summary` property will be provided. English is the default if no language is specified as per the Dark Sky API docs.
+    public var language: Language?
     
     /**
         Creates a new `APIClient` to interact with Forecast.io's Dark Sky API.
@@ -95,6 +98,9 @@ public class APIClient : NSObject {
         var queryItems: [NSURLQueryItem] = []
         if let units = self.units {
             queryItems.append(NSURLQueryItem(name: "units", value: units.description))
+        }
+        if let language = self.language {
+            queryItems.append(NSURLQueryItem(name: "lang", value: language.description))
         }
         if extendHourly {
             queryItems.append(NSURLQueryItem(name: "extend", value: "hourly"))
