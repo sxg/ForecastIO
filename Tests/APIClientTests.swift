@@ -112,6 +112,33 @@ class APIClientTests: XCTestCase {
         expect(err).toEventually(beNil())
     }
     
+    func testGetForecastWithFrenchLanguage() {
+        //  Given
+        let hostStub = isHost("api.forecast.io")
+        let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
+        let methodStub = isMethodGET()
+        let schemeStub = isScheme("https")
+        let queryStub = containsQueryParams(["lang": "fr"])
+        stub(hostStub && pathStub && methodStub && schemeStub && queryStub) { _ in
+            let forecastJSONPath = OHPathForFile("forecast.json", self.dynamicType)
+            return fixture(forecastJSONPath!, headers: ["Content-Type": "application/json"])
+        }
+        let client = APIClient(apiKey: "FAKE-API-KEY")
+        client.language = .French
+        var forecast: Forecast?
+        var err: NSError?
+        
+        //  When
+        client.getForecast(latitude: latitude, longitude: longitude) { (aForecast, error) -> Void in
+            forecast = aForecast
+            err = error
+        }
+        
+        //  Then
+        expect(forecast).toEventuallyNot(beNil())
+        expect(err).toEventually(beNil())
+    }
+    
     func testGetForecastWithExtendedHourly() {
         //  Given
         let hostStub = isHost("api.forecast.io")
