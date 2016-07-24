@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -61,7 +61,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D4DE2AAE1C513C040063A7CA"
+               BlueprintIdentifier = "4A8B23501D447FB300ACBAA8"
                BuildableName = "ForecastIO iOS Tests.xctest"
                BlueprintName = "ForecastIO iOS Tests"
                ReferencedContainer = "container:ForecastIO.xcodeproj">
