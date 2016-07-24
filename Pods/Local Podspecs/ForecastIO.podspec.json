@@ -1,6 +1,6 @@
 {
   "name": "ForecastIO",
-  "version": "1.7.0",
+  "version": "2.0.0",
   "summary": "ForecastIO is a Swift library for interfacing with the Dark Sky forecast API.",
   "homepage": "https://github.com/sxg/ForecastIO",
   "license": "MIT",
@@ -9,12 +9,12 @@
   },
   "source": {
     "git": "https://github.com/sxg/ForecastIO.git",
-    "tag": "1.7.0"
+    "tag": "2.0.0"
   },
   "social_media_url": "https://twitter.com/_Satyam_",
   "platforms": {
     "ios": "8.0",
-    "osx": "10.9",
+    "osx": "10.10",
     "watchos": "2.0",
     "tvos": "9.0"
   },

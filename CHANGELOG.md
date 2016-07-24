@@ -2,7 +2,12 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
-## 1.7.0
+## Unreleased
+
+### Updated
+- Unit tests are stricter in checking for a valid URL
+
+## 2.0.0
 
 Released on June 18, 2016.
 
@@ -10,6 +15,9 @@ Released on June 18, 2016.
 - Exclusion of fields from `getForecast` (by [miwand](https://github.com/miwand))
 - Extension of `hourly` property to include up to 168 hours of data (by [miwand](https://github.com/miwand))
 - `ForecastField` to represent `DataPoint`s and `DataBlock`s on `Forecast` responses (by [miwand](https://github.com/miwand))
+
+### Removed
+- Support for OS X 10.9 - deployment target for OS X is now 10.10
 
 ### Updated
 - Description of `DataPoint`s and `DataBlock`s in README.md

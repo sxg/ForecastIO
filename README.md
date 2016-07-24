@@ -1,5 +1,6 @@
 # ForecastIO
 
+[![Documentation](https://img.shields.io/cocoapods/metrics/doc-percent/ForecastIO.svg)](http://cocoadocs.org/decsets/ForecastIO/)
 [![CI Status](http://img.shields.io/travis/sxg/ForecastIO.svg?style=flat)](https://travis-ci.org/sxg/ForecastIO)
 [![Version](https://img.shields.io/cocoapods/v/ForecastIO.svg?style=flat)](http://cocoapods.org/pods/ForecastIO)
 [![License](https://img.shields.io/cocoapods/l/ForecastIO.svg?style=flat)](http://cocoapods.org/pods/ForecastIO)
@@ -7,7 +8,7 @@
 
 ## Requirements
 
-To use ForecastIO, all you need is an API key for the [Dark Sky API](https://developer.forecast.io/). ForecastIO supports iOS, OS X, watchOS, and tvOS.
+To use ForecastIO, all you need is an API key for the [Dark Sky API](https://developer.forecast.io/). ForecastIO supports iOS (≥8.0), macOS (≥10.10), watchOS (≥2.0), and tvOS (≥9.0).
 
 ## Installation
 
@@ -87,4 +88,4 @@ Satyam Ghodasara, sghodas@gmail.com
 
 ## License
 
-ForecastIO is available under the MIT license. See the LICENSE file for more info.
+ForecastIO is available under the MIT license. See the `LICENSE` file for more info.
