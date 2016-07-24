@@ -1,5 +1,5 @@
 PODS:
-  - ForecastIO (1.6.1)
+  - ForecastIO (1.7.0)
   - Nimble (4.0.1)
   - OHHTTPStubs (4.8.0):
     - OHHTTPStubs/Default (= 4.8.0)
@@ -28,8 +28,10 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  ForecastIO: fa5ef84db6414b200bbd7a6b5f27669f394eadc9
+  ForecastIO: 6afb692a6ef22023dfe90767fa76b6242aafcd95
   Nimble: 0f3c8b8b084cda391209c3c5efbb48bedeeb920a
   OHHTTPStubs: b393565822317305b87a1440d4c7aff131679f66
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: dbad215dac08ba2b535412d5f2864c2e5f581be3
+
+COCOAPODS: 1.0.1

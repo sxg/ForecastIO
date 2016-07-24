@@ -1,8 +1,0 @@
-framework module Nimble {
-  umbrella header "Pods-ForecastIO tvOS Tests-Nimble-umbrella.h"
-
-  export *
-  module * { export * }
-
-  private header "CurrentTestCaseTracker.h"
-}

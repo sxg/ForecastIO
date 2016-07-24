@@ -18,7 +18,7 @@ target 'ForecastIO tvOS Tests' do
     testing_pods
 end
 
-target 'ForecastIO OS X Tests' do
+target 'ForecastIO macOS Tests' do
     platform :osx, '10.9'
     testing_pods
 end
