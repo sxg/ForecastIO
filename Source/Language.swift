@@ -55,7 +55,7 @@ public enum Language: String, CustomStringConvertible {
     ///  The Cornish language.
     case Cornish = "kw"
     
-    ///  The NorwegianBokmål language.
+    ///  The Norwegian Bokmål language.
     case NorwegianBokmål = "nb"
     
     ///  The Dutch language.
