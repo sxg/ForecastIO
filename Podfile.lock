@@ -1,5 +1,5 @@
 PODS:
-  - ForecastIO (2.1.0)
+  - ForecastIO (2.1.1)
   - Nimble (4.0.1)
   - OHHTTPStubs (4.8.0):
     - OHHTTPStubs/Default (= 4.8.0)
@@ -28,7 +28,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  ForecastIO: 1e710526f279e3fec44404f20a0437aa6aa2c6ac
+  ForecastIO: a195c8ec7bd3f23ed856fce1bbf2f141abc45dc8
   Nimble: 0f3c8b8b084cda391209c3c5efbb48bedeeb920a
   OHHTTPStubs: b393565822317305b87a1440d4c7aff131679f66
 
