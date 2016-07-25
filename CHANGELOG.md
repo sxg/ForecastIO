@@ -2,6 +2,15 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.1.1
+
+Released on July 25, 2016.
+
+### Updated
+- Fixed typo in `README.md` for the language setting code
+- Fixed typos in `Language.swift` docs
+- Removed `xcov_report` folder
+
 ## 2.1.0
 
 Released on July 24, 2016.
