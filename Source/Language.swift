@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Languages in which data from the Dark Sky API may be returned.
+/// Language in which data from the Dark Sky API will be returned.
 public enum Language: String, CustomStringConvertible {
     ///  The Arabic language.
     case Arabic = "ar"

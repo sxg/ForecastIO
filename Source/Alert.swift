@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// A severe weather warning issued for a location by a governmental authority (consult Forecast.io's Dark Sky API documentation for a full list).
+/// A severe weather warning issued for a location by a governmental authority (consult the Dark Sky API documentation for a full list).
 public struct Alert {
     
     /// A short text summary of the `Alert`.

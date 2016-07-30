@@ -35,7 +35,7 @@ public struct Flag {
     /// Contains the IDs for each data station used in servicing this request.
     public let sources: Array<String>?
     
-    /// The presence of this property indicates which units were used for the data in this request. "US" units are default.
+    /// The presence of this property indicates which units were used for the data in this request. `US` units are default.
     public let units: String?
     
     /**

@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Units in which the Dark Sky API data may be returned.
+/// Units in which the Dark Sky API data will be returned.
 public enum Units: String, CustomStringConvertible {
     /**
          SI units. `Forecast` properties will become the following:

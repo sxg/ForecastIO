@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// A class to interact with Forecast.io's Dark Sky API.
+/// A class to interact with the Dark Sky API.
 public class APIClient : NSObject {
     
     private let apiKey: String
@@ -22,11 +22,11 @@ public class APIClient : NSObject {
     public var language: Language?
     
     /**
-        Creates a new `APIClient` to interact with Forecast.io's Dark Sky API.
+        Creates a new `APIClient` to interact with the Dark Sky API.
      
         - parameter apiKey: Your Dark Sky API key.
      
-        - returns: A new `APIClient` configured to interact with Forecast.io's Dark Sky API with your API key.
+        - returns: A new `APIClient` configured to interact with the Dark Sky API with your API key.
     */
     public init(apiKey key: String) {
         apiKey = key
