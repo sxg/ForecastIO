@@ -18,14 +18,14 @@ class DataBlockTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        let forecastJSONPath = NSBundle(forClass: self.dynamicType).pathForResource("forecast", ofType: "json")!
-        let forecastJSONData = NSData(contentsOfFile: forecastJSONPath)!
-        let forecastJSON = try! NSJSONSerialization.JSONObjectWithData(forecastJSONData, options: .MutableContainers) as! NSDictionary
+        let forecastJSONPath = Bundle(for: self.dynamicType).path(forResource: "forecast", ofType: "json")!
+        let forecastJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastJSONPath))
+        let forecastJSON = try! JSONSerialization.jsonObject(with: forecastJSONData, options: .mutableContainers) as! NSDictionary
         self.dataBlockJSON = forecastJSON["minutely"] as! NSDictionary
         
-        let forecastNoOptionalsJSONPath = NSBundle(forClass: self.dynamicType).pathForResource("forecast_no_optionals", ofType: "json")!
-        let forecastNoOptionalsJSONData = NSData(contentsOfFile: forecastNoOptionalsJSONPath)!
-        let forecastNoOptionalsJSON = try! NSJSONSerialization.JSONObjectWithData(forecastNoOptionalsJSONData, options: .MutableContainers) as! NSDictionary
+        let forecastNoOptionalsJSONPath = Bundle(for: self.dynamicType).path(forResource: "forecast_no_optionals", ofType: "json")!
+        let forecastNoOptionalsJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastNoOptionalsJSONPath))
+        let forecastNoOptionalsJSON = try! JSONSerialization.jsonObject(with: forecastNoOptionalsJSONData, options: .mutableContainers) as! NSDictionary
         self.dataBlockNoOptionalsJSON = forecastNoOptionalsJSON["minutely"] as! NSDictionary
     }
     

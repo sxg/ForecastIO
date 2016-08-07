@@ -12,7 +12,7 @@ import Foundation
 public struct DataPoint {
 
     /// The time at which this `DataPoint` occurs.
-    public let time: NSDate
+    public let time: Date
     
     /// A human-readable text summary of the weather.
     public let summary: String?
@@ -21,10 +21,10 @@ public struct DataPoint {
     public let icon: Icon?
     
     /// The time of the last sunrise before the solar noon closest to local noon on the given day. Only defined on `Forecast`'s `daily` `DataPoint`s. Note: near the poles, this may occur on a different day entirely!
-    public let sunriseTime: NSDate?
+    public let sunriseTime: Date?
     
     /// The time of the first sunset after the solar noon closest to local noon on the given day. Only defined on `Forecast`'s `daily` `DataPoint`s. Note: near the poles, this may occur on a different day entirely!
-    public let sunsetTime: NSDate?
+    public let sunsetTime: Date?
     
     /// The fractional part of the lunation number of the given day. This can be thought of as the "percentage complete" of the current lunar month. A value of `0` represents a new moon, a value of `0.25` represents a first quarter moon, a value of `0.5` represents a full moon, and a value of `0.75` represents a last quarter moon. The ranges between these values represent waxing crescent, waxing gibbous, waning gibbous, and waning crescent moons, respectively. Only defined on `Forecast`'s `daily` `DataPoint`s.
     public let moonPhase: Float?
@@ -42,7 +42,7 @@ public struct DataPoint {
     public let precipIntensityMax: Float?
     
     /// Time at which the maximum expected intensity of precipitation will occur. Only defined on `Forecast`'s `daily` `DataPoint`s.
-    public let precipIntensityMaxTime: NSDate?
+    public let precipIntensityMaxTime: Date?
     
     /// Value between `0` and `1` (inclusive) representing the probability of precipitation occurring at the given time.
     public let precipProbability: Float?
@@ -60,13 +60,13 @@ public struct DataPoint {
     public let temperatureMin: Float?
     
     /// The time at which the minimum temperature will occur on the given day in degrees Fahrenheit. Only defined on `Forecast`'s `daily` `DataPoint`s.
-    public let temperatureMinTime: NSDate?
+    public let temperatureMinTime: Date?
     
     /// The maximum temperature on the given day in degrees Fahrenheit. Only defined on `Forecast`'s `daily` `DataPoint`s.
     public let temperatureMax: Float?
     
     /// The time at which the maximum temperature will occur on the given day in degrees Fahrenheit. Only defined on `Forecast`'s `daily` `DataPoint`s.
-    public let temperatureMaxTime: NSDate?
+    public let temperatureMaxTime: Date?
     
     /// The apparent or "feels like" temperature at the given time in degrees Fahrenheit. Not defined on `Forecast`'s `daily` `DataPoint`s.
     public let apparentTemperature: Float?
@@ -75,13 +75,13 @@ public struct DataPoint {
     public let apparentTemperatureMin: Float?
     
     /// The time at which the minimum apparent or "feels like" temperature will occur on the given day in degrees Fahrenheit. Only defined on `Forecast`'s `daily` `DataPoint`s.
-    public let apparentTemperatureMinTime: NSDate?
+    public let apparentTemperatureMinTime: Date?
     
     /// The maximum apparent or "feels like" temperature on the given day in degrees Fahrenheit. Only defined on `Forecast`'s `daily` `DataPoint`s.
     public let apparentTemperatureMax: Float?
     
     /// The time at which the maximum apparent or "feels like" temperature will occur on the given day in degrees Fahrenheit. Only defined on `Forecast`'s `daily` `DataPoint`s.
-    public let apparentTemperatureMaxTime: NSDate?
+    public let apparentTemperatureMaxTime: Date?
     
     /// The dew point at the given time in degrees Fahrenheit.
     public let dewPoint: Float?
@@ -115,7 +115,7 @@ public struct DataPoint {
         - returns: A new `DataPoint` filled with data from the given JSON object.
     */
     public init(fromJSON json: NSDictionary) {
-        time = NSDate(timeIntervalSince1970: json["time"] as! Double)
+        time = Date(timeIntervalSince1970: json["time"] as! Double)
         summary = json["summary"] as? String
         if let jsonIcon = json["icon"] as? String {
             icon = Icon(rawValue: jsonIcon)
@@ -123,12 +123,12 @@ public struct DataPoint {
             icon = nil
         }
         if let jsonSunriseTime = json["sunriseTime"] as? Double {
-            sunriseTime = NSDate(timeIntervalSince1970: jsonSunriseTime)
+            sunriseTime = Date(timeIntervalSince1970: jsonSunriseTime)
         } else {
             sunriseTime = nil
         }
         if let jsonSunsetTime = json["sunsetTime"] as? Double {
-            sunsetTime = NSDate(timeIntervalSince1970: jsonSunsetTime)
+            sunsetTime = Date(timeIntervalSince1970: jsonSunsetTime)
         } else {
             sunsetTime = nil
         }
@@ -138,7 +138,7 @@ public struct DataPoint {
         precipIntensity = json["precipIntensity"] as? Float
         precipIntensityMax = json["precipIntensityMax"] as? Float
         if let jsonPrecipIntensityMaxTime = json["precipIntensityMaxTime"] as? Double {
-            precipIntensityMaxTime = NSDate(timeIntervalSince1970: jsonPrecipIntensityMaxTime)
+            precipIntensityMaxTime = Date(timeIntervalSince1970: jsonPrecipIntensityMaxTime)
         } else {
             precipIntensityMaxTime = nil
         }
@@ -152,26 +152,26 @@ public struct DataPoint {
         temperature = json["temperature"] as? Float
         temperatureMin = json["temperatureMin"] as? Float
         if let jsonTemperatureMinTime = json["temperatureMinTime"] as? Double {
-            temperatureMinTime = NSDate(timeIntervalSince1970: jsonTemperatureMinTime)
+            temperatureMinTime = Date(timeIntervalSince1970: jsonTemperatureMinTime)
         } else {
             temperatureMinTime = nil
         }
         temperatureMax = json["temperatureMax"] as? Float
         if let jsonTemperatureMaxTime = json["temperatureMaxTime"] as? Double {
-            temperatureMaxTime = NSDate(timeIntervalSince1970: jsonTemperatureMaxTime)
+            temperatureMaxTime = Date(timeIntervalSince1970: jsonTemperatureMaxTime)
         } else {
             temperatureMaxTime = nil
         }
         apparentTemperature = json["apparentTemperature"] as? Float
         apparentTemperatureMin = json["apparentTemperatureMin"] as? Float
         if let jsonApparentTemperatureMinTime = json["apparentTemperatureMinTime"] as? Double {
-            apparentTemperatureMinTime = NSDate(timeIntervalSince1970: jsonApparentTemperatureMinTime)
+            apparentTemperatureMinTime = Date(timeIntervalSince1970: jsonApparentTemperatureMinTime)
         } else {
             apparentTemperatureMinTime = nil
         }
         apparentTemperatureMax = json["apparentTemperatureMax"] as? Float
         if let jsonApparentTemperatureMaxTime = json["apparentTemperatureMaxTime"] as? Double {
-            apparentTemperatureMaxTime = NSDate(timeIntervalSince1970: jsonApparentTemperatureMaxTime)
+            apparentTemperatureMaxTime = Date(timeIntervalSince1970: jsonApparentTemperatureMaxTime)
         } else {
             apparentTemperatureMaxTime = nil
         }

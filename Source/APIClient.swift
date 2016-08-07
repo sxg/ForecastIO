@@ -12,7 +12,7 @@ import Foundation
 public class APIClient : NSObject {
     
     private let apiKey: String
-    private let session = NSURLSession.sharedSession()
+    private let session = URLSession.shared
     private static let forecastIOURL = "https://api.forecast.io/forecast/"
     
     /// Units in which the `Forecast` response will be provided. US is the default if no units are specified as per the Dark Sky API docs.
@@ -55,18 +55,18 @@ public class APIClient : NSObject {
         - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
         - parameter completion:             A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
-    public func getForecast(latitude lat: Double, longitude lon: Double, time: NSDate, excludeForecastFields: [ForecastField] = [], completion: (forecast: Forecast?, error: NSError?) -> Void) {
+    public func getForecast(latitude lat: Double, longitude lon: Double, time: Date, excludeForecastFields: [ForecastField] = [], completion: (forecast: Forecast?, error: NSError?) -> Void) {
         let url = buildForecastURL(latitude: lat, longitude: lon, time: time, extendHourly: false, excludeForecastFields: excludeForecastFields)
         getForecast(url: url, completion: completion)
     }
     
-    private func getForecast(url url: NSURL, completion: (forecast: Forecast?, error: NSError?) -> Void) {
-        let task = self.session.dataTaskWithURL(url, completionHandler: { (data: NSData?, response, err: NSError?) -> Void in
+    private func getForecast(url: URL, completion: (forecast: Forecast?, error: NSError?) -> Void) {
+        let task = self.session.dataTask(with: url, completionHandler: { (data: Data?, response, err: NSError?) -> Void in
             if err != nil {
                 completion(forecast: nil, error: err)
             } else {
                 do {
-                    let jsonObject = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers)
+                    let jsonObject = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
                     if let json = jsonObject as? NSDictionary {
                         let forecast = Forecast(fromJSON: json)
                         completion(forecast: forecast, error: err)
@@ -85,38 +85,38 @@ public class APIClient : NSObject {
         task.resume()
     }
     
-    private func buildForecastURL(latitude lat: Double, longitude lon: Double, time: NSDate?, extendHourly: Bool, excludeForecastFields: [ForecastField]) -> NSURL {
+    private func buildForecastURL(latitude lat: Double, longitude lon: Double, time: Date?, extendHourly: Bool, excludeForecastFields: [ForecastField]) -> URL {
         //  Build URL path
         var urlString = APIClient.forecastIOURL + apiKey + "/\(lat),\(lon)"
         if let time = time {
             let timeString = String(format: "%.0f", time.timeIntervalSince1970)
-            urlString.appendContentsOf(",\(timeString)")
+            urlString.append(",\(timeString)")
         }
         
         //  Build URL query parameters
-        let urlBuilder = NSURLComponents(string: urlString)!
-        var queryItems: [NSURLQueryItem] = []
+        var urlBuilder = URLComponents(string: urlString)!
+        var queryItems: [URLQueryItem] = []
         if let units = self.units {
-            queryItems.append(NSURLQueryItem(name: "units", value: units.description))
+            queryItems.append(URLQueryItem(name: "units", value: units.description))
         }
         if let language = self.language {
-            queryItems.append(NSURLQueryItem(name: "lang", value: language.description))
+            queryItems.append(URLQueryItem(name: "lang", value: language.description))
         }
         if extendHourly {
-            queryItems.append(NSURLQueryItem(name: "extend", value: "hourly"))
+            queryItems.append(URLQueryItem(name: "extend", value: "hourly"))
         }
         if !excludeForecastFields.isEmpty {
             var excludeForecastFieldsString = ""
             for forecastField in excludeForecastFields {
                 if excludeForecastFieldsString != "" {
-                    excludeForecastFieldsString.appendContentsOf(",")
+                    excludeForecastFieldsString.append(",")
                 }
-                excludeForecastFieldsString.appendContentsOf("\(forecastField.description)")
+                excludeForecastFieldsString.append("\(forecastField.description)")
             }
-            queryItems.append(NSURLQueryItem(name: "exclude", value: excludeForecastFieldsString))
+            queryItems.append(URLQueryItem(name: "exclude", value: excludeForecastFieldsString))
         }
         urlBuilder.queryItems = queryItems
     
-        return urlBuilder.URL!
+        return urlBuilder.url!
     }
 }
