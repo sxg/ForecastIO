@@ -41,7 +41,7 @@ public class APIClient : NSObject {
         - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
         - parameter completion:             A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
-    public func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeForecastFields: [ForecastField] = [], completion: (forecast: Forecast?, error: NSError?) -> Void) {
+    public func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeForecastFields: [ForecastField] = [], completion: (forecast: Forecast?, error: Error?) -> Void) {
         let url = buildForecastURL(latitude: lat, longitude: lon, time: nil, extendHourly: extendHourly, excludeForecastFields: excludeForecastFields)
         getForecast(url: url, completion: completion)
     }
@@ -55,13 +55,13 @@ public class APIClient : NSObject {
         - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
         - parameter completion:             A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
-    public func getForecast(latitude lat: Double, longitude lon: Double, time: Date, excludeForecastFields: [ForecastField] = [], completion: (forecast: Forecast?, error: NSError?) -> Void) {
+    public func getForecast(latitude lat: Double, longitude lon: Double, time: Date, excludeForecastFields: [ForecastField] = [], completion: (forecast: Forecast?, error: Error?) -> Void) {
         let url = buildForecastURL(latitude: lat, longitude: lon, time: time, extendHourly: false, excludeForecastFields: excludeForecastFields)
         getForecast(url: url, completion: completion)
     }
     
-    private func getForecast(url: URL, completion: (forecast: Forecast?, error: NSError?) -> Void) {
-        let task = self.session.dataTask(with: url, completionHandler: { (data: Data?, response, err: NSError?) -> Void in
+    private func getForecast(url: URL, completion: (forecast: Forecast?, error: Error?) -> Void) {
+        let task = self.session.dataTask(with: url, completionHandler: { (data: Data?, response, err: Error?) -> Void in
             if err != nil {
                 completion(forecast: nil, error: err)
             } else {
