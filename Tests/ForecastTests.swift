@@ -18,13 +18,13 @@ class ForecastTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        let forecastJSONPath = NSBundle(forClass: self.dynamicType).pathForResource("forecast", ofType: "json")!
-        let forecastJSONData = NSData(contentsOfFile: forecastJSONPath)!
-        self.forecastJSON = try! NSJSONSerialization.JSONObjectWithData(forecastJSONData, options: .MutableContainers) as! NSDictionary
+        let forecastJSONPath = Bundle(for: self.dynamicType).path(forResource: "forecast", ofType: "json")!
+        let forecastJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastJSONPath))
+        self.forecastJSON = try! JSONSerialization.jsonObject(with: forecastJSONData, options: .mutableContainers) as! NSDictionary
         
-        let forecastBareJSONPath = NSBundle(forClass: self.dynamicType).pathForResource("forecast_bare", ofType: "json")!
-        let forecastBareJSONData = NSData(contentsOfFile: forecastBareJSONPath)!
-        self.forecastBareJSON = try! NSJSONSerialization.JSONObjectWithData(forecastBareJSONData, options: .MutableContainers) as! NSDictionary
+        let forecastBareJSONPath = Bundle(for: self.dynamicType).path(forResource: "forecast_bare", ofType: "json")!
+        let forecastBareJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastBareJSONPath))
+        self.forecastBareJSON = try! JSONSerialization.jsonObject(with: forecastBareJSONData, options: .mutableContainers) as! NSDictionary
     }
     
     override func tearDown() {
