@@ -59,7 +59,7 @@ class APIClientTests: XCTestCase {
     
     func testGetForecastAtTime() {
         //  Given
-        let time = NSDate()
+        let time = Date()
         let timeString = String(format: "%.0f", time.timeIntervalSince1970)
         let hostStub = isHost("api.forecast.io")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude),\(timeString)")
@@ -194,7 +194,7 @@ class APIClientTests: XCTestCase {
     
     func testGetForecastWithoutInternet() {
         //  Given
-        let notConnectedError = NSError(domain:NSURLErrorDomain, code:Int(CFNetworkErrors.CFURLErrorNotConnectedToInternet.rawValue), userInfo:nil)
+        let notConnectedError = NSError(domain:NSURLErrorDomain, code:Int(CFNetworkErrors.cfurlErrorNotConnectedToInternet.rawValue), userInfo:nil)
         stub(isHost("api.forecast.io")) { _ in
             return OHHTTPStubsResponse(error:notConnectedError)
         }
