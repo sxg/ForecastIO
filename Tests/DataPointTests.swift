@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import Nimble
 @testable import ForecastIO
 
 class DataPointTests: XCTestCase {
@@ -33,11 +32,11 @@ class DataPointTests: XCTestCase {
         let dataPoint = DataPoint(fromJSON: self.dataPointJSON)
         
         //  Then
-        expect(dataPoint).toNot(beNil())
-        expect(dataPoint.time).to(equal(Date(timeIntervalSince1970: 1453575677)))
-        expect(dataPoint.summary).to(equal("Snow"))
-        expect(dataPoint.icon).to(equal(Icon.Snow))
-        expect(dataPoint.precipType).to(equal(Precipitation.Snow))
+        XCTAssertNotNil(dataPoint)
+        XCTAssertEqual(dataPoint.time, Date(timeIntervalSince1970: 1453575677))
+        XCTAssertEqual(dataPoint.summary, "Snow")
+        XCTAssertEqual(dataPoint.icon, Icon.Snow)
+        XCTAssertEqual(dataPoint.precipType, Precipitation.Snow)
     }
     
 }
