@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import Nimble
 @testable import ForecastIO
 
 class FlagTests: XCTestCase {
@@ -33,7 +32,7 @@ class FlagTests: XCTestCase {
         let flag = Flag(fromJSON: flagJSON)
         
         //  Then
-        expect(flag).toNot(beNil())
+        XCTAssertNotNil(flag)
     }
     
 }
