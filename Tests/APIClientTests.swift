@@ -7,9 +7,8 @@
 //
 
 import XCTest
-import Nimble
-@testable import ForecastIO
 import OHHTTPStubs
+@testable import ForecastIO
 
 class APIClientTests: XCTestCase {
     
@@ -29,11 +28,12 @@ class APIClientTests: XCTestCase {
         let client = APIClient(apiKey: apiKey)
         
         //  Then
-        expect(client).toNot(beNil())
+        XCTAssertNotNil(client)
     }
     
     func testGetForecast() {
         //  Given
+        let expect = expectation(description: "Get forecast")
         let hostStub = isHost("api.forecast.io")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
         let methodStub = isMethodGET()
@@ -50,16 +50,25 @@ class APIClientTests: XCTestCase {
         client.getForecast(latitude: latitude, longitude: longitude) { (currentForecast, error) -> Void in
             forecast = currentForecast
             err = error
+            if !err {
+                expect.fulfill()
+            }
         }
         
         //  Then
-        expect(forecast).toEventuallyNot(beNil())
-        expect(err).toEventually(beNil())
+        waitForExpectations(timeout: 5, handler: { error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
+            
+            XCTAssertNotNil(forecast)
+        })
     }
     
     func testGetForecastAtTime() {
         //  Given
-        let time = NSDate()
+        let expect = expectation(description: "Get forecast at time")
+        let time = Date()
         let timeString = String(format: "%.0f", time.timeIntervalSince1970)
         let hostStub = isHost("api.forecast.io")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude),\(timeString)")
@@ -78,15 +87,23 @@ class APIClientTests: XCTestCase {
         client.getForecast(latitude: latitude, longitude: longitude, time: time) { (aForecast, error) -> Void in
             forecast = aForecast
             err = error
+            if !err {
+                expect.fulfill()
+            }
         }
         
         //  Then
-        expect(forecast).toEventuallyNot(beNil())
-        expect(err).toEventually(beNil())
+        waitForExpectations(timeout: 5, handler: { error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
+            XCTAssertNotNil(forecast)
+        })
     }
     
     func testGetForecastWithSIUnits() {
         //  Given
+        let expect = expectation(description: "Get forecast with SI units")
         let hostStub = isHost("api.forecast.io")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
         let methodStub = isMethodGET()
@@ -105,15 +122,23 @@ class APIClientTests: XCTestCase {
         client.getForecast(latitude: latitude, longitude: longitude) { (aForecast, error) -> Void in
             forecast = aForecast
             err = error
+            if !err {
+                expect.fulfill()
+            }
         }
         
         //  Then
-        expect(forecast).toEventuallyNot(beNil())
-        expect(err).toEventually(beNil())
+        waitForExpectations(timeout: 5, handler: { error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
+            XCTAssertNotNil(forecast)
+        })
     }
     
     func testGetForecastWithFrenchLanguage() {
         //  Given
+        let expect = expectation(description: "Get forecast with French language")
         let hostStub = isHost("api.forecast.io")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
         let methodStub = isMethodGET()
@@ -132,15 +157,23 @@ class APIClientTests: XCTestCase {
         client.getForecast(latitude: latitude, longitude: longitude) { (aForecast, error) -> Void in
             forecast = aForecast
             err = error
+            if !err {
+                expect.fulfill()
+            }
         }
         
         //  Then
-        expect(forecast).toEventuallyNot(beNil())
-        expect(err).toEventually(beNil())
+        waitForExpectations(timeout: 5, handler: { error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
+            XCTAssertNotNil(forecast)
+        })
     }
     
     func testGetForecastWithExtendedHourly() {
         //  Given
+        let expect = expectation(description: "Get forecast wtih extended hourly")
         let hostStub = isHost("api.forecast.io")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
         let methodStub = isMethodGET()
@@ -158,15 +191,23 @@ class APIClientTests: XCTestCase {
         client.getForecast(latitude: latitude, longitude: longitude, extendHourly: true) { (aForecast, error) -> Void in
             forecast = aForecast
             err = error
+            if !err {
+                expect.fulfill()
+            }
         }
         
         //  Then
-        expect(forecast).toEventuallyNot(beNil())
-        expect(err).toEventually(beNil())
+        waitForExpectations(timeout: 5, handler: { error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
+            XCTAssertNotNil(forecast)
+        })
     }
     
     func testGetForecastWithExcludedForecastFields() {
         //  Given
+        let expect = expectation(description: "Get forecast wtih excluded forecast fields")
         let hostStub = isHost("api.forecast.io")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
         let methodStub = isMethodGET()
@@ -184,17 +225,24 @@ class APIClientTests: XCTestCase {
         client.getForecast(latitude: latitude, longitude: longitude, excludeForecastFields: [.Minutely, .Daily]) { (aForecast, error) -> Void in
             forecast = aForecast
             err = error
+            if !err {
+                expect.fulfill()
+            }
         }
         
         //  Then
-        expect(forecast).toEventuallyNot(beNil())
-        expect(err).toEventually(beNil())
-
+        waitForExpectations(timeout: 5, handler: { error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
+            XCTAssertNotNil(forecast)
+        })
     }
     
     func testGetForecastWithoutInternet() {
         //  Given
-        let notConnectedError = NSError(domain:NSURLErrorDomain, code:Int(CFNetworkErrors.CFURLErrorNotConnectedToInternet.rawValue), userInfo:nil)
+        let expect = expectation(description: "Get forecast without internet")
+        let notConnectedError = NSError(domain:NSURLErrorDomain, code:Int(CFNetworkErrors.cfurlErrorNotConnectedToInternet.rawValue), userInfo:nil)
         stub(isHost("api.forecast.io")) { _ in
             return OHHTTPStubsResponse(error:notConnectedError)
         }
@@ -206,15 +254,23 @@ class APIClientTests: XCTestCase {
         client.getForecast(latitude: latitude, longitude: longitude) { (aForecast, error) -> Void in
             forecast = aForecast
             err = error
+            if err {
+                expect.fulfill()
+            }
         }
         
         //  Then
-        expect(forecast).toEventually(beNil())
-        expect(err).toEventually(equal(notConnectedError))
+        waitForExpectations(timeout: 5, handler: { error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
+            XCTAssertNil(forecast)
+        })
     }
     
     func testGetForecastWithBadJSON() {
         //  Given
+        let expect = expectation(description: "Get forecast with bad JSON")
         stub(isHost("api.forecast.io")) { _ in
             //  Return empty body instead of JSON
             return fixture("", headers: ["Content-Type": "application/json"])
@@ -227,13 +283,21 @@ class APIClientTests: XCTestCase {
         client.getForecast(latitude: latitude, longitude: longitude) { (aForecast, error) -> Void in
             forecast = aForecast
             err = error
+            if err {
+                expect.fulfill()
+            }
         }
         
         //  Then
-        expect(forecast).toEventually(beNil())
-        expect(err).toEventuallyNot(beNil())
-        expect(err!.domain).toEventually(equal(ForecastIOErrorDomain))
-        expect(err!.code).toEventually(equal(ForecastIOErrorBadJSON))
+        waitForExpectations(timeout: 5, handler: { error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
+            XCTAssertNil(forecast)
+            XCTAssertNotNil(err)
+            XCTAssertEqual(err!.domain, ForecastIOErrorDomain)
+            XCTAssertEqual(err!.code, ForecastIOErrorBadJSON)
+        })
     }
     
 }
