@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import Nimble
 @testable import ForecastIO
 
 class ForecastFieldTests: XCTestCase {
@@ -16,12 +15,12 @@ class ForecastFieldTests: XCTestCase {
         //  Given
         //  When
         //  Then
-        expect(ForecastField.Currently.description).to(equal("currently"))
-        expect(ForecastField.Minutely.description).to(equal("minutely"))
-        expect(ForecastField.Hourly.description).to(equal("hourly"))
-        expect(ForecastField.Daily.description).to(equal("daily"))
-        expect(ForecastField.Alerts.description).to(equal("alerts"))
-        expect(ForecastField.Flags.description).to(equal("flags"))
+        XCTAssertEqual(ForecastField.Currently.description, "currently")
+        XCTAssertEqual(ForecastField.Minutely.description, "minutely")
+        XCTAssertEqual(ForecastField.Hourly.description, "hourly")
+        XCTAssertEqual(ForecastField.Daily.description, "daily")
+        XCTAssertEqual(ForecastField.Alerts.description, "alerts")
+        XCTAssertEqual(ForecastField.Flags.description, "flags")
     }
     
 }
