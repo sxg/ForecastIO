@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import Nimble
 @testable import ForecastIO
 
 class ForecastTests: XCTestCase {
@@ -37,15 +36,15 @@ class ForecastTests: XCTestCase {
         let forecast = Forecast(fromJSON: self.forecastJSON)
         
         //  Then
-        expect(forecast).toNot(beNil())
-        expect(forecast.latitude).to(equal(39.290385))
-        expect(forecast.longitude).to(equal(-76.612189))
-        expect(forecast.timezone).to(equal("America/New_York"))
-        expect(forecast.offset).to(equal(-5))
-        expect(forecast.currently).toNot(beNil())
-        expect(forecast.minutely).toNot(beNil())
-        expect(forecast.hourly).toNot(beNil())
-        expect(forecast.daily).toNot(beNil())
+        XCTAssertNotNil(forecast)
+        XCTAssertEqual(forecast.latitude, 39.290385)
+        XCTAssertEqual(forecast.longitude, -76.612189)
+        XCTAssertEqual(forecast.timezone, "America/New_York")
+        XCTAssertEqual(forecast.offset, -5)
+        XCTAssertNotNil(forecast.currently)
+        XCTAssertNotNil(forecast.minutely)
+        XCTAssertNotNil(forecast.hourly)
+        XCTAssertNotNil(forecast.daily)
     }
     
     func testInitBareFromJSON() {
@@ -54,15 +53,15 @@ class ForecastTests: XCTestCase {
         let forecast = Forecast(fromJSON: self.forecastBareJSON)
         
         //  Then
-        expect(forecast).toNot(beNil())
-        expect(forecast.latitude).to(equal(39.290385))
-        expect(forecast.longitude).to(equal(-76.612189))
-        expect(forecast.timezone).to(equal("America/New_York"))
-        expect(forecast.offset).to(beNil())
-        expect(forecast.currently).to(beNil())
-        expect(forecast.minutely).to(beNil())
-        expect(forecast.hourly).to(beNil())
-        expect(forecast.daily).to(beNil())
+        XCTAssertNotNil(forecast)
+        XCTAssertEqual(forecast.latitude, 39.290385)
+        XCTAssertEqual(forecast.longitude, -76.612189)
+        XCTAssertEqual(forecast.timezone, "America/New_York")
+        XCTAssertNil(forecast.offset)
+        XCTAssertNil(forecast.currently)
+        XCTAssertNil(forecast.minutely)
+        XCTAssertNil(forecast.hourly)
+        XCTAssertNil(forecast.daily)
     }
     
 }
