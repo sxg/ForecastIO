@@ -85,11 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/ForecastIO-OSX/ForecastIO.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Nimble-OSX/Nimble.framework"
   install_framework "$BUILT_PRODUCTS_DIR/OHHTTPStubs-OSX/OHHTTPStubs.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/ForecastIO-OSX/ForecastIO.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Nimble-OSX/Nimble.framework"
   install_framework "$BUILT_PRODUCTS_DIR/OHHTTPStubs-OSX/OHHTTPStubs.framework"
 fi

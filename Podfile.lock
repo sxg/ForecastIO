@@ -1,6 +1,5 @@
 PODS:
   - ForecastIO (2.1.1)
-  - Nimble (4.1.0)
   - OHHTTPStubs (4.8.0):
     - OHHTTPStubs/Default (= 4.8.0)
   - OHHTTPStubs/Core (4.8.0)
@@ -19,7 +18,6 @@ PODS:
 
 DEPENDENCIES:
   - ForecastIO (from `./`)
-  - Nimble (~> 4.0)
   - OHHTTPStubs (~> 4.7)
   - OHHTTPStubs/Swift (~> 4.7)
 
@@ -29,9 +27,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   ForecastIO: a195c8ec7bd3f23ed856fce1bbf2f141abc45dc8
-  Nimble: 97a0a4cae5124c117115634b2d055d8c97d0af19
   OHHTTPStubs: b393565822317305b87a1440d4c7aff131679f66
 
-PODFILE CHECKSUM: 1e857799eaf17cd7558f3fdad7c6ba0446a0a1a9
+PODFILE CHECKSUM: 9d00fec370fd838a8e0f5c71e03a2b31960f8543
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.0.1
