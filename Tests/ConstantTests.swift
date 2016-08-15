@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import Nimble
 @testable import ForecastIO
 
 class ConstantTests: XCTestCase {
@@ -16,8 +15,8 @@ class ConstantTests: XCTestCase {
         //  Given
         //  When
         //  Then
-        expect(ForecastIOErrorDomain).to(equal("ForecastIOErrorDomain"))
-        expect(ForecastIOErrorBadJSON).to(equal(1))
+        XCTAssertEqual(ForecastIOErrorDomain, "ForecastIOErrorDomain")
+        XCTAssertEqual(ForecastIOErrorBadJSON, 1)
     }
 
 }
