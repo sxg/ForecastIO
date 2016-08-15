@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import Nimble
 @testable import ForecastIO
 
 class DataBlockTests: XCTestCase {
@@ -39,10 +38,10 @@ class DataBlockTests: XCTestCase {
         let dataBlock = DataBlock(fromJSON: self.dataBlockJSON)
         
         //  Then
-        expect(dataBlock).toNot(beNil())
-        expect(dataBlock.summary).to(equal("Snow for the hour."))
-        expect(dataBlock.icon).to(equal(Icon.Snow))
-        expect(dataBlock.data).toNot(beEmpty())
+        XCTAssertNotNil(dataBlock)
+        XCTAssertEqual(dataBlock.summary, "Snow for the hour.")
+        XCTAssertEqual(dataBlock.icon, Icon.Snow)
+        XCTAssertFalse(dataBlock.data.isEmpty)
     }
     
     func testInitNoOptionalsFromJSON() {
@@ -51,10 +50,10 @@ class DataBlockTests: XCTestCase {
         let dataBlock = DataBlock(fromJSON: self.dataBlockNoOptionalsJSON)
         
         //  Then
-        expect(dataBlock).toNot(beNil())
-        expect(dataBlock.summary).to(beNil())
-        expect(dataBlock.icon).to(beNil())
-        expect(dataBlock.data).to(beNil())
+        XCTAssertNotNil(dataBlock)
+        XCTAssertNil(dataBlock.summary)
+        XCTAssertNil(dataBlock.icon)
+        XCTAssertNil(dataBlock.data)
     }
     
 }
