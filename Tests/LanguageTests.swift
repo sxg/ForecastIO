@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import Nimble
 @testable import ForecastIO
 
 class LanguageTests: XCTestCase {
@@ -16,35 +15,35 @@ class LanguageTests: XCTestCase {
         //  Given
         //  When
         //  Then
-        expect(Language.Arabic.description).to(equal("ar"))
-        expect(Language.Belarusian.description).to(equal("be"))
-        expect(Language.Bosnian.description).to(equal("bs"))
-        expect(Language.Czech.description).to(equal("cs"))
-        expect(Language.German.description).to(equal("de"))
-        expect(Language.Greek.description).to(equal("el"))
-        expect(Language.English.description).to(equal("en"))
-        expect(Language.Spanish.description).to(equal("es"))
-        expect(Language.French.description).to(equal("fr"))
-        expect(Language.Croatian.description).to(equal("hr"))
-        expect(Language.Hungarian.description).to(equal("hu"))
-        expect(Language.Indonesian.description).to(equal("id"))
-        expect(Language.Italian.description).to(equal("it"))
-        expect(Language.Icelandic.description).to(equal("is"))
-        expect(Language.Cornish.description).to(equal("kw"))
-        expect(Language.NorwegianBokmål.description).to(equal("nb"))
-        expect(Language.Dutch.description).to(equal("nl"))
-        expect(Language.Polish.description).to(equal("pl"))
-        expect(Language.Portuguese.description).to(equal("pt"))
-        expect(Language.Russian.description).to(equal("ru"))
-        expect(Language.Slovak.description).to(equal("sk"))
-        expect(Language.Serbian.description).to(equal("sr"))
-        expect(Language.Swedish.description).to(equal("sv"))
-        expect(Language.Tetum.description).to(equal("tet"))
-        expect(Language.Turkish.description).to(equal("tr"))
-        expect(Language.Ukrainian.description).to(equal("uk"))
-        expect(Language.PigLatin.description).to(equal("x-pig-latin"))
-        expect(Language.SimplifiedChinese.description).to(equal("zh"))
-        expect(Language.TraditionalChinese.description).to(equal("zh-tw"))
+        XCTAssertEqual(Language.Arabic.description, "ar")
+        XCTAssertEqual(Language.Belarusian.description, "be")
+        XCTAssertEqual(Language.Bosnian.description, "bs")
+        XCTAssertEqual(Language.Czech.description, "cs")
+        XCTAssertEqual(Language.German.description, "de")
+        XCTAssertEqual(Language.Greek.description, "el")
+        XCTAssertEqual(Language.English.description, "en")
+        XCTAssertEqual(Language.Spanish.description, "es")
+        XCTAssertEqual(Language.French.description, "fr")
+        XCTAssertEqual(Language.Croatian.description, "hr")
+        XCTAssertEqual(Language.Hungarian.description, "hu")
+        XCTAssertEqual(Language.Indonesian.description, "id")
+        XCTAssertEqual(Language.Italian.description, "it")
+        XCTAssertEqual(Language.Icelandic.description, "is")
+        XCTAssertEqual(Language.Cornish.description, "kw")
+        XCTAssertEqual(Language.NorwegianBokmål.description, "nb")
+        XCTAssertEqual(Language.Dutch.description, "nl")
+        XCTAssertEqual(Language.Polish.description, "pl")
+        XCTAssertEqual(Language.Portuguese.description, "pt")
+        XCTAssertEqual(Language.Russian.description, "ru")
+        XCTAssertEqual(Language.Slovak.description, "sk")
+        XCTAssertEqual(Language.Serbian.description, "sr")
+        XCTAssertEqual(Language.Swedish.description, "sv")
+        XCTAssertEqual(Language.Tetum.description, "tet")
+        XCTAssertEqual(Language.Turkish.description, "tr")
+        XCTAssertEqual(Language.Ukrainian.description, "uk")
+        XCTAssertEqual(Language.PigLatin.description, "x-pig-latin")
+        XCTAssertEqual(Language.SimplifiedChinese.description, "zh")
+        XCTAssertEqual(Language.TraditionalChinese.description, "zh-tw")
     }
 
 }
