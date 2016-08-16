@@ -41,7 +41,7 @@ public class APIClient : NSObject {
         - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
         - parameter completion:             A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
-    public func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeForecastFields: [ForecastField] = [], completion: (forecast: Forecast?, error: Error?) -> Void) {
+    public func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeForecastFields: [ForecastField] = [], completion: @escaping (_ forecast: Forecast?, _ error: Error?) -> Void) {
         let url = buildForecastURL(latitude: lat, longitude: lon, time: nil, extendHourly: extendHourly, excludeForecastFields: excludeForecastFields)
         getForecast(url, completion: completion)
     }
@@ -55,21 +55,21 @@ public class APIClient : NSObject {
         - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
         - parameter completion:             A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
-    public func getForecast(latitude lat: Double, longitude lon: Double, time: Date, excludeForecastFields: [ForecastField] = [], completion: (forecast: Forecast?, error: Error?) -> Void) {
+    public func getForecast(latitude lat: Double, longitude lon: Double, time: Date, excludeForecastFields: [ForecastField] = [], completion: @escaping (_ forecast: Forecast?, _ error: Error?) -> Void) {
         let url = buildForecastURL(latitude: lat, longitude: lon, time: time, extendHourly: false, excludeForecastFields: excludeForecastFields)
         getForecast(url, completion: completion)
     }
     
-    private func getForecast(_ url: URL, completion: (forecast: Forecast?, error: Error?) -> Void) {
+    private func getForecast(_ url: URL, completion: @escaping (_ forecast: Forecast?, _ error: Error?) -> Void) {
         let task = self.session.dataTask(with: url, completionHandler: { (data: Data?, response, err: Error?) -> Void in
             if err != nil {
-                completion(forecast: nil, error: err)
+                completion(nil, err)
             } else {
                 do {
                     let jsonObject = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
                     if let json = jsonObject as? NSDictionary {
                         let forecast = Forecast(fromJSON: json)
-                        completion(forecast: forecast, error: err)
+                        completion(forecast, err)
                     }
                 } catch _ {
                     let badJSONErrorUserInfo = [
@@ -78,7 +78,7 @@ public class APIClient : NSObject {
                         NSLocalizedFailureReasonErrorKey : "Could not parse data received from \(url.absoluteString)."
                     ]
                     let badJSONError = NSError(domain: ForecastIOErrorDomain, code: ForecastIOErrorBadJSON, userInfo: badJSONErrorUserInfo)
-                    completion(forecast: nil, error: badJSONError)
+                    completion(nil, badJSONError)
                 }
             }
         })

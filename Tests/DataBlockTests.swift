@@ -17,12 +17,12 @@ class DataBlockTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        let forecastJSONPath = Bundle(for: self.dynamicType).path(forResource: "forecast", ofType: "json")!
+        let forecastJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast", ofType: "json")!
         let forecastJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastJSONPath))
         let forecastJSON = try! JSONSerialization.jsonObject(with: forecastJSONData, options: .mutableContainers) as! NSDictionary
         self.dataBlockJSON = forecastJSON["minutely"] as! NSDictionary
         
-        let forecastNoOptionalsJSONPath = Bundle(for: self.dynamicType).path(forResource: "forecast_no_optionals", ofType: "json")!
+        let forecastNoOptionalsJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast_no_optionals", ofType: "json")!
         let forecastNoOptionalsJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastNoOptionalsJSONPath))
         let forecastNoOptionalsJSON = try! JSONSerialization.jsonObject(with: forecastNoOptionalsJSONData, options: .mutableContainers) as! NSDictionary
         self.dataBlockNoOptionalsJSON = forecastNoOptionalsJSON["minutely"] as! NSDictionary

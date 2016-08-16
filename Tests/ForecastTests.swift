@@ -17,11 +17,11 @@ class ForecastTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        let forecastJSONPath = Bundle(for: self.dynamicType).path(forResource: "forecast", ofType: "json")!
+        let forecastJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast", ofType: "json")!
         let forecastJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastJSONPath))
         self.forecastJSON = try! JSONSerialization.jsonObject(with: forecastJSONData, options: .mutableContainers) as! NSDictionary
         
-        let forecastBareJSONPath = Bundle(for: self.dynamicType).path(forResource: "forecast_bare", ofType: "json")!
+        let forecastBareJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast_bare", ofType: "json")!
         let forecastBareJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastBareJSONPath))
         self.forecastBareJSON = try! JSONSerialization.jsonObject(with: forecastBareJSONData, options: .mutableContainers) as! NSDictionary
     }

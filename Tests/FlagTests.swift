@@ -16,7 +16,7 @@ class FlagTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        let forecastJSONPath = Bundle(for: self.dynamicType).path(forResource: "forecast", ofType: "json")!
+        let forecastJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast", ofType: "json")!
         let forecastJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastJSONPath))
         let forecastJSON = try! JSONSerialization.jsonObject(with: forecastJSONData, options: .mutableContainers) as! NSDictionary
         self.flagJSON = forecastJSON["flags"] as! NSDictionary
