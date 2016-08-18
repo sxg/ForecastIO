@@ -3,8 +3,8 @@ use_frameworks!
 
 def testing_pods
     pod "ForecastIO", :path => "./"
-    pod "OHHTTPStubs", "~> 4.7"
-    pod "OHHTTPStubs/Swift", "~> 4.7"
+    pod "OHHTTPStubs"
+    pod "OHHTTPStubs/Swift"
 end
 
 target 'ForecastIO iOS Tests' do
