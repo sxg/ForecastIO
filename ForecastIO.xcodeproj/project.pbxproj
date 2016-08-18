@@ -568,7 +568,6 @@
 				LastUpgradeCheck = 0800;
 				TargetAttributes = {
 					39ED6CDC99672303F992B722C0ABD571 = {
-						DevelopmentTeam = 76333YNXLE;
 						LastSwiftMigration = 0800;
 					};
 					4A8B23501D447FB300ACBAA8 = {
@@ -578,7 +577,6 @@
 					};
 					D4446E6F1C51538000FBC8A8 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 76333YNXLE;
 						LastSwiftMigration = 0800;
 					};
 					D4446E781C51538000FBC8A8 = {
@@ -588,11 +586,9 @@
 						ProvisioningStyle = Automatic;
 					};
 					D4A480641C507CE70053EB05 = {
-						DevelopmentTeam = 76333YNXLE;
 						LastSwiftMigration = 0800;
 					};
 					D4A4807D1C507D730053EB05 = {
-						DevelopmentTeam = 76333YNXLE;
 						LastSwiftMigration = 0800;
 					};
 					D4DE2AC91C513EA00063A7CA = {
@@ -1195,7 +1191,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 76333YNXLE;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1335,7 +1331,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 76333YNXLE;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1463,7 +1459,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 76333YNXLE;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1533,7 +1529,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 76333YNXLE;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
