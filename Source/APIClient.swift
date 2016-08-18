@@ -9,17 +9,17 @@
 import Foundation
 
 /// A class to interact with the Dark Sky API.
-public class APIClient : NSObject {
+open class APIClient : NSObject {
     
-    private let apiKey: String
-    private let session = URLSession.shared
-    private static let forecastIOURL = "https://api.forecast.io/forecast/"
+    fileprivate let apiKey: String
+    fileprivate let session = URLSession.shared
+    fileprivate static let forecastIOURL = "https://api.forecast.io/forecast/"
     
     /// Units in which the `Forecast` response will be provided. US is the default if no units are specified as per the Dark Sky API docs.
-    public var units: Units?
+    open var units: Units?
     
     /// Language in which the `Forecast` response's `DataBlock` and `DataPoint`'s `summary` properties will be provided. English is the default if no language is specified as per the Dark Sky API docs.
-    public var language: Language?
+    open var language: Language?
     
     /**
         Creates a new `APIClient` to interact with the Dark Sky API.
@@ -41,7 +41,7 @@ public class APIClient : NSObject {
         - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
         - parameter completion:             A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
-    public func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeForecastFields: [ForecastField] = [], completion: @escaping (_ forecast: Forecast?, _ error: Error?) -> Void) {
+    open func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeForecastFields: [ForecastField] = [], completion: @escaping (_ forecast: Forecast?, _ error: Error?) -> Void) {
         let url = buildForecastURL(latitude: lat, longitude: lon, time: nil, extendHourly: extendHourly, excludeForecastFields: excludeForecastFields)
         getForecast(url, completion: completion)
     }
@@ -55,12 +55,12 @@ public class APIClient : NSObject {
         - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
         - parameter completion:             A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
-    public func getForecast(latitude lat: Double, longitude lon: Double, time: Date, excludeForecastFields: [ForecastField] = [], completion: @escaping (_ forecast: Forecast?, _ error: Error?) -> Void) {
+    open func getForecast(latitude lat: Double, longitude lon: Double, time: Date, excludeForecastFields: [ForecastField] = [], completion: @escaping (_ forecast: Forecast?, _ error: Error?) -> Void) {
         let url = buildForecastURL(latitude: lat, longitude: lon, time: time, extendHourly: false, excludeForecastFields: excludeForecastFields)
         getForecast(url, completion: completion)
     }
     
-    private func getForecast(_ url: URL, completion: @escaping (_ forecast: Forecast?, _ error: Error?) -> Void) {
+    fileprivate func getForecast(_ url: URL, completion: @escaping (_ forecast: Forecast?, _ error: Error?) -> Void) {
         let task = self.session.dataTask(with: url, completionHandler: { (data: Data?, response, err: Error?) -> Void in
             if err != nil {
                 completion(nil, err)
@@ -85,7 +85,7 @@ public class APIClient : NSObject {
         task.resume()
     }
     
-    private func buildForecastURL(latitude lat: Double, longitude lon: Double, time: Date?, extendHourly: Bool, excludeForecastFields: [ForecastField]) -> URL {
+    fileprivate func buildForecastURL(latitude lat: Double, longitude lon: Double, time: Date?, extendHourly: Bool, excludeForecastFields: [ForecastField]) -> URL {
         //  Build URL path
         var urlString = APIClient.forecastIOURL + apiKey + "/\(lat),\(lon)"
         if let time = time {
