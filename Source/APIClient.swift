@@ -11,9 +11,9 @@ import Foundation
 /// A class to interact with the Dark Sky API.
 open class APIClient : NSObject {
     
-    fileprivate let apiKey: String
-    fileprivate let session = URLSession.shared
-    fileprivate static let forecastIOURL = "https://api.forecast.io/forecast/"
+    private let apiKey: String
+    private let session = URLSession.shared
+    private static let forecastIOURL = "https://api.forecast.io/forecast/"
     
     /// Units in which the `Forecast` response will be provided. US is the default if no units are specified as per the Dark Sky API docs.
     open var units: Units?
@@ -60,7 +60,7 @@ open class APIClient : NSObject {
         getForecast(url, completion: completion)
     }
     
-    fileprivate func getForecast(_ url: URL, completion: @escaping (_ forecast: Forecast?, _ error: Error?) -> Void) {
+    private func getForecast(_ url: URL, completion: @escaping (_ forecast: Forecast?, _ error: Error?) -> Void) {
         let task = self.session.dataTask(with: url, completionHandler: { (data: Data?, response, err: Error?) -> Void in
             if err != nil {
                 completion(nil, err)
@@ -85,7 +85,7 @@ open class APIClient : NSObject {
         task.resume()
     }
     
-    fileprivate func buildForecastURL(latitude lat: Double, longitude lon: Double, time: Date?, extendHourly: Bool, excludeForecastFields: [ForecastField]) -> URL {
+    private func buildForecastURL(latitude lat: Double, longitude lon: Double, time: Date?, extendHourly: Bool, excludeForecastFields: [ForecastField]) -> URL {
         //  Build URL path
         var urlString = APIClient.forecastIOURL + apiKey + "/\(lat),\(lon)"
         if let time = time {
