@@ -41,9 +41,9 @@ open class APIClient : NSObject {
         - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
         - parameter completion:             A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
-    open func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeForecastFields: [ForecastField] = [], completion: @escaping (_ forecast: Forecast?, _ error: Error?) -> Void) {
+    open func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeForecastFields: [ForecastField] = [], completion: @escaping (Forecast?, Error?) -> Void) {
         let url = buildForecastURL(latitude: lat, longitude: lon, time: nil, extendHourly: extendHourly, excludeForecastFields: excludeForecastFields)
-        getForecast(url, completion: completion)
+        getForecast(url: url, completion: completion)
     }
     
     /**
@@ -55,12 +55,12 @@ open class APIClient : NSObject {
         - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
         - parameter completion:             A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
-    open func getForecast(latitude lat: Double, longitude lon: Double, time: Date, excludeForecastFields: [ForecastField] = [], completion: @escaping (_ forecast: Forecast?, _ error: Error?) -> Void) {
+    open func getForecast(latitude lat: Double, longitude lon: Double, time: Date, excludeForecastFields: [ForecastField] = [], completion: @escaping (Forecast?, Error?) -> Void) {
         let url = buildForecastURL(latitude: lat, longitude: lon, time: time, extendHourly: false, excludeForecastFields: excludeForecastFields)
-        getForecast(url, completion: completion)
+        getForecast(url: url, completion: completion)
     }
     
-    private func getForecast(_ url: URL, completion: @escaping (_ forecast: Forecast?, _ error: Error?) -> Void) {
+    private func getForecast(url: URL, completion: @escaping (Forecast?, Error?) -> Void) {
         let task = self.session.dataTask(with: url, completionHandler: { (data: Data?, response, err: Error?) -> Void in
             if err != nil {
                 completion(nil, err)
