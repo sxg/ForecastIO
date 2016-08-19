@@ -26,15 +26,15 @@ To integrate using [Carthage](https://github.com/Carthage/Carthage), specify it 
 github "sxg/ForecastIO"
 ```
 
-### Swift 3
+### Swift 2.3 & 3
 
-A pre-release version of ForecastIO with Swift 3 compatibility is available on the [swift3](https://github.com/sxg/ForecastIO/tree/swift3) branch. To install it, simply add the following line to your `Podfile`:
+Pre-release versions of ForecastIO with Swift 2.3 and 3 compatibility are available on the [swift2.3](https://github.com/sxg/ForecastIO/tree/swift2.3) and [swift3](https://github.com/sxg/ForecastIO/tree/swift3) branches. To install, simply add the following line to your `Podfile`:
 
 ```ruby
 pod "ForecastIO", :git => "https://github.com/sxg/ForecastIO.git", :branch => "swift3"
 ```
 
-To integrate the Swift 3 compatible version using Carthage, specify it in your `Cartfile`:
+To integrate the Swift 2.3 or 3 compatible versions using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
 github "sxg/ForecastIO" "swift3"
