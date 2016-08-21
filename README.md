@@ -44,7 +44,7 @@ github "sxg/ForecastIO" "swift3"
 
 The full documentation for ForecastIO is available on [CocoaDocs](http://cocoadocs.org/docsets/ForecastIO).
 
-ForecastIO includes a full suite of unit tests with [100% code coverage](https://codecov.io/gh/sxg/ForecastIO).
+ForecastIO includes a full suite of unit tests with 100% code coverage.
 
 ## Usage
 
