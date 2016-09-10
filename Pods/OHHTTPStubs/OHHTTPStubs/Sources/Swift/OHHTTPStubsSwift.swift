@@ -27,6 +27,36 @@
  */
 
 
+#if swift(>=3.0)
+#else
+#if swift(>=2.2)
+    extension OHHTTPStubs {
+        fileprivate class func stubRequests(_ passingTest: OHHTTPStubsTestBlock, withStubResponse: OHHTTPStubsResponseBlock) -> OHHTTPStubsDescriptor {
+            return self.stubRequests(passingTest: passingTest, withStubResponse: withStubResponse)
+        }
+    }
+
+    extension Foundation.URLRequest {
+        var httpMethod: String? { return httpMethod }
+        var url: URL? { return url }
+    }
+
+    extension URLComponents {
+        fileprivate convenience init?(url: URL, resolvingAgainstBaseURL: Bool) {
+            (self as NSURLComponents).init(url: url, resolvingAgainstBaseURL: resolvingAgainstBaseURL)
+        }
+    }
+
+    private typealias URLRequest = Foundation.URLRequest
+
+    extension URLRequest {
+        fileprivate func value(forHTTPHeaderField key: String) -> String? {
+            return self.value(forHTTPHeaderField: key)
+        }
+    }
+#endif
+#endif
+
 
 // MARK: Syntaxic Sugar for OHHTTPStubs
 
@@ -40,7 +70,7 @@
  * - Returns: The `OHHTTPStubsResponse` instance that will stub with the given status code
  *            & headers, and use the file content as the response body.
  */
-public func fixture(_ filePath: String, status: Int32 = 200, headers: [NSObject: AnyObject]?) -> OHHTTPStubsResponse {
+public func fixture(_ filePath: String, status: Int32 = 200, headers: [AnyHashable: Any]?) -> OHHTTPStubsResponse {
     return OHHTTPStubsResponse(fileAtPath: filePath, statusCode: status, headers: headers)
 }
 
@@ -53,9 +83,15 @@ public func fixture(_ filePath: String, status: Int32 = 200, headers: [NSObject:
  * - Returns: The opaque `OHHTTPStubsDescriptor` that uniquely identifies the stub
  *            and can be later used to remove it with `removeStub:`
  */
+#if swift(>=3.0)
+public func stub(condition: @escaping OHHTTPStubsTestBlock, response: @escaping OHHTTPStubsResponseBlock) -> OHHTTPStubsDescriptor {
+    return OHHTTPStubs.stubRequests(passingTest: condition, withStubResponse: response)
+}
+#else
 public func stub(_ condition: OHHTTPStubsTestBlock, response: OHHTTPStubsResponseBlock) -> OHHTTPStubsDescriptor {
     return OHHTTPStubs.stubRequests(passingTest: condition, withStubResponse: response)
 }
+#endif
 
 
 
@@ -147,7 +183,26 @@ public func isHost(_ host: String) -> OHHTTPStubsTestBlock {
  *         should include in the `path` parameter unless you're testing relative URLs)
  */
 public func isPath(_ path: String) -> OHHTTPStubsTestBlock {
-    return { req in req.url?.path == path }
+    return { req in (req.url as URL?)?.path == path } // Need to cast to NSURL because URL.path does not behave like NSURL.path in Swift 3.0. URL.path does not stop at the first ';' and returns the entire string.
+}
+
+/**
+ * Matcher for testing the start of an `NSURLRequest`'s **path**.
+ *
+ * - Parameter path: The path to match
+ *
+ * - Returns: a matcher (OHHTTPStubsTestBlock) that succeeds only if the request
+ *            starts with the given path
+ *
+ * - Note: URL paths are usually absolute and thus starts with a '/' (which you
+ *         should include in the `path` parameter unless you're testing relative URLs)
+ */
+public func pathStartsWith(_ path: String) -> OHHTTPStubsTestBlock {
+#if swift(>=3.0)
+    return { req in req.url?.path.hasPrefix(path) ?? false }
+#else
+    return { req in req.url?.path?.hasPrefix(path) ?? false }
+#endif
 }
 
 /**
@@ -190,7 +245,31 @@ public func containsQueryParams(_ params: [String:String?]) -> OHHTTPStubsTestBl
     }
 }
 
+/**
+ * Matcher testing that the `NSURLRequest` headers contain a specific key
+ * - Parameter name: the name of the key to search for in the `NSURLRequest`'s **allHTTPHeaderFields** property
+ *  
+ * - Returns: a matcher that returns true if the `NSURLRequest`'s headers contain a value for the key name
+ */
+public func hasHeaderNamed(_ name: String) -> OHHTTPStubsTestBlock {
+    return { (req: URLRequest) -> Bool in
+        return req.value(forHTTPHeaderField: name) != nil
+    }
+}
 
+/**
+ * Matcher testing that the `NSURLRequest` headers contain a specific key and the key's value is equal to the parameter value
+ * - Parameter name: the name of the key to search for in the `NSURLRequest`'s **allHTTPHeaderFields** property
+ * - Parameter value: the value to compare against the header's value
+ *  
+ * - Returns: a matcher that returns true if the `NSURLRequest`'s headers contain a value for the key name and it's value
+ *            is equal to the parameter value
+ */
+public func hasHeaderNamed(_ name: String, value: String) -> OHHTTPStubsTestBlock {
+    return { (req: URLRequest) -> Bool in
+        return req.value(forHTTPHeaderField: name) == value
+    }
+}
 
 // MARK: Operators on OHHTTPStubsTestBlock
 
@@ -202,9 +281,15 @@ public func containsQueryParams(_ params: [String:String?]) -> OHHTTPStubsTestBl
  *
  * - Returns: a matcher (`OHHTTPStubsTestBlock`) that succeeds if either of the given matchers succeeds
  */
+#if swift(>=3.0)
+public func || (lhs: @escaping OHHTTPStubsTestBlock, rhs: @escaping OHHTTPStubsTestBlock) -> OHHTTPStubsTestBlock {
+    return { req in lhs(req) || rhs(req) }
+}
+#else
 public func || (lhs: OHHTTPStubsTestBlock, rhs: OHHTTPStubsTestBlock) -> OHHTTPStubsTestBlock {
     return { req in lhs(req) || rhs(req) }
 }
+#endif
 
 /**
  * Combine different `OHHTTPStubsTestBlock` matchers with an 'AND' operation.
@@ -214,9 +299,15 @@ public func || (lhs: OHHTTPStubsTestBlock, rhs: OHHTTPStubsTestBlock) -> OHHTTPS
  *
  * - Returns: a matcher (`OHHTTPStubsTestBlock`) that only succeeds if both of the given matchers succeeds
  */
+#if swift(>=3.0)
+public func && (lhs: @escaping OHHTTPStubsTestBlock, rhs: @escaping OHHTTPStubsTestBlock) -> OHHTTPStubsTestBlock {
+    return { req in lhs(req) && rhs(req) }
+}
+#else
 public func && (lhs: OHHTTPStubsTestBlock, rhs: OHHTTPStubsTestBlock) -> OHHTTPStubsTestBlock {
     return { req in lhs(req) && rhs(req) }
 }
+#endif
 
 /**
  * Create the opposite of a given `OHHTTPStubsTestBlock` matcher.
@@ -225,6 +316,12 @@ public func && (lhs: OHHTTPStubsTestBlock, rhs: OHHTTPStubsTestBlock) -> OHHTTPS
  *
  * - Returns: a matcher (OHHTTPStubsTestBlock) that only succeeds if the expr matcher fails
  */
+#if swift(>=3.0)
+public prefix func ! (expr: @escaping OHHTTPStubsTestBlock) -> OHHTTPStubsTestBlock {
+    return { req in !expr(req) }
+}
+#else
 public prefix func ! (expr: OHHTTPStubsTestBlock) -> OHHTTPStubsTestBlock {
     return { req in !expr(req) }
 }
+#endif

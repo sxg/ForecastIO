@@ -38,7 +38,7 @@ class APIClientTests: XCTestCase {
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
-        _ = stub(hostStub && pathStub && methodStub && schemeStub) { _ in
+        _ = stub(condition: hostStub && pathStub && methodStub && schemeStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
             return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
@@ -72,7 +72,7 @@ class APIClientTests: XCTestCase {
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude),\(timeString)")
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
-        _ = stub(hostStub && pathStub && methodStub && schemeStub) { _ in
+        _ = stub(condition: hostStub && pathStub && methodStub && schemeStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
             return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
@@ -106,7 +106,7 @@ class APIClientTests: XCTestCase {
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
         let queryStub = containsQueryParams(["units": "si"])
-        _ = stub(hostStub && pathStub && methodStub && schemeStub && queryStub) { _ in
+        _ = stub(condition: hostStub && pathStub && methodStub && schemeStub && queryStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
             return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
@@ -140,7 +140,7 @@ class APIClientTests: XCTestCase {
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
         let queryStub = containsQueryParams(["lang": "fr"])
-        _ = stub(hostStub && pathStub && methodStub && schemeStub && queryStub) { _ in
+        _ = stub(condition: hostStub && pathStub && methodStub && schemeStub && queryStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
             return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
@@ -174,7 +174,7 @@ class APIClientTests: XCTestCase {
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
         let queryStub = containsQueryParams(["extend": "hourly"])
-        _ = stub(hostStub && pathStub && methodStub && schemeStub && queryStub) { _ in
+        _ = stub(condition: hostStub && pathStub && methodStub && schemeStub && queryStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
             return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
@@ -207,7 +207,7 @@ class APIClientTests: XCTestCase {
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
         let queryStub = containsQueryParams(["exclude": "minutely,daily"])
-        _ = stub(hostStub && pathStub && methodStub && schemeStub && queryStub) { _ in
+        _ = stub(condition: hostStub && pathStub && methodStub && schemeStub && queryStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
             return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
@@ -236,7 +236,7 @@ class APIClientTests: XCTestCase {
         //  Given
         let expect = expectation(description: "Get forecast without internet")
         let notConnectedError = NSError(domain:NSURLErrorDomain, code:Int(CFNetworkErrors.cfurlErrorNotConnectedToInternet.rawValue), userInfo:nil)
-        _ = stub(isHost("api.forecast.io")) { _ in
+        _ = stub(condition: isHost("api.forecast.io")) { _ in
             return OHHTTPStubsResponse(error:notConnectedError)
         }
         let client = APIClient(apiKey: "FAKE-API-KEY")
@@ -263,7 +263,7 @@ class APIClientTests: XCTestCase {
     func testGetForecastWithBadJSON() {
         //  Given
         let expect = expectation(description: "Get forecast with bad JSON")
-        _ = stub(isHost("api.forecast.io")) { _ in
+        _ = stub(condition: isHost("api.forecast.io")) { _ in
             //  Return empty body instead of JSON
             return fixture("", headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
