@@ -68,12 +68,12 @@ class ForecastTests: XCTestCase {
         //  Given
         //  When
         //  Then
-        XCTAssertEqual(Forecast.Field.Currently.rawValue, "currently")
-        XCTAssertEqual(Forecast.Field.Minutely.rawValue, "minutely")
-        XCTAssertEqual(Forecast.Field.Hourly.rawValue, "hourly")
-        XCTAssertEqual(Forecast.Field.Daily.rawValue, "daily")
-        XCTAssertEqual(Forecast.Field.Alerts.rawValue, "alerts")
-        XCTAssertEqual(Forecast.Field.Flags.rawValue, "flags")
+        XCTAssertEqual(Forecast.Field.currently.rawValue, "currently")
+        XCTAssertEqual(Forecast.Field.minutely.rawValue, "minutely")
+        XCTAssertEqual(Forecast.Field.hourly.rawValue, "hourly")
+        XCTAssertEqual(Forecast.Field.daily.rawValue, "daily")
+        XCTAssertEqual(Forecast.Field.alerts.rawValue, "alerts")
+        XCTAssertEqual(Forecast.Field.flags.rawValue, "flags")
     }
     
 }

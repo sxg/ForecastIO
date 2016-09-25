@@ -216,7 +216,7 @@ class APIClientTests: XCTestCase {
         var err: Error?
         
         //  When
-        client.getForecast(latitude: latitude, longitude: longitude, excludeForecastFields: [.Minutely, .Daily]) { (aForecast, error) -> Void in
+        client.getForecast(latitude: latitude, longitude: longitude, excludeForecastFields: [.minutely, .daily]) { (aForecast, error) -> Void in
             forecast = aForecast
             err = error
             expect.fulfill()
