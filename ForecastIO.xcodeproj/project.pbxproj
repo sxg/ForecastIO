@@ -14,7 +14,6 @@
 		4A10DB651D45103700E304C5 /* DataPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2CB1C54410300A4A02F /* DataPointTests.swift */; };
 		4A10DB661D45103700E304C5 /* FlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2C71C54400700A4A02F /* FlagTests.swift */; };
 		4A10DB671D45103700E304C5 /* ForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2B81C5434B800A4A02F /* ForecastTests.swift */; };
-		4A10DB681D45103700E304C5 /* ForecastFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3640F41D150000005602A7 /* ForecastFieldTests.swift */; };
 		4A10DB691D45103700E304C5 /* UnitsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D31C54454100A4A02F /* UnitsTest.swift */; };
 		4A10DB6A1D45103800E304C5 /* AlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2C31C543ED900A4A02F /* AlertTests.swift */; };
 		4A10DB6B1D45103800E304C5 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */; };
@@ -22,7 +21,6 @@
 		4A10DB6D1D45103800E304C5 /* DataPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2CB1C54410300A4A02F /* DataPointTests.swift */; };
 		4A10DB6E1D45103800E304C5 /* FlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2C71C54400700A4A02F /* FlagTests.swift */; };
 		4A10DB6F1D45103800E304C5 /* ForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2B81C5434B800A4A02F /* ForecastTests.swift */; };
-		4A10DB701D45103800E304C5 /* ForecastFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3640F41D150000005602A7 /* ForecastFieldTests.swift */; };
 		4A10DB711D45103800E304C5 /* UnitsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D31C54454100A4A02F /* UnitsTest.swift */; };
 		4A10DB721D45103900E304C5 /* AlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2C31C543ED900A4A02F /* AlertTests.swift */; };
 		4A10DB731D45103900E304C5 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */; };
@@ -42,7 +40,6 @@
 		4A56CEB81D447BD000751AF6 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FBB1C53F52000CB7548 /* Forecast.swift */; };
 		4A56CEB91D447BD000751AF6 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FBC1C53F52000CB7548 /* Icon.swift */; };
 		4A56CEBA1D447BD000751AF6 /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FBE1C53F52000CB7548 /* Precipitation.swift */; };
-		4A56CEBB1D447BD000751AF6 /* ForecastField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87606051D1080CB0079DE67 /* ForecastField.swift */; };
 		4A56CEBD1D447BD000751AF6 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FBF1C53F52000CB7548 /* Units.swift */; };
 		4A56CEBE1D447BD000751AF6 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14A6F61CDAB41B00D4C108 /* Constant.swift */; };
 		4A56CEC51D447F4900751AF6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A56CEB11D44770C00751AF6 /* Language.swift */; };
@@ -56,7 +53,6 @@
 		4AA3256F1D615F03003CFFA9 /* DataPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2CB1C54410300A4A02F /* DataPointTests.swift */; };
 		4AA325701D615F03003CFFA9 /* FlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2C71C54400700A4A02F /* FlagTests.swift */; };
 		4AA325711D615F03003CFFA9 /* ForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2B81C5434B800A4A02F /* ForecastTests.swift */; };
-		4AA325721D615F03003CFFA9 /* ForecastFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3640F41D150000005602A7 /* ForecastFieldTests.swift */; };
 		4AA325731D615F03003CFFA9 /* IconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB708701D45246C005D1E8E /* IconTests.swift */; };
 		4AA325741D615F03003CFFA9 /* LanguageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB7086C1D45230F005D1E8E /* LanguageTests.swift */; };
 		4AA325751D615F03003CFFA9 /* PrecipitationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB708741D452539005D1E8E /* PrecipitationTests.swift */; };
@@ -107,9 +103,6 @@
 		D4D9F2B61C54061600A4A02F /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = D4D9F2B41C54061600A4A02F /* forecast.json */; };
 		D4D9F2B71C54061600A4A02F /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = D4D9F2B41C54061600A4A02F /* forecast.json */; };
 		D4DE2ACF1C513EA00063A7CA /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
-		E87606071D1084B10079DE67 /* ForecastField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87606051D1080CB0079DE67 /* ForecastField.swift */; };
-		E87606081D1084B20079DE67 /* ForecastField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87606051D1080CB0079DE67 /* ForecastField.swift */; };
-		E87606091D1084B30079DE67 /* ForecastField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87606051D1080CB0079DE67 /* ForecastField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,7 +138,6 @@
 		4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = forecast_bare.json; path = Tests/Resources/forecast_bare.json; sourceTree = SOURCE_ROOT; };
 		4A14A6F61CDAB41B00D4C108 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Source/Constant.swift; sourceTree = "<group>"; };
 		4A3364661CD9712000775650 /* forecast_no_optionals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = forecast_no_optionals.json; path = Tests/Resources/forecast_no_optionals.json; sourceTree = SOURCE_ROOT; };
-		4A3640F41D150000005602A7 /* ForecastFieldTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastFieldTests.swift; path = Tests/ForecastFieldTests.swift; sourceTree = SOURCE_ROOT; };
 		4A3640F91D150EAA005602A7 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		4A56CEB11D44770C00751AF6 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Source/Language.swift; sourceTree = "<group>"; };
 		4A8B23511D447FB300ACBAA8 /* ForecastIO iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,7 +182,6 @@
 		D4D9F2D31C54454100A4A02F /* UnitsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnitsTest.swift; path = Tests/UnitsTest.swift; sourceTree = SOURCE_ROOT; };
 		D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClientTests.swift; path = Tests/APIClientTests.swift; sourceTree = SOURCE_ROOT; };
 		D4DE2AD41C513EA00063A7CA /* ForecastIO tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E87606051D1080CB0079DE67 /* ForecastField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastField.swift; path = Source/ForecastField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,7 +316,6 @@
 				D4564FB91C53F52000CB7548 /* DataPoint.swift */,
 				D4564FBA1C53F52000CB7548 /* Flag.swift */,
 				D4564FBB1C53F52000CB7548 /* Forecast.swift */,
-				E87606051D1080CB0079DE67 /* ForecastField.swift */,
 				D4564FBC1C53F52000CB7548 /* Icon.swift */,
 				4A10DB7A1D4510A900E304C5 /* Language.swift */,
 				D4564FBE1C53F52000CB7548 /* Precipitation.swift */,
@@ -369,7 +359,6 @@
 				D4D9F2CB1C54410300A4A02F /* DataPointTests.swift */,
 				D4D9F2C71C54400700A4A02F /* FlagTests.swift */,
 				D4D9F2B81C5434B800A4A02F /* ForecastTests.swift */,
-				4A3640F41D150000005602A7 /* ForecastFieldTests.swift */,
 				4AB708701D45246C005D1E8E /* IconTests.swift */,
 				4AB7086C1D45230F005D1E8E /* LanguageTests.swift */,
 				4AB708741D452539005D1E8E /* PrecipitationTests.swift */,
@@ -963,7 +952,6 @@
 				4AA3256F1D615F03003CFFA9 /* DataPointTests.swift in Sources */,
 				4AA325701D615F03003CFFA9 /* FlagTests.swift in Sources */,
 				4AA325711D615F03003CFFA9 /* ForecastTests.swift in Sources */,
-				4AA325721D615F03003CFFA9 /* ForecastFieldTests.swift in Sources */,
 				4AA325731D615F03003CFFA9 /* IconTests.swift in Sources */,
 				4AA325741D615F03003CFFA9 /* LanguageTests.swift in Sources */,
 				4AA325751D615F03003CFFA9 /* PrecipitationTests.swift in Sources */,
@@ -977,7 +965,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E87606071D1084B10079DE67 /* ForecastField.swift in Sources */,
 				D4564FC41C53F52000CB7548 /* Alert.swift in Sources */,
 				D4564FFC1C53F52000CB7548 /* Precipitation.swift in Sources */,
 				D4564FD21C53F52000CB7548 /* DataBlock.swift in Sources */,
@@ -1007,7 +994,6 @@
 				4A10DB691D45103700E304C5 /* UnitsTest.swift in Sources */,
 				4AB708771D452539005D1E8E /* PrecipitationTests.swift in Sources */,
 				4A10DB631D45103700E304C5 /* APIClientTests.swift in Sources */,
-				4A10DB681D45103700E304C5 /* ForecastFieldTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1015,7 +1001,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E87606091D1084B30079DE67 /* ForecastField.swift in Sources */,
 				D4564FC61C53F52000CB7548 /* Alert.swift in Sources */,
 				D4564FFE1C53F52000CB7548 /* Precipitation.swift in Sources */,
 				D4564FD41C53F52000CB7548 /* DataBlock.swift in Sources */,
@@ -1034,7 +1019,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E87606081D1084B20079DE67 /* ForecastField.swift in Sources */,
 				D4564FC21C53F52000CB7548 /* Alert.swift in Sources */,
 				D4564FFA1C53F52000CB7548 /* Precipitation.swift in Sources */,
 				D4564FD01C53F52000CB7548 /* DataBlock.swift in Sources */,
@@ -1064,7 +1048,6 @@
 				4A10DB711D45103800E304C5 /* UnitsTest.swift in Sources */,
 				4AB708761D452539005D1E8E /* PrecipitationTests.swift in Sources */,
 				4A10DB6B1D45103800E304C5 /* APIClientTests.swift in Sources */,
-				4A10DB701D45103800E304C5 /* ForecastFieldTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1081,7 +1064,6 @@
 				4A56CEB91D447BD000751AF6 /* Icon.swift in Sources */,
 				4A56CEBA1D447BD000751AF6 /* Precipitation.swift in Sources */,
 				4A10DB7B1D4510A900E304C5 /* Language.swift in Sources */,
-				4A56CEBB1D447BD000751AF6 /* ForecastField.swift in Sources */,
 				4A56CEBD1D447BD000751AF6 /* Units.swift in Sources */,
 				4A56CEBE1D447BD000751AF6 /* Constant.swift in Sources */,
 			);
