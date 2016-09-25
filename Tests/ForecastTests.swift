@@ -64,4 +64,16 @@ class ForecastTests: XCTestCase {
         XCTAssertNil(forecast.daily)
     }
     
+    func testForecastFieldRawValue() {
+        //  Given
+        //  When
+        //  Then
+        XCTAssertEqual(Forecast.Field.Currently.rawValue, "currently")
+        XCTAssertEqual(Forecast.Field.Minutely.rawValue, "minutely")
+        XCTAssertEqual(Forecast.Field.Hourly.rawValue, "hourly")
+        XCTAssertEqual(Forecast.Field.Daily.rawValue, "daily")
+        XCTAssertEqual(Forecast.Field.Alerts.rawValue, "alerts")
+        XCTAssertEqual(Forecast.Field.Flags.rawValue, "flags")
+    }
+    
 }

@@ -94,4 +94,27 @@ public struct Forecast {
             flags = nil
         }
     }
+    
+    /**
+     Data fields associated with a `Forecast`.
+     */
+    public enum Field: String {
+        /// Current weather conditions.
+        case Currently = "currently"
+        
+        /// Minute-by-minute weather conditions for the next hour.
+        case Minutely = "minutely"
+        
+        /// Hour-by-hour weather conditions for the next two days by default but can be extended to one week.
+        case Hourly = "hourly"
+        
+        /// Day-by-day weather conditions for the next week.
+        case Daily = "daily"
+        
+        /// Severe weather alerts.
+        case Alerts = "alerts"
+        
+        /// Miscellaneous metadata.
+        case Flags = "flags"
+    }
 }
