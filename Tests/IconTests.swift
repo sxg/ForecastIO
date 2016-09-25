@@ -11,20 +11,20 @@ import XCTest
 
 class IconTests: XCTestCase {
 
-    func testDescription() {
+    func testRawValue() {
         //  Given
         //  When
         //  Then
-        XCTAssertEqual(Icon.ClearDay.description, "clear-day")
-        XCTAssertEqual(Icon.ClearNight.description, "clear-night")
-        XCTAssertEqual(Icon.Rain.description, "rain")
-        XCTAssertEqual(Icon.Snow.description, "snow")
-        XCTAssertEqual(Icon.Sleet.description, "sleet")
-        XCTAssertEqual(Icon.Wind.description, "wind")
-        XCTAssertEqual(Icon.Fog.description, "fog")
-        XCTAssertEqual(Icon.Cloudy.description, "cloudy")
-        XCTAssertEqual(Icon.PartlyCloudyDay.description, "partly-cloudy-day")
-        XCTAssertEqual(Icon.PartlyCloudyNight.description, "partly-cloudy-night")
+        XCTAssertEqual(Icon.ClearDay.rawValue, "clear-day")
+        XCTAssertEqual(Icon.ClearNight.rawValue, "clear-night")
+        XCTAssertEqual(Icon.Rain.rawValue, "rain")
+        XCTAssertEqual(Icon.Snow.rawValue, "snow")
+        XCTAssertEqual(Icon.Sleet.rawValue, "sleet")
+        XCTAssertEqual(Icon.Wind.rawValue, "wind")
+        XCTAssertEqual(Icon.Fog.rawValue, "fog")
+        XCTAssertEqual(Icon.Cloudy.rawValue, "cloudy")
+        XCTAssertEqual(Icon.PartlyCloudyDay.rawValue, "partly-cloudy-day")
+        XCTAssertEqual(Icon.PartlyCloudyNight.rawValue, "partly-cloudy-night")
     }
 
 }
