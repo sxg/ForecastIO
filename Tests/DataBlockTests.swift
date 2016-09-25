@@ -40,7 +40,7 @@ class DataBlockTests: XCTestCase {
         //  Then
         XCTAssertNotNil(dataBlock)
         XCTAssertEqual(dataBlock.summary, "Snow for the hour.")
-        XCTAssertEqual(dataBlock.icon, Icon.Snow)
+        XCTAssertEqual(dataBlock.icon, Icon.snow)
         XCTAssertFalse(dataBlock.data!.isEmpty)
     }
     

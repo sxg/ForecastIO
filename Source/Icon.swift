@@ -13,32 +13,32 @@ import Foundation
 */
 public enum Icon: String {
     /// A clear day.
-    case ClearDay = "clear-day"
+    case clearDay = "clear-day"
     
     /// A clear night.
-    case ClearNight = "clear-night"
+    case clearNight = "clear-night"
     
     /// A rainy day or night.
-    case Rain = "rain"
+    case rain = "rain"
     
     /// A snowy day or night.
-    case Snow = "snow"
+    case snow = "snow"
     
     /// A sleety day or night.
-    case Sleet = "sleet"
+    case sleet = "sleet"
     
     /// A windy day or night.
-    case Wind = "wind"
+    case wind = "wind"
     
     /// A foggy day or night.
-    case Fog = "fog"
+    case fog = "fog"
     
     /// A cloudy day or night.
-    case Cloudy = "cloudy"
+    case cloudy = "cloudy"
     
     /// A partly cloudy day.
-    case PartlyCloudyDay = "partly-cloudy-day"
+    case partlyCloudyDay = "partly-cloudy-day"
     
     /// A partly cloudy night.
-    case PartlyCloudyNight = "partly-cloudy-night"
+    case partlyCloudyNight = "partly-cloudy-night"
 }

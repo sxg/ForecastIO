@@ -15,16 +15,16 @@ class IconTests: XCTestCase {
         //  Given
         //  When
         //  Then
-        XCTAssertEqual(Icon.ClearDay.rawValue, "clear-day")
-        XCTAssertEqual(Icon.ClearNight.rawValue, "clear-night")
-        XCTAssertEqual(Icon.Rain.rawValue, "rain")
-        XCTAssertEqual(Icon.Snow.rawValue, "snow")
-        XCTAssertEqual(Icon.Sleet.rawValue, "sleet")
-        XCTAssertEqual(Icon.Wind.rawValue, "wind")
-        XCTAssertEqual(Icon.Fog.rawValue, "fog")
-        XCTAssertEqual(Icon.Cloudy.rawValue, "cloudy")
-        XCTAssertEqual(Icon.PartlyCloudyDay.rawValue, "partly-cloudy-day")
-        XCTAssertEqual(Icon.PartlyCloudyNight.rawValue, "partly-cloudy-night")
+        XCTAssertEqual(Icon.clearDay.rawValue, "clear-day")
+        XCTAssertEqual(Icon.clearNight.rawValue, "clear-night")
+        XCTAssertEqual(Icon.rain.rawValue, "rain")
+        XCTAssertEqual(Icon.snow.rawValue, "snow")
+        XCTAssertEqual(Icon.sleet.rawValue, "sleet")
+        XCTAssertEqual(Icon.wind.rawValue, "wind")
+        XCTAssertEqual(Icon.fog.rawValue, "fog")
+        XCTAssertEqual(Icon.cloudy.rawValue, "cloudy")
+        XCTAssertEqual(Icon.partlyCloudyDay.rawValue, "partly-cloudy-day")
+        XCTAssertEqual(Icon.partlyCloudyNight.rawValue, "partly-cloudy-night")
     }
 
 }
