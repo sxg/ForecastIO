@@ -9,7 +9,7 @@
 import Foundation
 
 /// Units in which the Dark Sky API data will be returned.
-public enum Units: String, CustomStringConvertible {
+public enum Units: String {
     /**
          SI units. `Forecast` properties will become the following:
             - `summary`: temperature and snow accumulation units will be in degrees celsius or centimeters, respectively.
@@ -42,13 +42,4 @@ public enum Units: String, CustomStringConvertible {
     
     /// Automatically use the appropriate units based on the location for which you are requesting data.
     case Auto = "auto"
-    
-    /**
-        Returns the `String` value of the enum variant.
-     
-        - returns: `String` value of the enum variant.
-    */
-    public var description: String {
-        return rawValue
-    }
 }
