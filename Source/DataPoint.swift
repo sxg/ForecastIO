@@ -36,22 +36,22 @@ public struct DataPoint {
     public let nearestStormBearing: Float?
     
     /// The average expected intensity in inches of liquid water per hour of precipitation occurring at the given time *conditional on probability* (assuming any precipitation occurs at all). A *very* rough guide is that a value of `0` corresponds to no precipitation, `0.002` corresponds to very light precipitation, `0.017` corresponds to light precipitation, `0.1` corresponds to moderate precipitation, and `0.4` corresponds to heavy precipitation.
-    public let precipIntensity: Float?
+    public let precipitationIntensity: Float?
     
     /// Maximum expected intensity of precipitation on the given day in inches of liquid water per hour. Only defined on `Forecast`'s `daily` `DataPoint`s.
-    public let precipIntensityMax: Float?
+    public let precipitationIntensityMax: Float?
     
     /// Time at which the maximum expected intensity of precipitation will occur. Only defined on `Forecast`'s `daily` `DataPoint`s.
-    public let precipIntensityMaxTime: Date?
+    public let precipitationIntensityMaxTime: Date?
     
     /// Value between `0` and `1` (inclusive) representing the probability of precipitation occurring at the given time.
-    public let precipProbability: Float?
+    public let precipitationProbability: Float?
     
     /// Type of precipitation occurring at the given time. If `precipIntensity` is `0`, then this will be `nil`.
-    public let precipType: Precipitation?
+    public let precipitationType: Precipitation?
     
     /// The amount of snowfall accumulation expected to occur on the given day, in inches. This will be `nil` if no accumulation is expected. Only defined on `Forecast`'s `hourly` and `daily` `DataPoint`s.
-    public let precipAccumulation: Float?
+    public let precipitationAccumulation: Float?
     
     /// The temperature at the given time in degrees Fahrenheit. Not defined on `Forecast`'s `daily` `DataPoint`s.
     public let temperature: Float?
@@ -135,20 +135,20 @@ public struct DataPoint {
         moonPhase = json["moonPhase"] as? Float
         nearestStormDistance = json["nearestStormDistance"] as? Float
         nearestStormBearing = json["nearestStormBearing"] as? Float
-        precipIntensity = json["precipIntensity"] as? Float
-        precipIntensityMax = json["precipIntensityMax"] as? Float
-        if let jsonPrecipIntensityMaxTime = json["precipIntensityMaxTime"] as? Double {
-            precipIntensityMaxTime = Date(timeIntervalSince1970: jsonPrecipIntensityMaxTime)
+        precipitationIntensity = json["precipIntensity"] as? Float
+        precipitationIntensityMax = json["precipIntensityMax"] as? Float
+        if let jsonPrecipitationIntensityMaxTime = json["precipIntensityMaxTime"] as? Double {
+            precipitationIntensityMaxTime = Date(timeIntervalSince1970: jsonPrecipitationIntensityMaxTime)
         } else {
-            precipIntensityMaxTime = nil
+            precipitationIntensityMaxTime = nil
         }
-        precipProbability = json["precipProbability"] as? Float
-        if let jsonPrecipType = json["precipType"] as? String {
-            precipType = Precipitation(rawValue: jsonPrecipType)
+        precipitationProbability = json["precipProbability"] as? Float
+        if let jsonPrecipitationType = json["precipType"] as? String {
+            precipitationType = Precipitation(rawValue: jsonPrecipitationType)
         } else {
-            precipType = nil
+            precipitationType = nil
         }
-        precipAccumulation = json["precipAccumulation"] as? Float
+        precipitationAccumulation = json["precipAccumulation"] as? Float
         temperature = json["temperature"] as? Float
         temperatureMin = json["temperatureMin"] as? Float
         if let jsonTemperatureMinTime = json["temperatureMinTime"] as? Double {
