@@ -13,14 +13,14 @@ import Foundation
 */
 public enum Precipitation: String {
     /// Rainy.
-    case Rain = "rain"
+    case rain = "rain"
     
     /// Snowy.
-    case Snow = "snow"
+    case snow = "snow"
     
     /// Sleety, freezing rain, ice pellets, or wintery mix.
-    case Sleet = "sleet"
+    case sleet = "sleet"
     
     /// Haily.
-    case Hail = "hail"
+    case hail = "hail"
 }
