@@ -15,12 +15,11 @@ class UnitsTests: XCTestCase {
         //  Given
         //  When
         //  Then
-        XCTAssertEqual(Units.SI.rawValue, "si")
-        XCTAssertEqual(Units.US.rawValue, "us")
-        XCTAssertEqual(Units.CA.rawValue, "ca")
-        XCTAssertEqual(Units.UK.rawValue, "uk")
-        XCTAssertEqual(Units.UK2.rawValue, "uk2")
-        XCTAssertEqual(Units.Auto.rawValue, "auto")
+        XCTAssertEqual(Units.si.rawValue, "si")
+        XCTAssertEqual(Units.us.rawValue, "us")
+        XCTAssertEqual(Units.ca.rawValue, "ca")
+        XCTAssertEqual(Units.uk.rawValue, "uk2")
+        XCTAssertEqual(Units.auto.rawValue, "auto")
     }
     
 }

@@ -26,20 +26,17 @@ public enum Units: String {
             - `pressure`: hectopascals (equivalent to the default millibars)
             - `visibility`: kilometers
     */
-    case SI = "si"
+    case si = "si"
     
     /// US units and the default option.
-    case US = "us"
+    case us = "us"
     
     /// Canadian units. Identical to `.SI` except `windSpeed` is in kilometers per hour.
-    case CA = "ca"
-    
-    /// UK units. Deprecated by the Dark Sky API. Use `.UK2` instead. Identical to `.SI` except `windSpeed` is in miles per hour.
-    case UK = "uk"
+    case ca = "ca"
     
     /// UK units. Identical to `.SI` except `windSpeed` is in miles per hour, and `nearestStormDistance` and `visibility` are in miles.
-    case UK2 = "uk2"
+    case uk = "uk2"
     
     /// Automatically use the appropriate units based on the location for which you are requesting data.
-    case Auto = "auto"
+    case auto = "auto"
 }

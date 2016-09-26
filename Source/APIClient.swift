@@ -97,7 +97,7 @@ open class APIClient : NSObject {
         var urlBuilder = URLComponents(string: urlString)!
         var queryItems: [URLQueryItem] = []
         if let units = self.units {
-            queryItems.append(URLQueryItem(name: "units", value: units.description))
+            queryItems.append(URLQueryItem(name: "units", value: units.rawValue))
         }
         if let language = self.language {
             queryItems.append(URLQueryItem(name: "lang", value: language.rawValue))
