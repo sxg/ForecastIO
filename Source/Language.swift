@@ -13,6 +13,9 @@ public enum Language: String {
     ///  The Arabic language.
     case arabic = "ar"
     
+    ///  The Azerbaijani language.
+    case azerbaijani = "az"
+    
     ///  The Belarusian language.
     case belarusian = "be"
     

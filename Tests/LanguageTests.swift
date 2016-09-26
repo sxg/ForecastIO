@@ -16,6 +16,7 @@ class LanguageTests: XCTestCase {
         //  When
         //  Then
         XCTAssertEqual(Language.arabic.rawValue, "ar")
+        XCTAssertEqual(Language.azerbaijani.rawValue, "az")
         XCTAssertEqual(Language.belarusian.rawValue, "be")
         XCTAssertEqual(Language.bosnian.rawValue, "bs")
         XCTAssertEqual(Language.czech.rawValue, "cs")
