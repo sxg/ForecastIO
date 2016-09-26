@@ -19,9 +19,6 @@ public struct Forecast {
     /// The IANA timezone name for the requested location (e.g. "America/New_York"). Rely on local user settings over this property.
     public let timezone: String
     
-    /// The current timezone offset in hours from GMT.
-    public let offset: Int?
-    
     /// Severe weather `Alert`s issued by a governmental weather authority for the requested location.
     public let alerts: Array<Alert>?
     
@@ -52,11 +49,6 @@ public struct Forecast {
         longitude = json["longitude"] as! Float
         timezone = json["timezone"] as! String
         
-        if let jsonOffset = json["offset"] as? Int {
-            offset = jsonOffset
-        } else {
-            offset = nil
-        }
         if let jsonCurrently = json["currently"] as? NSDictionary {
             currently = DataPoint(fromJSON: jsonCurrently)
         } else {
