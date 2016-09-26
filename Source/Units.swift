@@ -11,20 +11,20 @@ import Foundation
 /// Units in which the Dark Sky API data will be returned.
 public enum Units: String {
     /**
-         SI units. `Forecast` properties will become the following:
-            - `summary`: temperature and snow accumulation units will be in degrees celsius or centimeters, respectively.
-            - `nearestStormDistance`: kilometers
-            - `precipIntensity`: millimeters per hour
-            - `precipIntensityMax`: millimeters per hour
-            - `precipAccumulation`: centimeters
-            - `temperature`: degrees celsius
-            - `temperatureMin`: degrees Celsius
-            - `temperatureMax`: degrees Celsius
-            - `apparentTemperature`: degrees Celsius
-            - `dewPoint`: degrees Celsius
-            - `windSpeed`: meters per second
-            - `pressure`: hectopascals (equivalent to the default millibars)
-            - `visibility`: kilometers
+     SI units. `Forecast` properties will become the following:
+     - `summary`: temperature and snow accumulation units will be in degrees celsius or centimeters, respectively.
+     - `nearestStormDistance`: kilometers
+     - `precipIntensity`: millimeters per hour
+     - `precipIntensityMax`: millimeters per hour
+     - `precipAccumulation`: centimeters
+     - `temperature`: degrees celsius
+     - `temperatureMin`: degrees Celsius
+     - `temperatureMax`: degrees Celsius
+     - `apparentTemperature`: degrees Celsius
+     - `dewPoint`: degrees Celsius
+     - `windSpeed`: meters per second
+     - `pressure`: hectopascals (equivalent to the default millibars)
+     - `visibility`: kilometers
     */
     case si = "si"
     
