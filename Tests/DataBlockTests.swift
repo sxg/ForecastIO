@@ -41,7 +41,7 @@ class DataBlockTests: XCTestCase {
         XCTAssertNotNil(dataBlock)
         XCTAssertEqual(dataBlock.summary, "Snow for the hour.")
         XCTAssertEqual(dataBlock.icon, Icon.snow)
-        XCTAssertFalse(dataBlock.data!.isEmpty)
+        XCTAssertFalse(dataBlock.data.isEmpty)
     }
     
     func testInitNoOptionalsFromJSON() {
@@ -53,7 +53,7 @@ class DataBlockTests: XCTestCase {
         XCTAssertNotNil(dataBlock)
         XCTAssertNil(dataBlock.summary)
         XCTAssertNil(dataBlock.icon)
-        XCTAssertNil(dataBlock.data)
+        XCTAssertNotNil(dataBlock.data)
     }
     
 }
