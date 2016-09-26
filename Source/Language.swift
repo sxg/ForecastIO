@@ -11,91 +11,91 @@ import Foundation
 /// Language in which data from the Dark Sky API will be returned.
 public enum Language: String, CustomStringConvertible {
     ///  The Arabic language.
-    case Arabic = "ar"
+    case arabic = "ar"
     
     ///  The Belarusian language.
-    case Belarusian = "be"
+    case belarusian = "be"
     
     ///  The Bosnian language.
-    case Bosnian = "bs"
+    case bosnian = "bs"
     
     ///  The Czech language.
-    case Czech = "cs"
+    case czech = "cs"
     
     ///  The German language.
-    case German = "de"
+    case german = "de"
     
     ///  The Greek language.
-    case Greek = "el"
+    case greek = "el"
     
     ///  The English language and the default option.
-    case English = "en"
+    case english = "en"
     
     ///  The Spanish language.
-    case Spanish = "es"
+    case spanish = "es"
     
     ///  The French language.
-    case French = "fr"
+    case french = "fr"
     
     ///  The Croatian language.
-    case Croatian = "hr"
+    case croatian = "hr"
     
     ///  The Hungarian language.
-    case Hungarian = "hu"
+    case hungarian = "hu"
     
     ///  The Indonesian language.
-    case Indonesian = "id"
+    case indonesian = "id"
     
     ///  The Italian language.
-    case Italian = "it"
+    case italian = "it"
     
     ///  The Icelandic language.
-    case Icelandic = "is"
+    case icelandic = "is"
     
     ///  The Cornish language.
-    case Cornish = "kw"
+    case cornish = "kw"
     
     ///  The Norwegian Bokmål language.
-    case NorwegianBokmål = "nb"
+    case norwegianBokmål = "nb"
     
     ///  The Dutch language.
-    case Dutch = "nl"
+    case dutch = "nl"
     
     ///  The Polish language.
-    case Polish = "pl"
+    case polish = "pl"
     
     ///  The Portuguese language.
-    case Portuguese = "pt"
+    case portuguese = "pt"
     
     ///  The Russian language.
-    case Russian = "ru"
+    case russian = "ru"
     
     ///  The Slovak language.
-    case Slovak = "sk"
+    case slovak = "sk"
     
     ///  The Serbian language.
-    case Serbian = "sr"
+    case serbian = "sr"
     
     ///  The Swedish language.
-    case Swedish = "sv"
+    case swedish = "sv"
     
     ///  The Tetum language.
-    case Tetum = "tet"
+    case tetum = "tet"
     
     ///  The Turkish language.
-    case Turkish = "tr"
+    case turkish = "tr"
     
     ///  The Ukrainian language.
-    case Ukrainian = "uk"
+    case ukrainian = "uk"
     
     ///  The Pig Latin language.
-    case PigLatin = "x-pig-latin"
+    case pigLatin = "x-pig-latin"
     
     ///  The simplified Chinese language.
-    case SimplifiedChinese = "zh"
+    case simplifiedChinese = "zh"
     
     ///  The traditional Chinese language.
-    case TraditionalChinese = "zh-tw"
+    case traditionalChinese = "zh-tw"
     
     /**
      Returns the `String` value of the enum variant.

@@ -145,7 +145,7 @@ class APIClientTests: XCTestCase {
             return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
         let client = APIClient(apiKey: "FAKE-API-KEY")
-        client.language = .French
+        client.language = .french
         var forecast: Forecast?
         var err: Error?
         
