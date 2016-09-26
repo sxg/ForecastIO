@@ -34,7 +34,7 @@ class APIClientTests: XCTestCase {
     func testGetForecast() {
         //  Given
         let expect = expectation(description: "Get forecast")
-        let hostStub = isHost("api.forecast.io")
+        let hostStub = isHost("api.darksky.net")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
@@ -68,7 +68,7 @@ class APIClientTests: XCTestCase {
         let expect = expectation(description: "Get forecast at time")
         let time = Date()
         let timeString = String(format: "%.0f", time.timeIntervalSince1970)
-        let hostStub = isHost("api.forecast.io")
+        let hostStub = isHost("api.darksky.net")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude),\(timeString)")
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
@@ -101,7 +101,7 @@ class APIClientTests: XCTestCase {
     func testGetForecastWithSIUnits() {
         //  Given
         let expect = expectation(description: "Get forecast with SI units")
-        let hostStub = isHost("api.forecast.io")
+        let hostStub = isHost("api.darksky.net")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
@@ -135,7 +135,7 @@ class APIClientTests: XCTestCase {
     func testGetForecastWithFrenchLanguage() {
         //  Given
         let expect = expectation(description: "Get forecast with French language")
-        let hostStub = isHost("api.forecast.io")
+        let hostStub = isHost("api.darksky.net")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
@@ -169,7 +169,7 @@ class APIClientTests: XCTestCase {
     func testGetForecastWithExtendedHourly() {
         //  Given
         let expect = expectation(description: "Get forecast wtih extended hourly")
-        let hostStub = isHost("api.forecast.io")
+        let hostStub = isHost("api.darksky.net")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
@@ -202,7 +202,7 @@ class APIClientTests: XCTestCase {
     func testGetForecastWithExcludedForecastFields() {
         //  Given
         let expect = expectation(description: "Get forecast wtih excluded forecast fields")
-        let hostStub = isHost("api.forecast.io")
+        let hostStub = isHost("api.darksky.net")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
@@ -236,7 +236,7 @@ class APIClientTests: XCTestCase {
         //  Given
         let expect = expectation(description: "Get forecast without internet")
         let notConnectedError = NSError(domain:NSURLErrorDomain, code:Int(CFNetworkErrors.cfurlErrorNotConnectedToInternet.rawValue), userInfo:nil)
-        _ = stub(condition: isHost("api.forecast.io")) { _ in
+        _ = stub(condition: isHost("api.darksky.net")) { _ in
             return OHHTTPStubsResponse(error:notConnectedError)
         }
         let client = APIClient(apiKey: "FAKE-API-KEY")
@@ -263,7 +263,7 @@ class APIClientTests: XCTestCase {
     func testGetForecastWithBadJSON() {
         //  Given
         let expect = expectation(description: "Get forecast with bad JSON")
-        _ = stub(condition: isHost("api.forecast.io")) { _ in
+        _ = stub(condition: isHost("api.darksky.net")) { _ in
             //  Return empty body instead of JSON
             return fixture("", headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }

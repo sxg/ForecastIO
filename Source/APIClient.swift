@@ -13,7 +13,7 @@ open class APIClient : NSObject {
     
     private let apiKey: String
     private let session = URLSession.shared
-    private static let forecastIOURL = "https://api.forecast.io/forecast/"
+    private static let forecastIOURL = "https://api.darksky.net/forecast/"
     
     /// Units in which the `Forecast` response will be provided. US is the default if no units are specified as per the Dark Sky API docs.
     open var units: Units?
