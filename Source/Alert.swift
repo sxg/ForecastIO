@@ -18,7 +18,7 @@ public struct Alert {
     public let expires: Date
     
     /// A detailed text description of the `Alert` from the appropriate weather service.
-    public let description: String?
+    public let description: String
     
     /// An HTTP(S) URI that contains detailed information about the `Alert`.
     public let uri: URL
@@ -34,11 +34,6 @@ public struct Alert {
         title = json["title"] as! String
         expires = Date(timeIntervalSince1970: json["expires"] as! Double)
         uri = URL(string: json["uri"] as! String)!
-
-        if let jsonDescription = json["description"] as? String {
-            description = jsonDescription
-        } else {
-            description = nil
-        }
+        description = json["description"] as! String
     }
 }
