@@ -9,7 +9,7 @@
 import Foundation
 
 /// Language in which data from the Dark Sky API will be returned.
-public enum Language: String, CustomStringConvertible {
+public enum Language: String {
     ///  The Arabic language.
     case arabic = "ar"
     
@@ -96,13 +96,4 @@ public enum Language: String, CustomStringConvertible {
     
     ///  The traditional Chinese language.
     case traditionalChinese = "zh-tw"
-    
-    /**
-     Returns the `String` value of the enum variant.
-     
-     - returns: `String` value of the enum variant.
-     */
-    public var description: String {
-        return rawValue
-    }
 }

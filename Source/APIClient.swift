@@ -100,7 +100,7 @@ open class APIClient : NSObject {
             queryItems.append(URLQueryItem(name: "units", value: units.description))
         }
         if let language = self.language {
-            queryItems.append(URLQueryItem(name: "lang", value: language.description))
+            queryItems.append(URLQueryItem(name: "lang", value: language.rawValue))
         }
         if extendHourly {
             queryItems.append(URLQueryItem(name: "extend", value: "hourly"))
