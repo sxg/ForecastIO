@@ -15,10 +15,10 @@ class PrecipitationTests: XCTestCase {
         //  Given
         //  When
         //  Then
-        XCTAssertEqual(Precipitation.Rain.description, "rain")
-        XCTAssertEqual(Precipitation.Snow.description, "snow")
-        XCTAssertEqual(Precipitation.Sleet.description, "sleet")
-        XCTAssertEqual(Precipitation.Hail.description, "hail")
+        XCTAssertEqual(Precipitation.Rain.rawValue, "rain")
+        XCTAssertEqual(Precipitation.Snow.rawValue, "snow")
+        XCTAssertEqual(Precipitation.Sleet.rawValue, "sleet")
+        XCTAssertEqual(Precipitation.Hail.rawValue, "hail")
     }
 
 }
