@@ -15,11 +15,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let client = APIClient(apiKey: "FAKE-API-KEY")
-        client.units = .Auto
-        client.language = .English
-        client.getForecast(latitude: 30, longitude: 30, excludeForecastFields: [.Alerts, .Currently, .Daily, .Flags, .Minutely]) { (forecast, error) in
-            print(forecast?.hourly?.data)
+        let client = APIClient(apiKey: "912822bc00f6744196d63a298598f697")
+        client.units = .auto
+        client.language = .english
+        client.getForecast(latitude: 30, longitude: 30, excludeForecastFields: [.alerts, .currently, .daily, .flags, .minutely]) { (result) in
+            switch result {
+            case .success(let forecast):
+                print(forecast.hourly?.data)
+            case .failure(let error):
+                print(error)
+            }
         }
     }
 
