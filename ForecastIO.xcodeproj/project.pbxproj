@@ -32,6 +32,10 @@
 		4A14A6FD1CDABBF400D4C108 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14A6F61CDAB41B00D4C108 /* Constant.swift */; };
 		4A3364681CD9712000775650 /* forecast_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A3364661CD9712000775650 /* forecast_no_optionals.json */; };
 		4A3364691CD9712000775650 /* forecast_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A3364661CD9712000775650 /* forecast_no_optionals.json */; };
+		4A468FF51D9A0AAF00B2C0D2 /* ForecastIOError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A468FF41D9A0AAF00B2C0D2 /* ForecastIOError.swift */; };
+		4A468FF61D9A0AAF00B2C0D2 /* ForecastIOError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A468FF41D9A0AAF00B2C0D2 /* ForecastIOError.swift */; };
+		4A468FF71D9A0AAF00B2C0D2 /* ForecastIOError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A468FF41D9A0AAF00B2C0D2 /* ForecastIOError.swift */; };
+		4A468FF81D9A0ABB00B2C0D2 /* ForecastIOError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A468FF41D9A0AAF00B2C0D2 /* ForecastIOError.swift */; };
 		4A56CEB31D447BD000751AF6 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB61C53F52000CB7548 /* Alert.swift */; };
 		4A56CEB41D447BD000751AF6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB71C53F52000CB7548 /* APIClient.swift */; };
 		4A56CEB51D447BD000751AF6 /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB81C53F52000CB7548 /* DataBlock.swift */; };
@@ -147,6 +151,7 @@
 		4A14A6F61CDAB41B00D4C108 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Source/Constant.swift; sourceTree = "<group>"; };
 		4A3364661CD9712000775650 /* forecast_no_optionals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = forecast_no_optionals.json; path = Tests/Resources/forecast_no_optionals.json; sourceTree = SOURCE_ROOT; };
 		4A3640F91D150EAA005602A7 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		4A468FF41D9A0AAF00B2C0D2 /* ForecastIOError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastIOError.swift; path = Source/ForecastIOError.swift; sourceTree = "<group>"; };
 		4A56CEB11D44770C00751AF6 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Source/Language.swift; sourceTree = "<group>"; };
 		4A61CCB61D98A27200BF9F5A /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Field.swift; path = Source/Field.swift; sourceTree = "<group>"; };
 		4A7AFEA31D98B9BA00568802 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
@@ -327,6 +332,7 @@
 				4A61CCB61D98A27200BF9F5A /* Field.swift */,
 				D4564FBA1C53F52000CB7548 /* Flag.swift */,
 				D4564FBB1C53F52000CB7548 /* Forecast.swift */,
+				4A468FF41D9A0AAF00B2C0D2 /* ForecastIOError.swift */,
 				D4564FBC1C53F52000CB7548 /* Icon.swift */,
 				4A10DB7A1D4510A900E304C5 /* Language.swift */,
 				D4564FBE1C53F52000CB7548 /* Precipitation.swift */,
@@ -986,6 +992,7 @@
 				D4564FD91C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE71C53F52000CB7548 /* Forecast.swift in Sources */,
 				4A14A6FB1CDABBF300D4C108 /* Constant.swift in Sources */,
+				4A468FF71D9A0AAF00B2C0D2 /* ForecastIOError.swift in Sources */,
 				4A56CEC61D447F4A00751AF6 /* Language.swift in Sources */,
 				4AF007161D98BC5000209184 /* Result.swift in Sources */,
 				D45650031C53F52100CB7548 /* Units.swift in Sources */,
@@ -1024,6 +1031,7 @@
 				D4564FDB1C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE91C53F52000CB7548 /* Forecast.swift in Sources */,
 				4A14A6FD1CDABBF400D4C108 /* Constant.swift in Sources */,
+				4A468FF81D9A0ABB00B2C0D2 /* ForecastIOError.swift in Sources */,
 				4A56CEC71D447F4B00751AF6 /* Language.swift in Sources */,
 				4AF007171D98BC5700209184 /* Result.swift in Sources */,
 				D45650051C53F52100CB7548 /* Units.swift in Sources */,
@@ -1044,6 +1052,7 @@
 				D4564FD71C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE51C53F52000CB7548 /* Forecast.swift in Sources */,
 				4A14A6F91CDABBF200D4C108 /* Constant.swift in Sources */,
+				4A468FF61D9A0AAF00B2C0D2 /* ForecastIOError.swift in Sources */,
 				4A56CEC51D447F4900751AF6 /* Language.swift in Sources */,
 				4AF007151D98BC4D00209184 /* Result.swift in Sources */,
 				D45650011C53F52000CB7548 /* Units.swift in Sources */,
@@ -1082,6 +1091,7 @@
 				4A61CCB71D98A27200BF9F5A /* Field.swift in Sources */,
 				4A56CEB91D447BD000751AF6 /* Icon.swift in Sources */,
 				4A56CEBA1D447BD000751AF6 /* Precipitation.swift in Sources */,
+				4A468FF51D9A0AAF00B2C0D2 /* ForecastIOError.swift in Sources */,
 				4A10DB7B1D4510A900E304C5 /* Language.swift in Sources */,
 				4A7AFEA41D98B9BA00568802 /* Result.swift in Sources */,
 				4A56CEBD1D447BD000751AF6 /* Units.swift in Sources */,
