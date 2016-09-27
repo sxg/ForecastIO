@@ -47,9 +47,13 @@ class APIClientTests: XCTestCase {
         var err: Error?
         
         //  When
-        client.getForecast(latitude: latitude, longitude: longitude) { (currentForecast, error) -> Void in
-            forecast = currentForecast
-            err = error
+        client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
+            switch result {
+            case .success(let currentForecast):
+                forecast = currentForecast
+            case .failure(let error):
+                err = error
+            }
             expect.fulfill()
         }
         
@@ -82,9 +86,13 @@ class APIClientTests: XCTestCase {
         var err: Error?
         
         //  When
-        client.getForecast(latitude: latitude, longitude: longitude, time: time) { (aForecast, error) -> Void in
-            forecast = aForecast
-            err = error
+        client.getForecast(latitude: latitude, longitude: longitude, time: time) { (result) -> Void in
+            switch result {
+            case .success(let aForecast):
+                forecast = aForecast
+            case .failure(let error):
+                err = error
+            }
             expect.fulfill()
         }
         
@@ -116,9 +124,13 @@ class APIClientTests: XCTestCase {
         var err: Error?
         
         //  When
-        client.getForecast(latitude: latitude, longitude: longitude) { (aForecast, error) -> Void in
-            forecast = aForecast
-            err = error
+        client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
+            switch result {
+            case .success(let aForecast):
+                forecast = aForecast
+            case .failure(let error):
+                err = error
+            }
             expect.fulfill()
         }
         
@@ -150,9 +162,13 @@ class APIClientTests: XCTestCase {
         var err: Error?
         
         //  When
-        client.getForecast(latitude: latitude, longitude: longitude) { (aForecast, error) -> Void in
-            forecast = aForecast
-            err = error
+        client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
+            switch result {
+            case .success(let aForecast):
+                forecast = aForecast
+            case .failure(let error):
+                err = error
+            }
             expect.fulfill()
         }
         
@@ -183,9 +199,13 @@ class APIClientTests: XCTestCase {
         var err: Error?
         
         //  When
-        client.getForecast(latitude: latitude, longitude: longitude, extendHourly: true) { (aForecast, error) -> Void in
-            forecast = aForecast
-            err = error
+        client.getForecast(latitude: latitude, longitude: longitude, extendHourly: true) { (result) -> Void in
+            switch result {
+            case .success(let aForecast):
+                forecast = aForecast
+            case .failure(let error):
+                err = error
+            }
             expect.fulfill()
         }
         
@@ -216,9 +236,13 @@ class APIClientTests: XCTestCase {
         var err: Error?
         
         //  When
-        client.getForecast(latitude: latitude, longitude: longitude, excludeForecastFields: [.minutely, .daily]) { (aForecast, error) -> Void in
-            forecast = aForecast
-            err = error
+        client.getForecast(latitude: latitude, longitude: longitude, excludeForecastFields: [.minutely, .daily]) { (result) -> Void in
+            switch result {
+            case .success(let aForecast):
+                forecast = aForecast
+            case .failure(let error):
+                err = error
+            }
             expect.fulfill()
         }
         
@@ -244,9 +268,13 @@ class APIClientTests: XCTestCase {
         var err: Error?
         
         //  When
-        client.getForecast(latitude: latitude, longitude: longitude) { (aForecast, error) -> Void in
-            forecast = aForecast
-            err = error
+        client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
+            switch result {
+            case .success(let aForecast):
+                forecast = aForecast
+            case .failure(let error):
+                err = error
+            }
             expect.fulfill()
         }
         
@@ -272,9 +300,13 @@ class APIClientTests: XCTestCase {
         var err: Error?
         
         //  When
-        client.getForecast(latitude: latitude, longitude: longitude) { (aForecast, error) -> Void in
-            forecast = aForecast
-            err = error
+        client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
+            switch result {
+            case .success(let aForecast):
+                forecast = aForecast
+            case .failure(let error):
+                err = error
+            }
             expect.fulfill()
         }
         
@@ -285,8 +317,6 @@ class APIClientTests: XCTestCase {
             }
             XCTAssertNil(forecast)
             XCTAssertNotNil(err)
-            XCTAssertEqual((err! as NSError).domain, ForecastIOErrorDomain)
-            XCTAssertEqual((err! as NSError).code, ForecastIOErrorBadJSON)
         })
     }
     

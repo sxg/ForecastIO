@@ -72,13 +72,8 @@ open class APIClient : NSObject {
                         completionHandler(Result.success(forecast))
                     }
                 } catch _ {
-                    let badJSONErrorUserInfo = [
-                        NSLocalizedDescriptionKey : "Failed to read JSON from the Dark Sky API.",
-                        NSLocalizedRecoverySuggestionErrorKey : "Make sure the body of a GET request to \(url.absoluteString) returns properly formatted JSON.",
-                        NSLocalizedFailureReasonErrorKey : "Could not parse data received from \(url.absoluteString)."
-                    ]
-                    let badJSONError = NSError(domain: ForecastIOErrorDomain, code: ForecastIOErrorBadJSON, userInfo: badJSONErrorUserInfo)
-                    completionHandler(Result.failure(badJSONError))
+                    let invalidJSONError = ForecastIOError.invalidJSON(data!)
+                    completionHandler(Result.failure(invalidJSONError))
                 }
             }
         })
