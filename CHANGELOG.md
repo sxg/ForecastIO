@@ -2,6 +2,32 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
+## 3.0.0
+
+Released on September 25, 2016.
+
+### Added
+- `Result` enum type to encapsulate responses
+- `ForecastIOError` to represent errors in interacting with the Dark Sky API
+
+### Updated
+- Lowercased all enum cases
+- Moved `ForecastField` enum under `Forecast` as `Field`
+- Expanded `precip` on properties to `precipitation`
+- `DataBlock.data` is no longer optional
+- `Alert.description` is no longer optional
+- `Flag.sources` and `Flag.units` are no longer optional
+- `Flag.units` is now a `Units` enum type
+- API endpoint is now `api.darksky.net` instead of `api.forecast.io`
+- `getForecast` methods renamed `completion` to `completionHandler`
+- `getForecast` methods' `completionHandler`s now return `Result<Forecast>` 
+
+### Removed
+- `Units.uk2` is replaced by `Units.uk`
+- `CustomStringConvertible` protocol conformance from all enums
+- `Forecast.offset`
+- Constants file and `ForecastIOErrorCode` and `ForecastIOErrorDomain`
+
 ## 2.1.1
 
 Released on July 25, 2016.
