@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         let client = APIClient(apiKey: "FAKE-API-KEY")
         client.units = .auto
         client.language = .english
-        client.getForecast(latitude: 30, longitude: 30, excludeForecastFields: [.alerts, .currently, .daily, .flags, .minutely]) { (result) in
+        client.getForecast(latitude: 30, longitude: 30, excludeFields: [.alerts, .currently, .daily, .flags, .minutely]) { (result) in
             switch result {
             case .success(let forecast):
                 print(forecast.hourly?.data)

@@ -35,28 +35,28 @@ open class APIClient : NSObject {
     /**
         Gets the current `Forecast` at a specified latitude and longitude and returns it in a block.
      
-        - parameter latitude:               Latitude at which to get the `Forecast`.
-        - parameter longitude:              Longitude at which to get the `Forecast`.
-        - parameter extendHourly:           If `true`, extends the amount of data in the `hourly` property of `Forecast` to 168 hours from 48 hours. Warning: this massively increases the amount of data returned. Defaults to `false`.
-        - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
-        - parameter completion:             A block that returns the `Forecast` at the latitude and longitude you specified or an error.
+        - parameter latitude:       Latitude at which to get the `Forecast`.
+        - parameter longitude:      Longitude at which to get the `Forecast`.
+        - parameter extendHourly:   If `true`, extends the amount of data in the `hourly` property of `Forecast` to 168 hours from 48 hours. Warning: this massively increases the amount of data returned. Defaults to `false`.
+        - parameter excludeFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
+        - parameter completion:     A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
-    open func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeForecastFields: [Forecast.Field] = [], completion: @escaping (Result<Forecast>) -> Void) {
-        let url = buildForecastURL(latitude: lat, longitude: lon, time: nil, extendHourly: extendHourly, excludeForecastFields: excludeForecastFields)
+    open func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeFields: [Forecast.Field] = [], completion: @escaping (Result<Forecast>) -> Void) {
+        let url = buildForecastURL(latitude: lat, longitude: lon, time: nil, extendHourly: extendHourly, excludeFields: excludeFields)
         getForecast(url: url, completionHandler: completion)
     }
     
     /**
         Gets the `Forecast` at a specified latitude, longitude, and time, and returns it in a block.
      
-        - parameter latitude:               Latitude at which to get the `Forecast`.
-        - parameter longitude:              Longitude at which to get the `Forecast`.
-        - parameter time:                   Time at which to get the `Forecast`. If no timezone is specified, local time (at the specified latitude and longitude) will be assumed.
-        - parameter excludeForecastFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
-        - parameter completion:             A block that returns the `Forecast` at the latitude and longitude you specified or an error.
+        - parameter latitude:       Latitude at which to get the `Forecast`.
+        - parameter longitude:      Longitude at which to get the `Forecast`.
+        - parameter time:           Time at which to get the `Forecast`. If no timezone is specified, local time (at the specified latitude and longitude) will be assumed.
+        - parameter excludeFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
+        - parameter completion:     A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     */
-    open func getForecast(latitude lat: Double, longitude lon: Double, time: Date, excludeForecastFields: [Forecast.Field] = [], completion: @escaping (Result<Forecast>) -> Void) {
-        let url = buildForecastURL(latitude: lat, longitude: lon, time: time, extendHourly: false, excludeForecastFields: excludeForecastFields)
+    open func getForecast(latitude lat: Double, longitude lon: Double, time: Date, excludeFields: [Forecast.Field] = [], completion: @escaping (Result<Forecast>) -> Void) {
+        let url = buildForecastURL(latitude: lat, longitude: lon, time: time, extendHourly: false, excludeFields: excludeFields)
         getForecast(url: url, completionHandler: completion)
     }
     
@@ -80,7 +80,7 @@ open class APIClient : NSObject {
         task.resume()
     }
     
-    private func buildForecastURL(latitude lat: Double, longitude lon: Double, time: Date?, extendHourly: Bool, excludeForecastFields: [Forecast.Field]) -> URL {
+    private func buildForecastURL(latitude lat: Double, longitude lon: Double, time: Date?, extendHourly: Bool, excludeFields: [Forecast.Field]) -> URL {
         //  Build URL path
         var urlString = APIClient.forecastIOURL + apiKey + "/\(lat),\(lon)"
         if let time = time {
@@ -100,15 +100,15 @@ open class APIClient : NSObject {
         if extendHourly {
             queryItems.append(URLQueryItem(name: "extend", value: "hourly"))
         }
-        if !excludeForecastFields.isEmpty {
-            var excludeForecastFieldsString = ""
-            for forecastField in excludeForecastFields {
-                if excludeForecastFieldsString != "" {
-                    excludeForecastFieldsString.append(",")
+        if !excludeFields.isEmpty {
+            var excludeFieldsString = ""
+            for field in excludeFields {
+                if excludeFieldsString != "" {
+                    excludeFieldsString.append(",")
                 }
-                excludeForecastFieldsString.append("\(forecastField.rawValue)")
+                excludeFieldsString.append("\(field.rawValue)")
             }
-            queryItems.append(URLQueryItem(name: "exclude", value: excludeForecastFieldsString))
+            queryItems.append(URLQueryItem(name: "exclude", value: excludeFieldsString))
         }
         urlBuilder.queryItems = queryItems
     

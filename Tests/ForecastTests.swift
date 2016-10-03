@@ -62,7 +62,7 @@ class ForecastTests: XCTestCase {
         XCTAssertNil(forecast.daily)
     }
     
-    func testForecastFieldRawValue() {
+    func testFieldRawValue() {
         //  Given
         //  When
         //  Then

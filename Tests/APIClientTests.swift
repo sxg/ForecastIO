@@ -219,7 +219,7 @@ class APIClientTests: XCTestCase {
         })
     }
     
-    func testGetForecastWithExcludedForecastFields() {
+    func testGetForecastWithExcludedFields() {
         //  Given
         let expect = expectation(description: "Get forecast wtih excluded forecast fields")
         let hostStub = isHost("api.darksky.net")
@@ -236,7 +236,7 @@ class APIClientTests: XCTestCase {
         var err: Error?
         
         //  When
-        client.getForecast(latitude: latitude, longitude: longitude, excludeForecastFields: [.minutely, .daily]) { (result) -> Void in
+        client.getForecast(latitude: latitude, longitude: longitude, excludeFields: [.minutely, .daily]) { (result) -> Void in
             switch result {
             case .success(let aForecast):
                 forecast = aForecast
