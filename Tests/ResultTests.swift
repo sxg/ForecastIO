@@ -24,10 +24,12 @@ class ResultTests: XCTestCase {
         
         //  When
         let (aForecast, aRequestMetadata) = result.value
+        let anError = result.error
         
         //  Then
         XCTAssertNotNil(aForecast)
         XCTAssertNotNil(aRequestMetadata)
+        XCTAssertNil(anError)
     }
     
     func testFailureResult() {
@@ -36,9 +38,12 @@ class ResultTests: XCTestCase {
         let result = Result<Forecast>.failure(forecastIOError)
         
         //  When
+        let (aForecast, aRequestMetadata) = result.value
         let anError = result.error
         
         //  Then
+        XCTAssertNil(aForecast)
+        XCTAssertNil(aRequestMetadata)
         XCTAssertNotNil(anError)
     }
     
