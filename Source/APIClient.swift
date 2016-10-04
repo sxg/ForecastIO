@@ -55,7 +55,9 @@ open class APIClient : NSObject {
     }
     
     private func getForecast(url: URL, completionHandler: @escaping (Result<Forecast>) -> Void) {
-        let task = self.session.dataTask(with: url, completionHandler: { (data: Data?, response, err: Error?) -> Void in
+        var urlRequest = URLRequest(url: url)
+        urlRequest.addValue("gzip", forHTTPHeaderField: "Accept-Encoding")
+        let task = self.session.dataTask(with: urlRequest, completionHandler: { (data: Data?, response, err: Error?) -> Void in
             if let err = err {
                 completionHandler(Result.failure(err))
             } else {
