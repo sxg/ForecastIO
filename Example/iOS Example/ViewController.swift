@@ -20,8 +20,9 @@ class ViewController: UIViewController {
         client.language = .english
         client.getForecast(latitude: 30, longitude: 30, excludeFields: [.alerts, .currently, .daily, .flags, .minutely]) { (result) in
             switch result {
-            case .success(let forecast):
+            case .success(let forecast, let requestMetadata):
                 print(forecast.hourly?.data)
+                print(requestMetadata)
             case .failure(let error):
                 print(error)
             }
