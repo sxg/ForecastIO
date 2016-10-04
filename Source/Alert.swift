@@ -23,13 +23,11 @@ public struct Alert {
     /// An HTTP(S) URI that contains detailed information about the `Alert`.
     public let uri: URL
     
-    /**
-        Creates a new `Alert` from a JSON object.
-     
-        - parameter fromJSON: A JSON object with keys corresponding to the `Alert`'s properties.
-     
-        - returns: A new `Alert` filled with data from the given JSON object.
-    */
+    /// Creates a new `Alert` from a JSON object.
+    ///
+    /// - parameter json: A JSON object with keys corresponding to the `Alert`'s properties.
+    ///
+    /// - returns: A new `Alert` filled with data from the given JSON object.
     public init(fromJSON json: NSDictionary) {
         title = json["title"] as! String
         expires = Date(timeIntervalSince1970: json["expires"] as! Double)

@@ -10,6 +10,7 @@ import Foundation
 
 /// The weather data for a location at a specific time.
 public struct Forecast {
+    
     /// The requested latitude.
     public let latitude: Float
     
@@ -37,13 +38,28 @@ public struct Forecast {
     /// The daily weather conditions at the requested location for the next week aligned to midnight of the day.
     public let daily: DataBlock?
     
-    /**
-        Creates a new `Forecast` from a JSON object.
-     
-        - parameter fromJSON: A JSON object with keys corresponding to the `Forecast`'s properties.
-     
-        - returns: A new `Forecast` filled with data from the given JSON object.
-     */
+    /// Data fields associated with a `Forecast`.
+    ///
+    /// - currently: Current weather conditions.
+    /// - minutely:  Minute-by-minute weather conditions for the next hour.
+    /// - hourly:    Hour-by-hour weather conditions for the next two days by default but can be exte1nded to one week.
+    /// - daily:     Day-by-day weather conditions for the next week.
+    /// - alerts:    Severe weather alerts.
+    /// - flags:     Miscellaneous metadata.
+    public enum Field: String {
+        case currently = "currently"
+        case minutely = "minutely"
+        case hourly = "hourly"
+        case daily = "daily"
+        case alerts = "alerts"
+        case flags = "flags"
+    }
+    
+    /// Creates a new `Forecast` from a JSON object.
+    ///
+    /// - parameter json: A JSON object with keys corresponding to the `Forecast`'s properties.
+    ///
+    /// - returns: A new `Forecast` filled with data from the given JSON object.
     public init(fromJSON json: NSDictionary) {
         latitude = json["latitude"] as! Float
         longitude = json["longitude"] as! Float

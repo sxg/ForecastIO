@@ -21,40 +21,34 @@ open class APIClient : NSObject {
     /// Language in which the `Forecast` response's `DataBlock` and `DataPoint`'s `summary` properties will be provided. English is the default if no language is specified as per the Dark Sky API docs.
     open var language: Language?
     
-    /**
-        Creates a new `APIClient` to interact with the Dark Sky API.
-     
-        - parameter apiKey: Your Dark Sky API key.
-     
-        - returns: A new `APIClient` configured to interact with the Dark Sky API with your API key.
-    */
+    /// Creates a new `APIClient` to interact with the Dark Sky API.
+    ///
+    /// - parameter key: Your Dark Sky API key.
+    ///
+    /// - returns: A new `APIClient` configured to interact with the Dark Sky API with your API key.
     public init(apiKey key: String) {
         apiKey = key
     }
 
-    /**
-        Gets the current `Forecast` at a specified latitude and longitude and returns it in a block.
-     
-        - parameter latitude:       Latitude at which to get the `Forecast`.
-        - parameter longitude:      Longitude at which to get the `Forecast`.
-        - parameter extendHourly:   If `true`, extends the amount of data in the `hourly` property of `Forecast` to 168 hours from 48 hours. Warning: this massively increases the amount of data returned. Defaults to `false`.
-        - parameter excludeFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
-        - parameter completion:     A block that returns the `Forecast` at the latitude and longitude you specified or an error.
-    */
+    /// Gets the current `Forecast` at a specified latitude and longitude and returns it in a block.
+    ///
+    /// - parameter lat:           Latitude at which to get the `Forecast`.
+    /// - parameter lon:           Longitude at which to get the `Forecast`.
+    /// - parameter extendHourly:  If `true`, extends the amount of data in the `hourly` property of `Forecast` to 168 hours from 48 hours. Warning: this massively increases the amount of data returned. Defaults to `false`.
+    /// - parameter excludeFields: `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
+    /// - parameter completion:    A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     open func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeFields: [Forecast.Field] = [], completion: @escaping (Result<Forecast>) -> Void) {
         let url = buildForecastURL(latitude: lat, longitude: lon, time: nil, extendHourly: extendHourly, excludeFields: excludeFields)
         getForecast(url: url, completionHandler: completion)
     }
     
-    /**
-        Gets the `Forecast` at a specified latitude, longitude, and time, and returns it in a block.
-     
-        - parameter latitude:       Latitude at which to get the `Forecast`.
-        - parameter longitude:      Longitude at which to get the `Forecast`.
-        - parameter time:           Time at which to get the `Forecast`. If no timezone is specified, local time (at the specified latitude and longitude) will be assumed.
-        - parameter excludeFields:  `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
-        - parameter completion:     A block that returns the `Forecast` at the latitude and longitude you specified or an error.
-    */
+    /// Gets the `Forecast` at a specified latitude, longitude, and time, and returns it in a block.
+    ///
+    /// - parameter lat:           Latitude at which to get the `Forecast`.
+    /// - parameter lon:           Longitude at which to get the `Forecast`.
+    /// - parameter time:          Time at which to get the `Forecast`. If no timezone is specified, local time (at the specified latitude and longitude) will be assumed.
+    /// - parameter excludeFields: `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
+    /// - parameter completion:    A block that returns the `Forecast` at the latitude and longitude you specified or an error.
     open func getForecast(latitude lat: Double, longitude lon: Double, time: Date, excludeFields: [Forecast.Field] = [], completion: @escaping (Result<Forecast>) -> Void) {
         let url = buildForecastURL(latitude: lat, longitude: lon, time: time, extendHourly: false, excludeFields: excludeFields)
         getForecast(url: url, completionHandler: completion)

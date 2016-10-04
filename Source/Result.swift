@@ -8,28 +8,13 @@
 
 import Foundation
 
-/// Used to represent whether a request was successful or encountered an error.
+/// Represents whether a request was successful or encountered an error.
+///
+/// - success: The request and all post processing operations were successful resulting in the serialization of the provided associated value.
+/// - failure: The request encountered an error resulting in a failure. The associated values are the original data provided by the server as well as the error that caused the failure.
 public enum Result<Value> {
-    /// The request and all post processing operations were successful resulting in the serialization of the provided associated value.
     case success(Value)
-    
-    /// The request encountered an error resulting in a failure. The associated values are the original data provided by the server as well as the error that caused the failure.
     case failure(Error)
-    
-    /// Returns `true` if the result is a success, `false` otherwise.
-    public var isSuccess: Bool {
-        switch self {
-        case .success:
-            return true
-        case .failure:
-            return false
-        }
-    }
-    
-    /// Returns `true` if the result is a failure, `false` otherwise.
-    public var isFailure: Bool {
-        return !isSuccess
-    }
     
     /// Returns the associated value if the result is a success, `nil` otherwise.
     public var value: Value? {

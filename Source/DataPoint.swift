@@ -107,13 +107,11 @@ public struct DataPoint {
     /// The columnar density of total atomspheric ozone at the given time in Dobson units.
     public let ozone: Float?
     
-    /**
-        Creates a new `DataPoint` from a JSON object.
-     
-        - parameter fromJSON: A JSON object with keys corresponding to the `DataPoint`'s properties.
-     
-        - returns: A new `DataPoint` filled with data from the given JSON object.
-    */
+    /// Creates a new `DataPoint` from a JSON object.
+    ///
+    /// - parameter json: A JSON object with keys corresponding to the `DataPoint`'s properties.
+    ///
+    /// - returns: A new `DataPoint` filled with data from the given JSON object.
     public init(fromJSON json: NSDictionary) {
         time = Date(timeIntervalSince1970: json["time"] as! Double)
         summary = json["summary"] as? String

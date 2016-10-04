@@ -45,10 +45,6 @@
 		4A56CEC51D447F4900751AF6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A56CEB11D44770C00751AF6 /* Language.swift */; };
 		4A56CEC61D447F4A00751AF6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A56CEB11D44770C00751AF6 /* Language.swift */; };
 		4A56CEC71D447F4B00751AF6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A56CEB11D44770C00751AF6 /* Language.swift */; };
-		4A61CCB71D98A27200BF9F5A /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A61CCB61D98A27200BF9F5A /* Field.swift */; };
-		4A61CCB81D98A3C000BF9F5A /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A61CCB61D98A27200BF9F5A /* Field.swift */; };
-		4A61CCB91D98A3C400BF9F5A /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A61CCB61D98A27200BF9F5A /* Field.swift */; };
-		4A61CCBA1D98A3C800BF9F5A /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A61CCB61D98A27200BF9F5A /* Field.swift */; };
 		4A7AFEA41D98B9BA00568802 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7AFEA31D98B9BA00568802 /* Result.swift */; };
 		4A8B235C1D44807E00ACBAA8 /* forecast_bare.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */; };
 		4A8B235D1D44807E00ACBAA8 /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = D4D9F2B41C54061600A4A02F /* forecast.json */; };
@@ -149,7 +145,6 @@
 		4A3640F91D150EAA005602A7 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		4A468FF41D9A0AAF00B2C0D2 /* ForecastIOError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastIOError.swift; path = Source/ForecastIOError.swift; sourceTree = "<group>"; };
 		4A56CEB11D44770C00751AF6 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Source/Language.swift; sourceTree = "<group>"; };
-		4A61CCB61D98A27200BF9F5A /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Field.swift; path = Source/Field.swift; sourceTree = "<group>"; };
 		4A7AFEA31D98B9BA00568802 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		4A8B23511D447FB300ACBAA8 /* ForecastIO iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB7086C1D45230F005D1E8E /* LanguageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LanguageTests.swift; path = Tests/LanguageTests.swift; sourceTree = SOURCE_ROOT; };
@@ -325,7 +320,6 @@
 				4ACC21E21DA1FB640051D7E7 /* RequestMetadata.swift */,
 				D4564FB81C53F52000CB7548 /* DataBlock.swift */,
 				D4564FB91C53F52000CB7548 /* DataPoint.swift */,
-				4A61CCB61D98A27200BF9F5A /* Field.swift */,
 				D4564FBA1C53F52000CB7548 /* Flag.swift */,
 				D4564FBB1C53F52000CB7548 /* Forecast.swift */,
 				4A468FF41D9A0AAF00B2C0D2 /* ForecastIOError.swift */,
@@ -983,7 +977,6 @@
 				4ACC21E51DA1FB640051D7E7 /* RequestMetadata.swift in Sources */,
 				D4564FEE1C53F52000CB7548 /* Icon.swift in Sources */,
 				D4564FE01C53F52000CB7548 /* Flag.swift in Sources */,
-				4A61CCB91D98A3C400BF9F5A /* Field.swift in Sources */,
 				D4564FD91C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE71C53F52000CB7548 /* Forecast.swift in Sources */,
 				4A468FF71D9A0AAF00B2C0D2 /* ForecastIOError.swift in Sources */,
@@ -1021,7 +1014,6 @@
 				4ACC21E61DA1FB640051D7E7 /* RequestMetadata.swift in Sources */,
 				D4564FF01C53F52000CB7548 /* Icon.swift in Sources */,
 				D4564FE21C53F52000CB7548 /* Flag.swift in Sources */,
-				4A61CCBA1D98A3C800BF9F5A /* Field.swift in Sources */,
 				D4564FDB1C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE91C53F52000CB7548 /* Forecast.swift in Sources */,
 				4A468FF81D9A0ABB00B2C0D2 /* ForecastIOError.swift in Sources */,
@@ -1042,7 +1034,6 @@
 				4ACC21E41DA1FB640051D7E7 /* RequestMetadata.swift in Sources */,
 				D4564FEC1C53F52000CB7548 /* Icon.swift in Sources */,
 				D4564FDE1C53F52000CB7548 /* Flag.swift in Sources */,
-				4A61CCB81D98A3C000BF9F5A /* Field.swift in Sources */,
 				D4564FD71C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE51C53F52000CB7548 /* Forecast.swift in Sources */,
 				4A468FF61D9A0AAF00B2C0D2 /* ForecastIOError.swift in Sources */,
@@ -1081,7 +1072,6 @@
 				4A56CEB61D447BD000751AF6 /* DataPoint.swift in Sources */,
 				4A56CEB71D447BD000751AF6 /* Flag.swift in Sources */,
 				4A56CEB81D447BD000751AF6 /* Forecast.swift in Sources */,
-				4A61CCB71D98A27200BF9F5A /* Field.swift in Sources */,
 				4A56CEB91D447BD000751AF6 /* Icon.swift in Sources */,
 				4A56CEBA1D447BD000751AF6 /* Precipitation.swift in Sources */,
 				4A468FF51D9A0AAF00B2C0D2 /* ForecastIOError.swift in Sources */,
