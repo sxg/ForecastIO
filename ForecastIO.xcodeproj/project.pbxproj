@@ -317,7 +317,6 @@
 			children = (
 				D4564FB61C53F52000CB7548 /* Alert.swift */,
 				D4564FB71C53F52000CB7548 /* APIClient.swift */,
-				4ACC21E21DA1FB640051D7E7 /* RequestMetadata.swift */,
 				D4564FB81C53F52000CB7548 /* DataBlock.swift */,
 				D4564FB91C53F52000CB7548 /* DataPoint.swift */,
 				D4564FBA1C53F52000CB7548 /* Flag.swift */,
@@ -327,6 +326,7 @@
 				4A10DB7A1D4510A900E304C5 /* Language.swift */,
 				D4564FBE1C53F52000CB7548 /* Precipitation.swift */,
 				4A7AFEA31D98B9BA00568802 /* Result.swift */,
+				4ACC21E21DA1FB640051D7E7 /* RequestMetadata.swift */,
 				D4564FBF1C53F52000CB7548 /* Units.swift */,
 				D4564FBD1C53F52000CB7548 /* Info.plist */,
 			);

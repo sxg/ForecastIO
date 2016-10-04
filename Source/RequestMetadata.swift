@@ -20,19 +20,19 @@ public struct RequestMetadata {
     /// Server-side response time of the current request in milliseconds.
     public let responseTime: Float?
 
-    /// Creates a new `RequestMetadata` from a `Dictionary` of Dark Sky API response headers.
+    /// Creates a new `RequestMetadata` from a `Dictionary` of Dark Sky API response header fields.
     ///
-    /// - parameter headers: A `Dictionary` containing Dark Sky API response headers.
+    /// - parameter headerFields: A `Dictionary` containing Dark Sky API response header fields.
     ///
-    /// - returns: A new `RequestMetadata` filled with data from the given Dark Sky API response headers `Dictionary`.
-    public init(fromHTTPHeaders headers: [AnyHashable: Any]) {
-        cacheControl = headers["Cache-Control"] as? String
-        if let forecastAPICallsHeader = headers["X-Forecast-API-Calls"] as? String {
+    /// - returns: A new `RequestMetadata` filled with data from the given Dark Sky API response header fields `Dictionary`.
+    public init(fromHTTPHeaderFields headerFields: [AnyHashable: Any]) {
+        cacheControl = headerFields["Cache-Control"] as? String
+        if let forecastAPICallsHeader = headerFields["X-Forecast-API-Calls"] as? String {
             apiRequestsCount = Int(forecastAPICallsHeader)
         } else {
             apiRequestsCount = nil
         }
-        if var responseTimeHeader = headers["X-Response-Time"] as? String {
+        if var responseTimeHeader = headerFields["X-Response-Time"] as? String {
             // Remove "ms" units from the string
             responseTimeHeader = responseTimeHeader.trimmingCharacters(in: CharacterSet.letters)
             responseTime = Float(responseTimeHeader)
