@@ -10,6 +10,7 @@ Released on September 25, 2016.
 - `Result` enum type to encapsulate responses
 - `RequestMetadata` to represent data about the consumption of the Dark Sky API
 - `ForecastIOError` to represent errors in interacting with the Dark Sky API
+- Explicit gzip encoding to all Dark Sky API requests
 
 ### Updated
 - Lowercased all enum cases
