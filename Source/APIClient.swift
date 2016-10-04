@@ -61,9 +61,10 @@ open class APIClient : NSObject {
             } else {
                 do {
                     let jsonObject = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
-                    if let json = jsonObject as? NSDictionary {
+                    if let json = jsonObject as? NSDictionary, let httpURLResponse = response as? HTTPURLResponse {
                         let forecast = Forecast(fromJSON: json)
-                        completionHandler(Result.success(forecast))
+                        let requestMetadata = RequestMetadata(fromHTTPHeaders: httpURLResponse.allHeaderFields)
+                        completionHandler(Result.success(forecast, requestMetadata))
                     }
                 } catch _ {
                     let invalidJSONError = ForecastIOError.invalidJSON(data!)
