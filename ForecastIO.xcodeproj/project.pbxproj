@@ -67,10 +67,10 @@
 		4AB708731D45246C005D1E8E /* IconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB708701D45246C005D1E8E /* IconTests.swift */; };
 		4AB708761D452539005D1E8E /* PrecipitationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB708741D452539005D1E8E /* PrecipitationTests.swift */; };
 		4AB708771D452539005D1E8E /* PrecipitationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB708741D452539005D1E8E /* PrecipitationTests.swift */; };
-		4ACC21E31DA1FB640051D7E7 /* APIMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC21E21DA1FB640051D7E7 /* APIMetadata.swift */; };
-		4ACC21E41DA1FB640051D7E7 /* APIMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC21E21DA1FB640051D7E7 /* APIMetadata.swift */; };
-		4ACC21E51DA1FB640051D7E7 /* APIMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC21E21DA1FB640051D7E7 /* APIMetadata.swift */; };
-		4ACC21E61DA1FB640051D7E7 /* APIMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC21E21DA1FB640051D7E7 /* APIMetadata.swift */; };
+		4ACC21E31DA1FB640051D7E7 /* RequestMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC21E21DA1FB640051D7E7 /* RequestMetadata.swift */; };
+		4ACC21E41DA1FB640051D7E7 /* RequestMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC21E21DA1FB640051D7E7 /* RequestMetadata.swift */; };
+		4ACC21E51DA1FB640051D7E7 /* RequestMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC21E21DA1FB640051D7E7 /* RequestMetadata.swift */; };
+		4ACC21E61DA1FB640051D7E7 /* RequestMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC21E21DA1FB640051D7E7 /* RequestMetadata.swift */; };
 		4AF007151D98BC4D00209184 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7AFEA31D98B9BA00568802 /* Result.swift */; };
 		4AF007161D98BC5000209184 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7AFEA31D98B9BA00568802 /* Result.swift */; };
 		4AF007171D98BC5700209184 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7AFEA31D98B9BA00568802 /* Result.swift */; };
@@ -155,7 +155,7 @@
 		4AB7086C1D45230F005D1E8E /* LanguageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LanguageTests.swift; path = Tests/LanguageTests.swift; sourceTree = SOURCE_ROOT; };
 		4AB708701D45246C005D1E8E /* IconTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconTests.swift; path = Tests/IconTests.swift; sourceTree = SOURCE_ROOT; };
 		4AB708741D452539005D1E8E /* PrecipitationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrecipitationTests.swift; path = Tests/PrecipitationTests.swift; sourceTree = SOURCE_ROOT; };
-		4ACC21E21DA1FB640051D7E7 /* APIMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIMetadata.swift; path = Source/APIMetadata.swift; sourceTree = "<group>"; };
+		4ACC21E21DA1FB640051D7E7 /* RequestMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestMetadata.swift; path = Source/RequestMetadata.swift; sourceTree = "<group>"; };
 		52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F290BC03424BDFA86DFE07 /* Pods_ForecastIO_macOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastIO_macOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1B356DACA6D8F6203D8BA3 /* Pods-ForecastIO macOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO macOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -322,7 +322,7 @@
 			children = (
 				D4564FB61C53F52000CB7548 /* Alert.swift */,
 				D4564FB71C53F52000CB7548 /* APIClient.swift */,
-				4ACC21E21DA1FB640051D7E7 /* APIMetadata.swift */,
+				4ACC21E21DA1FB640051D7E7 /* RequestMetadata.swift */,
 				D4564FB81C53F52000CB7548 /* DataBlock.swift */,
 				D4564FB91C53F52000CB7548 /* DataPoint.swift */,
 				4A61CCB61D98A27200BF9F5A /* Field.swift */,
@@ -980,7 +980,7 @@
 				D4564FC41C53F52000CB7548 /* Alert.swift in Sources */,
 				D4564FFC1C53F52000CB7548 /* Precipitation.swift in Sources */,
 				D4564FD21C53F52000CB7548 /* DataBlock.swift in Sources */,
-				4ACC21E51DA1FB640051D7E7 /* APIMetadata.swift in Sources */,
+				4ACC21E51DA1FB640051D7E7 /* RequestMetadata.swift in Sources */,
 				D4564FEE1C53F52000CB7548 /* Icon.swift in Sources */,
 				D4564FE01C53F52000CB7548 /* Flag.swift in Sources */,
 				4A61CCB91D98A3C400BF9F5A /* Field.swift in Sources */,
@@ -1018,7 +1018,7 @@
 				D4564FC61C53F52000CB7548 /* Alert.swift in Sources */,
 				D4564FFE1C53F52000CB7548 /* Precipitation.swift in Sources */,
 				D4564FD41C53F52000CB7548 /* DataBlock.swift in Sources */,
-				4ACC21E61DA1FB640051D7E7 /* APIMetadata.swift in Sources */,
+				4ACC21E61DA1FB640051D7E7 /* RequestMetadata.swift in Sources */,
 				D4564FF01C53F52000CB7548 /* Icon.swift in Sources */,
 				D4564FE21C53F52000CB7548 /* Flag.swift in Sources */,
 				4A61CCBA1D98A3C800BF9F5A /* Field.swift in Sources */,
@@ -1039,7 +1039,7 @@
 				D4564FC21C53F52000CB7548 /* Alert.swift in Sources */,
 				D4564FFA1C53F52000CB7548 /* Precipitation.swift in Sources */,
 				D4564FD01C53F52000CB7548 /* DataBlock.swift in Sources */,
-				4ACC21E41DA1FB640051D7E7 /* APIMetadata.swift in Sources */,
+				4ACC21E41DA1FB640051D7E7 /* RequestMetadata.swift in Sources */,
 				D4564FEC1C53F52000CB7548 /* Icon.swift in Sources */,
 				D4564FDE1C53F52000CB7548 /* Flag.swift in Sources */,
 				4A61CCB81D98A3C000BF9F5A /* Field.swift in Sources */,
@@ -1077,7 +1077,7 @@
 				4A56CEB31D447BD000751AF6 /* Alert.swift in Sources */,
 				4A56CEB41D447BD000751AF6 /* APIClient.swift in Sources */,
 				4A56CEB51D447BD000751AF6 /* DataBlock.swift in Sources */,
-				4ACC21E31DA1FB640051D7E7 /* APIMetadata.swift in Sources */,
+				4ACC21E31DA1FB640051D7E7 /* RequestMetadata.swift in Sources */,
 				4A56CEB61D447BD000751AF6 /* DataPoint.swift in Sources */,
 				4A56CEB71D447BD000751AF6 /* Flag.swift in Sources */,
 				4A56CEB81D447BD000751AF6 /* Forecast.swift in Sources */,
