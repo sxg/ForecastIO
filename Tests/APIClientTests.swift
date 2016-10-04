@@ -44,13 +44,15 @@ class APIClientTests: XCTestCase {
         }
         let client = APIClient(apiKey: apiKey)
         var forecast: Forecast?
+        var metadata: RequestMetadata?
         var err: Error?
         
         //  When
         client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
             switch result {
-            case .success(let currentForecast):
+            case .success(let currentForecast, let requestMetadata):
                 forecast = currentForecast
+                metadata = requestMetadata
             case .failure(let error):
                 err = error
             }
@@ -63,6 +65,7 @@ class APIClientTests: XCTestCase {
                 print("Error: \(error.localizedDescription)")
             }
             XCTAssertNotNil(forecast)
+            XCTAssertNotNil(metadata)
             XCTAssertNil(err)
         })
     }
@@ -83,13 +86,15 @@ class APIClientTests: XCTestCase {
         let client = APIClient(apiKey: "FAKE-API-KEY")
         client.units = .si
         var forecast: Forecast?
+        var metadata: RequestMetadata?
         var err: Error?
         
         //  When
         client.getForecast(latitude: latitude, longitude: longitude, time: time) { (result) -> Void in
             switch result {
-            case .success(let aForecast):
+            case .success(let aForecast, let requestMetadata):
                 forecast = aForecast
+                metadata = requestMetadata
             case .failure(let error):
                 err = error
             }
@@ -102,6 +107,7 @@ class APIClientTests: XCTestCase {
                 print("Error: \(error.localizedDescription)")
             }
             XCTAssertNotNil(forecast)
+            XCTAssertNotNil(metadata)
             XCTAssertNil(err)
         })
     }
@@ -121,13 +127,15 @@ class APIClientTests: XCTestCase {
         let client = APIClient(apiKey: "FAKE-API-KEY")
         client.units = .si
         var forecast: Forecast?
+        var metadata: RequestMetadata?
         var err: Error?
         
         //  When
         client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
             switch result {
-            case .success(let aForecast):
+            case .success(let aForecast, let requestMetadata):
                 forecast = aForecast
+                metadata = requestMetadata
             case .failure(let error):
                 err = error
             }
@@ -140,6 +148,7 @@ class APIClientTests: XCTestCase {
                 print("Error: \(error.localizedDescription)")
             }
             XCTAssertNotNil(forecast)
+            XCTAssertNotNil(metadata)
             XCTAssertNil(err)
         })
     }
@@ -159,13 +168,15 @@ class APIClientTests: XCTestCase {
         let client = APIClient(apiKey: "FAKE-API-KEY")
         client.language = .french
         var forecast: Forecast?
+        var metadata: RequestMetadata?
         var err: Error?
         
         //  When
         client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
             switch result {
-            case .success(let aForecast):
+            case .success(let aForecast, let requestMetadata):
                 forecast = aForecast
+                metadata = requestMetadata
             case .failure(let error):
                 err = error
             }
@@ -178,6 +189,7 @@ class APIClientTests: XCTestCase {
                 print("Error: \(error.localizedDescription)")
             }
             XCTAssertNotNil(forecast)
+            XCTAssertNotNil(metadata)
             XCTAssertNil(err)
         })
     }
@@ -196,13 +208,15 @@ class APIClientTests: XCTestCase {
         }
         let client = APIClient(apiKey: "FAKE-API-KEY")
         var forecast: Forecast?
+        var metadata: RequestMetadata?
         var err: Error?
         
         //  When
         client.getForecast(latitude: latitude, longitude: longitude, extendHourly: true) { (result) -> Void in
             switch result {
-            case .success(let aForecast):
+            case .success(let aForecast, let requestMetadata):
                 forecast = aForecast
+                metadata = requestMetadata
             case .failure(let error):
                 err = error
             }
@@ -215,6 +229,7 @@ class APIClientTests: XCTestCase {
                 print("Error: \(error.localizedDescription)")
             }
             XCTAssertNotNil(forecast)
+            XCTAssertNotNil(metadata)
             XCTAssertNil(err)
         })
     }
@@ -233,13 +248,15 @@ class APIClientTests: XCTestCase {
         }
         let client = APIClient(apiKey: "FAKE-API-KEY")
         var forecast: Forecast?
+        var metadata: RequestMetadata?
         var err: Error?
         
         //  When
         client.getForecast(latitude: latitude, longitude: longitude, excludeFields: [.minutely, .daily]) { (result) -> Void in
             switch result {
-            case .success(let aForecast):
+            case .success(let aForecast, let requestMetadata):
                 forecast = aForecast
+                metadata = requestMetadata
             case .failure(let error):
                 err = error
             }
@@ -252,6 +269,7 @@ class APIClientTests: XCTestCase {
                 print("Error: \(error.localizedDescription)")
             }
             XCTAssertNotNil(forecast)
+            XCTAssertNotNil(metadata)
             XCTAssertNil(err)
         })
     }
@@ -265,13 +283,15 @@ class APIClientTests: XCTestCase {
         }
         let client = APIClient(apiKey: "FAKE-API-KEY")
         var forecast: Forecast?
+        var metadata: RequestMetadata?
         var err: Error?
         
         //  When
         client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
             switch result {
-            case .success(let aForecast):
+            case .success(let aForecast, let requestMetadata):
                 forecast = aForecast
+                metadata = requestMetadata
             case .failure(let error):
                 err = error
             }
@@ -284,6 +304,7 @@ class APIClientTests: XCTestCase {
                 print("Error: \(error.localizedDescription)")
             }
             XCTAssertNil(forecast)
+            XCTAssertNil(metadata)
             XCTAssertNotNil(err)
         })
     }
@@ -297,13 +318,15 @@ class APIClientTests: XCTestCase {
         }
         let client = APIClient(apiKey: "FAKE-API-KEY")
         var forecast: Forecast?
+        var metadata: RequestMetadata?
         var err: Error?
         
         //  When
         client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
             switch result {
-            case .success(let aForecast):
+            case .success(let aForecast, let requestMetadata):
                 forecast = aForecast
+                metadata = requestMetadata
             case .failure(let error):
                 err = error
             }
@@ -316,6 +339,7 @@ class APIClientTests: XCTestCase {
                 print("Error: \(error.localizedDescription)")
             }
             XCTAssertNil(forecast)
+            XCTAssertNil(metadata)
             XCTAssertNotNil(err)
         })
     }
