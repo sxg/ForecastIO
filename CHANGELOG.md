@@ -8,6 +8,7 @@ Released on September 25, 2016.
 
 ### Added
 - `Result` enum type to encapsulate responses
+- `RequestMetadata` to represent data about the consumption of the Dark Sky API
 - `ForecastIOError` to represent errors in interacting with the Dark Sky API
 
 ### Updated
@@ -20,7 +21,8 @@ Released on September 25, 2016.
 - `Flag.units` is now a `Units` enum type
 - API endpoint is now `api.darksky.net` instead of `api.forecast.io`
 - `getForecast` methods renamed `completion` to `completionHandler`
-- `getForecast` methods' `completionHandler`s now return `Result<Forecast>` 
+- `getForecast` methods' `completionHandler`s now return `Result<Forecast>`
+- Documentation formatting
 
 ### Removed
 - `Units.uk2` is replaced by `Units.uk`
