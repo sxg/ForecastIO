@@ -67,6 +67,12 @@
 		4ACC21E41DA1FB640051D7E7 /* RequestMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC21E21DA1FB640051D7E7 /* RequestMetadata.swift */; };
 		4ACC21E51DA1FB640051D7E7 /* RequestMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC21E21DA1FB640051D7E7 /* RequestMetadata.swift */; };
 		4ACC21E61DA1FB640051D7E7 /* RequestMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC21E21DA1FB640051D7E7 /* RequestMetadata.swift */; };
+		4ADA38511DA34E9A00434C3D /* RequestMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA38501DA34E9A00434C3D /* RequestMetadataTests.swift */; };
+		4ADA38521DA34E9A00434C3D /* RequestMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA38501DA34E9A00434C3D /* RequestMetadataTests.swift */; };
+		4ADA38531DA34E9A00434C3D /* RequestMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA38501DA34E9A00434C3D /* RequestMetadataTests.swift */; };
+		4ADA38551DA34FDB00434C3D /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA38541DA34FDB00434C3D /* ResultTests.swift */; };
+		4ADA38561DA34FDB00434C3D /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA38541DA34FDB00434C3D /* ResultTests.swift */; };
+		4ADA38571DA34FDB00434C3D /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA38541DA34FDB00434C3D /* ResultTests.swift */; };
 		4AF007151D98BC4D00209184 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7AFEA31D98B9BA00568802 /* Result.swift */; };
 		4AF007161D98BC5000209184 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7AFEA31D98B9BA00568802 /* Result.swift */; };
 		4AF007171D98BC5700209184 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7AFEA31D98B9BA00568802 /* Result.swift */; };
@@ -151,6 +157,8 @@
 		4AB708701D45246C005D1E8E /* IconTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconTests.swift; path = Tests/IconTests.swift; sourceTree = SOURCE_ROOT; };
 		4AB708741D452539005D1E8E /* PrecipitationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrecipitationTests.swift; path = Tests/PrecipitationTests.swift; sourceTree = SOURCE_ROOT; };
 		4ACC21E21DA1FB640051D7E7 /* RequestMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestMetadata.swift; path = Source/RequestMetadata.swift; sourceTree = "<group>"; };
+		4ADA38501DA34E9A00434C3D /* RequestMetadataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestMetadataTests.swift; path = Tests/RequestMetadataTests.swift; sourceTree = SOURCE_ROOT; };
+		4ADA38541DA34FDB00434C3D /* ResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultTests.swift; path = Tests/ResultTests.swift; sourceTree = SOURCE_ROOT; };
 		52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F290BC03424BDFA86DFE07 /* Pods_ForecastIO_macOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastIO_macOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1B356DACA6D8F6203D8BA3 /* Pods-ForecastIO macOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO macOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -369,6 +377,8 @@
 				4AB708701D45246C005D1E8E /* IconTests.swift */,
 				4AB7086C1D45230F005D1E8E /* LanguageTests.swift */,
 				4AB708741D452539005D1E8E /* PrecipitationTests.swift */,
+				4ADA38501DA34E9A00434C3D /* RequestMetadataTests.swift */,
+				4ADA38541DA34FDB00434C3D /* ResultTests.swift */,
 				D4D9F2D31C54454100A4A02F /* UnitsTest.swift */,
 				D45650071C53F53800CB7548 /* Info.plist */,
 			);
@@ -954,11 +964,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ADA38511DA34E9A00434C3D /* RequestMetadataTests.swift in Sources */,
 				4AA3256E1D615F03003CFFA9 /* DataBlockTests.swift in Sources */,
 				4AA3256F1D615F03003CFFA9 /* DataPointTests.swift in Sources */,
 				4AA325701D615F03003CFFA9 /* FlagTests.swift in Sources */,
 				4AA325711D615F03003CFFA9 /* ForecastTests.swift in Sources */,
 				4AA325731D615F03003CFFA9 /* IconTests.swift in Sources */,
+				4ADA38551DA34FDB00434C3D /* ResultTests.swift in Sources */,
 				4AA325741D615F03003CFFA9 /* LanguageTests.swift in Sources */,
 				4AA325751D615F03003CFFA9 /* PrecipitationTests.swift in Sources */,
 				4AA325761D615F03003CFFA9 /* UnitsTest.swift in Sources */,
@@ -991,11 +1003,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ADA38531DA34E9A00434C3D /* RequestMetadataTests.swift in Sources */,
 				4A10DB641D45103700E304C5 /* DataBlockTests.swift in Sources */,
 				4A10DB621D45103700E304C5 /* AlertTests.swift in Sources */,
 				4A10DB661D45103700E304C5 /* FlagTests.swift in Sources */,
 				4A10DB651D45103700E304C5 /* DataPointTests.swift in Sources */,
 				4AB708731D45246C005D1E8E /* IconTests.swift in Sources */,
+				4ADA38571DA34FDB00434C3D /* ResultTests.swift in Sources */,
 				4AB7086F1D45230F005D1E8E /* LanguageTests.swift in Sources */,
 				4A10DB671D45103700E304C5 /* ForecastTests.swift in Sources */,
 				4A10DB691D45103700E304C5 /* UnitsTest.swift in Sources */,
@@ -1048,11 +1062,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ADA38521DA34E9A00434C3D /* RequestMetadataTests.swift in Sources */,
 				4A10DB6C1D45103800E304C5 /* DataBlockTests.swift in Sources */,
 				4A10DB6A1D45103800E304C5 /* AlertTests.swift in Sources */,
 				4A10DB6E1D45103800E304C5 /* FlagTests.swift in Sources */,
 				4A10DB6D1D45103800E304C5 /* DataPointTests.swift in Sources */,
 				4AB708721D45246C005D1E8E /* IconTests.swift in Sources */,
+				4ADA38561DA34FDB00434C3D /* ResultTests.swift in Sources */,
 				4AB7086E1D45230F005D1E8E /* LanguageTests.swift in Sources */,
 				4A10DB6F1D45103800E304C5 /* ForecastTests.swift in Sources */,
 				4A10DB711D45103800E304C5 /* UnitsTest.swift in Sources */,
