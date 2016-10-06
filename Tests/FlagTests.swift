@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import Nimble
 @testable import ForecastIO
 
 class FlagTests: XCTestCase {
@@ -17,9 +16,9 @@ class FlagTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        let forecastJSONPath = NSBundle(forClass: self.dynamicType).pathForResource("forecast", ofType: "json")!
-        let forecastJSONData = NSData(contentsOfFile: forecastJSONPath)!
-        let forecastJSON = try! NSJSONSerialization.JSONObjectWithData(forecastJSONData, options: .MutableContainers) as! NSDictionary
+        let forecastJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast", ofType: "json")!
+        let forecastJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastJSONPath))
+        let forecastJSON = try! JSONSerialization.jsonObject(with: forecastJSONData, options: .mutableContainers) as! NSDictionary
         self.flagJSON = forecastJSON["flags"] as! NSDictionary
     }
     
@@ -33,7 +32,7 @@ class FlagTests: XCTestCase {
         let flag = Flag(fromJSON: flagJSON)
         
         //  Then
-        expect(flag).toNot(beNil())
+        XCTAssertNotNil(flag)
     }
     
 }

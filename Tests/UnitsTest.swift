@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import Nimble
 @testable import ForecastIO
 
 class UnitsTests: XCTestCase {
@@ -16,12 +15,11 @@ class UnitsTests: XCTestCase {
         //  Given
         //  When
         //  Then
-        expect(Units.SI.description).to(equal("si"))
-        expect(Units.US.description).to(equal("us"))
-        expect(Units.CA.description).to(equal("ca"))
-        expect(Units.UK.description).to(equal("uk"))
-        expect(Units.UK2.description).to(equal("uk2"))
-        expect(Units.Auto.description).to(equal("auto"))
+        XCTAssertEqual(Units.si.rawValue, "si")
+        XCTAssertEqual(Units.us.rawValue, "us")
+        XCTAssertEqual(Units.ca.rawValue, "ca")
+        XCTAssertEqual(Units.uk.rawValue, "uk2")
+        XCTAssertEqual(Units.auto.rawValue, "auto")
     }
     
 }

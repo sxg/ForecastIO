@@ -8,28 +8,15 @@
 
 import Foundation
 
-/**
-    Types of precipitation.
-*/
-public enum Precipitation: String, CustomStringConvertible {
-    /// Rainy.
-    case Rain = "rain"
-    
-    /// Snowy.
-    case Snow = "snow"
-    
-    /// Sleety, freezing rain, ice pellets, or wintery mix.
-    case Sleet = "sleet"
-    
-    /// Haily.
-    case Hail = "hail"
-    
-    /**
-        Returns the `String` value of the enum variant.
-     
-        - returns: `String` value of the enum variant.
-    */
-    public var description: String {
-        return rawValue
-    }
+/// Types of precipitation.
+///
+/// - rain:  Rainy.
+/// - snow:  Snowy.
+/// - sleet: Sleety, freezing rain, ice pellets, or wintery mix.
+/// - hail:  Haily.
+public enum Precipitation: String {
+    case rain = "rain"
+    case snow = "snow"
+    case sleet = "sleet"
+    case hail = "hail"
 }

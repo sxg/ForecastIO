@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import Nimble
 @testable import ForecastIO
 
 class PrecipitationTests: XCTestCase {
@@ -16,10 +15,10 @@ class PrecipitationTests: XCTestCase {
         //  Given
         //  When
         //  Then
-        expect(Precipitation.Rain.description).to(equal("rain"))
-        expect(Precipitation.Snow.description).to(equal("snow"))
-        expect(Precipitation.Sleet.description).to(equal("sleet"))
-        expect(Precipitation.Hail.description).to(equal("hail"))
+        XCTAssertEqual(Precipitation.rain.rawValue, "rain")
+        XCTAssertEqual(Precipitation.snow.rawValue, "snow")
+        XCTAssertEqual(Precipitation.sleet.rawValue, "sleet")
+        XCTAssertEqual(Precipitation.hail.rawValue, "hail")
     }
 
 }

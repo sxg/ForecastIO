@@ -7,44 +7,44 @@
 //
 
 import XCTest
-import Nimble
 @testable import ForecastIO
 
 class LanguageTests: XCTestCase {
 
-    func testDescription() {
+    func testRawValue() {
         //  Given
         //  When
         //  Then
-        expect(Language.Arabic.description).to(equal("ar"))
-        expect(Language.Belarusian.description).to(equal("be"))
-        expect(Language.Bosnian.description).to(equal("bs"))
-        expect(Language.Czech.description).to(equal("cs"))
-        expect(Language.German.description).to(equal("de"))
-        expect(Language.Greek.description).to(equal("el"))
-        expect(Language.English.description).to(equal("en"))
-        expect(Language.Spanish.description).to(equal("es"))
-        expect(Language.French.description).to(equal("fr"))
-        expect(Language.Croatian.description).to(equal("hr"))
-        expect(Language.Hungarian.description).to(equal("hu"))
-        expect(Language.Indonesian.description).to(equal("id"))
-        expect(Language.Italian.description).to(equal("it"))
-        expect(Language.Icelandic.description).to(equal("is"))
-        expect(Language.Cornish.description).to(equal("kw"))
-        expect(Language.NorwegianBokmål.description).to(equal("nb"))
-        expect(Language.Dutch.description).to(equal("nl"))
-        expect(Language.Polish.description).to(equal("pl"))
-        expect(Language.Portuguese.description).to(equal("pt"))
-        expect(Language.Russian.description).to(equal("ru"))
-        expect(Language.Slovak.description).to(equal("sk"))
-        expect(Language.Serbian.description).to(equal("sr"))
-        expect(Language.Swedish.description).to(equal("sv"))
-        expect(Language.Tetum.description).to(equal("tet"))
-        expect(Language.Turkish.description).to(equal("tr"))
-        expect(Language.Ukrainian.description).to(equal("uk"))
-        expect(Language.PigLatin.description).to(equal("x-pig-latin"))
-        expect(Language.SimplifiedChinese.description).to(equal("zh"))
-        expect(Language.TraditionalChinese.description).to(equal("zh-tw"))
+        XCTAssertEqual(Language.arabic.rawValue, "ar")
+        XCTAssertEqual(Language.azerbaijani.rawValue, "az")
+        XCTAssertEqual(Language.belarusian.rawValue, "be")
+        XCTAssertEqual(Language.bosnian.rawValue, "bs")
+        XCTAssertEqual(Language.czech.rawValue, "cs")
+        XCTAssertEqual(Language.german.rawValue, "de")
+        XCTAssertEqual(Language.greek.rawValue, "el")
+        XCTAssertEqual(Language.english.rawValue, "en")
+        XCTAssertEqual(Language.spanish.rawValue, "es")
+        XCTAssertEqual(Language.french.rawValue, "fr")
+        XCTAssertEqual(Language.croatian.rawValue, "hr")
+        XCTAssertEqual(Language.hungarian.rawValue, "hu")
+        XCTAssertEqual(Language.indonesian.rawValue, "id")
+        XCTAssertEqual(Language.italian.rawValue, "it")
+        XCTAssertEqual(Language.icelandic.rawValue, "is")
+        XCTAssertEqual(Language.cornish.rawValue, "kw")
+        XCTAssertEqual(Language.norwegianBokmål.rawValue, "nb")
+        XCTAssertEqual(Language.dutch.rawValue, "nl")
+        XCTAssertEqual(Language.polish.rawValue, "pl")
+        XCTAssertEqual(Language.portuguese.rawValue, "pt")
+        XCTAssertEqual(Language.russian.rawValue, "ru")
+        XCTAssertEqual(Language.slovak.rawValue, "sk")
+        XCTAssertEqual(Language.serbian.rawValue, "sr")
+        XCTAssertEqual(Language.swedish.rawValue, "sv")
+        XCTAssertEqual(Language.tetum.rawValue, "tet")
+        XCTAssertEqual(Language.turkish.rawValue, "tr")
+        XCTAssertEqual(Language.ukrainian.rawValue, "uk")
+        XCTAssertEqual(Language.pigLatin.rawValue, "x-pig-latin")
+        XCTAssertEqual(Language.simplifiedChinese.rawValue, "zh")
+        XCTAssertEqual(Language.traditionalChinese.rawValue, "zh-tw")
     }
 
 }

@@ -1,9 +1,9 @@
 EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/ForecastIO-tvOS" "$PODS_CONFIGURATION_BUILD_DIR/Nimble-tvOS" "$PODS_CONFIGURATION_BUILD_DIR/OHHTTPStubs-tvOS"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/ForecastIO-tvOS" "$PODS_CONFIGURATION_BUILD_DIR/OHHTTPStubs-tvOS"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/ForecastIO-tvOS/ForecastIO.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Nimble-tvOS/Nimble.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/OHHTTPStubs-tvOS/OHHTTPStubs.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "ForecastIO" -framework "Nimble" -framework "OHHTTPStubs"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/ForecastIO-tvOS/ForecastIO.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/OHHTTPStubs-tvOS/OHHTTPStubs.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "ForecastIO" -framework "OHHTTPStubs"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

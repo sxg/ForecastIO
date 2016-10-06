@@ -8,46 +8,27 @@
 
 import Foundation
 
-/**
-    Types of weather conditions. Additional values may be defined in the future, so be sure to use a default.
-*/
-public enum Icon: String, CustomStringConvertible {
-    /// A clear day.
-    case ClearDay = "clear-day"
-    
-    /// A clear night.
-    case ClearNight = "clear-night"
-    
-    /// A rainy day or night.
-    case Rain = "rain"
-    
-    /// A snowy day or night.
-    case Snow = "snow"
-    
-    /// A sleety day or night.
-    case Sleet = "sleet"
-    
-    /// A windy day or night.
-    case Wind = "wind"
-    
-    /// A foggy day or night.
-    case Fog = "fog"
-    
-    /// A cloudy day or night.
-    case Cloudy = "cloudy"
-    
-    /// A partly cloudy day.
-    case PartlyCloudyDay = "partly-cloudy-day"
-    
-    /// A partly cloudy night.
-    case PartlyCloudyNight = "partly-cloudy-night"
-    
-    /**
-     Returns the `String` value of the enum variant.
-     
-     - returns: `String` value of the enum variant.
-     */
-    public var description: String {
-        return rawValue
-    }
+/// Types of weather conditions. Additional values may be defined in the future, so be sure to use a default.
+///
+/// - clearDay:          A clear day.
+/// - clearNight:        A clear night.
+/// - rain:              A rainy day or night.
+/// - snow:              A snowy day or night.
+/// - sleet:             A sleety day or night.
+/// - wind:              A windy day or night.
+/// - fog:               A foggy day or night.
+/// - cloudy:            A cloudy day or night.
+/// - partlyCloudyDay:   A partly cloudy day.
+/// - partlyCloudyNight: A partly cloudy night.
+public enum Icon: String {
+    case clearDay = "clear-day"
+    case clearNight = "clear-night"
+    case rain = "rain"
+    case snow = "snow"
+    case sleet = "sleet"
+    case wind = "wind"
+    case fog = "fog"
+    case cloudy = "cloudy"
+    case partlyCloudyDay = "partly-cloudy-day"
+    case partlyCloudyNight = "partly-cloudy-night"
 }

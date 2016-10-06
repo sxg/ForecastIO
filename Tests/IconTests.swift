@@ -7,25 +7,24 @@
 //
 
 import XCTest
-import Nimble
 @testable import ForecastIO
 
 class IconTests: XCTestCase {
 
-    func testDescription() {
+    func testRawValue() {
         //  Given
         //  When
         //  Then
-        expect(Icon.ClearDay.description).to(equal("clear-day"))
-        expect(Icon.ClearNight.description).to(equal("clear-night"))
-        expect(Icon.Rain.description).to(equal("rain"))
-        expect(Icon.Snow.description).to(equal("snow"))
-        expect(Icon.Sleet.description).to(equal("sleet"))
-        expect(Icon.Wind.description).to(equal("wind"))
-        expect(Icon.Fog.description).to(equal("fog"))
-        expect(Icon.Cloudy.description).to(equal("cloudy"))
-        expect(Icon.PartlyCloudyDay.description).to(equal("partly-cloudy-day"))
-        expect(Icon.PartlyCloudyNight.description).to(equal("partly-cloudy-night"))
+        XCTAssertEqual(Icon.clearDay.rawValue, "clear-day")
+        XCTAssertEqual(Icon.clearNight.rawValue, "clear-night")
+        XCTAssertEqual(Icon.rain.rawValue, "rain")
+        XCTAssertEqual(Icon.snow.rawValue, "snow")
+        XCTAssertEqual(Icon.sleet.rawValue, "sleet")
+        XCTAssertEqual(Icon.wind.rawValue, "wind")
+        XCTAssertEqual(Icon.fog.rawValue, "fog")
+        XCTAssertEqual(Icon.cloudy.rawValue, "cloudy")
+        XCTAssertEqual(Icon.partlyCloudyDay.rawValue, "partly-cloudy-day")
+        XCTAssertEqual(Icon.partlyCloudyNight.rawValue, "partly-cloudy-night")
     }
 
 }

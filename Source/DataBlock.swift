@@ -18,18 +18,14 @@ public struct DataBlock {
     public let icon: Icon?
     
     /// `DataPoint`s ordered by time, which describe the weather conditions at the requested location over time.
-    public let data: Array<DataPoint>?
+    public let data: Array<DataPoint>
     
-    
-    /**
-        Creates a new `DataBlock` from a JSON object.
-     
-        - parameter fromJSON: A JSON object with keys corresponding to the `DataBlock`'s properties.
-     
-        - returns: A new `DataBlock` filled with data from the given JSON object.
-    */
+    /// Creates a new `DataBlock` from a JSON object.
+    ///
+    /// - parameter json: A JSON object with keys corresponding to the `DataBlock`'s properties.
+    ///
+    /// - returns: A new `DataBlock` filled with data from the given JSON object.
     public init(fromJSON json: NSDictionary) {
-        
         if let jsonSummary = json["summary"] as? String {
             summary = jsonSummary
         } else {
@@ -41,14 +37,11 @@ public struct DataBlock {
             icon = nil
         }
         
-        if let jsonData = json["data"] as? Array<NSDictionary> {
-            var tempData = [DataPoint]()
-            for jsonDataPoint in jsonData {
-                tempData.append(DataPoint(fromJSON: jsonDataPoint))
-            }
-            data = tempData
-        } else {
-            data = nil
+        let jsonData = json["data"] as! Array<NSDictionary>
+        var tempData = [DataPoint]()
+        for jsonDataPoint in jsonData {
+            tempData.append(DataPoint(fromJSON: jsonDataPoint))
         }
+        data = tempData
     }
 }

@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import Nimble
 @testable import ForecastIO
 
 class DataPointTests: XCTestCase {
@@ -17,9 +16,9 @@ class DataPointTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        let forecastJSONPath = NSBundle(forClass: self.dynamicType).pathForResource("forecast", ofType: "json")!
-        let forecastJSONData = NSData(contentsOfFile: forecastJSONPath)!
-        let forecastJSON = try! NSJSONSerialization.JSONObjectWithData(forecastJSONData, options: .MutableContainers) as! NSDictionary
+        let forecastJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast", ofType: "json")!
+        let forecastJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastJSONPath))
+        let forecastJSON = try! JSONSerialization.jsonObject(with: forecastJSONData, options: .mutableContainers) as! NSDictionary
         self.dataPointJSON = forecastJSON["currently"] as! NSDictionary
     }
     
@@ -33,11 +32,11 @@ class DataPointTests: XCTestCase {
         let dataPoint = DataPoint(fromJSON: self.dataPointJSON)
         
         //  Then
-        expect(dataPoint).toNot(beNil())
-        expect(dataPoint.time).to(equal(NSDate(timeIntervalSince1970: 1453575677)))
-        expect(dataPoint.summary).to(equal("Snow"))
-        expect(dataPoint.icon).to(equal(Icon.Snow))
-        expect(dataPoint.precipType).to(equal(Precipitation.Snow))
+        XCTAssertNotNil(dataPoint)
+        XCTAssertEqual(dataPoint.time, Date(timeIntervalSince1970: 1453575677))
+        XCTAssertEqual(dataPoint.summary, "Snow")
+        XCTAssertEqual(dataPoint.icon, Icon.snow)
+        XCTAssertEqual(dataPoint.precipitationType, Precipitation.snow)
     }
     
 }
