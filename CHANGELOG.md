@@ -4,10 +4,10 @@ ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
 ## 3.0.0
 
-Released on September 25, 2016.
+Released on October 6, 2016.
 
 ### Added
-- `Result` enum type to encapsulate responses
+- `Result<V>` enum type to encapsulate responses
 - `RequestMetadata` to represent data about the consumption of the Dark Sky API
 - `ForecastIOError` to represent errors in interacting with the Dark Sky API
 - Explicit gzip encoding to all Dark Sky API requests
@@ -27,7 +27,7 @@ Released on September 25, 2016.
 - `APIClient` is now `DarkSkyClient`
 
 ### Removed
-- `Units.uk2` is replaced by `Units.uk`
+- `Units.uk2` is gone and its value is now represented by `Units.uk`
 - `CustomStringConvertible` protocol conformance from all enums
 - `Forecast.offset`
 - Constants file and `ForecastIOErrorCode` and `ForecastIOErrorDomain`
