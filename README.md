@@ -29,7 +29,7 @@ github "sxg/ForecastIO"
 
 ### Swift 2.3
 
-A Swift 2.3 compatible version of ForecastIO is available on the [swift2.3](https://github.com/sxg/ForecastIO/tree/swift2.3) branch. This version is frozen at the [ForecastIO 2.1.1 API](http://cocoadocs.org/docsets/ForecastIO/2.1.1/). This version is no longer supported, and users are encouraged to migrate to the latest version of ForecastIO. To install the Swift 2.3 compatible version of ForecastIO, simply add the following line to your `Podfile`:
+A Swift 2.3 compatible version of ForecastIO is available on the [swift2.3](https://github.com/sxg/ForecastIO/tree/swift2.3) branch. This version is frozen at the [ForecastIO 2.1.1 API](http://cocoadocs.org/docsets/ForecastIO/2.1.1/) and no longer supported. To install the Swift 2.3 compatible version of ForecastIO, simply add the following line to your `Podfile`:
 
 ```ruby
 pod "ForecastIO", :git => "https://github.com/sxg/ForecastIO.git", :branch => "swift2.3"
@@ -49,18 +49,18 @@ ForecastIO includes a full suite of unit tests with [100% code coverage](https:/
 
 ## Usage
 
-First, create an `DarkSkyClient` with your API key:
+First, create a `DarkSkyClient` with your API key:
 
 ```swift
 import ForecastIO
 ...
-let forecastIOClient = DarkSkyClient(apiKey: "YOUR_API_KEY_HERE")
+let client = DarkSkyClient(apiKey: "YOUR_API_KEY_HERE")
 ```
 
 You can choose units that you want `Forecast` responses to use:
 
 ```swift
-forecastIOClient.units = .SI
+client.units = .si
 ```
 
 The following units are supported:
@@ -73,7 +73,7 @@ The following units are supported:
 You can also choose the language that you want `Forecast` responses to use:
 
 ```swift
-forecastIOClient.language = .English
+client.language = .english
 ```
 
 Many languages are supported (a full list is available [here](https://darksky.net/dev/docs/forecast)). If no language is specified, English is used as the default.
