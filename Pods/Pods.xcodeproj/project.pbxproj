@@ -924,7 +924,13 @@
 					07FDB6B1FE971C84471157C43EEC33D8 = {
 						LastSwiftMigration = 0800;
 					};
+					1596876D27FB0FD6172529B6D87539C2 = {
+						LastSwiftMigration = 0800;
+					};
 					2757B228BC7787592A3B11E6A44C4CE1 = {
+						LastSwiftMigration = 0800;
+					};
+					2D3C38E1D9579919BF6C67F6A244AE3A = {
 						LastSwiftMigration = 0800;
 					};
 					4AF0241D351751C75200C5E2EA1A906F = {
@@ -937,6 +943,9 @@
 						LastSwiftMigration = 0800;
 					};
 					B9217502F27ADDB187E4A00AEE881675 = {
+						LastSwiftMigration = 0800;
+					};
+					C4E6B418BF36E60406C87BF6F17FCF58 = {
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -1261,6 +1270,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1295,6 +1305,7 @@
 				PRODUCT_NAME = Pods_ForecastIO_macOS_Tests;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1355,6 +1366,7 @@
 				PRODUCT_NAME = OHHTTPStubs;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1619,6 +1631,7 @@
 				PRODUCT_NAME = ForecastIO;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1755,6 +1768,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1790,6 +1804,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
