@@ -34,7 +34,7 @@
 		4A468FF71D9A0AAF00B2C0D2 /* ForecastIOError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A468FF41D9A0AAF00B2C0D2 /* ForecastIOError.swift */; };
 		4A468FF81D9A0ABB00B2C0D2 /* ForecastIOError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A468FF41D9A0AAF00B2C0D2 /* ForecastIOError.swift */; };
 		4A56CEB31D447BD000751AF6 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB61C53F52000CB7548 /* Alert.swift */; };
-		4A56CEB41D447BD000751AF6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB71C53F52000CB7548 /* APIClient.swift */; };
+		4A56CEB41D447BD000751AF6 /* DarkSkyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB71C53F52000CB7548 /* DarkSkyClient.swift */; };
 		4A56CEB51D447BD000751AF6 /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB81C53F52000CB7548 /* DataBlock.swift */; };
 		4A56CEB61D447BD000751AF6 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB91C53F52000CB7548 /* DataPoint.swift */; };
 		4A56CEB71D447BD000751AF6 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FBA1C53F52000CB7548 /* Flag.swift */; };
@@ -85,9 +85,9 @@
 		D4564FC21C53F52000CB7548 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB61C53F52000CB7548 /* Alert.swift */; };
 		D4564FC41C53F52000CB7548 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB61C53F52000CB7548 /* Alert.swift */; };
 		D4564FC61C53F52000CB7548 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB61C53F52000CB7548 /* Alert.swift */; };
-		D4564FC91C53F52000CB7548 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB71C53F52000CB7548 /* APIClient.swift */; };
-		D4564FCB1C53F52000CB7548 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB71C53F52000CB7548 /* APIClient.swift */; };
-		D4564FCD1C53F52000CB7548 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB71C53F52000CB7548 /* APIClient.swift */; };
+		D4564FC91C53F52000CB7548 /* DarkSkyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB71C53F52000CB7548 /* DarkSkyClient.swift */; };
+		D4564FCB1C53F52000CB7548 /* DarkSkyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB71C53F52000CB7548 /* DarkSkyClient.swift */; };
+		D4564FCD1C53F52000CB7548 /* DarkSkyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB71C53F52000CB7548 /* DarkSkyClient.swift */; };
 		D4564FD01C53F52000CB7548 /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB81C53F52000CB7548 /* DataBlock.swift */; };
 		D4564FD21C53F52000CB7548 /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB81C53F52000CB7548 /* DataBlock.swift */; };
 		D4564FD41C53F52000CB7548 /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FB81C53F52000CB7548 /* DataBlock.swift */; };
@@ -171,7 +171,7 @@
 		D4446E791C51538000FBC8A8 /* ForecastIO macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4446E901C51543900FBC8A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D4564FB61C53F52000CB7548 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = Alert.swift; path = Source/Alert.swift; sourceTree = "<group>"; };
-		D4564FB71C53F52000CB7548 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = APIClient.swift; path = Source/APIClient.swift; sourceTree = "<group>"; };
+		D4564FB71C53F52000CB7548 /* DarkSkyClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = DarkSkyClient.swift; path = Source/DarkSkyClient.swift; sourceTree = "<group>"; };
 		D4564FB81C53F52000CB7548 /* DataBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = DataBlock.swift; path = Source/DataBlock.swift; sourceTree = "<group>"; };
 		D4564FB91C53F52000CB7548 /* DataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = DataPoint.swift; path = Source/DataPoint.swift; sourceTree = "<group>"; };
 		D4564FBA1C53F52000CB7548 /* Flag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = Flag.swift; path = Source/Flag.swift; sourceTree = "<group>"; };
@@ -324,7 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				D4564FB61C53F52000CB7548 /* Alert.swift */,
-				D4564FB71C53F52000CB7548 /* APIClient.swift */,
+				D4564FB71C53F52000CB7548 /* DarkSkyClient.swift */,
 				D4564FB81C53F52000CB7548 /* DataBlock.swift */,
 				D4564FB91C53F52000CB7548 /* DataPoint.swift */,
 				D4564FBA1C53F52000CB7548 /* Flag.swift */,
@@ -995,7 +995,7 @@
 				4A56CEC61D447F4A00751AF6 /* Language.swift in Sources */,
 				4AF007161D98BC5000209184 /* Result.swift in Sources */,
 				D45650031C53F52100CB7548 /* Units.swift in Sources */,
-				D4564FCB1C53F52000CB7548 /* APIClient.swift in Sources */,
+				D4564FCB1C53F52000CB7548 /* DarkSkyClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1034,7 +1034,7 @@
 				4A56CEC71D447F4B00751AF6 /* Language.swift in Sources */,
 				4AF007171D98BC5700209184 /* Result.swift in Sources */,
 				D45650051C53F52100CB7548 /* Units.swift in Sources */,
-				D4564FCD1C53F52000CB7548 /* APIClient.swift in Sources */,
+				D4564FCD1C53F52000CB7548 /* DarkSkyClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1054,7 +1054,7 @@
 				4A56CEC51D447F4900751AF6 /* Language.swift in Sources */,
 				4AF007151D98BC4D00209184 /* Result.swift in Sources */,
 				D45650011C53F52000CB7548 /* Units.swift in Sources */,
-				D4564FC91C53F52000CB7548 /* APIClient.swift in Sources */,
+				D4564FC91C53F52000CB7548 /* DarkSkyClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1082,7 +1082,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A56CEB31D447BD000751AF6 /* Alert.swift in Sources */,
-				4A56CEB41D447BD000751AF6 /* APIClient.swift in Sources */,
+				4A56CEB41D447BD000751AF6 /* DarkSkyClient.swift in Sources */,
 				4A56CEB51D447BD000751AF6 /* DataBlock.swift in Sources */,
 				4ACC21E31DA1FB640051D7E7 /* RequestMetadata.swift in Sources */,
 				4A56CEB61D447BD000751AF6 /* DataPoint.swift in Sources */,

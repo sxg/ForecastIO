@@ -1,5 +1,5 @@
 //
-//  APIClient.swift
+//  DarkSkyClient.swift
 //  ForecastIO
 //
 //  Created by Satyam Ghodasara on 7/22/15.
@@ -9,11 +9,11 @@
 import Foundation
 
 /// A class to interact with the Dark Sky API.
-open class APIClient : NSObject {
+open class DarkSkyClient : NSObject {
     
     private let apiKey: String
     private let session = URLSession.shared
-    private static let forecastIOURL = "https://api.darksky.net/forecast/"
+    private static let darkSkyURL = "https://api.darksky.net/forecast/"
     
     /// Units in which the `Forecast` response will be provided. US is the default if no units are specified as per the Dark Sky API docs.
     open var units: Units?
@@ -21,11 +21,11 @@ open class APIClient : NSObject {
     /// Language in which the `Forecast` response's `DataBlock` and `DataPoint`'s `summary` properties will be provided. English is the default if no language is specified as per the Dark Sky API docs.
     open var language: Language?
     
-    /// Creates a new `APIClient` to interact with the Dark Sky API.
+    /// Creates a new `DarkSkyClient` to interact with the Dark Sky API.
     ///
     /// - parameter key: Your Dark Sky API key.
     ///
-    /// - returns: A new `APIClient` configured to interact with the Dark Sky API with your API key.
+    /// - returns: A new `DarkSkyClient` configured to interact with the Dark Sky API with your API key.
     public init(apiKey key: String) {
         apiKey = key
     }
@@ -79,7 +79,7 @@ open class APIClient : NSObject {
     
     private func buildForecastURL(latitude lat: Double, longitude lon: Double, time: Date?, extendHourly: Bool, excludeFields: [Forecast.Field]) -> URL {
         //  Build URL path
-        var urlString = APIClient.forecastIOURL + apiKey + "/\(lat),\(lon)"
+        var urlString = DarkSkyClient.darkSkyURL + apiKey + "/\(lat),\(lon)"
         if let time = time {
             let timeString = String(format: "%.0f", time.timeIntervalSince1970)
             urlString.append(",\(timeString)")

@@ -1,5 +1,5 @@
 //
-//  APIClientTests.swift
+//  DarkSkyClientTests.swift
 //  ForecastIO
 //
 //  Created by Satyam Ghodasara on 1/23/16.
@@ -10,7 +10,7 @@ import XCTest
 import OHHTTPStubs
 @testable import ForecastIO
 
-class APIClientTests: XCTestCase {
+class DarkSkyClientTests: XCTestCase {
     
     let apiKey = "FAKE-API-KEY"
     let latitude = 41.499320
@@ -25,7 +25,7 @@ class APIClientTests: XCTestCase {
     func testInit() {
         //  Given
         //  When
-        let client = APIClient(apiKey: apiKey)
+        let client = DarkSkyClient(apiKey: apiKey)
         
         //  Then
         XCTAssertNotNil(client)
@@ -42,7 +42,7 @@ class APIClientTests: XCTestCase {
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
             return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
-        let client = APIClient(apiKey: apiKey)
+        let client = DarkSkyClient(apiKey: apiKey)
         var forecast: Forecast?
         var metadata: RequestMetadata?
         var err: Error?
@@ -83,7 +83,7 @@ class APIClientTests: XCTestCase {
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
             return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
-        let client = APIClient(apiKey: "FAKE-API-KEY")
+        let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
         client.units = .si
         var forecast: Forecast?
         var metadata: RequestMetadata?
@@ -124,7 +124,7 @@ class APIClientTests: XCTestCase {
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
             return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
-        let client = APIClient(apiKey: "FAKE-API-KEY")
+        let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
         client.units = .si
         var forecast: Forecast?
         var metadata: RequestMetadata?
@@ -165,7 +165,7 @@ class APIClientTests: XCTestCase {
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
             return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
-        let client = APIClient(apiKey: "FAKE-API-KEY")
+        let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
         client.language = .french
         var forecast: Forecast?
         var metadata: RequestMetadata?
@@ -206,7 +206,7 @@ class APIClientTests: XCTestCase {
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
             return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
-        let client = APIClient(apiKey: "FAKE-API-KEY")
+        let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
         var forecast: Forecast?
         var metadata: RequestMetadata?
         var err: Error?
@@ -246,7 +246,7 @@ class APIClientTests: XCTestCase {
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
             return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
-        let client = APIClient(apiKey: "FAKE-API-KEY")
+        let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
         var forecast: Forecast?
         var metadata: RequestMetadata?
         var err: Error?
@@ -281,7 +281,7 @@ class APIClientTests: XCTestCase {
         _ = stub(condition: isHost("api.darksky.net")) { _ in
             return OHHTTPStubsResponse(error:notConnectedError)
         }
-        let client = APIClient(apiKey: "FAKE-API-KEY")
+        let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
         var forecast: Forecast?
         var metadata: RequestMetadata?
         var err: Error?
@@ -316,7 +316,7 @@ class APIClientTests: XCTestCase {
             //  Return empty body instead of JSON
             return fixture("", headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
-        let client = APIClient(apiKey: "FAKE-API-KEY")
+        let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
         var forecast: Forecast?
         var metadata: RequestMetadata?
         var err: Error?

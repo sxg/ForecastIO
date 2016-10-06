@@ -24,6 +24,7 @@ Released on September 25, 2016.
 - `getForecast` methods renamed `completion` to `completionHandler`
 - `getForecast` methods' `completionHandler`s now return `Result<Forecast>`
 - Documentation formatting
+- `APIClient` is now `DarkSkyClient`
 
 ### Removed
 - `Units.uk2` is replaced by `Units.uk`

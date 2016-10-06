@@ -49,12 +49,12 @@ ForecastIO includes a full suite of unit tests with [100% code coverage](https:/
 
 ## Usage
 
-First, create an `APIClient` with your API key:
+First, create an `DarkSkyClient` with your API key:
 
 ```swift
 import ForecastIO
 ...
-let forecastIOClient = APIClient(apiKey: "YOUR_API_KEY_HERE")
+let forecastIOClient = DarkSkyClient(apiKey: "YOUR_API_KEY_HERE")
 ```
 
 You can choose units that you want `Forecast` responses to use:
@@ -78,7 +78,7 @@ forecastIOClient.language = .English
 
 Many languages are supported (a full list is available [here](https://darksky.net/dev/docs/forecast)). If no language is specified, English is used as the default.
 
-With the `APIClient`, you can make two kinds of requests. The first will get the current `Forecast` for a particular location:
+With the `DarkSkyClient`, you can make two kinds of requests. The first will get the current `Forecast` for a particular location:
 
 ```swift
 client.getForecast(latitude: myLat, longitude: myLon) { (result) in
