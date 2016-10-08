@@ -10,7 +10,7 @@
 
 ## Requirements
 
-To use ForecastIO, all you need is an API key for the [Dark Sky API](https://darksky.net/dev/). ForecastIO supports iOS (≥8.0), macOS (≥10.10), watchOS (≥2.0), and tvOS (≥9.0).
+To use ForecastIO, all you need is an API key for the [Dark Sky API](https://darksky.net/dev/). ForecastIO supports iOS (≥9.0), macOS (≥10.10), watchOS (≥2.0), and tvOS (≥9.0).
 
 ## Installation
 

@@ -2,6 +2,13 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
+## 3.0.1
+
+Released on October 8, 2016.
+
+### Removed
+- Official iOS 8.x support
+
 ## 3.0.0
 
 Released on October 6, 2016.
