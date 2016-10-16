@@ -9,66 +9,95 @@
 import Foundation
 
 /// Language in which data from the Dark Sky API will be returned.
-///
-/// - arabic:             The Arabic language.
-/// - azerbaijani:        The Azerbaijani language.
-/// - belarusian:         The Belarusian language.
-/// - bosnian:            The Bosnian language.
-/// - czech:              The Czech language.
-/// - german:             The German language.
-/// - greek:              The Greek language.
-/// - english:            The English language and the default option.
-/// - spanish:            The Spanish language.
-/// - french:             The French language.
-/// - croatian:           The Croatian language.
-/// - hungarian:          The Hungarian language.
-/// - indonesian:         The Indonesian language.
-/// - italian:            The Italian language.
-/// - icelandic:          The Icelandic language.
-/// - cornish:            The Cornish language.
-/// - norwegianBokmål:    The Norwegian Bokmål language.
-/// - dutch:              The Dutch language.
-/// - polish:             The Polish language.
-/// - portuguese:         The Portuguese language.
-/// - russian:            The Russian language.
-/// - slovak:             The Slovak language.
-/// - serbian:            The Serbian language.
-/// - swedish:            The Swedish language.
-/// - tetum:              The Tetum language.
-/// - turkish:            The Turkish language.
-/// - ukrainian:          The Ukrainian language.
-/// - pigLatin:           The Pig Latin language.
-/// - simplifiedChinese:  The simplified Chinese language.
-/// - traditionalChinese: The traditional Chinese language.
 public enum Language: String {
+    
+    /// The Arabic language.
     case arabic = "ar"
+    
+    /// The Azerbaijani language.
     case azerbaijani = "az"
+    
+    /// The Belarusian language.
     case belarusian = "be"
+    
+    /// The Bosnian language.
     case bosnian = "bs"
+    
+    /// The Czech language.
     case czech = "cs"
+    
+    /// The German language.
     case german = "de"
+    
+    /// The Greek language.
     case greek = "el"
+    
+    /// The English language and the default option.
     case english = "en"
+    
+    /// The Spanish language.
     case spanish = "es"
+    
+    /// The French language.
     case french = "fr"
+    
+    /// The Croatian language.
     case croatian = "hr"
+    
+    /// The Hungarian language.
     case hungarian = "hu"
+    
+    /// The Indonesian language.
     case indonesian = "id"
+    
+    /// The Italian language.
     case italian = "it"
+    
+    /// The Icelandic language.
     case icelandic = "is"
+    
+    /// The Cornish language.
     case cornish = "kw"
+    
+    /// The Norwegian Bokmål language.
     case norwegianBokmål = "nb"
+    
+    /// The Dutch language.
     case dutch = "nl"
+    
+    /// The Polish language.
     case polish = "pl"
+    
+    /// The Portuguese language.
     case portuguese = "pt"
+    
+    /// The Russian language.
     case russian = "ru"
+    
+    /// The Slovak language.
     case slovak = "sk"
+    
+    /// The Serbian language.
     case serbian = "sr"
+    
+    /// The Swedish language.
     case swedish = "sv"
+    
+    /// The Tetum language.
     case tetum = "tet"
+    
+    /// The Turkish language.
     case turkish = "tr"
+    
+    /// The Ukrainian language.
     case ukrainian = "uk"
+    
+    /// The Pig Latin language.
     case pigLatin = "x-pig-latin"
+    
+    /// The simplified Chinese language.
     case simplifiedChinese = "zh"
+    
+    /// The traditional Chinese language.
     case traditionalChinese = "zh-tw"
 }
