@@ -39,19 +39,24 @@ public struct Forecast {
     public let daily: DataBlock?
     
     /// Data fields associated with a `Forecast`.
-    ///
-    /// - currently: Current weather conditions.
-    /// - minutely:  Minute-by-minute weather conditions for the next hour.
-    /// - hourly:    Hour-by-hour weather conditions for the next two days by default but can be exte1nded to one week.
-    /// - daily:     Day-by-day weather conditions for the next week.
-    /// - alerts:    Severe weather alerts.
-    /// - flags:     Miscellaneous metadata.
     public enum Field: String {
+        
+        /// Current weather conditions.
         case currently = "currently"
+        
+        /// Minute-by-minute weather conditions for the next hour.
         case minutely = "minutely"
+        
+        /// Hour-by-hour weather conditions for the next two days by default but can be exte1nded to one week.
         case hourly = "hourly"
+        
+        /// Day-by-day weather conditions for the next week.
         case daily = "daily"
+        
+        /// Severe weather alerts.
         case alerts = "alerts"
+        
+        /// Miscellaneous metadata.
         case flags = "flags"
     }
     
