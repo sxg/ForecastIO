@@ -2,6 +2,13 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
+## 3.0.2
+
+Released on October 17, 2016.
+
+### Updated
+- Fixed enum docs 
+
 ## 3.0.1
 
 Released on October 8, 2016.
