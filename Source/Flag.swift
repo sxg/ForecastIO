@@ -38,13 +38,11 @@ public struct Flag {
     /// The presence of this property indicates which units were used for the data in this request. `US` units are default.
     public let units: Units
     
-    /**
-        Creates a new `Flag` from a JSON object.
-     
-        - parameter fromJSON: A JSON object with keys corresponding to the `Flag`'s properties.
-     
-        - returns: A new `Flag` filled with data from the given JSON object.
-    */
+    /// Creates a new `Flag` from a JSON object.
+    ///
+    /// - parameter json: A JSON object with keys corresponding to the `Flag`'s properties.
+    ///
+    /// - returns: A new `Flag` filled with data from the given JSON object.
     public init(fromJSON json: NSDictionary) {
         darkSkyUnavailable = json["darksky-unavailable"] as? Bool
         darkSkyStations = json["darksky-stations"] as? Array<String>
