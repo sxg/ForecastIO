@@ -15,13 +15,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
+        let client = DarkSkyClient(apiKey: "e44aa5f62929f0798e8296c113b8a4cb")
         client.units = .auto
         client.language = .english
         client.getForecast(latitude: 30, longitude: 30, excludeFields: [.alerts, .currently, .daily, .flags, .minutely]) { (result) in
             switch result {
             case .success(let forecast, let requestMetadata):
-                print(forecast.hourly?.data)
+                print(forecast.hourly!.data)
                 print(requestMetadata)
             case .failure(let error):
                 print(error)
