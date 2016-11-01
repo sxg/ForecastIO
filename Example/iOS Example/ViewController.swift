@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let client = DarkSkyClient(apiKey: "e44aa5f62929f0798e8296c113b8a4cb")
+        let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
         client.units = .auto
         client.language = .english
         client.getForecast(latitude: 30, longitude: 30, excludeFields: [.alerts, .currently, .daily, .flags, .minutely]) { (result) in
