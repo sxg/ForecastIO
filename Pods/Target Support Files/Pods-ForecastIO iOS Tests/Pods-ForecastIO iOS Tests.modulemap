@@ -1,6 +1,0 @@
-framework module Pods_ForecastIO_iOS_Tests {
-  umbrella header "Pods-ForecastIO iOS Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

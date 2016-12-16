@@ -1,6 +1,0 @@
-framework module ForecastIO {
-  umbrella header "ForecastIO-iOS-umbrella.h"
-
-  export *
-  module * { export * }
-}

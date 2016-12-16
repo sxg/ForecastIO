@@ -1,6 +1,0 @@
-framework module ForecastIO {
-  umbrella header "ForecastIO-tvOS-umbrella.h"
-
-  export *
-  module * { export * }
-}
