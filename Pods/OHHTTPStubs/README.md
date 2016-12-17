@@ -48,8 +48,8 @@ This example is using the Swift helpers found in `OHHTTPStubsSwift.swift` provid
 ```swift
 stub(isHost("mywebservice.com")) { _ in
   // Stub it with our "wsresponse.json" stub file (which is in same bundle as self)
-  let stubPath = OHPathForFile("wsresponse.json", self.dynamicType)
-  return fixture(stubPath!, headers: ["Content-Type":"application/json"])
+  let stubPath = OHPathForFile("wsresponse.json", type(of: self))
+  return fixture(filePath: stubPath!, headers: ["Content-Type":"application/json"])
 }
 ```
 
@@ -76,7 +76,7 @@ _(There are also other ways to perform a similar task, including using `curl -is
 
 _[Nullability annotations](https://developer.apple.com/swift/blog/?id=25) have also been added to the ObjC API to allow a cleaner API when used from Swift even if you don't use the dedicated Swift API wrapper provided by `OHHTTPStubsSwift.swift`._
 
-> Note: When building with Swift 2.2, you will have some `extraneous '_' in parameter` warnings. Those are normal: it's because the code is already ready for the transition to Swift 3 — which requires those `_` in paramters while Swift 2.2 didn't.  
+> Note: When building with Swift 2.2, you will have some `extraneous '_' in parameter` warnings. Those are normal: it's because the code is already ready for the transition to Swift 3 — which requires those `_` in parameters while Swift 2.2 didn't.  
 > You can safely ignore those warnings in Swift 2.2. See [SE-0046](https://github.com/apple/swift-evolution/blob/master/proposals/0046-first-label.md) for more info.
 
 # Installing in your projects

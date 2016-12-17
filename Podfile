@@ -8,7 +8,7 @@ def testing_pods
 end
 
 target 'ForecastIO iOS Tests' do
-    platform :ios, '8.0'
+    platform :ios, '9.0'
     testing_pods
 end
 

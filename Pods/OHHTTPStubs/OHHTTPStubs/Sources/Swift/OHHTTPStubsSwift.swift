@@ -31,27 +31,27 @@
 #else
 #if swift(>=2.2)
     extension OHHTTPStubs {
-        fileprivate class func stubRequests(_ passingTest: OHHTTPStubsTestBlock, withStubResponse: OHHTTPStubsResponseBlock) -> OHHTTPStubsDescriptor {
-            return self.stubRequests(passingTest: passingTest, withStubResponse: withStubResponse)
+        private class func stubRequests(passingTest passingTest: OHHTTPStubsTestBlock, withStubResponse: OHHTTPStubsResponseBlock) -> OHHTTPStubsDescriptor {
+            return stubRequestsPassingTest(passingTest, withStubResponse: withStubResponse)
         }
     }
 
-    extension Foundation.URLRequest {
-        var httpMethod: String? { return httpMethod }
-        var url: URL? { return url }
+    extension NSURLRequest {
+        var httpMethod: String? { return HTTPMethod }
+        var url: NSURL? { return URL }
     }
 
-    extension URLComponents {
-        fileprivate convenience init?(url: URL, resolvingAgainstBaseURL: Bool) {
-            (self as NSURLComponents).init(url: url, resolvingAgainstBaseURL: resolvingAgainstBaseURL)
+    extension NSURLComponents {
+        private convenience init?(url: NSURL, resolvingAgainstBaseURL: Bool) {
+            self.init(URL: url, resolvingAgainstBaseURL: resolvingAgainstBaseURL)
         }
     }
 
-    private typealias URLRequest = Foundation.URLRequest
+    private typealias URLRequest = NSURLRequest
 
     extension URLRequest {
-        fileprivate func value(forHTTPHeaderField key: String) -> String? {
-            return self.value(forHTTPHeaderField: key)
+        private func value(forHTTPHeaderField key: String) -> String? {
+            return valueForHTTPHeaderField(key)
         }
     }
 #endif
@@ -70,7 +70,7 @@
  * - Returns: The `OHHTTPStubsResponse` instance that will stub with the given status code
  *            & headers, and use the file content as the response body.
  */
-public func fixture(_ filePath: String, status: Int32 = 200, headers: [AnyHashable: Any]?) -> OHHTTPStubsResponse {
+public func fixture(filePath: String, status: Int32 = 200, headers: [NSObject: AnyObject]?) -> OHHTTPStubsResponse {
     return OHHTTPStubsResponse(fileAtPath: filePath, statusCode: status, headers: headers)
 }
 
@@ -84,11 +84,12 @@ public func fixture(_ filePath: String, status: Int32 = 200, headers: [AnyHashab
  *            and can be later used to remove it with `removeStub:`
  */
 #if swift(>=3.0)
+@discardableResult
 public func stub(condition: @escaping OHHTTPStubsTestBlock, response: @escaping OHHTTPStubsResponseBlock) -> OHHTTPStubsDescriptor {
     return OHHTTPStubs.stubRequests(passingTest: condition, withStubResponse: response)
 }
 #else
-public func stub(_ condition: OHHTTPStubsTestBlock, response: OHHTTPStubsResponseBlock) -> OHHTTPStubsDescriptor {
+public func stub(condition: OHHTTPStubsTestBlock, response: OHHTTPStubsResponseBlock) -> OHHTTPStubsDescriptor {
     return OHHTTPStubs.stubRequests(passingTest: condition, withStubResponse: response)
 }
 #endif
@@ -183,7 +184,7 @@ public func isHost(_ host: String) -> OHHTTPStubsTestBlock {
  *         should include in the `path` parameter unless you're testing relative URLs)
  */
 public func isPath(_ path: String) -> OHHTTPStubsTestBlock {
-    return { req in (req.url as URL?)?.path == path } // Need to cast to NSURL because URL.path does not behave like NSURL.path in Swift 3.0. URL.path does not stop at the first ';' and returns the entire string.
+    return { req in (req.url as NSURL?)?.path == path } // Need to cast to NSURL because URL.path does not behave like NSURL.path in Swift 3.0. URL.path does not stop at the first ';' and returns the entire string.
 }
 
 /**
@@ -233,7 +234,7 @@ public func isExtension(_ ext: String) -> OHHTTPStubsTestBlock {
 public func containsQueryParams(_ params: [String:String?]) -> OHHTTPStubsTestBlock {
     return { req in
         if let url = req.url {
-            let comps = URLComponents(url: url, resolvingAgainstBaseURL: true)
+            let comps = NSURLComponents(url: url, resolvingAgainstBaseURL: true)
             if let queryItems = comps?.queryItems {
                 for (k,v) in params {
                     if queryItems.filter({ qi in qi.name == k && qi.value == v }).count == 0 { return false }
