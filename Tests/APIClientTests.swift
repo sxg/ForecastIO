@@ -40,7 +40,7 @@ class DarkSkyClientTests: XCTestCase {
         let schemeStub = isScheme("https")
         _ = stub(condition: hostStub && pathStub && methodStub && schemeStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
-            return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
+            return fixture(filePath: forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
         let client = DarkSkyClient(apiKey: apiKey)
         var forecast: Forecast?
@@ -81,7 +81,7 @@ class DarkSkyClientTests: XCTestCase {
         let schemeStub = isScheme("https")
         _ = stub(condition: hostStub && pathStub && methodStub && schemeStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
-            return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
+            return fixture(filePath: forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
         let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
         client.units = .si
@@ -122,7 +122,7 @@ class DarkSkyClientTests: XCTestCase {
         let queryStub = containsQueryParams(["units": "si"])
         _ = stub(condition: hostStub && pathStub && methodStub && schemeStub && queryStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
-            return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
+            return fixture(filePath: forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
         let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
         client.units = .si
@@ -163,7 +163,7 @@ class DarkSkyClientTests: XCTestCase {
         let queryStub = containsQueryParams(["lang": "fr"])
         _ = stub(condition: hostStub && pathStub && methodStub && schemeStub && queryStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
-            return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
+            return fixture(filePath: forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
         let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
         client.language = .french
@@ -204,7 +204,7 @@ class DarkSkyClientTests: XCTestCase {
         let queryStub = containsQueryParams(["extend": "hourly"])
         _ = stub(condition: hostStub && pathStub && methodStub && schemeStub && queryStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
-            return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
+            return fixture(filePath: forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
         let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
         var forecast: Forecast?
@@ -244,7 +244,7 @@ class DarkSkyClientTests: XCTestCase {
         let queryStub = containsQueryParams(["exclude": "minutely,daily"])
         _ = stub(condition: hostStub && pathStub && methodStub && schemeStub && queryStub) { _ in
             let forecastJSONPath = OHPathForFile("forecast.json", type(of: self))
-            return fixture(forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
+            return fixture(filePath: forecastJSONPath!, headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
         let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
         var forecast: Forecast?
@@ -314,7 +314,7 @@ class DarkSkyClientTests: XCTestCase {
         let expect = expectation(description: "Get forecast with bad JSON")
         _ = stub(condition: isHost("api.darksky.net")) { _ in
             //  Return empty body instead of JSON
-            return fixture("", headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
+            return fixture(filePath: "", headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
         let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
         var forecast: Forecast?
