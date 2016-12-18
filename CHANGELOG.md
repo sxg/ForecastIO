@@ -2,6 +2,13 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
+## 3.0.3
+
+Released on December 18, 2016.
+
+### Removed
+- ForecastIO arm scheme
+
 ## 3.0.2
 
 Released on October 17, 2016.
