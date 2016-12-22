@@ -1,4 +1,4 @@
-# ForecastIO
+![ForecastIO](header.png)
 
 ![Swift](http://img.shields.io/badge/swift-3.0-brightgreen.svg)
 [![CI Status](http://img.shields.io/travis/sxg/ForecastIO.svg?style=flat)](https://travis-ci.org/sxg/ForecastIO)
