@@ -26,11 +26,7 @@ public struct DataBlock {
     ///
     /// - returns: A new `DataBlock` filled with data from the given JSON object.
     public init(fromJSON json: NSDictionary) {
-        if let jsonSummary = json["summary"] as? String {
-            summary = jsonSummary
-        } else {
-            summary = nil
-        }
+        summary = json["summary"] as? String
         if let jsonIcon = json["icon"] as? String {
             icon = Icon(rawValue: jsonIcon)
         } else {
