@@ -23,6 +23,9 @@ public enum Language: String {
     /// The Bosnian language.
     case bosnian = "bs"
     
+    /// The Catalan language.
+    case catalan = "ca"
+    
     /// The Czech language.
     case czech = "cs"
     
@@ -37,6 +40,9 @@ public enum Language: String {
     
     /// The Spanish language.
     case spanish = "es"
+    
+    /// The Estonian language.
+    case estonian = "et"
     
     /// The French language.
     case french = "fr"
@@ -76,6 +82,9 @@ public enum Language: String {
     
     /// The Slovak language.
     case slovak = "sk"
+    
+    /// The Slovenian language.
+    case slovenian = "sl"
     
     /// The Serbian language.
     case serbian = "sr"

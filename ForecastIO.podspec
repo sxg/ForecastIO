@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ForecastIO"
-  s.version          = "3.0.3"
+  s.version          = "3.0.4"
   s.summary          = "ForecastIO is a Swift library for interfacing with the Dark Sky forecast API."
   s.homepage         = "https://github.com/sxg/ForecastIO"
   s.license          = 'MIT'
@@ -24,7 +24,4 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Source/*.swift'
-#  s.resource_bundles = {
-#    'ForecastIO' => ['Pod/Assets/*.png']
-#  }
 end

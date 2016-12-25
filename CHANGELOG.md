@@ -2,6 +2,16 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
+## 3.0.4
+
+Released on December 24, 2016.
+
+### Added
+- Support for Catalan, Estonian, and Slovenian
+
+### Updated
+- References to the `Array` type now use the `[]` shorthand
+
 ## 3.0.3
 
 Released on December 18, 2016.
