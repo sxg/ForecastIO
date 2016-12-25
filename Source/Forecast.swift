@@ -21,7 +21,7 @@ public struct Forecast {
     public let timezone: String
     
     /// Severe weather `Alert`s issued by a governmental weather authority for the requested location.
-    public let alerts: Array<Alert>?
+    public let alerts: [Alert]?
     
     /// Metadata for the request.
     public let flags: Flag?
@@ -91,7 +91,7 @@ public struct Forecast {
             daily = nil
         }
         
-        if let jsonAlerts = json["alerts"] as? Array<NSDictionary> {
+        if let jsonAlerts = json["alerts"] as? [NSDictionary] {
             var tempAlerts = [Alert]()
             for jsonAlert in jsonAlerts {
                 tempAlerts.append(Alert(fromJSON: jsonAlert))
