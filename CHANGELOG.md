@@ -2,6 +2,13 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
+## 4.0.0
+
+Released on February 6, 2016.
+
+### Updated
+- `expire` property on `Alert` is now optional
+
 ## 3.0.4
 
 Released on December 24, 2016.
