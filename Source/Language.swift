@@ -20,6 +20,9 @@ public enum Language: String {
     /// The Belarusian language.
     case belarusian = "be"
     
+    /// The Bulgarian language.
+    case bulgarian = "bg"
+    
     /// The Bosnian language.
     case bosnian = "bs"
     
