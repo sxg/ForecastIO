@@ -12,10 +12,10 @@ import Foundation
 public struct Forecast {
     
     /// The requested latitude.
-    public let latitude: Float
+    public let latitude: Double
     
     /// The requested longitude.
-    public let longitude: Float
+    public let longitude: Double
     
     /// The IANA timezone name for the requested location (e.g. "America/New_York"). Rely on local user settings over this property.
     public let timezone: String
