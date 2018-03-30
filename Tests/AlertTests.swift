@@ -45,6 +45,9 @@ class AlertTests: XCTestCase {
         XCTAssertEqual(alert.expires, Date(timeIntervalSince1970: 1453593600))
         XCTAssertEqual(alert.uri.absoluteString, "http://alerts.weather.gov/cap/wwacapget.php?x=MD1255E4FAA7AC.HighWindWarning.1255E5079700MD.LWXNPWLWX.b0aa96f59630770f05e80c219b873fd2")
         XCTAssertEqual(alert.description, "...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 7 PM EST THIS\nEVENING...\n* TIMING...THROUGH TODAY.\n* WINDS...NORTH 25 TO 35 MPH WITH GUSTS UP TO 55 MPH.\n* IMPACTS...DOWNED TREES...POWERLINES...AND MINOR STRUCTURAL\nDAMAGE. DRIVING HIGH PROFILE VEHICLES IN THESE CONDITIONS IS\nDANGEROUS.\n")
+        XCTAssertEqual(alert.severity.rawValue, "watch")
+        XCTAssertEqual(alert.regions, ["Eastern Bergen","Eastern Essex","Eastern Passaic","Eastern Union","Hudson","Western Bergen","Western Essex","Western Passaic","Western Union"])
+        XCTAssertEqual(alert.time, Date(timeIntervalSince1970: 1453562580))
     }
     
     func testInitNoOptionalsFromJSON() {
@@ -60,6 +63,9 @@ class AlertTests: XCTestCase {
         XCTAssertNil(alert.expires)
         XCTAssertEqual(alert.uri.absoluteString, "http://alerts.weather.gov/cap/wwacapget.php?x=MD1255E4FAA7AC.HighWindWarning.1255E5079700MD.LWXNPWLWX.b0aa96f59630770f05e80c219b873fd2")
         XCTAssertEqual(alert.description, "...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 7 PM EST THIS\nEVENING...\n* TIMING...THROUGH TODAY.\n* WINDS...NORTH 25 TO 35 MPH WITH GUSTS UP TO 55 MPH.\n* IMPACTS...DOWNED TREES...POWERLINES...AND MINOR STRUCTURAL\nDAMAGE. DRIVING HIGH PROFILE VEHICLES IN THESE CONDITIONS IS\nDANGEROUS.\n")
+        XCTAssertEqual(alert.severity.rawValue, "watch")
+        XCTAssertEqual(alert.regions, ["Eastern Bergen","Eastern Essex","Eastern Passaic","Eastern Union","Hudson","Western Bergen","Western Essex","Western Passaic","Western Union"])
+        XCTAssertEqual(alert.time, Date(timeIntervalSince1970: 1453562580))
     }
     
 }

@@ -66,8 +66,8 @@ public struct Forecast {
     ///
     /// - returns: A new `Forecast` filled with data from the given JSON object.
     public init(fromJSON json: NSDictionary) {
-        latitude = json["latitude"] as! Float
-        longitude = json["longitude"] as! Float
+        latitude = json["latitude"] as! Double
+        longitude = json["longitude"] as! Double
         timezone = json["timezone"] as! String
         
         if let jsonCurrently = json["currently"] as? NSDictionary {

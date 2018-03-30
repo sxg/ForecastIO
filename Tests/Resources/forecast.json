@@ -1625,14 +1625,18 @@
          "time":1453562580,
          "expires":1453593600,
          "description":"...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 7 PM EST THIS\nEVENING...\n* TIMING...THROUGH TODAY.\n* WINDS...NORTH 25 TO 35 MPH WITH GUSTS UP TO 55 MPH.\n* IMPACTS...DOWNED TREES...POWERLINES...AND MINOR STRUCTURAL\nDAMAGE. DRIVING HIGH PROFILE VEHICLES IN THESE CONDITIONS IS\nDANGEROUS.\n",
-         "uri":"http://alerts.weather.gov/cap/wwacapget.php?x=MD1255E4FAA7AC.HighWindWarning.1255E5079700MD.LWXNPWLWX.b0aa96f59630770f05e80c219b873fd2"
+         "uri":"http://alerts.weather.gov/cap/wwacapget.php?x=MD1255E4FAA7AC.HighWindWarning.1255E5079700MD.LWXNPWLWX.b0aa96f59630770f05e80c219b873fd2",
+         "severity":"watch",
+         "regions": ["Eastern Bergen","Eastern Essex","Eastern Passaic","Eastern Union","Hudson","Western Bergen","Western Essex","Western Passaic","Western Union"]
       },
       {
          "title":"Blizzard Warning for Baltimore, MD",
          "time":1453559700,
          "expires":1453633200,
          "description":"VERY STRONG LOW PRESSURE WILL DRIFT EAST FROM THE MOUTH OF THE\nCHESAPEAKE BAY TODAY.\n...BLIZZARD WARNING REMAINS IN EFFECT UNTIL 6 AM EST SUNDAY...\n* HAZARD TYPES...HEAVY SNOW AND BLOWING SNOW.\n* SNOW ACCUMULATIONS...22 TO 30 INCHES...UP TO 36 INCHES ABOVE\n1200 FEET.\n* TIMING...HEAVY SNOW THROUGH THIS EVENING. BLOWING SNOW INTO\nSUNDAY.\n* IMPACTS...HEAVY SNOW AND BLOWING SNOW WILL CONTINUE TO CAUSE\nDANGEROUS CONDITIONS AND WILL BE A THREAT TO LIFE AND PROPERTY.\nTRAVEL IS IMPOSSIBLE. VISIBILITY WILL BE REDUCED TO NEAR ZERO\nAT TIMES IN WHITEOUT CONDITIONS THROUGH TONIGHT.\n* WINDS...NORTH 20 TO 30 MPH WITH GUSTS UP TO 50 MPH.\n* TEMPERATURES...IN THE LOWER 20S. WIND CHILLS SINGLE DIGITS.\n",
-         "uri":"http://alerts.weather.gov/cap/wwacapget.php?x=MD1255E4FA854C.BlizzardWarning.1255E50944B0MD.LWXWSWLWX.2725408b6d049dc67224e179c743dc2d"
+         "uri":"http://alerts.weather.gov/cap/wwacapget.php?x=MD1255E4FA854C.BlizzardWarning.1255E50944B0MD.LWXWSWLWX.2725408b6d049dc67224e179c743dc2d",
+         "severity":"warning",
+         "regions": ["Eastern Bergen","Eastern Essex","Eastern Passaic","Eastern Union","Hudson","Western Bergen","Western Essex","Western Passaic","Western Union"]
       }
    ],
    "flags":{

@@ -14,6 +14,9 @@ public struct Alert {
     /// A short text summary of the `Alert`.
     public let title: String
     
+    /// The time at which this alert was issued.
+    public let time: Date
+    
     /// The time at which the `Alert` will cease to be valid.
     public let expires: Date?
     
@@ -22,6 +25,25 @@ public struct Alert {
     
     /// An HTTP(S) URI that contains detailed information about the `Alert`.
     public let uri: URL
+    
+    /// Regions covered by the `Alert`.
+    public let regions: [String]
+    
+    /// The severity of the `Alert`.
+    public let severity: Severity
+    
+    /// Severity categories of `Alert`s.
+    public enum Severity: String {
+        
+        /// `advisory` `Alert`s tell an individual to be aware of potentially severe weather.
+        case advisory = "advisory"
+        
+        /// `watch` `Alert`s tell an individual to prepare for potentially severe weather.
+        case watch = "watch"
+        
+        /// `warning` `Alert`s tell an individual to take immediate action to protect themselves and others from potentially severe weather.
+        case warning = "warning"
+    }
     
     /// Creates a new `Alert` from a JSON object.
     ///
@@ -35,7 +57,10 @@ public struct Alert {
         } else {
             expires = nil
         }
+        time = Date(timeIntervalSince1970: json["time"] as! Double)
         uri = URL(string: json["uri"] as! String)!
         description = json["description"] as! String
+        regions = json["regions"] as! [String]
+        severity = Severity(rawValue: json["severity"] as! String)!
     }
 }

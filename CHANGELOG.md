@@ -2,9 +2,20 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
+## 4.1.0
+
+Released on March 30, 2018.
+
+### Added
+- `time`, `regions`, and `severity` properties on `Alert`
+- Support for Bulgarian
+
+### Updated
+- `Float` properties are now `Double` on `DataPoint` and `Forecast`
+
 ## 4.0.0
 
-Released on February 6, 2016.
+Released on February 6, 2017.
 
 ### Updated
 - `expire` property on `Alert` is now optional
