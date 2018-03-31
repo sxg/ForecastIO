@@ -1,5 +1,5 @@
 framework module ForecastIO {
-  umbrella header "ForecastIO-OSX-umbrella.h"
+  umbrella header "ForecastIO-macOS-umbrella.h"
 
   export *
   module * { export * }

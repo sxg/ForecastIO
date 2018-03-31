@@ -70,6 +70,8 @@ The following units are supported:
 - UK
 - Auto (uses the local units for the location for which you are requesting weather data)
 
+More details about the units of each property are available [in the Dark Sky API docs](https://darksky.net/dev/docs/forecast).
+
 You can also choose the language that you want `Forecast` responses to use:
 
 ```swift

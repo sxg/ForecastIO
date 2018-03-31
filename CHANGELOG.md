@@ -2,6 +2,19 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
+## 5.0.0
+
+Released on March 31, 2018.
+
+### Added
+- `uvIndex`, `uvIndexTime`, and `windGust` properties on `DataPoint`
+- Support for Danish, Finnish, Japanese, Georgian, Korean, and Romanian
+- `CONTRIBUTING.md`, which describes basic guidelines for contributing to this project
+
+### Updated
+- Swift 4.1 compatibility
+- Max/min temperatures on `DataPoint` are now high/low
+
 ## 4.1.0
 
 Released on March 30, 2018.

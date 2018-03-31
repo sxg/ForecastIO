@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		2B5C2670CE91A99832E2AF62 /* Pods_ForecastIO_tvOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12EB4AA3A72DB396C38E25DB /* Pods_ForecastIO_tvOS_Tests.framework */; };
 		4A10DB621D45103700E304C5 /* AlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2C31C543ED900A4A02F /* AlertTests.swift */; };
-		4A10DB631D45103700E304C5 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */; };
+		4A10DB631D45103700E304C5 /* DarkSkyClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D71C54462A00A4A02F /* DarkSkyClientTests.swift */; };
 		4A10DB641D45103700E304C5 /* DataBlockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2CF1C5442C400A4A02F /* DataBlockTests.swift */; };
 		4A10DB651D45103700E304C5 /* DataPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2CB1C54410300A4A02F /* DataPointTests.swift */; };
 		4A10DB661D45103700E304C5 /* FlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2C71C54400700A4A02F /* FlagTests.swift */; };
 		4A10DB671D45103700E304C5 /* ForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2B81C5434B800A4A02F /* ForecastTests.swift */; };
 		4A10DB691D45103700E304C5 /* UnitsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D31C54454100A4A02F /* UnitsTest.swift */; };
 		4A10DB6A1D45103800E304C5 /* AlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2C31C543ED900A4A02F /* AlertTests.swift */; };
-		4A10DB6B1D45103800E304C5 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */; };
+		4A10DB6B1D45103800E304C5 /* DarkSkyClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D71C54462A00A4A02F /* DarkSkyClientTests.swift */; };
 		4A10DB6C1D45103800E304C5 /* DataBlockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2CF1C5442C400A4A02F /* DataBlockTests.swift */; };
 		4A10DB6D1D45103800E304C5 /* DataPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2CB1C54410300A4A02F /* DataPointTests.swift */; };
 		4A10DB6E1D45103800E304C5 /* FlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2C71C54400700A4A02F /* FlagTests.swift */; };
 		4A10DB6F1D45103800E304C5 /* ForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2B81C5434B800A4A02F /* ForecastTests.swift */; };
 		4A10DB711D45103800E304C5 /* UnitsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D31C54454100A4A02F /* UnitsTest.swift */; };
 		4A10DB721D45103900E304C5 /* AlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2C31C543ED900A4A02F /* AlertTests.swift */; };
-		4A10DB731D45103900E304C5 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */; };
+		4A10DB731D45103900E304C5 /* DarkSkyClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9F2D71C54462A00A4A02F /* DarkSkyClientTests.swift */; };
 		4A10DB7B1D4510A900E304C5 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10DB7A1D4510A900E304C5 /* Language.swift */; };
 		4A14A6F41CDAA80E00D4C108 /* forecast_bare.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */; };
 		4A14A6F51CDAA80F00D4C108 /* forecast_bare.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */; };
@@ -42,10 +42,10 @@
 		4A56CEB91D447BD000751AF6 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FBC1C53F52000CB7548 /* Icon.swift */; };
 		4A56CEBA1D447BD000751AF6 /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FBE1C53F52000CB7548 /* Precipitation.swift */; };
 		4A56CEBD1D447BD000751AF6 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FBF1C53F52000CB7548 /* Units.swift */; };
-		4A56CEC51D447F4900751AF6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A56CEB11D44770C00751AF6 /* Language.swift */; };
-		4A56CEC61D447F4A00751AF6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A56CEB11D44770C00751AF6 /* Language.swift */; };
-		4A56CEC71D447F4B00751AF6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A56CEB11D44770C00751AF6 /* Language.swift */; };
 		4A7AFEA41D98B9BA00568802 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7AFEA31D98B9BA00568802 /* Result.swift */; };
+		4A7C1CCF206FF6940021A961 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10DB7A1D4510A900E304C5 /* Language.swift */; };
+		4A7C1CD0206FF69A0021A961 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10DB7A1D4510A900E304C5 /* Language.swift */; };
+		4A7C1CD1206FF6A00021A961 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10DB7A1D4510A900E304C5 /* Language.swift */; };
 		4A8B235C1D44807E00ACBAA8 /* forecast_bare.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */; };
 		4A8B235D1D44807E00ACBAA8 /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = D4D9F2B41C54061600A4A02F /* forecast.json */; };
 		4A8B235E1D44807E00ACBAA8 /* forecast_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A3364661CD9712000775650 /* forecast_no_optionals.json */; };
@@ -150,8 +150,8 @@
 		4A3364661CD9712000775650 /* forecast_no_optionals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = forecast_no_optionals.json; path = Tests/Resources/forecast_no_optionals.json; sourceTree = SOURCE_ROOT; };
 		4A3640F91D150EAA005602A7 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		4A468FF41D9A0AAF00B2C0D2 /* ForecastIOError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastIOError.swift; path = Source/ForecastIOError.swift; sourceTree = "<group>"; };
-		4A56CEB11D44770C00751AF6 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Source/Language.swift; sourceTree = "<group>"; };
 		4A7AFEA31D98B9BA00568802 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		4A7C1CD2206FFBBD0021A961 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		4A8B23511D447FB300ACBAA8 /* ForecastIO iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB7086C1D45230F005D1E8E /* LanguageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LanguageTests.swift; path = Tests/LanguageTests.swift; sourceTree = SOURCE_ROOT; };
 		4AB708701D45246C005D1E8E /* IconTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconTests.swift; path = Tests/IconTests.swift; sourceTree = SOURCE_ROOT; };
@@ -183,7 +183,7 @@
 		D45650071C53F53800CB7548 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
 		D4A4807A1C507CE70053EB05 /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A480931C507D730053EB05 /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4B85DAC1C533A7B00BD2FCD /* ForecastIO.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ForecastIO.podspec; sourceTree = "<group>"; };
+		D4B85DAC1C533A7B00BD2FCD /* ForecastIO.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ForecastIO.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D4B85DAD1C533A7B00BD2FCD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D4B85DAE1C533A7B00BD2FCD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D4D9F2B01C53F76500A4A02F /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -194,7 +194,7 @@
 		D4D9F2CB1C54410300A4A02F /* DataPointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataPointTests.swift; path = Tests/DataPointTests.swift; sourceTree = SOURCE_ROOT; };
 		D4D9F2CF1C5442C400A4A02F /* DataBlockTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataBlockTests.swift; path = Tests/DataBlockTests.swift; sourceTree = SOURCE_ROOT; };
 		D4D9F2D31C54454100A4A02F /* UnitsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnitsTest.swift; path = Tests/UnitsTest.swift; sourceTree = SOURCE_ROOT; };
-		D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClientTests.swift; path = Tests/APIClientTests.swift; sourceTree = SOURCE_ROOT; };
+		D4D9F2D71C54462A00A4A02F /* DarkSkyClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DarkSkyClientTests.swift; path = Tests/DarkSkyClientTests.swift; sourceTree = SOURCE_ROOT; };
 		D4DE2AD41C513EA00063A7CA /* ForecastIO tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -261,14 +261,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4AF4CE20206EDF4B00BFA485 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				4A56CEB11D44770C00751AF6 /* Language.swift */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -278,7 +270,6 @@
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				8B40303E341216B1C5CF6E57ADE54857 /* Products */,
 				CAC24571B48A74C836257F9A /* Pods */,
-				4AF4CE20206EDF4B00BFA485 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -358,6 +349,7 @@
 				D4B85DAD1C533A7B00BD2FCD /* LICENSE */,
 				D4B85DAE1C533A7B00BD2FCD /* README.md */,
 				4A3640F91D150EAA005602A7 /* CHANGELOG.md */,
+				4A7C1CD2206FFBBD0021A961 /* CONTRIBUTING.md */,
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 			);
 			name = Metadata;
@@ -378,7 +370,7 @@
 			children = (
 				D4D9F2B31C54060800A4A02F /* Resources */,
 				D4D9F2C31C543ED900A4A02F /* AlertTests.swift */,
-				D4D9F2D71C54462A00A4A02F /* APIClientTests.swift */,
+				D4D9F2D71C54462A00A4A02F /* DarkSkyClientTests.swift */,
 				D4D9F2CF1C5442C400A4A02F /* DataBlockTests.swift */,
 				D4D9F2CB1C54410300A4A02F /* DataPointTests.swift */,
 				D4D9F2C71C54400700A4A02F /* FlagTests.swift */,
@@ -580,36 +572,36 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0930;
 				TargetAttributes = {
 					39ED6CDC99672303F992B722C0ABD571 = {
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0930;
 					};
 					4A8B23501D447FB300ACBAA8 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 76333YNXLE;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Manual;
 					};
 					D4446E6F1C51538000FBC8A8 = {
 						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0930;
 					};
 					D4446E781C51538000FBC8A8 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 76333YNXLE;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Manual;
 					};
 					D4A480641C507CE70053EB05 = {
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0930;
 					};
 					D4A4807D1C507D730053EB05 = {
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0930;
 					};
 					D4DE2AC91C513EA00063A7CA = {
 						DevelopmentTeam = 76333YNXLE;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -720,9 +712,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO tvOS Tests/Pods-ForecastIO tvOS Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ForecastIO-tvOS/ForecastIO.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs-tvOS/OHHTTPStubs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForecastIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -750,13 +747,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForecastIO macOS Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4A61E8DC1D4485FC000DDEC6 /* [CP] Embed Pods Frameworks */ = {
@@ -765,9 +765,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ForecastIO-iOS/ForecastIO.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs-iOS/OHHTTPStubs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForecastIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -794,13 +799,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForecastIO iOS Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6206FF6BF0A4AEA3C3961B22 /* [CP] Copy Pods Resources */ = {
@@ -914,9 +922,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ForecastIO-macOS/ForecastIO.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs-macOS/OHHTTPStubs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForecastIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -929,13 +942,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForecastIO tvOS Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DE93023B7A6C2E5C9BEBC0B3 /* 📦 Embed Pods Frameworks */ = {
@@ -986,7 +1002,7 @@
 				4AA325751D615F03003CFFA9 /* PrecipitationTests.swift in Sources */,
 				4AA325761D615F03003CFFA9 /* UnitsTest.swift in Sources */,
 				4A10DB721D45103900E304C5 /* AlertTests.swift in Sources */,
-				4A10DB731D45103900E304C5 /* APIClientTests.swift in Sources */,
+				4A10DB731D45103900E304C5 /* DarkSkyClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -994,6 +1010,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7C1CD0206FF69A0021A961 /* Language.swift in Sources */,
 				D4564FC41C53F52000CB7548 /* Alert.swift in Sources */,
 				D4564FFC1C53F52000CB7548 /* Precipitation.swift in Sources */,
 				D4564FD21C53F52000CB7548 /* DataBlock.swift in Sources */,
@@ -1003,7 +1020,6 @@
 				D4564FD91C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE71C53F52000CB7548 /* Forecast.swift in Sources */,
 				4A468FF71D9A0AAF00B2C0D2 /* ForecastIOError.swift in Sources */,
-				4A56CEC61D447F4A00751AF6 /* Language.swift in Sources */,
 				4AF007161D98BC5000209184 /* Result.swift in Sources */,
 				D45650031C53F52100CB7548 /* Units.swift in Sources */,
 				D4564FCB1C53F52000CB7548 /* DarkSkyClient.swift in Sources */,
@@ -1025,7 +1041,7 @@
 				4A10DB671D45103700E304C5 /* ForecastTests.swift in Sources */,
 				4A10DB691D45103700E304C5 /* UnitsTest.swift in Sources */,
 				4AB708771D452539005D1E8E /* PrecipitationTests.swift in Sources */,
-				4A10DB631D45103700E304C5 /* APIClientTests.swift in Sources */,
+				4A10DB631D45103700E304C5 /* DarkSkyClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1033,6 +1049,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7C1CD1206FF6A00021A961 /* Language.swift in Sources */,
 				D4564FC61C53F52000CB7548 /* Alert.swift in Sources */,
 				D4564FFE1C53F52000CB7548 /* Precipitation.swift in Sources */,
 				D4564FD41C53F52000CB7548 /* DataBlock.swift in Sources */,
@@ -1042,7 +1059,6 @@
 				D4564FDB1C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE91C53F52000CB7548 /* Forecast.swift in Sources */,
 				4A468FF81D9A0ABB00B2C0D2 /* ForecastIOError.swift in Sources */,
-				4A56CEC71D447F4B00751AF6 /* Language.swift in Sources */,
 				4AF007171D98BC5700209184 /* Result.swift in Sources */,
 				D45650051C53F52100CB7548 /* Units.swift in Sources */,
 				D4564FCD1C53F52000CB7548 /* DarkSkyClient.swift in Sources */,
@@ -1053,6 +1069,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7C1CCF206FF6940021A961 /* Language.swift in Sources */,
 				D4564FC21C53F52000CB7548 /* Alert.swift in Sources */,
 				D4564FFA1C53F52000CB7548 /* Precipitation.swift in Sources */,
 				D4564FD01C53F52000CB7548 /* DataBlock.swift in Sources */,
@@ -1062,7 +1079,6 @@
 				D4564FD71C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE51C53F52000CB7548 /* Forecast.swift in Sources */,
 				4A468FF61D9A0AAF00B2C0D2 /* ForecastIOError.swift in Sources */,
-				4A56CEC51D447F4900751AF6 /* Language.swift in Sources */,
 				4AF007151D98BC4D00209184 /* Result.swift in Sources */,
 				D45650011C53F52000CB7548 /* Units.swift in Sources */,
 				D4564FC91C53F52000CB7548 /* DarkSkyClient.swift in Sources */,
@@ -1084,7 +1100,7 @@
 				4A10DB6F1D45103800E304C5 /* ForecastTests.swift in Sources */,
 				4A10DB711D45103800E304C5 /* UnitsTest.swift in Sources */,
 				4AB708761D452539005D1E8E /* PrecipitationTests.swift in Sources */,
-				4A10DB6B1D45103800E304C5 /* APIClientTests.swift in Sources */,
+				4A10DB6B1D45103800E304C5 /* DarkSkyClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1154,7 +1170,8 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1171,14 +1188,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1231,7 +1256,8 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1244,7 +1270,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA68478095963C4BF1141CF2 /* Pods-ForecastIO iOS Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
@@ -1263,7 +1289,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1271,7 +1298,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC556936E1D2FA0BE77EF0D4 /* Pods-ForecastIO iOS Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
@@ -1291,7 +1318,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1303,14 +1331,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1373,7 +1409,8 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1411,7 +1448,8 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1421,7 +1459,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF213A74D8DC9F42C361755D /* Pods-ForecastIO macOS Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_IDENTITY = "";
@@ -1441,7 +1479,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1449,7 +1488,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9B1B356DACA6D8F6203D8BA3 /* Pods-ForecastIO macOS Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_IDENTITY = "";
@@ -1470,7 +1509,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1501,7 +1541,8 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1537,7 +1578,8 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1573,7 +1615,8 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1609,7 +1652,8 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1622,7 +1666,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 191359B70894BED3AA7BABDA /* Pods-ForecastIO tvOS Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_IDENTITY = "";
@@ -1641,7 +1685,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1649,7 +1694,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 092D5794F1D9F9ED48D55505 /* Pods-ForecastIO tvOS Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_IDENTITY = "";
@@ -1669,7 +1714,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

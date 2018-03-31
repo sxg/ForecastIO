@@ -1,20 +1,20 @@
 PODS:
-  - ForecastIO (3.0.0)
-  - OHHTTPStubs (5.2.1):
-    - OHHTTPStubs/Default (= 5.2.1)
-  - OHHTTPStubs/Core (5.2.1)
-  - OHHTTPStubs/Default (5.2.1):
+  - ForecastIO (4.1.0)
+  - OHHTTPStubs (6.1.0):
+    - OHHTTPStubs/Default (= 6.1.0)
+  - OHHTTPStubs/Core (6.1.0)
+  - OHHTTPStubs/Default (6.1.0):
     - OHHTTPStubs/Core
     - OHHTTPStubs/JSON
     - OHHTTPStubs/NSURLSession
     - OHHTTPStubs/OHPathHelpers
-  - OHHTTPStubs/JSON (5.2.1):
+  - OHHTTPStubs/JSON (6.1.0):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/NSURLSession (5.2.1):
+  - OHHTTPStubs/NSURLSession (6.1.0):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/OHPathHelpers (5.2.1)
-  - OHHTTPStubs/Swift (5.2.1):
-    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.1.0)
+  - OHHTTPStubs/Swift (6.1.0):
+    - OHHTTPStubs/Default
 
 DEPENDENCIES:
   - ForecastIO (from `./`)
@@ -23,12 +23,12 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   ForecastIO:
-    :path: "./"
+    :path: ./
 
 SPEC CHECKSUMS:
-  ForecastIO: dd4bc4a7e2c2adcdec63bf6ae0d74c3b277bdd5d
-  OHHTTPStubs: 3a42f25c00563b71355ac73112ba2324e9e6cef4
+  ForecastIO: 28a7095b903a57207f12477cf333484a3600f9ce
+  OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
 
-PODFILE CHECKSUM: 7fc2e510bf2c5d97ec123f34502420d7da1c5016
+PODFILE CHECKSUM: 165177beaf033c9a2c8c9d78ea69c0cc2e04bbaa
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.4.0
