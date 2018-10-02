@@ -56,6 +56,9 @@ public enum Language: String {
     /// The French language.
     case french = "fr"
     
+    /// The Hebrew language.
+    case hebrew = "he"
+    
     /// The Croatian language.
     case croatian = "hr"
     
@@ -82,6 +85,9 @@ public enum Language: String {
     
     /// The Cornish language.
     case cornish = "kw"
+    
+    /// The Latvian language.
+    case latvian = "lv"
     
     /// The Norwegian Bokmål language.
     case norwegianBokmål = "nb"

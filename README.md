@@ -1,6 +1,6 @@
 ![ForecastIO](header.png)
 
-![Swift](http://img.shields.io/badge/swift-3.0-brightgreen.svg)
+![Swift](https://img.shields.io/badge/Swift-4.2-brightgreen.svg)
 [![CI Status](http://img.shields.io/travis/sxg/ForecastIO.svg?style=flat)](https://travis-ci.org/sxg/ForecastIO)
 [![Documentation](https://img.shields.io/cocoapods/metrics/doc-percent/ForecastIO.svg)](http://cocoadocs.org/docsets/ForecastIO/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)

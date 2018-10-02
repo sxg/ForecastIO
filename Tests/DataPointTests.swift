@@ -19,7 +19,7 @@ class DataPointTests: XCTestCase {
         let forecastJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast", ofType: "json")!
         let forecastJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastJSONPath))
         let forecastJSON = try! JSONSerialization.jsonObject(with: forecastJSONData, options: .mutableContainers) as! NSDictionary
-        self.dataPointJSON = forecastJSON["currently"] as! NSDictionary
+        self.dataPointJSON = forecastJSON["currently"] as? NSDictionary
     }
     
     override func tearDown() {
