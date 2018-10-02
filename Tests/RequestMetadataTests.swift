@@ -13,7 +13,7 @@ class RequestMetadataTests: XCTestCase {
     
     func testInitFromHTTPHeaderFields() {
         //  Given
-        let httpHeaderFields = ["Cache-Control": "max-age=60", "X-Forecast-API-Calls": "12", "X-Response-Time": "123.45ms"]
+        let httpHeaderFields = ["Cache-Control": "max-age=60", "x-forecast-api-calls": "12", "x-response-time": "123.45ms"]
         
         //  When
         let requestMetadata = RequestMetadata(fromHTTPHeaderFields: httpHeaderFields)

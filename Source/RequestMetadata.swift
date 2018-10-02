@@ -27,12 +27,12 @@ public struct RequestMetadata {
     /// - returns: A new `RequestMetadata` filled with data from the given Dark Sky API response header fields `Dictionary`.
     public init(fromHTTPHeaderFields headerFields: [AnyHashable: Any]) {
         cacheControl = headerFields["Cache-Control"] as? String
-        if let forecastAPICallsHeader = headerFields["X-Forecast-API-Calls"] as? String {
+        if let forecastAPICallsHeader = headerFields["x-forecast-api-calls"] as? String {
             apiRequestsCount = Int(forecastAPICallsHeader)
         } else {
             apiRequestsCount = nil
         }
-        if var responseTimeHeader = headerFields["X-Response-Time"] as? String {
+        if var responseTimeHeader = headerFields["x-response-time"] as? String {
             // Remove "ms" units from the string
             responseTimeHeader = responseTimeHeader.trimmingCharacters(in: CharacterSet.letters)
             responseTime = Float(responseTimeHeader)
