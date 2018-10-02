@@ -2,6 +2,17 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
+## 5.1.0
+
+Release on October 2, 2018.
+
+### Added
+- Support for Hebrew and Latvian
+
+### Updated
+- Fixed `apiRequestsCount` and `responseTime` serialization from headers
+- Swift 4.2 compatibility
+
 ## 5.0.0
 
 Released on March 31, 2018.
