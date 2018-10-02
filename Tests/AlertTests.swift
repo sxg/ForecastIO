@@ -20,12 +20,12 @@ class AlertTests: XCTestCase {
         let forecastJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast", ofType: "json")!
         let forecastJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastJSONPath))
         let forecastJSON = try! JSONSerialization.jsonObject(with: forecastJSONData, options: .mutableContainers) as! NSDictionary
-        self.alertsJSON = forecastJSON["alerts"] as! NSArray
+        self.alertsJSON = forecastJSON["alerts"] as? NSArray
         
         let forecastNoOptionalsJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast_no_optionals", ofType: "json")!
         let forecastNoOptionalsJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastNoOptionalsJSONPath))
         let forecastNoOptionalsJSON = try! JSONSerialization.jsonObject(with: forecastNoOptionalsJSONData, options: .mutableContainers) as! NSDictionary
-        self.alertsNoOptionalsJSON = forecastNoOptionalsJSON["alerts"] as! NSArray
+        self.alertsNoOptionalsJSON = forecastNoOptionalsJSON["alerts"] as? NSArray
     }
     
     override func tearDown() {
