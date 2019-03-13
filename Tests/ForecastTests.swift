@@ -11,29 +11,34 @@ import XCTest
 
 class ForecastTests: XCTestCase {
     
-    var forecastJSON: NSDictionary!
-    var forecastBareJSON: NSDictionary!
+    var forecastJSONData: Data!
+    var forecastBareJSONData: Data!
+    var decoder: JSONDecoder!
     
     override func setUp() {
         super.setUp()
         
+        // Load forecast.json as Data
         let forecastJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast", ofType: "json")!
-        let forecastJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastJSONPath))
-        self.forecastJSON = try! JSONSerialization.jsonObject(with: forecastJSONData, options: .mutableContainers) as! NSDictionary
+        self.forecastJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastJSONPath))
         
+        // Load forecast_bare.json as Data
         let forecastBareJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast_bare", ofType: "json")!
-        let forecastBareJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastBareJSONPath))
-        self.forecastBareJSON = try! JSONSerialization.jsonObject(with: forecastBareJSONData, options: .mutableContainers) as! NSDictionary
+        self.forecastBareJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastBareJSONPath))
+        
+        // Setup the decoder
+        self.decoder = JSONDecoder()
+        self.decoder.dateDecodingStrategy = .secondsSince1970
     }
     
     override func tearDown() {
         super.tearDown()
     }
     
-    func testInitFromJSON() {
+    func testInitFromDecoder() {
         //  Given
         //  When
-        let forecast = Forecast(fromJSON: self.forecastJSON)
+        let forecast = try! self.decoder.decode(Forecast.self, from: self.forecastJSONData)
         
         //  Then
         XCTAssertNotNil(forecast)
@@ -46,10 +51,10 @@ class ForecastTests: XCTestCase {
         XCTAssertNotNil(forecast.daily)
     }
     
-    func testInitBareFromJSON() {
+    func testInitFromDecoderBare() {
         //  Given
         //  When
-        let forecast = Forecast(fromJSON: self.forecastBareJSON)
+        let forecast = try! self.decoder.decode(Forecast.self, from: self.forecastBareJSONData)
         
         //  Then
         XCTAssertNotNil(forecast)
