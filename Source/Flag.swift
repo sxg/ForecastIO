@@ -38,4 +38,16 @@ public struct Flag: Decodable {
     /// The presence of this property indicates which units were used for the data in this request. `US` units are default.
     public let units: Units
 
+    /// Maps `Flag`'s properties to JSON keys
+    private enum CodingKeys: String, CodingKey {
+        case darkSkyUnavailable = "darksky-unavailable"
+        case darkSkyStations = "darksky-stations"
+        case dataPointStations = "datapoint-stations"
+        case isdStations = "isd-stations"
+        case lampStations = "lamp-stations"
+        case metarStations = "metar-stations"
+        case metnoLicense = "metno-license"
+        case sources, units
+    }
+    
 }
