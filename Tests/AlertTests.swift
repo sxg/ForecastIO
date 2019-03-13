@@ -38,7 +38,7 @@ class AlertTests: XCTestCase {
     func testInitFromDecoder() {
         // Given
         // When
-        let alert = try! decoder.decode(Alert.self, from: self.alertsJSONData)
+        let alert = try! self.decoder.decode(Alert.self, from: self.alertsJSONData)
         
         // Then
         XCTAssertNotNil(alert)
@@ -54,7 +54,7 @@ class AlertTests: XCTestCase {
     func testInitFromDecoderNoOptionals() {
         // Given
         // When
-        let alert = try! decoder.decode(Alert.self, from: self.alertsNoOptionalsJSONData)
+        let alert = try! self.decoder.decode(Alert.self, from: self.alertsNoOptionalsJSONData)
         
         // Then
         XCTAssertNotNil(alert)
