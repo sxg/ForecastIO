@@ -11,15 +11,19 @@ import XCTest
 
 class FlagTests: XCTestCase {
     
-    var flagJSON: NSDictionary!
+    var flagJSONData: Data!
+    var decoder: JSONDecoder!
     
     override func setUp() {
         super.setUp()
         
-        let forecastJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast", ofType: "json")!
-        let forecastJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastJSONPath))
-        let forecastJSON = try! JSONSerialization.jsonObject(with: forecastJSONData, options: .mutableContainers) as! NSDictionary
-        self.flagJSON = forecastJSON["flags"] as? NSDictionary
+        // Load flag.json as Data
+        let flagJSONPath = Bundle(for: type(of: self)).path(forResource: "flag", ofType: "json")!
+        self.flagJSONData = try! Data(contentsOf: URL(fileURLWithPath: flagJSONPath))
+        
+        // Setup the decoder
+        self.decoder = JSONDecoder()
+        self.decoder.dateDecodingStrategy = .secondsSince1970
     }
     
     override func tearDown() {
@@ -29,7 +33,7 @@ class FlagTests: XCTestCase {
     func testInitFromJSON() {
         //  Given
         //  When
-        let flag = Flag(fromJSON: flagJSON)
+        let flag = try! self.decoder.decode(Flag.self, from: self.flagJSONData)
         
         //  Then
         XCTAssertNotNil(flag)
