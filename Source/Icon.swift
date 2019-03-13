@@ -9,7 +9,7 @@
 import Foundation
 
 /// Types of weather conditions. Additional values may be defined in the future, so be sure to use a default.
-public enum Icon: String {
+public enum Icon: String, Decodable {
     
     /// A clear day.
     case clearDay = "clear-day"
