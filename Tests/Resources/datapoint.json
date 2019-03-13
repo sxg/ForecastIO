@@ -1,0 +1,20 @@
+{
+    "time":1453575677,
+    "summary":"Snow",
+    "icon":"snow",
+    "nearestStormDistance":0,
+    "precipIntensity":0.0524,
+    "precipIntensityError":0,
+    "precipProbability":1,
+    "precipType":"snow",
+    "temperature":26.74,
+    "apparentTemperature":13.75,
+    "dewPoint":24.79,
+    "humidity":0.92,
+    "windSpeed":17.99,
+    "windBearing":10,
+    "visibility":1.25,
+    "cloudCover":0.55,
+    "pressure":1001.02,
+    "ozone":368.34
+}
