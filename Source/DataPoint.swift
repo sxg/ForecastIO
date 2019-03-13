@@ -9,7 +9,7 @@
 import Foundation
 
 /// Weather data for a specific location and time.
-public struct DataPoint {
+public struct DataPoint: Decodable {
 
     /// The time at which this `DataPoint` begins. `minutely` `DataPoint`s are always aligned to the top of the minute, `hourly` `DataPoint`s to the top of the hour, and `daily` `DataPoint`s to midnight of the day, all according to the local timezone.
     public let time: Date
@@ -115,6 +115,12 @@ public struct DataPoint {
     
     /// The time at which the maximum UV index occurs during the given day. Only defined on `Forecast`'s `daily` `DataPoint`s.
     public let uvIndexTime: Date?
+    
+    /// Map `DataPoint`'s properties to JSON keys
+    private enum CodingKeys: String, CodingKey {
+        case precipitationType = "precipType"
+        case time, summary, icon, sunriseTime, sunsetTime, moonPhase, nearestStormDistance, nearestStormBearing, precipitationIntensity, precipitationIntensityMax, precipitationIntensityMaxTime, precipitationProbability, precipitationAccumulation, temperature, temperatureLow, temperatureLowTime, temperatureHigh, temperatureHighTime, apparentTemperature, apparentTemperatureLow, apparentTemperatureLowTime, apparentTemperatureHigh, apparentTemperatureHighTime, dewPoint, windGust, windSpeed, windBearing, cloudCover, humidity, pressure, visibility, ozone, uvIndex, uvIndexTime
+    }
     
     /// Creates a new `DataPoint` from a JSON object.
     ///
