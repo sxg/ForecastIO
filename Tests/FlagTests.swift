@@ -30,7 +30,7 @@ class FlagTests: XCTestCase {
         super.tearDown()
     }
     
-    func testInitFromJSON() {
+    func testInitFromDecoder() {
         //  Given
         //  When
         let flag = try! self.decoder.decode(Flag.self, from: self.flagJSONData)
