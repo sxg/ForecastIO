@@ -30,19 +30,6 @@ class DataPointTests: XCTestCase {
         super.tearDown()
     }
     
-    func testInitFromJSON() {
-        //  Given
-        //  When
-//        let dataPoint = DataPoint(fromJSON: self.dataPointJSON)
-        
-        //  Then
-//        XCTAssertNotNil(dataPoint)
-//        XCTAssertEqual(dataPoint.time, Date(timeIntervalSince1970: 1453575677))
-//        XCTAssertEqual(dataPoint.summary, "Snow")
-//        XCTAssertEqual(dataPoint.icon, Icon.snow)
-//        XCTAssertEqual(dataPoint.precipitationType, Precipitation.snow)
-    }
-    
     func testInitFromDecoder() {
         // Given
         // When
