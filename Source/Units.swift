@@ -9,7 +9,7 @@
 import Foundation
 
 /// Units in which the Dark Sky API data will be returned.
-public enum Units: String {
+public enum Units: String, Decodable {
     
     /// SI units. More details are available [in the Dark Sky API docs](https://darksky.net/dev/docs/forecast).
     case si = "si"
