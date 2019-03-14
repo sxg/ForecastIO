@@ -57,20 +57,29 @@ open class DarkSkyClient : NSObject {
     private func getForecast(url: URL, completionHandler: @escaping (Result<Forecast>) -> Void) {
         var urlRequest = URLRequest(url: url)
         urlRequest.addValue("gzip", forHTTPHeaderField: "Accept-Encoding")
-        let task = self.session.dataTask(with: urlRequest, completionHandler: { (data: Data?, response, err: Error?) -> Void in
-            if let err = err {
+        let task = self.session.dataTask(with: urlRequest, completionHandler: { (optData: Data?, optResponse, optErr: Error?) -> Void in
+            if let err = optErr {
                 completionHandler(Result.failure(err))
             } else {
                 do {
-                    let jsonObject = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
-                    if let json = jsonObject as? NSDictionary, let httpURLResponse = response as? HTTPURLResponse {
-                        let forecast = Forecast(fromJSON: json)
-                        let requestMetadata = RequestMetadata(fromHTTPHeaderFields: httpURLResponse.allHeaderFields)
-                        completionHandler(Result.success(forecast, requestMetadata))
+                    guard let data = optData else {
+                        completionHandler(Result.failure(ForecastIOError.missingData))
+                        return
                     }
-                } catch _ {
-                    let invalidJSONError = ForecastIOError.invalidJSON(data!)
-                    completionHandler(Result.failure(invalidJSONError))
+                    guard let response = optResponse as? HTTPURLResponse else {
+                        completionHandler(Result.failure(ForecastIOError.missingResponse))
+                        return
+                    }
+                    
+                    let decoder = JSONDecoder()
+                    decoder.dateDecodingStrategy = .secondsSince1970
+                    let forecast = try decoder.decode(Forecast.self, from: data)
+                    let requestMetadata = RequestMetadata(fromHTTPHeaderFields: response.allHeaderFields)
+                    completionHandler(Result.success(forecast, requestMetadata))
+                } catch DecodingError.dataCorrupted(let context) {
+                    completionHandler(Result.failure(DecodingError.dataCorrupted(context)))
+                } catch {
+                    completionHandler(Result.failure(ForecastIOError.unexpectedError))
                 }
             }
         })
