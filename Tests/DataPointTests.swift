@@ -37,10 +37,10 @@ class DataPointTests: XCTestCase {
         
         // Then
         XCTAssertNotNil(dataPoint)
-        XCTAssertEqual(dataPoint.time, Date(timeIntervalSince1970: 1453575677))
-        XCTAssertEqual(dataPoint.summary, "Snow")
-        XCTAssertEqual(dataPoint.icon, Icon.snow)
-        XCTAssertEqual(dataPoint.precipitationType, Precipitation.snow)
+        XCTAssertEqual(dataPoint.time, Date(timeIntervalSince1970: 1552546800))
+        XCTAssertEqual(dataPoint.summary, "Partly cloudy starting in the evening.")
+        XCTAssertEqual(dataPoint.icon, Icon.partlyCloudyNight)
+        XCTAssertEqual(dataPoint.precipitationType, Precipitation.rain)
     }
     
 }
