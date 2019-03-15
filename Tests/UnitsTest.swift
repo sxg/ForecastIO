@@ -12,9 +12,9 @@ import XCTest
 class UnitsTests: XCTestCase {
     
     func testDescription() {
-        //  Given
-        //  When
-        //  Then
+        // Given
+        // When
+        // Then
         XCTAssertEqual(Units.si.rawValue, "si")
         XCTAssertEqual(Units.us.rawValue, "us")
         XCTAssertEqual(Units.ca.rawValue, "ca")

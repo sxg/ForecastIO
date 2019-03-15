@@ -36,11 +36,11 @@ class ForecastTests: XCTestCase {
     }
     
     func testInitFromDecoder() {
-        //  Given
-        //  When
+        // Given
+        // When
         let forecast = try! self.decoder.decode(Forecast.self, from: self.forecastJSONData)
         
-        //  Then
+        // Then
         XCTAssertNotNil(forecast)
         XCTAssertEqual(forecast.latitude, 39.290385)
         XCTAssertEqual(forecast.longitude, -76.612189)
@@ -52,11 +52,11 @@ class ForecastTests: XCTestCase {
     }
     
     func testInitFromDecoderBare() {
-        //  Given
-        //  When
+        // Given
+        // When
         let forecast = try! self.decoder.decode(Forecast.self, from: self.forecastBareJSONData)
         
-        //  Then
+        // Then
         XCTAssertNotNil(forecast)
         XCTAssertEqual(forecast.latitude, 39.290385)
         XCTAssertEqual(forecast.longitude, -76.612189)
@@ -68,9 +68,9 @@ class ForecastTests: XCTestCase {
     }
     
     func testFieldRawValue() {
-        //  Given
-        //  When
-        //  Then
+        // Given
+        // When
+        // Then
         XCTAssertEqual(Forecast.Field.currently.rawValue, "currently")
         XCTAssertEqual(Forecast.Field.minutely.rawValue, "minutely")
         XCTAssertEqual(Forecast.Field.hourly.rawValue, "hourly")

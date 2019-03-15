@@ -86,9 +86,9 @@ With the `DarkSkyClient`, you can make two kinds of requests. The first will get
 client.getForecast(latitude: myLat, longitude: myLon) { result in
     switch result {
     case .success(let currentForecast, let requestMetadata):
-        //  We got the current forecast!
+        // We got the current forecast!
     case .failure(let error):
-        //  Uh-oh. We have an error!
+        // Uh-oh. We have an error!
     }
 }
 ```
@@ -99,9 +99,9 @@ The second kind of request is called a time machine request, and it will get a `
 client.getForecast(latitude: myLat, longitude: myLon, time: myTime) { result in
     switch result {
     case .success(let forecast, let requestMetadata):
-        //  We got the forecast!
+        // We got the forecast!
     case .failure(let error):
-        //  Uh-oh. We have an error!
+        // Uh-oh. We have an error!
     }
 }
 ```

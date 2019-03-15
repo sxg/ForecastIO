@@ -36,11 +36,11 @@ class DataBlockTests: XCTestCase {
     }
     
     func testInitFromDecoder() {
-        //  Given
-        //  When
+        // Given
+        // When
         let dataBlock = try! self.decoder.decode(DataBlock.self, from: self.dataBlockJSONData)
         
-        //  Then
+        // Then
         XCTAssertNotNil(dataBlock)
         XCTAssertEqual(dataBlock.summary, "Snow for the hour.")
         XCTAssertEqual(dataBlock.icon, Icon.snow)
@@ -48,11 +48,11 @@ class DataBlockTests: XCTestCase {
     }
     
     func testInitFromDecoderNoOptionals() {
-        //  Given
-        //  When
+        // Given
+        // When
         let dataBlock = try! self.decoder.decode(DataBlock.self, from: self.dataBlockNoOptionalsJSONData)
         
-        //  Then
+        // Then
         XCTAssertNotNil(dataBlock)
         XCTAssertNil(dataBlock.summary)
         XCTAssertNil(dataBlock.icon)

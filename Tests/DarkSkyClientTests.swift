@@ -23,16 +23,16 @@ class DarkSkyClientTests: XCTestCase {
     }
     
     func testInit() {
-        //  Given
-        //  When
+        // Given
+        // When
         let client = DarkSkyClient(apiKey: apiKey)
         
-        //  Then
+        // Then
         XCTAssertNotNil(client)
     }
     
     func testGetForecast() {
-        //  Given
+        // Given
         let expect = expectation(description: "Get forecast")
         let hostStub = isHost("api.darksky.net")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
@@ -47,7 +47,7 @@ class DarkSkyClientTests: XCTestCase {
         var metadata: RequestMetadata?
         var err: Error?
         
-        //  When
+        // When
         client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
             switch result {
             case .success(let currentForecast, let requestMetadata):
@@ -59,7 +59,7 @@ class DarkSkyClientTests: XCTestCase {
             expect.fulfill()
         }
         
-        //  Then
+        // Then
         waitForExpectations(timeout: 5, handler: { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
@@ -71,7 +71,7 @@ class DarkSkyClientTests: XCTestCase {
     }
     
     func testGetForecastAtTime() {
-        //  Given
+        // Given
         let expect = expectation(description: "Get forecast at time")
         let time = Date()
         let timeString = String(format: "%.0f", time.timeIntervalSince1970)
@@ -89,7 +89,7 @@ class DarkSkyClientTests: XCTestCase {
         var metadata: RequestMetadata?
         var err: Error?
         
-        //  When
+        // When
         client.getForecast(latitude: latitude, longitude: longitude, time: time) { (result) -> Void in
             switch result {
             case .success(let aForecast, let requestMetadata):
@@ -101,7 +101,7 @@ class DarkSkyClientTests: XCTestCase {
             expect.fulfill()
         }
         
-        //  Then
+        // Then
         waitForExpectations(timeout: 5, handler: { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
@@ -113,7 +113,7 @@ class DarkSkyClientTests: XCTestCase {
     }
     
     func testGetForecastWithSIUnits() {
-        //  Given
+        // Given
         let expect = expectation(description: "Get forecast with SI units")
         let hostStub = isHost("api.darksky.net")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
@@ -130,7 +130,7 @@ class DarkSkyClientTests: XCTestCase {
         var metadata: RequestMetadata?
         var err: Error?
         
-        //  When
+        // When
         client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
             switch result {
             case .success(let aForecast, let requestMetadata):
@@ -142,7 +142,7 @@ class DarkSkyClientTests: XCTestCase {
             expect.fulfill()
         }
         
-        //  Then
+        // Then
         waitForExpectations(timeout: 5, handler: { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
@@ -154,7 +154,7 @@ class DarkSkyClientTests: XCTestCase {
     }
     
     func testGetForecastWithFrenchLanguage() {
-        //  Given
+        // Given
         let expect = expectation(description: "Get forecast with French language")
         let hostStub = isHost("api.darksky.net")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
@@ -171,7 +171,7 @@ class DarkSkyClientTests: XCTestCase {
         var metadata: RequestMetadata?
         var err: Error?
         
-        //  When
+        // When
         client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
             switch result {
             case .success(let aForecast, let requestMetadata):
@@ -183,7 +183,7 @@ class DarkSkyClientTests: XCTestCase {
             expect.fulfill()
         }
         
-        //  Then
+        // Then
         waitForExpectations(timeout: 5, handler: { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
@@ -195,7 +195,7 @@ class DarkSkyClientTests: XCTestCase {
     }
     
     func testGetForecastWithExtendedHourly() {
-        //  Given
+        // Given
         let expect = expectation(description: "Get forecast wtih extended hourly")
         let hostStub = isHost("api.darksky.net")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
@@ -211,7 +211,7 @@ class DarkSkyClientTests: XCTestCase {
         var metadata: RequestMetadata?
         var err: Error?
         
-        //  When
+        // When
         client.getForecast(latitude: latitude, longitude: longitude, extendHourly: true) { (result) -> Void in
             switch result {
             case .success(let aForecast, let requestMetadata):
@@ -223,7 +223,7 @@ class DarkSkyClientTests: XCTestCase {
             expect.fulfill()
         }
         
-        //  Then
+        // Then
         waitForExpectations(timeout: 5, handler: { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
@@ -235,7 +235,7 @@ class DarkSkyClientTests: XCTestCase {
     }
     
     func testGetForecastWithExcludedFields() {
-        //  Given
+        // Given
         let expect = expectation(description: "Get forecast wtih excluded forecast fields")
         let hostStub = isHost("api.darksky.net")
         let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
@@ -251,7 +251,7 @@ class DarkSkyClientTests: XCTestCase {
         var metadata: RequestMetadata?
         var err: Error?
         
-        //  When
+        // When
         client.getForecast(latitude: latitude, longitude: longitude, excludeFields: [.minutely, .daily]) { (result) -> Void in
             switch result {
             case .success(let aForecast, let requestMetadata):
@@ -263,7 +263,7 @@ class DarkSkyClientTests: XCTestCase {
             expect.fulfill()
         }
         
-        //  Then
+        // Then
         waitForExpectations(timeout: 5, handler: { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
@@ -275,7 +275,7 @@ class DarkSkyClientTests: XCTestCase {
     }
     
     func testGetForecastWithoutInternet() {
-        //  Given
+        // Given
         let expect = expectation(description: "Get forecast without internet")
         let notConnectedError = NSError(domain:NSURLErrorDomain, code:Int(CFNetworkErrors.cfurlErrorNotConnectedToInternet.rawValue), userInfo:nil)
         _ = stub(condition: isHost("api.darksky.net")) { _ in
@@ -286,7 +286,7 @@ class DarkSkyClientTests: XCTestCase {
         var metadata: RequestMetadata?
         var err: Error?
         
-        //  When
+        // When
         client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
             switch result {
             case .success(let aForecast, let requestMetadata):
@@ -298,7 +298,7 @@ class DarkSkyClientTests: XCTestCase {
             expect.fulfill()
         }
         
-        //  Then
+        // Then
         waitForExpectations(timeout: 5, handler: { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
@@ -310,10 +310,10 @@ class DarkSkyClientTests: XCTestCase {
     }
     
     func testGetForecastWithBadJSON() {
-        //  Given
+        // Given
         let expect = expectation(description: "Get forecast with bad JSON")
         _ = stub(condition: isHost("api.darksky.net")) { _ in
-            //  Return empty body instead of JSON
+            // Return empty body instead of JSON
             return fixture(filePath: "", headers: ["Content-Type" as NSObject: "application/json" as AnyObject])
         }
         let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
@@ -321,7 +321,7 @@ class DarkSkyClientTests: XCTestCase {
         var metadata: RequestMetadata?
         var err: Error?
         
-        //  When
+        // When
         client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
             switch result {
             case .success(let aForecast, let requestMetadata):
@@ -333,7 +333,7 @@ class DarkSkyClientTests: XCTestCase {
             expect.fulfill()
         }
         
-        //  Then
+        // Then
         waitForExpectations(timeout: 5, handler: { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")

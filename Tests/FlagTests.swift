@@ -31,11 +31,11 @@ class FlagTests: XCTestCase {
     }
     
     func testInitFromDecoder() {
-        //  Given
-        //  When
+        // Given
+        // When
         let flag = try! self.decoder.decode(Flag.self, from: self.flagJSONData)
         
-        //  Then
+        // Then
         XCTAssertNotNil(flag)
         XCTAssertNil(flag.darkSkyUnavailable)
         XCTAssertEqual(flag.darkSkyStations, ["KLWX", "KDOX"])

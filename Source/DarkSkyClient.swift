@@ -87,14 +87,14 @@ open class DarkSkyClient : NSObject {
     }
     
     private func buildForecastURL(latitude lat: Double, longitude lon: Double, time: Date?, extendHourly: Bool, excludeFields: [Forecast.Field]) -> URL {
-        //  Build URL path
+        // Build URL path
         var urlString = DarkSkyClient.darkSkyURL + apiKey + "/\(lat),\(lon)"
         if let time = time {
             let timeString = String(format: "%.0f", time.timeIntervalSince1970)
             urlString.append(",\(timeString)")
         }
         
-        //  Build URL query parameters
+        // Build URL query parameters
         var urlBuilder = URLComponents(string: urlString)!
         var queryItems: [URLQueryItem] = []
         if let units = self.units {
