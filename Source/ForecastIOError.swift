@@ -19,4 +19,5 @@ public enum ForecastIOError: Error {
     
     /// Error due to unknown cause.
     case unexpectedError
+    
 }

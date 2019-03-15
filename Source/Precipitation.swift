@@ -22,4 +22,5 @@ public enum Precipitation: String, Decodable {
     
     /// Haily.
     case hail = "hail"
+    
 }

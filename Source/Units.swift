@@ -25,4 +25,5 @@ public enum Units: String, Decodable {
     
     /// Automatically use the appropriate units based on the location for which you are requesting data.
     case auto = "auto"
+    
 }

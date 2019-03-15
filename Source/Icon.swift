@@ -40,4 +40,5 @@ public enum Icon: String, Decodable {
     
     /// A partly cloudy night.
     case partlyCloudyNight = "partly-cloudy-night"
+    
 }
