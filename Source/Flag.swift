@@ -14,23 +14,8 @@ public struct Flag: Decodable {
     /// The presence of this property indicates that the Dark Sky data source supports the `Forecast`'s location, but a temporary error (such as a radar station being down for maintenance) has made the data unavailable.
     public let darkSkyUnavailable: Bool?
     
-    /// Contains the IDs for each radar station used in servicing the `Forecast` request.
-    public let darkSkyStations: [String]?
-    
-    /// Contains the IDs for each `DataPoint` station used in servicing this request.
-    public let dataPointStations: [String]?
-    
-    /// Contains the IDs for each ISD station used in servicing this request.
-    public let isdStations: [String]?
-    
-    /// Contains the IDs for each LAMP station used in servicing this request.
-    public let lampStations: [String]?
-    
-    /// Contains the IDs for each METAR station used in servicing this request.
-    public let metarStations: [String]?
-    
-    /// The presence of this property indicates that data from api.met.no was used to facilitate this request (as per their license agreement).
-    public let metnoLicense: Bool?
+    /// The distance to the nearest weather station that contributed data to this response. Note, however, that many other stations may have also been used; this value is primarily for debugging purposes.
+    public let nearestStation: Double
     
     /// Contains the IDs for each data station used in servicing this request.
     public let sources: [String]
@@ -41,12 +26,7 @@ public struct Flag: Decodable {
     /// Maps `Flag`'s properties to JSON keys.
     private enum CodingKeys: String, CodingKey {
         case darkSkyUnavailable = "darksky-unavailable"
-        case darkSkyStations = "darksky-stations"
-        case dataPointStations = "datapoint-stations"
-        case isdStations = "isd-stations"
-        case lampStations = "lamp-stations"
-        case metarStations = "metar-stations"
-        case metnoLicense = "metno-license"
+        case nearestStation = "nearest-station"
         case sources, units
     }
     
