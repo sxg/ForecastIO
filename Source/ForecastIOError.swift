@@ -14,8 +14,8 @@ public enum ForecastIOError: Error {
     /// Error due to missing data.
     case missingData
     
-    /// Error due to missing response.
-    case missingResponse
+    /// Error due to missing HTTP(S) headers.
+    case missingHeaders
     
     /// Error due to unknown cause.
     case unexpectedError

@@ -67,7 +67,7 @@ open class DarkSkyClient : NSObject {
                         return
                     }
                     guard let response = optResponse as? HTTPURLResponse else {
-                        completionHandler(Result.failure(ForecastIOError.missingResponse))
+                        completionHandler(Result.failure(ForecastIOError.missingHeaders))
                         return
                     }
                     
