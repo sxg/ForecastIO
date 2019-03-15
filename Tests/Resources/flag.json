@@ -1,0 +1,17 @@
+{
+    "sources":[
+        "nearest-precip",
+        "nwspa",
+        "cmc",
+        "gfs",
+        "hrrr",
+        "icon",
+        "isd",
+        "madis",
+        "nam",
+        "sref",
+        "darksky"
+    ],
+    "nearest-station":1.839,
+    "units":"us"
+}

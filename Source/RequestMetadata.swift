@@ -40,4 +40,5 @@ public struct RequestMetadata {
             responseTime = nil
         }
     }
+    
 }

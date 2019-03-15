@@ -11,32 +11,36 @@ import XCTest
 
 class DataPointTests: XCTestCase {
     
-    var dataPointJSON: NSDictionary!
+    var dataPointJSONData: Data!
+    var decoder: JSONDecoder!
     
     override func setUp() {
         super.setUp()
         
-        let forecastJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast", ofType: "json")!
-        let forecastJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastJSONPath))
-        let forecastJSON = try! JSONSerialization.jsonObject(with: forecastJSONData, options: .mutableContainers) as! NSDictionary
-        self.dataPointJSON = forecastJSON["currently"] as? NSDictionary
+        // Load datapoint.json as Data
+        let dataPointJSONPath = Bundle(for: type(of: self)).path(forResource: "datapoint", ofType: "json")!
+        self.dataPointJSONData = try! Data(contentsOf: URL(fileURLWithPath: dataPointJSONPath))
+        
+        // Setup the decoder
+        self.decoder = JSONDecoder()
+        self.decoder.dateDecodingStrategy = .secondsSince1970
     }
     
     override func tearDown() {
         super.tearDown()
     }
     
-    func testInitFromJSON() {
-        //  Given
-        //  When
-        let dataPoint = DataPoint(fromJSON: self.dataPointJSON)
+    func testInitFromDecoder() {
+        // Given
+        // When
+        let dataPoint = try! decoder.decode(DataPoint.self, from: self.dataPointJSONData)
         
-        //  Then
+        // Then
         XCTAssertNotNil(dataPoint)
-        XCTAssertEqual(dataPoint.time, Date(timeIntervalSince1970: 1453575677))
-        XCTAssertEqual(dataPoint.summary, "Snow")
-        XCTAssertEqual(dataPoint.icon, Icon.snow)
-        XCTAssertEqual(dataPoint.precipitationType, Precipitation.snow)
+        XCTAssertEqual(dataPoint.time, Date(timeIntervalSince1970: 1552546800))
+        XCTAssertEqual(dataPoint.summary, "Partly cloudy starting in the evening.")
+        XCTAssertEqual(dataPoint.icon, Icon.partlyCloudyNight)
+        XCTAssertEqual(dataPoint.precipitationType, Precipitation.rain)
     }
     
 }

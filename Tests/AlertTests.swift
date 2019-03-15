@@ -11,35 +11,36 @@ import XCTest
 
 class AlertTests: XCTestCase {
     
-    var alertsJSON: NSArray!
-    var alertsNoOptionalsJSON: NSArray!
+    var alertsJSONData: Data!
+    var alertsNoOptionalsJSONData: Data!
+    var decoder: JSONDecoder!
     
     override func setUp() {
         super.setUp()
         
-        let forecastJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast", ofType: "json")!
-        let forecastJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastJSONPath))
-        let forecastJSON = try! JSONSerialization.jsonObject(with: forecastJSONData, options: .mutableContainers) as! NSDictionary
-        self.alertsJSON = forecastJSON["alerts"] as? NSArray
+        // Load alerts.json as Data
+        let alertsJSONPath = Bundle(for: type(of: self)).path(forResource: "alerts", ofType: "json")!
+        self.alertsJSONData = try! Data(contentsOf: URL(fileURLWithPath: alertsJSONPath))
         
-        let forecastNoOptionalsJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast_no_optionals", ofType: "json")!
-        let forecastNoOptionalsJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastNoOptionalsJSONPath))
-        let forecastNoOptionalsJSON = try! JSONSerialization.jsonObject(with: forecastNoOptionalsJSONData, options: .mutableContainers) as! NSDictionary
-        self.alertsNoOptionalsJSON = forecastNoOptionalsJSON["alerts"] as? NSArray
+        // Load alerts_no_optiionals.json as Data
+        let alertsNoOptionalsJSONPath = Bundle(for: type(of: self)).path(forResource: "alerts_no_optionals", ofType: "json")!
+        self.alertsNoOptionalsJSONData = try! Data(contentsOf: URL(fileURLWithPath: alertsNoOptionalsJSONPath))
+        
+        // Setup the decoder
+        self.decoder = JSONDecoder()
+        self.decoder.dateDecodingStrategy = .secondsSince1970
     }
     
     override func tearDown() {
         super.tearDown()
     }
     
-    func testInitFromJSON() {
-        //  Given
-        let alertJSON = self.alertsJSON[0] as! NSDictionary
+    func testInitFromDecoder() {
+        // Given
+        // When
+        let alert = try! self.decoder.decode(Alert.self, from: self.alertsJSONData)
+        // Then
         
-        //  When
-        let alert = Alert(fromJSON: alertJSON)
-        
-        //  Then
         XCTAssertNotNil(alert)
         XCTAssertEqual(alert.title, "High Wind Warning for Baltimore, MD")
         XCTAssertEqual(alert.expires, Date(timeIntervalSince1970: 1453593600))
@@ -50,14 +51,12 @@ class AlertTests: XCTestCase {
         XCTAssertEqual(alert.time, Date(timeIntervalSince1970: 1453562580))
     }
     
-    func testInitNoOptionalsFromJSON() {
-        //  Given
-        let alertJSON = self.alertsNoOptionalsJSON[0] as! NSDictionary
+    func testInitFromDecoderNoOptionals() {
+        // Given
+        // When
+        let alert = try! self.decoder.decode(Alert.self, from: self.alertsNoOptionalsJSONData)
         
-        //  When
-        let alert = Alert(fromJSON: alertJSON)
-        
-        //  Then
+        // Then
         XCTAssertNotNil(alert)
         XCTAssertEqual(alert.title, "High Wind Warning for Baltimore, MD")
         XCTAssertNil(alert.expires)

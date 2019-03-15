@@ -12,9 +12,9 @@ import XCTest
 class PrecipitationTests: XCTestCase {
 
     func testDescription() {
-        //  Given
-        //  When
-        //  Then
+        // Given
+        // When
+        // Then
         XCTAssertEqual(Precipitation.rain.rawValue, "rain")
         XCTAssertEqual(Precipitation.snow.rawValue, "snow")
         XCTAssertEqual(Precipitation.sleet.rawValue, "sleet")

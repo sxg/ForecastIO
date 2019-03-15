@@ -12,9 +12,9 @@ import XCTest
 class IconTests: XCTestCase {
 
     func testRawValue() {
-        //  Given
-        //  When
-        //  Then
+        // Given
+        // When
+        // Then
         XCTAssertEqual(Icon.clearDay.rawValue, "clear-day")
         XCTAssertEqual(Icon.clearNight.rawValue, "clear-night")
         XCTAssertEqual(Icon.rain.rawValue, "rain")

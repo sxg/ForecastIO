@@ -9,7 +9,7 @@
 import Foundation
 
 /// Weather data for a specific location and time.
-public struct DataPoint {
+public struct DataPoint: Decodable {
 
     /// The time at which this `DataPoint` begins. `minutely` `DataPoint`s are always aligned to the top of the minute, `hourly` `DataPoint`s to the top of the hour, and `daily` `DataPoint`s to midnight of the day, all according to the local timezone.
     public let time: Date
@@ -68,6 +68,18 @@ public struct DataPoint {
     /// The time at which the daytime high temperature occurs. Only defined on `Forecast`'s `daily` `DataPoint`s.
     public let temperatureHighTime: Date?
     
+    /// The maximum temperature during a given date. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let temperatureMax: Double?
+    
+    /// The time at which the maximum temperature during a given date occurs. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let temperatureMaxTime: Date?
+    
+    /// The minimum temperature during a given date. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let temperatureMin: Double?
+    
+    /// The time at which the minimum temperature during a given date occurs. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let temperatureMinTime: Date?
+    
     /// The apparent or "feels like" temperature. Not defined on `Forecast`'s `daily` `DataPoint`s.
     public let apparentTemperature: Double?
     
@@ -83,11 +95,26 @@ public struct DataPoint {
     /// The time at which the daytime high apparent temperature occurs. Only defined on `Forecast`'s `daily` `DataPoint`s.
     public let apparentTemperatureHighTime: Date?
     
+    /// The maximum apparent temperature during a given date. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let apparentTemperatureMax: Double?
+    
+    /// The time at which the maximum apparent temperature during a given date occurs. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let apparentTemperatureMaxTime: Date?
+    
+    /// The minimum apparent temperature during a given date. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let apparentTemperatureMin: Double?
+    
+    /// The time at which the minimum apparent temperature during a given date occurs. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let apparentTemperatureMinTime: Date?
+    
     /// The dew point at the given time.
     public let dewPoint: Double?
     
     /// The wind gust speed.
     public let windGust: Double?
+    
+    /// The time at which the maximum wind gust speed during a given date occurs. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let windGustTime: Date?
     
     /// The wind speed at the given time.
     public let windSpeed: Double?
@@ -116,86 +143,10 @@ public struct DataPoint {
     /// The time at which the maximum UV index occurs during the given day. Only defined on `Forecast`'s `daily` `DataPoint`s.
     public let uvIndexTime: Date?
     
-    /// Creates a new `DataPoint` from a JSON object.
-    ///
-    /// - parameter json: A JSON object with keys corresponding to the `DataPoint`'s properties.
-    ///
-    /// - returns: A new `DataPoint` filled with data from the given JSON object.
-    public init(fromJSON json: NSDictionary) {
-        time = Date(timeIntervalSince1970: json["time"] as! Double)
-        summary = json["summary"] as? String
-        if let jsonIcon = json["icon"] as? String {
-            icon = Icon(rawValue: jsonIcon)
-        } else {
-            icon = nil
-        }
-        if let jsonSunriseTime = json["sunriseTime"] as? Double {
-            sunriseTime = Date(timeIntervalSince1970: jsonSunriseTime)
-        } else {
-            sunriseTime = nil
-        }
-        if let jsonSunsetTime = json["sunsetTime"] as? Double {
-            sunsetTime = Date(timeIntervalSince1970: jsonSunsetTime)
-        } else {
-            sunsetTime = nil
-        }
-        moonPhase = json["moonPhase"] as? Double
-        nearestStormDistance = json["nearestStormDistance"] as? Double
-        nearestStormBearing = json["nearestStormBearing"] as? Double
-        precipitationIntensity = json["precipIntensity"] as? Double
-        precipitationIntensityMax = json["precipIntensityMax"] as? Double
-        if let jsonPrecipitationIntensityMaxTime = json["precipIntensityMaxTime"] as? Double {
-            precipitationIntensityMaxTime = Date(timeIntervalSince1970: jsonPrecipitationIntensityMaxTime)
-        } else {
-            precipitationIntensityMaxTime = nil
-        }
-        precipitationProbability = json["precipProbability"] as? Double
-        if let jsonPrecipitationType = json["precipType"] as? String {
-            precipitationType = Precipitation(rawValue: jsonPrecipitationType)
-        } else {
-            precipitationType = nil
-        }
-        precipitationAccumulation = json["precipAccumulation"] as? Double
-        temperature = json["temperature"] as? Double
-        temperatureLow = json["temperatureLow"] as? Double
-        if let jsonTemperatureLowTime = json["temperatureLowTime"] as? Double {
-            temperatureLowTime = Date(timeIntervalSince1970: jsonTemperatureLowTime)
-        } else {
-            temperatureLowTime = nil
-        }
-        temperatureHigh = json["temperatureHigh"] as? Double
-        if let jsonTemperatureHighTime = json["temperatureHighTime"] as? Double {
-            temperatureHighTime = Date(timeIntervalSince1970: jsonTemperatureHighTime)
-        } else {
-            temperatureHighTime = nil
-        }
-        apparentTemperature = json["apparentTemperature"] as? Double
-        apparentTemperatureLow = json["apparentTemperatureLow"] as? Double
-        if let jsonApparentTemperatureLowTime = json["apparentTemperatureLowTime"] as? Double {
-            apparentTemperatureLowTime = Date(timeIntervalSince1970: jsonApparentTemperatureLowTime)
-        } else {
-            apparentTemperatureLowTime = nil
-        }
-        apparentTemperatureHigh = json["apparentTemperatureHigh"] as? Double
-        if let jsonApparentTemperatureHighTime = json["apparentTemperatureHighTime"] as? Double {
-            apparentTemperatureHighTime = Date(timeIntervalSince1970: jsonApparentTemperatureHighTime)
-        } else {
-            apparentTemperatureHighTime = nil
-        }
-        dewPoint = json["dewPoint"] as? Double
-        windGust = json["windGust"] as? Double
-        windSpeed = json["windSpeed"] as? Double
-        windBearing = json["windBearing"] as? Double
-        cloudCover = json["cloudCover"] as? Double
-        humidity = json["humidity"] as? Double
-        pressure = json["pressure"] as? Double
-        visibility = json["visibility"] as? Double
-        ozone = json["ozone"] as? Double
-        uvIndex = json["uvIndex"] as? Double
-        if let jsonUVIndexTime = json["uvIndexTime"] as? Double {
-            uvIndexTime = Date(timeIntervalSince1970: jsonUVIndexTime)
-        } else {
-            uvIndexTime = nil
-        }
+    /// Map `DataPoint`'s properties to JSON keys.
+    private enum CodingKeys: String, CodingKey {
+        case precipitationType = "precipType"
+        case time, summary, icon, sunriseTime, sunsetTime, moonPhase, nearestStormDistance, nearestStormBearing, precipitationIntensity, precipitationIntensityMax, precipitationIntensityMaxTime, precipitationProbability, precipitationAccumulation, temperature, temperatureLow, temperatureLowTime, temperatureHigh, temperatureHighTime, temperatureMax, temperatureMaxTime, temperatureMin, temperatureMinTime, apparentTemperature, apparentTemperatureLow, apparentTemperatureLowTime, apparentTemperatureHigh, apparentTemperatureHighTime, apparentTemperatureMax, apparentTemperatureMaxTime, apparentTemperatureMin, apparentTemperatureMinTime, dewPoint, windGust, windGustTime, windSpeed, windBearing, cloudCover, humidity, pressure, visibility, ozone, uvIndex, uvIndexTime
     }
+    
 }

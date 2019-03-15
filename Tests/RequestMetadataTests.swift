@@ -12,13 +12,13 @@ import XCTest
 class RequestMetadataTests: XCTestCase {
     
     func testInitFromHTTPHeaderFields() {
-        //  Given
+        // Given
         let httpHeaderFields = ["Cache-Control": "max-age=60", "x-forecast-api-calls": "12", "x-response-time": "123.45ms"]
         
-        //  When
+        // When
         let requestMetadata = RequestMetadata(fromHTTPHeaderFields: httpHeaderFields)
         
-        //  Then
+        // Then
         XCTAssertNotNil(requestMetadata)
         XCTAssertEqual(requestMetadata.cacheControl, "max-age=60")
         XCTAssertEqual(requestMetadata.apiRequestsCount, 12)

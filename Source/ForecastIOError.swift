@@ -11,6 +11,13 @@ import Foundation
 /// Represents errors in interacting with the Dark Sky API.
 public enum ForecastIOError: Error {
     
-    /// Error due to invalid JSON.
-    case invalidJSON(Data)
+    /// Error due to missing data.
+    case missingData
+    
+    /// Error due to missing HTTP(S) headers.
+    case missingHeaders
+    
+    /// Error due to unknown cause.
+    case unexpectedError
+    
 }

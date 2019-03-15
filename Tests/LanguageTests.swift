@@ -12,9 +12,9 @@ import XCTest
 class LanguageTests: XCTestCase {
 
     func testRawValue() {
-        //  Given
-        //  When
-        //  Then
+        // Given
+        // When
+        // Then
         XCTAssertEqual(Language.arabic.rawValue, "ar")
         XCTAssertEqual(Language.azerbaijani.rawValue, "az")
         XCTAssertEqual(Language.belarusian.rawValue, "be")

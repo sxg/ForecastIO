@@ -11,45 +11,48 @@ import XCTest
 
 class DataBlockTests: XCTestCase {
     
-    var dataBlockJSON: NSDictionary!
-    var dataBlockNoOptionalsJSON: NSDictionary!
+    var dataBlockJSONData: Data!
+    var dataBlockNoOptionalsJSONData: Data!
+    var decoder: JSONDecoder!
     
     override func setUp() {
         super.setUp()
         
-        let forecastJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast", ofType: "json")!
-        let forecastJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastJSONPath))
-        let forecastJSON = try! JSONSerialization.jsonObject(with: forecastJSONData, options: .mutableContainers) as! NSDictionary
-        self.dataBlockJSON = forecastJSON["minutely"] as? NSDictionary
+        // Load datablock.json as Data
+        let dataBlockJSONPath = Bundle(for: type(of: self)).path(forResource: "datablock", ofType: "json")!
+        self.dataBlockJSONData = try! Data(contentsOf: URL(fileURLWithPath: dataBlockJSONPath))
         
-        let forecastNoOptionalsJSONPath = Bundle(for: type(of: self)).path(forResource: "forecast_no_optionals", ofType: "json")!
-        let forecastNoOptionalsJSONData = try! Data(contentsOf: URL(fileURLWithPath: forecastNoOptionalsJSONPath))
-        let forecastNoOptionalsJSON = try! JSONSerialization.jsonObject(with: forecastNoOptionalsJSONData, options: .mutableContainers) as! NSDictionary
-        self.dataBlockNoOptionalsJSON = forecastNoOptionalsJSON["minutely"] as? NSDictionary
+        // Load datablock_no_optionals.json as Data
+        let dataBlockNoOptionalsJSONPath = Bundle(for: type(of: self)).path(forResource: "datablock_no_optionals", ofType: "json")!
+        self.dataBlockNoOptionalsJSONData = try! Data(contentsOf: URL(fileURLWithPath: dataBlockNoOptionalsJSONPath))
+        
+        // Setup the decoder
+        self.decoder = JSONDecoder()
+        self.decoder.dateDecodingStrategy = .secondsSince1970
     }
     
     override func tearDown() {
         super.tearDown()
     }
     
-    func testInitFromJSON() {
-        //  Given
-        //  When
-        let dataBlock = DataBlock(fromJSON: self.dataBlockJSON)
+    func testInitFromDecoder() {
+        // Given
+        // When
+        let dataBlock = try! self.decoder.decode(DataBlock.self, from: self.dataBlockJSONData)
         
-        //  Then
+        // Then
         XCTAssertNotNil(dataBlock)
-        XCTAssertEqual(dataBlock.summary, "Snow for the hour.")
-        XCTAssertEqual(dataBlock.icon, Icon.snow)
+        XCTAssertEqual(dataBlock.summary, "Clear for the hour.")
+        XCTAssertEqual(dataBlock.icon, Icon.clearDay)
         XCTAssertFalse(dataBlock.data.isEmpty)
     }
     
-    func testInitNoOptionalsFromJSON() {
-        //  Given
-        //  When
-        let dataBlock = DataBlock(fromJSON: self.dataBlockNoOptionalsJSON)
+    func testInitFromDecoderNoOptionals() {
+        // Given
+        // When
+        let dataBlock = try! self.decoder.decode(DataBlock.self, from: self.dataBlockNoOptionalsJSONData)
         
-        //  Then
+        // Then
         XCTAssertNotNil(dataBlock)
         XCTAssertNil(dataBlock.summary)
         XCTAssertNil(dataBlock.icon)

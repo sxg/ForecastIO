@@ -36,4 +36,5 @@ public enum Result<Value> {
             return error
         }
     }
+    
 }
