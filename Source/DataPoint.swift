@@ -116,7 +116,7 @@ public struct DataPoint: Decodable {
     /// The time at which the maximum UV index occurs during the given day. Only defined on `Forecast`'s `daily` `DataPoint`s.
     public let uvIndexTime: Date?
     
-    /// Map `DataPoint`'s properties to JSON keys
+    /// Map `DataPoint`'s properties to JSON keys.
     private enum CodingKeys: String, CodingKey {
         case precipitationType = "precipType"
         case time, summary, icon, sunriseTime, sunsetTime, moonPhase, nearestStormDistance, nearestStormBearing, precipitationIntensity, precipitationIntensityMax, precipitationIntensityMaxTime, precipitationProbability, precipitationAccumulation, temperature, temperatureLow, temperatureLowTime, temperatureHigh, temperatureHighTime, apparentTemperature, apparentTemperatureLow, apparentTemperatureLowTime, apparentTemperatureHigh, apparentTemperatureHighTime, dewPoint, windGust, windSpeed, windBearing, cloudCover, humidity, pressure, visibility, ozone, uvIndex, uvIndexTime
