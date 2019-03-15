@@ -68,6 +68,18 @@ public struct DataPoint: Decodable {
     /// The time at which the daytime high temperature occurs. Only defined on `Forecast`'s `daily` `DataPoint`s.
     public let temperatureHighTime: Date?
     
+    /// The maximum temperature during a given date. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let temperatureMax: Double?
+    
+    /// The time at which the maximum temperature during a given date occurs. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let temperatureMaxTime: Date?
+    
+    /// The minimum temperature during a given date. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let temperatureMin: Double?
+    
+    /// The time at which the minimum temperature during a given date occurs. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let temperatureMinTime: Date?
+    
     /// The apparent or "feels like" temperature. Not defined on `Forecast`'s `daily` `DataPoint`s.
     public let apparentTemperature: Double?
     
@@ -83,11 +95,26 @@ public struct DataPoint: Decodable {
     /// The time at which the daytime high apparent temperature occurs. Only defined on `Forecast`'s `daily` `DataPoint`s.
     public let apparentTemperatureHighTime: Date?
     
+    /// The maximum apparent temperature during a given date. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let apparentTemperatureMax: Double?
+    
+    /// The time at which the maximum apparent temperature during a given date occurs. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let apparentTemperatureMaxTime: Date?
+    
+    /// The minimum apparent temperature during a given date. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let apparentTemperatureMin: Double?
+    
+    /// The time at which the minimum apparent temperature during a given date occurs. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let apparentTemperatureMinTime: Date?
+    
     /// The dew point at the given time.
     public let dewPoint: Double?
     
     /// The wind gust speed.
     public let windGust: Double?
+    
+    /// The time at which the maximum wind gust speed during a given date occurs. Only defined on `Forecast`'s `daily` `DataPoint`s.
+    public let windGustTime: Date?
     
     /// The wind speed at the given time.
     public let windSpeed: Double?
@@ -119,7 +146,7 @@ public struct DataPoint: Decodable {
     /// Map `DataPoint`'s properties to JSON keys.
     private enum CodingKeys: String, CodingKey {
         case precipitationType = "precipType"
-        case time, summary, icon, sunriseTime, sunsetTime, moonPhase, nearestStormDistance, nearestStormBearing, precipitationIntensity, precipitationIntensityMax, precipitationIntensityMaxTime, precipitationProbability, precipitationAccumulation, temperature, temperatureLow, temperatureLowTime, temperatureHigh, temperatureHighTime, apparentTemperature, apparentTemperatureLow, apparentTemperatureLowTime, apparentTemperatureHigh, apparentTemperatureHighTime, dewPoint, windGust, windSpeed, windBearing, cloudCover, humidity, pressure, visibility, ozone, uvIndex, uvIndexTime
+        case time, summary, icon, sunriseTime, sunsetTime, moonPhase, nearestStormDistance, nearestStormBearing, precipitationIntensity, precipitationIntensityMax, precipitationIntensityMaxTime, precipitationProbability, precipitationAccumulation, temperature, temperatureLow, temperatureLowTime, temperatureHigh, temperatureHighTime, temperatureMax, temperatureMaxTime, temperatureMin, temperatureMinTime, apparentTemperature, apparentTemperatureLow, apparentTemperatureLowTime, apparentTemperatureHigh, apparentTemperatureHighTime, apparentTemperatureMax, apparentTemperatureMaxTime, apparentTemperatureMin, apparentTemperatureMinTime, dewPoint, windGust, windGustTime, windSpeed, windBearing, cloudCover, humidity, pressure, visibility, ozone, uvIndex, uvIndexTime
     }
     
 }
