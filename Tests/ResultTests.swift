@@ -47,9 +47,9 @@ class ResultTests: XCTestCase {
         XCTAssertNotNil(anError)
     }
     
-    func testFailureResultMissingResponse() {
+    func testFailureResultMissingHeaders() {
         // Given
-        let result = Result<Forecast>.failure(ForecastIOError.missingResponse)
+        let result = Result<Forecast>.failure(ForecastIOError.missingHeaders)
         
         // When
         let (aForecast, aRequestMetadata) = result.value
