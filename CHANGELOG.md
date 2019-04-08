@@ -2,9 +2,18 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
+## 6.0.1
+
+Released on April 8, 2019.
+
+### Updated
+- `CodingKeys` for precipitation properties on `DataPoint`
+- `nearestStations` on `Flag` is now optional
+- All unit test JSON files are now included in all unit test targets
+
 ## 6.0.0
 
-Release on March 15, 2019.
+Released on March 15, 2019.
 
 ### Added
 - Most structs now conform to `Decodable`
@@ -23,7 +32,7 @@ Release on March 15, 2019.
 
 ## 5.1.0
 
-Release on October 2, 2018.
+Released on October 2, 2018.
 
 ### Added
 - Support for Hebrew and Latvian
