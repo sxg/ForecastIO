@@ -15,7 +15,7 @@ public struct Flag: Decodable {
     public let darkSkyUnavailable: Bool?
     
     /// The distance to the nearest weather station that contributed data to this response. Note, however, that many other stations may have also been used; this value is primarily for debugging purposes.
-    public let nearestStation: Double
+    public let nearestStation: Double?
     
     /// Contains the IDs for each data station used in servicing this request.
     public let sources: [String]

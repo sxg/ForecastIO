@@ -39,8 +39,8 @@ class AlertTests: XCTestCase {
         // Given
         // When
         let alert = try! self.decoder.decode(Alert.self, from: self.alertsJSONData)
-        // Then
         
+        // Then
         XCTAssertNotNil(alert)
         XCTAssertEqual(alert.title, "High Wind Warning for Baltimore, MD")
         XCTAssertEqual(alert.expires, Date(timeIntervalSince1970: 1453593600))
