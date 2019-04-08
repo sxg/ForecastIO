@@ -146,7 +146,12 @@ public struct DataPoint: Decodable {
     /// Map `DataPoint`'s properties to JSON keys.
     private enum CodingKeys: String, CodingKey {
         case precipitationType = "precipType"
-        case time, summary, icon, sunriseTime, sunsetTime, moonPhase, nearestStormDistance, nearestStormBearing, precipitationIntensity, precipitationIntensityMax, precipitationIntensityMaxTime, precipitationProbability, precipitationAccumulation, temperature, temperatureLow, temperatureLowTime, temperatureHigh, temperatureHighTime, temperatureMax, temperatureMaxTime, temperatureMin, temperatureMinTime, apparentTemperature, apparentTemperatureLow, apparentTemperatureLowTime, apparentTemperatureHigh, apparentTemperatureHighTime, apparentTemperatureMax, apparentTemperatureMaxTime, apparentTemperatureMin, apparentTemperatureMinTime, dewPoint, windGust, windGustTime, windSpeed, windBearing, cloudCover, humidity, pressure, visibility, ozone, uvIndex, uvIndexTime
+        case precipitationIntensity = "precipIntensity"
+        case precipitationIntensityMax = "precipIntensityMax"
+        case precipitationIntensityMaxTime = "precipIntensityMaxTime"
+        case precipitationProbability = "precipProbability"
+        case precipitationAccumulation = "precipAccumulation"
+        case time, summary, icon, sunriseTime, sunsetTime, moonPhase, nearestStormDistance, nearestStormBearing, temperature, temperatureLow, temperatureLowTime, temperatureHigh, temperatureHighTime, temperatureMax, temperatureMaxTime, temperatureMin, temperatureMinTime, apparentTemperature, apparentTemperatureLow, apparentTemperatureLowTime, apparentTemperatureHigh, apparentTemperatureHighTime, apparentTemperatureMax, apparentTemperatureMaxTime, apparentTemperatureMin, apparentTemperatureMinTime, dewPoint, windGust, windGustTime, windSpeed, windBearing, cloudCover, humidity, pressure, visibility, ozone, uvIndex, uvIndexTime
     }
     
 }
