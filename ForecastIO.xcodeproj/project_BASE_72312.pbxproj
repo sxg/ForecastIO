@@ -49,18 +49,6 @@
 		4A8B235C1D44807E00ACBAA8 /* forecast_bare.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A14A6EE1CDAA80300D4C108 /* forecast_bare.json */; };
 		4A8B235D1D44807E00ACBAA8 /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = D4D9F2B41C54061600A4A02F /* forecast.json */; };
 		4A8B235E1D44807E00ACBAA8 /* forecast_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A3364661CD9712000775650 /* forecast_no_optionals.json */; };
-		4A8EDD67225C06B1004E0370 /* datablock.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A92DEAF2239A62A00C12799 /* datablock.json */; };
-		4A8EDD68225C06B1004E0370 /* datablock_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A92DEB12239A65300C12799 /* datablock_no_optionals.json */; };
-		4A8EDD69225C06B1004E0370 /* datapoint.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A92DEAC2239A31100C12799 /* datapoint.json */; };
-		4A8EDD6A225C06B1004E0370 /* flag.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A92DEA922399B9000C12799 /* flag.json */; };
-		4A8EDD6B225C06B1004E0370 /* alerts.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A92DEA322398FD300C12799 /* alerts.json */; };
-		4A8EDD6C225C06B1004E0370 /* alerts_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A92DEA6223997F900C12799 /* alerts_no_optionals.json */; };
-		4A8EDD6D225C06C7004E0370 /* datablock.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A92DEAF2239A62A00C12799 /* datablock.json */; };
-		4A8EDD6E225C06C7004E0370 /* datablock_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A92DEB12239A65300C12799 /* datablock_no_optionals.json */; };
-		4A8EDD6F225C06C7004E0370 /* datapoint.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A92DEAC2239A31100C12799 /* datapoint.json */; };
-		4A8EDD70225C06C7004E0370 /* flag.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A92DEA922399B9000C12799 /* flag.json */; };
-		4A8EDD71225C06C7004E0370 /* alerts.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A92DEA322398FD300C12799 /* alerts.json */; };
-		4A8EDD72225C06C7004E0370 /* alerts_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A92DEA6223997F900C12799 /* alerts_no_optionals.json */; };
 		4A92DEA422398FD300C12799 /* alerts.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A92DEA322398FD300C12799 /* alerts.json */; };
 		4A92DEA5223991B000C12799 /* alerts.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A92DEA322398FD300C12799 /* alerts.json */; };
 		4A92DEA7223997F900C12799 /* alerts_no_optionals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A92DEA6223997F900C12799 /* alerts_no_optionals.json */; };
@@ -608,20 +596,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 0930;
 				TargetAttributes = {
 					39ED6CDC99672303F992B722C0ABD571 = {
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1000;
 					};
 					4A8B23501D447FB300ACBAA8 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 76333YNXLE;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Manual;
 					};
 					D4446E6F1C51538000FBC8A8 = {
 						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1000;
 					};
 					D4446E781C51538000FBC8A8 = {
 						CreatedOnToolsVersion = 7.2;
@@ -630,16 +618,14 @@
 						ProvisioningStyle = Manual;
 					};
 					D4A480641C507CE70053EB05 = {
-						DevelopmentTeam = 76333YNXLE;
-						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = "";
 					};
 					D4A4807D1C507D730053EB05 = {
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1000;
 					};
 					D4DE2AC91C513EA00063A7CA = {
 						DevelopmentTeam = 76333YNXLE;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -649,7 +635,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -673,15 +658,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A8B235D1D44807E00ACBAA8 /* forecast.json in Resources */,
 				4A8B235C1D44807E00ACBAA8 /* forecast_bare.json in Resources */,
+				4A8B235D1D44807E00ACBAA8 /* forecast.json in Resources */,
 				4A8B235E1D44807E00ACBAA8 /* forecast_no_optionals.json in Resources */,
-				4A8EDD67225C06B1004E0370 /* datablock.json in Resources */,
-				4A8EDD68225C06B1004E0370 /* datablock_no_optionals.json in Resources */,
-				4A8EDD69225C06B1004E0370 /* datapoint.json in Resources */,
-				4A8EDD6A225C06B1004E0370 /* flag.json in Resources */,
-				4A8EDD6B225C06B1004E0370 /* alerts.json in Resources */,
-				4A8EDD6C225C06B1004E0370 /* alerts_no_optionals.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,15 +688,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4D9F2B71C54061600A4A02F /* forecast.json in Resources */,
-				4A14A6F51CDAA80F00D4C108 /* forecast_bare.json in Resources */,
-				4A3364691CD9712000775650 /* forecast_no_optionals.json in Resources */,
+				4A92DEA5223991B000C12799 /* alerts.json in Resources */,
+				4A92DEA82239997C00C12799 /* alerts_no_optionals.json in Resources */,
 				4A92DEB32239A81A00C12799 /* datablock.json in Resources */,
 				4A92DEB42239A81E00C12799 /* datablock_no_optionals.json in Resources */,
 				4A92DEAE2239A32C00C12799 /* datapoint.json in Resources */,
 				4A92DEAB22399CF100C12799 /* flag.json in Resources */,
-				4A92DEA5223991B000C12799 /* alerts.json in Resources */,
-				4A92DEA82239997C00C12799 /* alerts_no_optionals.json in Resources */,
+				D4D9F2B71C54061600A4A02F /* forecast.json in Resources */,
+				4A3364691CD9712000775650 /* forecast_no_optionals.json in Resources */,
+				4A14A6F51CDAA80F00D4C108 /* forecast_bare.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,14 +719,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4D9F2B61C54061600A4A02F /* forecast.json in Resources */,
-				4A14A6F41CDAA80E00D4C108 /* forecast_bare.json in Resources */,
 				4A3364681CD9712000775650 /* forecast_no_optionals.json in Resources */,
-				4A8EDD6D225C06C7004E0370 /* datablock.json in Resources */,
-				4A8EDD6E225C06C7004E0370 /* datablock_no_optionals.json in Resources */,
-				4A8EDD6F225C06C7004E0370 /* datapoint.json in Resources */,
-				4A8EDD70225C06C7004E0370 /* flag.json in Resources */,
-				4A8EDD71225C06C7004E0370 /* alerts.json in Resources */,
-				4A8EDD72225C06C7004E0370 /* alerts_no_optionals.json in Resources */,
+				4A14A6F41CDAA80E00D4C108 /* forecast_bare.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1246,7 +1219,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1270,9 +1242,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = 76333YNXLE;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1289,7 +1259,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
@@ -1390,7 +1359,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1414,9 +1382,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 76333YNXLE;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1438,7 +1404,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -1581,13 +1546,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 76333YNXLE;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1601,7 +1565,6 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = io.Satyam.ForecastIO;
 				PRODUCT_NAME = ForecastIO;
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
@@ -1619,13 +1582,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 76333YNXLE;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1639,7 +1601,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = io.Satyam.ForecastIO;
 				PRODUCT_NAME = ForecastIO;
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
