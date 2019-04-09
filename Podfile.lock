@@ -1,5 +1,5 @@
 PODS:
-  - ForecastIO (5.0.0)
+  - ForecastIO (6.0.1)
   - OHHTTPStubs (6.1.0):
     - OHHTTPStubs/Default (= 6.1.0)
   - OHHTTPStubs/Core (6.1.0)
@@ -21,14 +21,18 @@ DEPENDENCIES:
   - OHHTTPStubs
   - OHHTTPStubs/Swift
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OHHTTPStubs
+
 EXTERNAL SOURCES:
   ForecastIO:
-    :path: ./
+    :path: "./"
 
 SPEC CHECKSUMS:
-  ForecastIO: d85d340ea9aee114edf3f4c2c1ace8520b4b45e5
+  ForecastIO: cc09d6eef52bd2cbe9f980f8fcfe1bf762dcc2f1
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
 
 PODFILE CHECKSUM: 165177beaf033c9a2c8c9d78ea69c0cc2e04bbaa
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.6.1

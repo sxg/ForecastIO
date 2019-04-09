@@ -485,7 +485,6 @@
 				4A8B234F1D447FB300ACBAA8 /* Resources */,
 				4A61E8DC1D4485FC000DDEC6 /* [CP] Embed Pods Frameworks */,
 				A2AB66E7AAEBD170430F30A9 /* Frameworks */,
-				A78386AA9D119F648E9AA85D /* [CP] Copy Pods Resources */,
 				BFF18696856C11A277937E9B /* 📦 Embed Pods Frameworks */,
 				697836CFFDC66359DEF71664 /* 📦 Copy Pods Resources */,
 			);
@@ -527,7 +526,6 @@
 				D4446E761C51538000FBC8A8 /* Frameworks */,
 				D4446E771C51538000FBC8A8 /* Resources */,
 				D567B01DC0F135735DE83125 /* [CP] Embed Pods Frameworks */,
-				6206FF6BF0A4AEA3C3961B22 /* [CP] Copy Pods Resources */,
 				541F5CEF4E1B0E11E15245AE /* 📦 Embed Pods Frameworks */,
 				D36BCE5504D10B4402A89526 /* 📦 Copy Pods Resources */,
 			);
@@ -587,7 +585,6 @@
 				D4DE2ACE1C513EA00063A7CA /* Frameworks */,
 				D4DE2AD01C513EA00063A7CA /* Resources */,
 				1D371CDD30534294D1EBE02E /* [CP] Embed Pods Frameworks */,
-				A51261E0D39E71E840F0BE03 /* [CP] Copy Pods Resources */,
 				DE93023B7A6C2E5C9BEBC0B3 /* 📦 Embed Pods Frameworks */,
 				ECB5FEA436EB1E973A7FAE01 /* 📦 Copy Pods Resources */,
 			);
@@ -775,7 +772,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO tvOS Tests/Pods-ForecastIO tvOS Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ForecastIO tvOS Tests/Pods-ForecastIO tvOS Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ForecastIO-tvOS/ForecastIO.framework",
 				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs-tvOS/OHHTTPStubs.framework",
 			);
@@ -786,7 +783,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO tvOS Tests/Pods-ForecastIO tvOS Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForecastIO tvOS Tests/Pods-ForecastIO tvOS Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2E631B9627D742CB6C5D14DF /* [CP] Check Pods Manifest.lock */ = {
@@ -828,7 +825,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ForecastIO-iOS/ForecastIO.framework",
 				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs-iOS/OHHTTPStubs.framework",
 			);
@@ -839,7 +836,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests-frameworks.sh\"\n";
 		};
 		541F5CEF4E1B0E11E15245AE /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -874,21 +871,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6206FF6BF0A4AEA3C3961B22 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6454F655B03EA5266A4E7163 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -912,36 +894,6 @@
 			inputPaths = (
 			);
 			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A51261E0D39E71E840F0BE03 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO tvOS Tests/Pods-ForecastIO tvOS Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A78386AA9D119F648E9AA85D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -985,7 +937,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ForecastIO-macOS/ForecastIO.framework",
 				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs-macOS/OHHTTPStubs.framework",
 			);
@@ -996,7 +948,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D77866CE3775D48775A3F8B1 /* [CP] Check Pods Manifest.lock */ = {
@@ -1233,7 +1185,6 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1322,7 +1273,6 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1354,7 +1304,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-
 			};
 			name = Debug;
 		};
@@ -1382,7 +1331,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-
 			};
 			name = Release;
 		};
@@ -1514,7 +1462,6 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1606,7 +1553,6 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-
 				TARGETED_DEVICE_FAMILY = 4;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1644,7 +1590,6 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-
 				TARGETED_DEVICE_FAMILY = 4;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1680,7 +1625,6 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1716,7 +1660,6 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1748,7 +1691,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-
 			};
 			name = Debug;
 		};
@@ -1776,7 +1718,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-
 			};
 			name = Release;
 		};
