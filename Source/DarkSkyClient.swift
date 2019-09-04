@@ -37,7 +37,7 @@ open class DarkSkyClient : NSObject {
     /// - parameter extendHourly:  If `true`, extends the amount of data in the `hourly` property of `Forecast` to 168 hours from 48 hours. Warning: this massively increases the amount of data returned. Defaults to `false`.
     /// - parameter excludeFields: `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
     /// - parameter completion:    A block that returns the `Forecast` at the latitude and longitude you specified or an error.
-    open func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeFields: [Forecast.Field] = [], completion: @escaping (Result<Forecast>) -> Void) {
+    open func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeFields: [Forecast.Field] = [], completion: @escaping (Result<(Forecast, RequestMetadata), Error>) -> Void) {
         let url = buildForecastURL(latitude: lat, longitude: lon, time: nil, extendHourly: extendHourly, excludeFields: excludeFields)
         getForecast(url: url, completionHandler: completion)
     }
@@ -49,12 +49,12 @@ open class DarkSkyClient : NSObject {
     /// - parameter time:          Time at which to get the `Forecast`. If no timezone is specified, local time (at the specified latitude and longitude) will be assumed.
     /// - parameter excludeFields: `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
     /// - parameter completion:    A block that returns the `Forecast` at the latitude and longitude you specified or an error.
-    open func getForecast(latitude lat: Double, longitude lon: Double, time: Date, excludeFields: [Forecast.Field] = [], completion: @escaping (Result<Forecast>) -> Void) {
+    open func getForecast(latitude lat: Double, longitude lon: Double, time: Date, excludeFields: [Forecast.Field] = [], completion: @escaping (Result<(Forecast, RequestMetadata), Error>) -> Void) {
         let url = buildForecastURL(latitude: lat, longitude: lon, time: time, extendHourly: false, excludeFields: excludeFields)
         getForecast(url: url, completionHandler: completion)
     }
     
-    private func getForecast(url: URL, completionHandler: @escaping (Result<Forecast>) -> Void) {
+    private func getForecast(url: URL, completionHandler: @escaping (Result<(Forecast, RequestMetadata), Error>) -> Void) {
         var urlRequest = URLRequest(url: url)
         urlRequest.addValue("gzip", forHTTPHeaderField: "Accept-Encoding")
         let task = self.session.dataTask(with: urlRequest, completionHandler: { (optData: Data?, optResponse, optErr: Error?) -> Void in
@@ -75,7 +75,7 @@ open class DarkSkyClient : NSObject {
                     decoder.dateDecodingStrategy = .secondsSince1970
                     let forecast = try decoder.decode(Forecast.self, from: data)
                     let requestMetadata = RequestMetadata(fromHTTPHeaderFields: response.allHeaderFields)
-                    completionHandler(Result.success(forecast, requestMetadata))
+                    completionHandler(Result.success((forecast, requestMetadata)))
                 } catch DecodingError.dataCorrupted(let context) {
                     completionHandler(Result.failure(DecodingError.dataCorrupted(context)))
                 } catch {
