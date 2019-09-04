@@ -23,6 +23,9 @@ public enum Language: String, Decodable {
     /// The Bulgarian language.
     case bulgarian = "bg"
     
+    /// The Bengali language.
+    case bengali = "bn"
+    
     /// The Bosnian language.
     case bosnian = "bs"
     
@@ -44,6 +47,9 @@ public enum Language: String, Decodable {
     /// The English language and the default option.
     case english = "en"
     
+    /// The Esperanto language.
+    case esperanto = "eo"
+    
     /// The Spanish language.
     case spanish = "es"
     
@@ -58,6 +64,9 @@ public enum Language: String, Decodable {
     
     /// The Hebrew language.
     case hebrew = "he"
+    
+    /// The Hindi language.
+    case hindi = "hi"
     
     /// The Croatian language.
     case croatian = "hr"
@@ -80,6 +89,9 @@ public enum Language: String, Decodable {
     /// The Georgian language.
     case georgian = "ka"
     
+    /// The Kannada language.
+    case kannada = "kn"
+    
     /// The Korean language.
     case korean = "ko"
     
@@ -89,11 +101,20 @@ public enum Language: String, Decodable {
     /// The Latvian language.
     case latvian = "lv"
     
+    /// The Malayam language.
+    case malayam = "ml"
+    
+    /// The Marathi language.
+    case marathi = "mr"
+    
     /// The Norwegian Bokmål language.
     case norwegianBokmål = "nb"
     
     /// The Dutch language.
     case dutch = "nl"
+    
+    /// The Punjabi language.
+    case punjabi = "pa"
     
     /// The Polish language.
     case polish = "pl"
@@ -119,6 +140,12 @@ public enum Language: String, Decodable {
     /// The Swedish language.
     case swedish = "sv"
     
+    /// The Tamil language.
+    case tamil = "ta"
+    
+    /// The Telugu language.
+    case telugu = "te"
+    
     /// The Tetum language.
     case tetum = "tet"
     
@@ -127,6 +154,9 @@ public enum Language: String, Decodable {
     
     /// The Ukrainian language.
     case ukrainian = "uk"
+    
+    /// The Urdu language.
+    case urdu = "ur"
     
     /// The Pig Latin language.
     case pigLatin = "x-pig-latin"
