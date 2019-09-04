@@ -208,7 +208,7 @@
 		63B0A567C85F80DB4CDA40C2B31F61C9 /* Pods-ForecastIO tvOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ForecastIO tvOS Tests.release.xcconfig"; sourceTree = "<group>"; };
 		66F8AAC9458ADF2D8C66BF11DF56E30C /* OHHTTPStubs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubs.h; path = OHHTTPStubs/Sources/OHHTTPStubs.h; sourceTree = "<group>"; };
 		683F2244DAC5D8DADAA5FC146BC0810F /* DataBlock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataBlock.swift; path = Source/DataBlock.swift; sourceTree = "<group>"; };
-		6B5E8D82BE18A3145711CEA091ECBEB0 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OHHTTPStubs.framework; path = "OHHTTPStubs-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B5E8D82BE18A3145711CEA091ECBEB0 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		764E1AF3124FB96AF068790641182D9F /* ForecastIO-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ForecastIO-macOS-prefix.pch"; path = "../ForecastIO-macOS/ForecastIO-macOS-prefix.pch"; sourceTree = "<group>"; };
 		7737CD052E377B43C1BDCC5356D7AF66 /* DarkSkyClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DarkSkyClient.swift; path = Source/DarkSkyClient.swift; sourceTree = "<group>"; };
 		79F94A94E514CB88FA03967BF36B3826 /* ForecastIO-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "ForecastIO-tvOS.modulemap"; path = "../ForecastIO-tvOS/ForecastIO-tvOS.modulemap"; sourceTree = "<group>"; };
@@ -216,9 +216,9 @@
 		7A431B1AB9B1ACA69912317CE6124E26 /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Source/Icon.swift; sourceTree = "<group>"; };
 		7D456AF75726A7B6BCAE31ADB308610A /* OHHTTPStubs-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "OHHTTPStubs-macOS-Info.plist"; path = "../OHHTTPStubs-macOS/OHHTTPStubs-macOS-Info.plist"; sourceTree = "<group>"; };
 		7FD13A33263733F1FC036924CC05E94F /* Pods-ForecastIO iOS Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ForecastIO iOS Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		800DEC15EF87D5452EA33AB24C6F0CEB /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OHHTTPStubs.framework; path = "OHHTTPStubs-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		800DEC15EF87D5452EA33AB24C6F0CEB /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C82CDC44065FDF620E7DA7AEA4FE37 /* NSURLRequest+HTTPBodyTesting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+HTTPBodyTesting.m"; path = "OHHTTPStubs/Sources/NSURLSession/NSURLRequest+HTTPBodyTesting.m"; sourceTree = "<group>"; };
-		81DF84A34C4E208882166AE66976DAE8 /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ForecastIO.framework; path = "ForecastIO-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81DF84A34C4E208882166AE66976DAE8 /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8916712719F48064DC3D02E2EF55C533 /* Pods-ForecastIO tvOS Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ForecastIO tvOS Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		89A97B84314E3BE01DDC2008E8FC256C /* Pods-ForecastIO iOS Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ForecastIO iOS Tests-dummy.m"; sourceTree = "<group>"; };
 		89BD41EDDF43645BC3FE6AF8B6A1F606 /* OHHTTPStubs-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "OHHTTPStubs-iOS.modulemap"; sourceTree = "<group>"; };
@@ -229,11 +229,11 @@
 		960320426DAA29689C57EA0F57D1CDC2 /* Pods-ForecastIO iOS Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ForecastIO iOS Tests.modulemap"; sourceTree = "<group>"; };
 		9ADD97CC12FB687546E137CCA74C0D74 /* OHHTTPStubs-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "OHHTTPStubs-macOS.xcconfig"; path = "../OHHTTPStubs-macOS/OHHTTPStubs-macOS.xcconfig"; sourceTree = "<group>"; };
 		9CF8E123599AD6D839C703A1E314B524 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E02E3D854A31687207435AFDB33A01A /* OHHTTPStubs-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OHHTTPStubs-macOS-prefix.pch"; path = "../OHHTTPStubs-macOS/OHHTTPStubs-macOS-prefix.pch"; sourceTree = "<group>"; };
 		9F66B9C7278B2A7CA805B8876DD50C36 /* ForecastIO-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ForecastIO-macOS-Info.plist"; path = "../ForecastIO-macOS/ForecastIO-macOS-Info.plist"; sourceTree = "<group>"; };
-		A2D85BEE3011211B564D38401107505C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		A3F9DA8EBF03E2DDAC1EF0BA3531901A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A2D85BEE3011211B564D38401107505C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A3F9DA8EBF03E2DDAC1EF0BA3531901A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A47B0F9F11936AE63AF4E22C7F2ADC13 /* Pods-ForecastIO macOS Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ForecastIO macOS Tests-dummy.m"; sourceTree = "<group>"; };
 		A55DC2521CC65ED14C0AF3A3C052CF1E /* NSURLRequest+HTTPBodyTesting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+HTTPBodyTesting.h"; path = "OHHTTPStubs/Sources/NSURLSession/NSURLRequest+HTTPBodyTesting.h"; sourceTree = "<group>"; };
 		A5F6A169CAE55A39C549946B2355B651 /* Units.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Units.swift; path = Source/Units.swift; sourceTree = "<group>"; };
@@ -242,15 +242,15 @@
 		AF55C15DF95BA3D3C77B67B1E2C2EC6B /* OHHTTPStubs-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OHHTTPStubs-tvOS-dummy.m"; path = "../OHHTTPStubs-tvOS/OHHTTPStubs-tvOS-dummy.m"; sourceTree = "<group>"; };
 		B0A3FDA294EC0422AE6C1BDE4B41BF3D /* Pods-ForecastIO iOS Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ForecastIO iOS Tests-frameworks.sh"; sourceTree = "<group>"; };
 		B294F782EB0D95235F29A16A9C0E029A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		B368AD3DF84A59BB5CDAD683A5C70DFD /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ForecastIO.framework; path = "ForecastIO-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B368AD3DF84A59BB5CDAD683A5C70DFD /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B519C14075436058DA2353D13A9B9C67 /* OHHTTPStubsMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubsMethodSwizzling.m; path = OHHTTPStubs/Sources/NSURLSession/OHHTTPStubsMethodSwizzling.m; sourceTree = "<group>"; };
 		B642BB54CC3255EF053FDFD6253D6BEB /* Language.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Source/Language.swift; sourceTree = "<group>"; };
-		B64574F5C55CE31177E54371C9526E9F /* Pods_ForecastIO_tvOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ForecastIO_tvOS_Tests.framework; path = "Pods-ForecastIO tvOS Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64574F5C55CE31177E54371C9526E9F /* Pods_ForecastIO_tvOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastIO_tvOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80505330AB45D7B7FA05B55AF7F21C6 /* Pods-ForecastIO tvOS Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ForecastIO tvOS Tests-frameworks.sh"; sourceTree = "<group>"; };
 		B8CF71F11E9A462E5B27A12D049248EC /* OHHTTPStubsResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubsResponse.h; path = OHHTTPStubs/Sources/OHHTTPStubsResponse.h; sourceTree = "<group>"; };
 		C072B9C4950743B7FB418327B8928ECA /* Pods-ForecastIO macOS Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ForecastIO macOS Tests.modulemap"; sourceTree = "<group>"; };
 		C0BC88F0C7F1686009B6C4ECCF318586 /* OHHTTPStubs-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OHHTTPStubs-iOS-Info.plist"; sourceTree = "<group>"; };
-		C4AB9C3A41887C7F4432B291A30A6C31 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OHHTTPStubs.framework; path = "OHHTTPStubs-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4AB9C3A41887C7F4432B291A30A6C31 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57548003CBF409881387FCEB6A18C83 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		C80BB7E390796A1F28645E263872C157 /* OHHTTPStubs-tvOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "OHHTTPStubs-tvOS-Info.plist"; path = "../OHHTTPStubs-tvOS/OHHTTPStubs-tvOS-Info.plist"; sourceTree = "<group>"; };
 		CA6845EF48BF049BDDF6E8521245D8FB /* ForecastIO-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ForecastIO-tvOS-prefix.pch"; path = "../ForecastIO-tvOS/ForecastIO-tvOS-prefix.pch"; sourceTree = "<group>"; };
@@ -264,16 +264,16 @@
 		E070FCF9C7E691C13CF93E20A6F8AA09 /* ForecastIO-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "ForecastIO-macOS.modulemap"; path = "../ForecastIO-macOS/ForecastIO-macOS.modulemap"; sourceTree = "<group>"; };
 		E0EED23C49F427A65D6A10C843D4D1FC /* OHHTTPStubs-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OHHTTPStubs-iOS-dummy.m"; sourceTree = "<group>"; };
 		E64440079B9377037B0358D4FDCCD648 /* ForecastIO-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ForecastIO-tvOS-umbrella.h"; path = "../ForecastIO-tvOS/ForecastIO-tvOS-umbrella.h"; sourceTree = "<group>"; };
-		E69FAECC0198BC6B1312B9014A012E76 /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ForecastIO.framework; path = "ForecastIO-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E69FAECC0198BC6B1312B9014A012E76 /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E798231975630D4D5F52E352EE691A65 /* Pods-ForecastIO macOS Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ForecastIO macOS Tests-frameworks.sh"; sourceTree = "<group>"; };
 		E9502496F94BC796CBF27217D0A8DC09 /* OHHTTPStubsResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubsResponse.m; path = OHHTTPStubs/Sources/OHHTTPStubsResponse.m; sourceTree = "<group>"; };
 		EAB63EA0AF9EE29CB196FD5AFC869402 /* Forecast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Forecast.swift; path = Source/Forecast.swift; sourceTree = "<group>"; };
 		ED78EB00EB4C25FD4EF7FB5A66B6D18E /* OHHTTPStubsMethodSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubsMethodSwizzling.h; path = OHHTTPStubs/Sources/NSURLSession/OHHTTPStubsMethodSwizzling.h; sourceTree = "<group>"; };
 		EEB80CB55A9D023F35FC136846CB72CB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		EF2A50C1D1E09DF6AE61DA7F02954DA7 /* Pods_ForecastIO_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ForecastIO_iOS_Tests.framework; path = "Pods-ForecastIO iOS Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF8806D72E5E9AB763BD86458261C5B3 /* Pods_ForecastIO_macOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ForecastIO_macOS_Tests.framework; path = "Pods-ForecastIO macOS Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2A50C1D1E09DF6AE61DA7F02954DA7 /* Pods_ForecastIO_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastIO_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8806D72E5E9AB763BD86458261C5B3 /* Pods_ForecastIO_macOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastIO_macOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA5D9A4BB35D43B93598E04CDEF97E3 /* OHPathHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHPathHelpers.m; path = OHHTTPStubs/Sources/OHPathHelpers/OHPathHelpers.m; sourceTree = "<group>"; };
-		F115F83BDD946DED558D0FF0EB686B4A /* ForecastIO.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ForecastIO.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F115F83BDD946DED558D0FF0EB686B4A /* ForecastIO.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ForecastIO.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F213F9D8A1B99F144170C2FA3D228960 /* Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = Source/Alert.swift; sourceTree = "<group>"; };
 		F4482B21EE0A63138934507B23EB863B /* Pods-ForecastIO tvOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ForecastIO tvOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F479033A05BCA6DA44BF23D1395F6E52 /* Precipitation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Precipitation.swift; path = Source/Precipitation.swift; sourceTree = "<group>"; };
@@ -373,7 +373,6 @@
 				BB553B40BBA444363CB08BCA445C8C60 /* Support Files */,
 				BBAF6B48B308842B78A8DE6B7C9F74E1 /* Swift */,
 			);
-			name = OHHTTPStubs;
 			path = OHHTTPStubs;
 			sourceTree = "<group>";
 		};
@@ -929,14 +928,23 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1030;
+				TargetAttributes = {
+					17E1EC9D20C85E2468467F431DC45C7D = {
+						LastSwiftMigration = 1030;
+					};
+					FFF06EC19BAC7E0B21BBC83F59B69E14 = {
+						LastSwiftMigration = 1030;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = B21DB7041044A63816801479468F07E3 /* Products */;
@@ -1204,7 +1212,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9ADD97CC12FB687546E137CCA74C0D74 /* OHHTTPStubs-macOS.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1237,7 +1244,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60F2955A343377AF3C6BFC35C28863D9 /* ForecastIO-macOS.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1291,7 +1297,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1303,7 +1309,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60F2955A343377AF3C6BFC35C28863D9 /* ForecastIO-macOS.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1357,7 +1362,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1463,6 +1468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1513,8 +1519,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -1526,7 +1531,6 @@
 			baseConfigurationReference = 0A711B444E2540BD59709ACC83874173 /* Pods-ForecastIO macOS Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1581,7 +1585,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1677,7 +1681,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1721,6 +1725,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1855,7 +1860,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9ADD97CC12FB687546E137CCA74C0D74 /* OHHTTPStubs-macOS.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1889,7 +1893,6 @@
 			baseConfigurationReference = 5C6475A7AB67239F69D5F28F115A29A5 /* Pods-ForecastIO macOS Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
