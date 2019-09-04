@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 /// A class to interact with the Dark Sky API.
 open class DarkSkyClient : NSObject {
@@ -30,27 +31,25 @@ open class DarkSkyClient : NSObject {
         apiKey = key
     }
 
-    /// Gets the current `Forecast` at a specified latitude and longitude and returns it in a block.
+    /// Gets the current `Forecast` at a specified location and returns it in a block.
     ///
-    /// - parameter lat:           Latitude at which to get the `Forecast`.
-    /// - parameter lon:           Longitude at which to get the `Forecast`.
+    /// - parameter loc:           Location at which to get the `Forecast`.
     /// - parameter extendHourly:  If `true`, extends the amount of data in the `hourly` property of `Forecast` to 168 hours from 48 hours. Warning: this massively increases the amount of data returned. Defaults to `false`.
     /// - parameter excludeFields: `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
     /// - parameter completion:    A block that returns the `Forecast` at the latitude and longitude you specified or an error.
-    open func getForecast(latitude lat: Double, longitude lon: Double, extendHourly: Bool = false, excludeFields: [Forecast.Field] = [], completion: @escaping (Result<(Forecast, RequestMetadata), Error>) -> Void) {
-        let url = buildForecastURL(latitude: lat, longitude: lon, time: nil, extendHourly: extendHourly, excludeFields: excludeFields)
+    open func getForecast(location loc: CLLocationCoordinate2D, extendHourly: Bool = false, excludeFields: [Forecast.Field] = [], completion: @escaping (Result<(Forecast, RequestMetadata), Error>) -> Void) {
+        let url = buildForecastURL(location: loc, time: nil, extendHourly: extendHourly, excludeFields: excludeFields)
         getForecast(url: url, completionHandler: completion)
     }
     
-    /// Gets the `Forecast` at a specified latitude, longitude, and time, and returns it in a block.
+    /// Gets the `Forecast` at a specified location and time and returns it in a block.
     ///
-    /// - parameter lat:           Latitude at which to get the `Forecast`.
-    /// - parameter lon:           Longitude at which to get the `Forecast`.
+    /// - parameter loc:           Location at which to get the `Forecast`.
     /// - parameter time:          Time at which to get the `Forecast`. If no timezone is specified, local time (at the specified latitude and longitude) will be assumed.
     /// - parameter excludeFields: `Array` of fields to exclude from the `Forecast` response. Defaults to an empty array.
     /// - parameter completion:    A block that returns the `Forecast` at the latitude and longitude you specified or an error.
-    open func getForecast(latitude lat: Double, longitude lon: Double, time: Date, excludeFields: [Forecast.Field] = [], completion: @escaping (Result<(Forecast, RequestMetadata), Error>) -> Void) {
-        let url = buildForecastURL(latitude: lat, longitude: lon, time: time, extendHourly: false, excludeFields: excludeFields)
+    open func getForecast(location loc: CLLocationCoordinate2D, time: Date, excludeFields: [Forecast.Field] = [], completion: @escaping (Result<(Forecast, RequestMetadata), Error>) -> Void) {
+        let url = buildForecastURL(location: loc, time: time, extendHourly: false, excludeFields: excludeFields)
         getForecast(url: url, completionHandler: completion)
     }
     
@@ -86,9 +85,9 @@ open class DarkSkyClient : NSObject {
         task.resume()
     }
     
-    private func buildForecastURL(latitude lat: Double, longitude lon: Double, time: Date?, extendHourly: Bool, excludeFields: [Forecast.Field]) -> URL {
+    private func buildForecastURL(location loc: CLLocationCoordinate2D, time: Date?, extendHourly: Bool, excludeFields: [Forecast.Field]) -> URL {
         // Build URL path
-        var urlString = DarkSkyClient.darkSkyURL + apiKey + "/\(lat),\(lon)"
+        var urlString = DarkSkyClient.darkSkyURL + apiKey + "/\(loc.latitude),\(loc.longitude)"
         if let time = time {
             let timeString = String(format: "%.0f", time.timeIntervalSince1970)
             urlString.append(",\(timeString)")

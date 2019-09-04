@@ -8,13 +8,13 @@
 
 import XCTest
 import OHHTTPStubs
+import CoreLocation
 @testable import ForecastIO
 
 class DarkSkyClientTests: XCTestCase {
     
     let apiKey = "FAKE-API-KEY"
-    let latitude = 41.499320
-    let longitude = -81.694361
+    let location = CLLocationCoordinate2D(latitude: 41.499320, longitude: -81.694361)
     
     override func tearDown() {
         OHHTTPStubs.removeAllStubs()
@@ -35,7 +35,7 @@ class DarkSkyClientTests: XCTestCase {
         // Given
         let expect = expectation(description: "Get forecast")
         let hostStub = isHost("api.darksky.net")
-        let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
+        let pathStub = isPath("/forecast/\(apiKey)/\(location.latitude),\(location.longitude)")
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
         _ = stub(condition: hostStub && pathStub && methodStub && schemeStub) { _ in
@@ -48,7 +48,7 @@ class DarkSkyClientTests: XCTestCase {
         var err: Error?
         
         // When
-        client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
+        client.getForecast(location: location) { (result) -> Void in
             switch result {
             case .success(let currentForecast, let requestMetadata):
                 forecast = currentForecast
@@ -76,7 +76,7 @@ class DarkSkyClientTests: XCTestCase {
         let time = Date()
         let timeString = String(format: "%.0f", time.timeIntervalSince1970)
         let hostStub = isHost("api.darksky.net")
-        let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude),\(timeString)")
+        let pathStub = isPath("/forecast/\(apiKey)/\(location.latitude),\(location.longitude),\(timeString)")
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
         _ = stub(condition: hostStub && pathStub && methodStub && schemeStub) { _ in
@@ -90,7 +90,7 @@ class DarkSkyClientTests: XCTestCase {
         var err: Error?
         
         // When
-        client.getForecast(latitude: latitude, longitude: longitude, time: time) { (result) -> Void in
+        client.getForecast(location: location, time: time) { (result) -> Void in
             switch result {
             case .success(let aForecast, let requestMetadata):
                 forecast = aForecast
@@ -116,7 +116,7 @@ class DarkSkyClientTests: XCTestCase {
         // Given
         let expect = expectation(description: "Get forecast with SI units")
         let hostStub = isHost("api.darksky.net")
-        let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
+        let pathStub = isPath("/forecast/\(apiKey)/\(location.latitude),\(location.longitude)")
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
         let queryStub = containsQueryParams(["units": "si"])
@@ -131,7 +131,7 @@ class DarkSkyClientTests: XCTestCase {
         var err: Error?
         
         // When
-        client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
+        client.getForecast(location: location) { (result) -> Void in
             switch result {
             case .success(let aForecast, let requestMetadata):
                 forecast = aForecast
@@ -157,7 +157,7 @@ class DarkSkyClientTests: XCTestCase {
         // Given
         let expect = expectation(description: "Get forecast with French language")
         let hostStub = isHost("api.darksky.net")
-        let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
+        let pathStub = isPath("/forecast/\(apiKey)/\(location.latitude),\(location.longitude)")
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
         let queryStub = containsQueryParams(["lang": "fr"])
@@ -172,7 +172,7 @@ class DarkSkyClientTests: XCTestCase {
         var err: Error?
         
         // When
-        client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
+        client.getForecast(location: location) { (result) -> Void in
             switch result {
             case .success(let aForecast, let requestMetadata):
                 forecast = aForecast
@@ -198,7 +198,7 @@ class DarkSkyClientTests: XCTestCase {
         // Given
         let expect = expectation(description: "Get forecast wtih extended hourly")
         let hostStub = isHost("api.darksky.net")
-        let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
+        let pathStub = isPath("/forecast/\(apiKey)/\(location.latitude),\(location.longitude)")
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
         let queryStub = containsQueryParams(["extend": "hourly"])
@@ -212,7 +212,7 @@ class DarkSkyClientTests: XCTestCase {
         var err: Error?
         
         // When
-        client.getForecast(latitude: latitude, longitude: longitude, extendHourly: true) { (result) -> Void in
+        client.getForecast(location: location, extendHourly: true) { (result) -> Void in
             switch result {
             case .success(let aForecast, let requestMetadata):
                 forecast = aForecast
@@ -238,7 +238,7 @@ class DarkSkyClientTests: XCTestCase {
         // Given
         let expect = expectation(description: "Get forecast wtih excluded forecast fields")
         let hostStub = isHost("api.darksky.net")
-        let pathStub = isPath("/forecast/\(apiKey)/\(latitude),\(longitude)")
+        let pathStub = isPath("/forecast/\(apiKey)/\(location.latitude),\(location.longitude)")
         let methodStub = isMethodGET()
         let schemeStub = isScheme("https")
         let queryStub = containsQueryParams(["exclude": "minutely,daily"])
@@ -252,7 +252,7 @@ class DarkSkyClientTests: XCTestCase {
         var err: Error?
         
         // When
-        client.getForecast(latitude: latitude, longitude: longitude, excludeFields: [.minutely, .daily]) { (result) -> Void in
+        client.getForecast(location: location, excludeFields: [.minutely, .daily]) { (result) -> Void in
             switch result {
             case .success(let aForecast, let requestMetadata):
                 forecast = aForecast
@@ -287,7 +287,7 @@ class DarkSkyClientTests: XCTestCase {
         var err: Error?
         
         // When
-        client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
+        client.getForecast(location: location) { (result) -> Void in
             switch result {
             case .success(let aForecast, let requestMetadata):
                 forecast = aForecast
@@ -322,7 +322,7 @@ class DarkSkyClientTests: XCTestCase {
         var err: Error?
         
         // When
-        client.getForecast(latitude: latitude, longitude: longitude) { (result) -> Void in
+        client.getForecast(location: location) { (result) -> Void in
             switch result {
             case .success(let aForecast, let requestMetadata):
                 forecast = aForecast
