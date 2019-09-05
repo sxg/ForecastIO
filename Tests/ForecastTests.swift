@@ -42,8 +42,8 @@ class ForecastTests: XCTestCase {
         
         // Then
         XCTAssertNotNil(forecast)
-        XCTAssertEqual(forecast.latitude, 37.8267)
-        XCTAssertEqual(forecast.longitude, -122.4233)
+        XCTAssertEqual(forecast.location.latitude, 37.8267)
+        XCTAssertEqual(forecast.location.longitude, -122.4233)
         XCTAssertEqual(forecast.timezone, "America/Los_Angeles")
         XCTAssertNotNil(forecast.currently)
         XCTAssertNotNil(forecast.minutely)
@@ -58,8 +58,8 @@ class ForecastTests: XCTestCase {
         
         // Then
         XCTAssertNotNil(forecast)
-        XCTAssertEqual(forecast.latitude, 37.8267)
-        XCTAssertEqual(forecast.longitude, -122.4233)
+        XCTAssertEqual(forecast.location.latitude, 37.8267)
+        XCTAssertEqual(forecast.location.longitude, -122.4233)
         XCTAssertEqual(forecast.timezone, "America/Los_Angeles")
         XCTAssertNil(forecast.currently)
         XCTAssertNil(forecast.minutely)

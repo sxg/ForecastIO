@@ -42,7 +42,6 @@
 		4A56CEB91D447BD000751AF6 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FBC1C53F52000CB7548 /* Icon.swift */; };
 		4A56CEBA1D447BD000751AF6 /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FBE1C53F52000CB7548 /* Precipitation.swift */; };
 		4A56CEBD1D447BD000751AF6 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4564FBF1C53F52000CB7548 /* Units.swift */; };
-		4A7AFEA41D98B9BA00568802 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7AFEA31D98B9BA00568802 /* Result.swift */; };
 		4A7C1CCF206FF6940021A961 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10DB7A1D4510A900E304C5 /* Language.swift */; };
 		4A7C1CD0206FF69A0021A961 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10DB7A1D4510A900E304C5 /* Language.swift */; };
 		4A7C1CD1206FF6A00021A961 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10DB7A1D4510A900E304C5 /* Language.swift */; };
@@ -94,12 +93,6 @@
 		4ADA38511DA34E9A00434C3D /* RequestMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA38501DA34E9A00434C3D /* RequestMetadataTests.swift */; };
 		4ADA38521DA34E9A00434C3D /* RequestMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA38501DA34E9A00434C3D /* RequestMetadataTests.swift */; };
 		4ADA38531DA34E9A00434C3D /* RequestMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA38501DA34E9A00434C3D /* RequestMetadataTests.swift */; };
-		4ADA38551DA34FDB00434C3D /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA38541DA34FDB00434C3D /* ResultTests.swift */; };
-		4ADA38561DA34FDB00434C3D /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA38541DA34FDB00434C3D /* ResultTests.swift */; };
-		4ADA38571DA34FDB00434C3D /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA38541DA34FDB00434C3D /* ResultTests.swift */; };
-		4AF007151D98BC4D00209184 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7AFEA31D98B9BA00568802 /* Result.swift */; };
-		4AF007161D98BC5000209184 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7AFEA31D98B9BA00568802 /* Result.swift */; };
-		4AF007171D98BC5700209184 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7AFEA31D98B9BA00568802 /* Result.swift */; };
 		4AF9825A1D45024100081BC8 /* ForecastIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */; };
 		5ABCACFE76610D1BA9085803 /* Pods_ForecastIO_macOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F290BC03424BDFA86DFE07 /* Pods_ForecastIO_macOS_Tests.framework */; };
 		99DDEA407AFC1B8A6B7DA975EC9F410C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
@@ -174,7 +167,6 @@
 		4A3364661CD9712000775650 /* forecast_no_optionals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = forecast_no_optionals.json; path = Tests/Resources/forecast_no_optionals.json; sourceTree = SOURCE_ROOT; };
 		4A3640F91D150EAA005602A7 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		4A468FF41D9A0AAF00B2C0D2 /* ForecastIOError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastIOError.swift; path = Source/ForecastIOError.swift; sourceTree = "<group>"; };
-		4A7AFEA31D98B9BA00568802 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		4A7C1CD2206FFBBD0021A961 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		4A8B23511D447FB300ACBAA8 /* ForecastIO iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForecastIO iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A92DEA322398FD300C12799 /* alerts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = alerts.json; path = Tests/Resources/alerts.json; sourceTree = SOURCE_ROOT; };
@@ -188,7 +180,6 @@
 		4AB708741D452539005D1E8E /* PrecipitationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrecipitationTests.swift; path = Tests/PrecipitationTests.swift; sourceTree = SOURCE_ROOT; };
 		4ACC21E21DA1FB640051D7E7 /* RequestMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestMetadata.swift; path = Source/RequestMetadata.swift; sourceTree = "<group>"; };
 		4ADA38501DA34E9A00434C3D /* RequestMetadataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestMetadataTests.swift; path = Tests/RequestMetadataTests.swift; sourceTree = SOURCE_ROOT; };
-		4ADA38541DA34FDB00434C3D /* ResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultTests.swift; path = Tests/ResultTests.swift; sourceTree = SOURCE_ROOT; };
 		52F3D67303609FDA6D12254CB10EDE7C /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F290BC03424BDFA86DFE07 /* Pods_ForecastIO_macOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastIO_macOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1B356DACA6D8F6203D8BA3 /* Pods-ForecastIO macOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastIO macOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -363,7 +354,6 @@
 				D4564FBC1C53F52000CB7548 /* Icon.swift */,
 				4A10DB7A1D4510A900E304C5 /* Language.swift */,
 				D4564FBE1C53F52000CB7548 /* Precipitation.swift */,
-				4A7AFEA31D98B9BA00568802 /* Result.swift */,
 				4ACC21E21DA1FB640051D7E7 /* RequestMetadata.swift */,
 				D4564FBF1C53F52000CB7548 /* Units.swift */,
 				D4564FBD1C53F52000CB7548 /* Info.plist */,
@@ -415,7 +405,6 @@
 				4AB7086C1D45230F005D1E8E /* LanguageTests.swift */,
 				4AB708741D452539005D1E8E /* PrecipitationTests.swift */,
 				4ADA38501DA34E9A00434C3D /* RequestMetadataTests.swift */,
-				4ADA38541DA34FDB00434C3D /* ResultTests.swift */,
 				D4D9F2D31C54454100A4A02F /* UnitsTest.swift */,
 				D45650071C53F53800CB7548 /* Info.plist */,
 			);
@@ -485,9 +474,7 @@
 				4A8B234F1D447FB300ACBAA8 /* Resources */,
 				4A61E8DC1D4485FC000DDEC6 /* [CP] Embed Pods Frameworks */,
 				A2AB66E7AAEBD170430F30A9 /* Frameworks */,
-				A78386AA9D119F648E9AA85D /* [CP] Copy Pods Resources */,
 				BFF18696856C11A277937E9B /* 📦 Embed Pods Frameworks */,
-				697836CFFDC66359DEF71664 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -527,9 +514,7 @@
 				D4446E761C51538000FBC8A8 /* Frameworks */,
 				D4446E771C51538000FBC8A8 /* Resources */,
 				D567B01DC0F135735DE83125 /* [CP] Embed Pods Frameworks */,
-				6206FF6BF0A4AEA3C3961B22 /* [CP] Copy Pods Resources */,
 				541F5CEF4E1B0E11E15245AE /* 📦 Embed Pods Frameworks */,
-				D36BCE5504D10B4402A89526 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -587,9 +572,7 @@
 				D4DE2ACE1C513EA00063A7CA /* Frameworks */,
 				D4DE2AD01C513EA00063A7CA /* Resources */,
 				1D371CDD30534294D1EBE02E /* [CP] Embed Pods Frameworks */,
-				A51261E0D39E71E840F0BE03 /* [CP] Copy Pods Resources */,
 				DE93023B7A6C2E5C9BEBC0B3 /* 📦 Embed Pods Frameworks */,
-				ECB5FEA436EB1E973A7FAE01 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -611,22 +594,22 @@
 				LastUpgradeCheck = 1020;
 				TargetAttributes = {
 					39ED6CDC99672303F992B722C0ABD571 = {
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1030;
 					};
 					4A8B23501D447FB300ACBAA8 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 76333YNXLE;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Manual;
 					};
 					D4446E6F1C51538000FBC8A8 = {
 						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1030;
 					};
 					D4446E781C51538000FBC8A8 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 76333YNXLE;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Manual;
 					};
 					D4A480641C507CE70053EB05 = {
@@ -635,22 +618,22 @@
 						ProvisioningStyle = Automatic;
 					};
 					D4A4807D1C507D730053EB05 = {
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1030;
 					};
 					D4DE2AC91C513EA00063A7CA = {
 						DevelopmentTeam = 76333YNXLE;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Manual;
 					};
 				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "ForecastIO" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = 8B40303E341216B1C5CF6E57ADE54857 /* Products */;
@@ -775,7 +758,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO tvOS Tests/Pods-ForecastIO tvOS Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ForecastIO tvOS Tests/Pods-ForecastIO tvOS Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ForecastIO-tvOS/ForecastIO.framework",
 				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs-tvOS/OHHTTPStubs.framework",
 			);
@@ -786,7 +769,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO tvOS Tests/Pods-ForecastIO tvOS Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForecastIO tvOS Tests/Pods-ForecastIO tvOS Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2E631B9627D742CB6C5D14DF /* [CP] Check Pods Manifest.lock */ = {
@@ -828,7 +811,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ForecastIO-iOS/ForecastIO.framework",
 				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs-iOS/OHHTTPStubs.framework",
 			);
@@ -839,7 +822,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests-frameworks.sh\"\n";
 		};
 		541F5CEF4E1B0E11E15245AE /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -874,21 +857,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6206FF6BF0A4AEA3C3961B22 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6454F655B03EA5266A4E7163 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -902,51 +870,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		697836CFFDC66359DEF71664 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A51261E0D39E71E840F0BE03 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO tvOS Tests/Pods-ForecastIO tvOS Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A78386AA9D119F648E9AA85D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BFF18696856C11A277937E9B /* 📦 Embed Pods Frameworks */ = {
@@ -964,28 +887,13 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO iOS Tests/Pods-ForecastIO iOS Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D36BCE5504D10B4402A89526 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D567B01DC0F135735DE83125 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ForecastIO-macOS/ForecastIO.framework",
 				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs-macOS/OHHTTPStubs.framework",
 			);
@@ -996,7 +904,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForecastIO macOS Tests/Pods-ForecastIO macOS Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D77866CE3775D48775A3F8B1 /* [CP] Check Pods Manifest.lock */ = {
@@ -1032,21 +940,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO tvOS Tests/Pods-ForecastIO tvOS Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ECB5FEA436EB1E973A7FAE01 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastIO tvOS Tests/Pods-ForecastIO tvOS Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1060,7 +953,6 @@
 				4AA325701D615F03003CFFA9 /* FlagTests.swift in Sources */,
 				4AA325711D615F03003CFFA9 /* ForecastTests.swift in Sources */,
 				4AA325731D615F03003CFFA9 /* IconTests.swift in Sources */,
-				4ADA38551DA34FDB00434C3D /* ResultTests.swift in Sources */,
 				4AA325741D615F03003CFFA9 /* LanguageTests.swift in Sources */,
 				4AA325751D615F03003CFFA9 /* PrecipitationTests.swift in Sources */,
 				4AA325761D615F03003CFFA9 /* UnitsTest.swift in Sources */,
@@ -1083,7 +975,6 @@
 				D4564FD91C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE71C53F52000CB7548 /* Forecast.swift in Sources */,
 				4A468FF71D9A0AAF00B2C0D2 /* ForecastIOError.swift in Sources */,
-				4AF007161D98BC5000209184 /* Result.swift in Sources */,
 				D45650031C53F52100CB7548 /* Units.swift in Sources */,
 				D4564FCB1C53F52000CB7548 /* DarkSkyClient.swift in Sources */,
 			);
@@ -1099,7 +990,6 @@
 				4A10DB661D45103700E304C5 /* FlagTests.swift in Sources */,
 				4A10DB651D45103700E304C5 /* DataPointTests.swift in Sources */,
 				4AB708731D45246C005D1E8E /* IconTests.swift in Sources */,
-				4ADA38571DA34FDB00434C3D /* ResultTests.swift in Sources */,
 				4AB7086F1D45230F005D1E8E /* LanguageTests.swift in Sources */,
 				4A10DB671D45103700E304C5 /* ForecastTests.swift in Sources */,
 				4A10DB691D45103700E304C5 /* UnitsTest.swift in Sources */,
@@ -1122,7 +1012,6 @@
 				D4564FDB1C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE91C53F52000CB7548 /* Forecast.swift in Sources */,
 				4A468FF81D9A0ABB00B2C0D2 /* ForecastIOError.swift in Sources */,
-				4AF007171D98BC5700209184 /* Result.swift in Sources */,
 				D45650051C53F52100CB7548 /* Units.swift in Sources */,
 				D4564FCD1C53F52000CB7548 /* DarkSkyClient.swift in Sources */,
 			);
@@ -1142,7 +1031,6 @@
 				D4564FD71C53F52000CB7548 /* DataPoint.swift in Sources */,
 				D4564FE51C53F52000CB7548 /* Forecast.swift in Sources */,
 				4A468FF61D9A0AAF00B2C0D2 /* ForecastIOError.swift in Sources */,
-				4AF007151D98BC4D00209184 /* Result.swift in Sources */,
 				D45650011C53F52000CB7548 /* Units.swift in Sources */,
 				D4564FC91C53F52000CB7548 /* DarkSkyClient.swift in Sources */,
 			);
@@ -1158,7 +1046,6 @@
 				4A10DB6E1D45103800E304C5 /* FlagTests.swift in Sources */,
 				4A10DB6D1D45103800E304C5 /* DataPointTests.swift in Sources */,
 				4AB708721D45246C005D1E8E /* IconTests.swift in Sources */,
-				4ADA38561DA34FDB00434C3D /* ResultTests.swift in Sources */,
 				4AB7086E1D45230F005D1E8E /* LanguageTests.swift in Sources */,
 				4A10DB6F1D45103800E304C5 /* ForecastTests.swift in Sources */,
 				4A10DB711D45103800E304C5 /* UnitsTest.swift in Sources */,
@@ -1182,7 +1069,6 @@
 				4A56CEBA1D447BD000751AF6 /* Precipitation.swift in Sources */,
 				4A468FF51D9A0AAF00B2C0D2 /* ForecastIOError.swift in Sources */,
 				4A10DB7B1D4510A900E304C5 /* Language.swift in Sources */,
-				4A7AFEA41D98B9BA00568802 /* Result.swift in Sources */,
 				4A56CEBD1D447BD000751AF6 /* Units.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1233,7 +1119,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1322,7 +1208,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1354,7 +1240,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1382,7 +1268,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1476,7 +1362,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1514,7 +1400,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1544,7 +1430,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1573,7 +1459,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1680,7 +1566,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1716,7 +1602,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1748,7 +1634,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1776,7 +1662,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

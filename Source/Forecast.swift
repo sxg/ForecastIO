@@ -7,15 +7,13 @@
 //
 
 import Foundation
+import CoreLocation
 
 /// The weather data for a location at a specific time.
 public struct Forecast: Decodable {
     
-    /// The requested latitude.
-    public let latitude: Double
-    
-    /// The requested longitude.
-    public let longitude: Double
+    /// The requested location.
+    public let location: CLLocationCoordinate2D
     
     /// The IANA timezone name for the requested location (e.g. "America/New_York"). Rely on local user settings over this property.
     public let timezone: String
@@ -58,6 +56,31 @@ public struct Forecast: Decodable {
         
         /// Miscellaneous metadata.
         case flags = "flags"
+    }
+    
+    /// Creates a new `Forecast` from JSON using `Decodable`.
+    ///
+    /// - parameter decoder: JSON decoder (provided by `Decodable`).
+    ///
+    /// - returns: A new `Forecast` configured by the requested JSON.
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.timezone = try container.decode(String.self, forKey: .timezone)
+        self.alerts = try container.decodeIfPresent([Alert].self, forKey: .alerts)
+        self.flags = try container.decodeIfPresent(Flag.self, forKey: .flags)
+        self.currently = try container.decodeIfPresent(DataPoint.self, forKey: .currently)
+        self.minutely = try container.decodeIfPresent(DataBlock.self, forKey: .minutely)
+        self.hourly = try container.decodeIfPresent(DataBlock.self, forKey: .hourly)
+        self.daily = try container.decodeIfPresent(DataBlock.self, forKey: .daily)
+        let lat = try container.decode(Double.self, forKey: .latitude)
+        let lon = try container.decode(Double.self, forKey: .longitude)
+        self.location = CLLocationCoordinate2D(latitude: lat, longitude: lon)
+    }
+    
+    /// Map `Forecast`'s properties to JSON keys.
+    private enum CodingKeys: String, CodingKey {
+        case timezone, alerts, flags, currently, minutely, hourly, daily
+        case latitude, longitude
     }
     
 }

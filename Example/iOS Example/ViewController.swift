@@ -8,6 +8,7 @@
 
 import UIKit
 import ForecastIO
+import CoreLocation
 
 class ViewController: UIViewController {
     
@@ -18,7 +19,8 @@ class ViewController: UIViewController {
         let client = DarkSkyClient(apiKey: "FAKE-API-KEY")
         client.units = .auto
         client.language = .english
-        client.getForecast(latitude: 30, longitude: 30, excludeFields: [.alerts, .currently, .daily, .flags, .minutely]) { result in
+        let loc = CLLocationCoordinate2D(latitude: 30, longitude: 30)
+        client.getForecast(location: loc, excludeFields: [.alerts, .currently, .daily, .flags, .minutely]) { result in
             switch result {
             case .success(let forecast, let requestMetadata):
                 print(forecast.hourly!.data)

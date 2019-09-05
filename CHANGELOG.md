@@ -2,6 +2,19 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
+## 7.0.0
+
+Released on September 4, 2019.
+
+### Added
+- `precipitationIntensityError` property on `DataPoint`
+- Support for more languages
+
+### Updated
+- Swift 5 compatibility
+- Replaced custom `Result` with Swift's native implementation
+- Replaced `latitude` and `longitude` properties in `DarkSkyClient` and `Forecast` with `location` property of type `CLLocationCoordinate2D`
+
 ## 6.0.1
 
 Released on April 8, 2019.

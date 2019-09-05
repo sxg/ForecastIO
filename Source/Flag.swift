@@ -23,7 +23,7 @@ public struct Flag: Decodable {
     /// The presence of this property indicates which units were used for the data in this request. `US` units are default.
     public let units: Units
 
-    /// Maps `Flag`'s properties to JSON keys.
+    /// Map `Flag`'s properties to JSON keys.
     private enum CodingKeys: String, CodingKey {
         case darkSkyUnavailable = "darksky-unavailable"
         case nearestStation = "nearest-station"

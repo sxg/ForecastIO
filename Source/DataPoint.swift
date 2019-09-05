@@ -35,8 +35,11 @@ public struct DataPoint: Decodable {
     /// The approximate direction of the nearest storm in degrees, with true north at 0º and progressing clockwise. If `nearestStormDistance` is `0`, then this value will be `nil`. Only defined on `Forecast`'s `currently` `DataPoint`s.
     public let nearestStormBearing: Double?
     
-    /// The intensity of precipitation occuring at the given time. This value is *conditional on probability* (that is, assuming any precipitation falls at all) for `minutely` `DataPoint`s, and unconditional otherwise.
+    /// The intensity (in inches of liquid water per hour) of precipitation occuring at the given time. This value is *conditional on probability* (that is, assuming any precipitation falls at all) for `minutely` `DataPoint`s, and unconditional otherwise.
     public let precipitationIntensity: Double?
+    
+    /// The standard deviation of the distribution of `precipitationIntensity`. This property is only available when the full distribution and not just the expected mean can be estimated with accuracy.
+    public let precipitationIntensityError: Double?
     
     /// The maximum value of `precipitationIntensity` during a given day. Only defined on `Forecast`'s `daily` `DataPoint`s.
     public let precipitationIntensityMax: Double?
@@ -147,6 +150,7 @@ public struct DataPoint: Decodable {
     private enum CodingKeys: String, CodingKey {
         case precipitationType = "precipType"
         case precipitationIntensity = "precipIntensity"
+        case precipitationIntensityError = "precipIntensityError"
         case precipitationIntensityMax = "precipIntensityMax"
         case precipitationIntensityMaxTime = "precipIntensityMaxTime"
         case precipitationProbability = "precipProbability"

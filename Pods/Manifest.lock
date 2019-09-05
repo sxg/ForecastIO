@@ -1,19 +1,19 @@
 PODS:
-  - ForecastIO (6.0.1)
-  - OHHTTPStubs (6.1.0):
-    - OHHTTPStubs/Default (= 6.1.0)
-  - OHHTTPStubs/Core (6.1.0)
-  - OHHTTPStubs/Default (6.1.0):
+  - ForecastIO (7.0.0)
+  - OHHTTPStubs (8.0.0):
+    - OHHTTPStubs/Default (= 8.0.0)
+  - OHHTTPStubs/Core (8.0.0)
+  - OHHTTPStubs/Default (8.0.0):
     - OHHTTPStubs/Core
     - OHHTTPStubs/JSON
     - OHHTTPStubs/NSURLSession
     - OHHTTPStubs/OHPathHelpers
-  - OHHTTPStubs/JSON (6.1.0):
+  - OHHTTPStubs/JSON (8.0.0):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/NSURLSession (6.1.0):
+  - OHHTTPStubs/NSURLSession (8.0.0):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/OHPathHelpers (6.1.0)
-  - OHHTTPStubs/Swift (6.1.0):
+  - OHHTTPStubs/OHPathHelpers (8.0.0)
+  - OHHTTPStubs/Swift (8.0.0):
     - OHHTTPStubs/Default
 
 DEPENDENCIES:
@@ -30,8 +30,8 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  ForecastIO: 1721035ed2daf4450f246d192e9685e4952f42ae
-  OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
+  ForecastIO: 9cd94bb73de8c994ae63038c8366564f0a356473
+  OHHTTPStubs: 9cbce6364bec557cc3439aa6bb7514670d780881
 
 PODFILE CHECKSUM: 165177beaf033c9a2c8c9d78ea69c0cc2e04bbaa
 
