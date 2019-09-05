@@ -924,23 +924,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 1030;
-				TargetAttributes = {
-					47364CCADF40C81B88EDEEDD078BED92 = {
-						LastSwiftMigration = 1030;
-					};
-					AB2577660631C176FCF5ACAB8DB5942C = {
-						LastSwiftMigration = 1030;
-					};
-					B0A2B1A81F0E7E5B362CC05FA3DC165C = {
-						LastSwiftMigration = 1030;
-					};
-					D7ECAEBCE206BE3A92609B4EB576ECCD = {
-						LastSwiftMigration = 1030;
-					};
-					FFF06EC19BAC7E0B21BBC83F59B69E14 = {
-						LastSwiftMigration = 1030;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1240,37 +1223,36 @@
 			};
 			name = Debug;
 		};
-		0E18B207A9AC1585F7FF9A8C5A00EC91 /* Release */ = {
+		260F3F2D9EB7D93108E76010EA034768 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9ADD97CC12FB687546E137CCA74C0D74 /* OHHTTPStubs-macOS.xcconfig */;
+			baseConfigurationReference = 9EA37D75A34AABF4D12789E727156F39 /* ForecastIO-iOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs-macOS/OHHTTPStubs-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs-macOS/OHHTTPStubs-macOS-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ForecastIO-iOS/ForecastIO-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ForecastIO-iOS/ForecastIO-iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs-macOS/OHHTTPStubs-macOS.modulemap";
-				PRODUCT_MODULE_NAME = OHHTTPStubs;
-				PRODUCT_NAME = OHHTTPStubs;
-				SDKROOT = macosx;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ForecastIO-iOS/ForecastIO-iOS.modulemap";
+				PRODUCT_MODULE_NAME = ForecastIO;
+				PRODUCT_NAME = ForecastIO;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		3E8B4BAF4818380DC389BF04B06DFDC7 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1304,11 +1286,10 @@
 			};
 			name = Release;
 		};
-		5313637C377AB0E1775608AFE71B976F /* Release */ = {
+		41C40CCC641E85B413660ABE8775B796 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 138957DB3560C51EA31D3DC64841B8E0 /* ForecastIO-macOS.xcconfig */;
+			baseConfigurationReference = 9ADD97CC12FB687546E137CCA74C0D74 /* OHHTTPStubs-macOS.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1320,14 +1301,46 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/ForecastIO-macOS/ForecastIO-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ForecastIO-macOS/ForecastIO-macOS-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs-macOS/OHHTTPStubs-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs-macOS/OHHTTPStubs-macOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/ForecastIO-macOS/ForecastIO-macOS.modulemap";
-				PRODUCT_MODULE_NAME = ForecastIO;
-				PRODUCT_NAME = ForecastIO;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs-macOS/OHHTTPStubs-macOS.modulemap";
+				PRODUCT_MODULE_NAME = OHHTTPStubs;
+				PRODUCT_NAME = OHHTTPStubs;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		61B040CF51EE6F702A8AC125169AD34E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ADD97CC12FB687546E137CCA74C0D74 /* OHHTTPStubs-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs-macOS/OHHTTPStubs-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs-macOS/OHHTTPStubs-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs-macOS/OHHTTPStubs-macOS.modulemap";
+				PRODUCT_MODULE_NAME = OHHTTPStubs;
+				PRODUCT_NAME = OHHTTPStubs;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1337,101 +1350,7 @@
 			};
 			name = Release;
 		};
-		689A53BBB1D442E335C0DC542CB0FE49 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EA37D75A34AABF4D12789E727156F39 /* ForecastIO-iOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ForecastIO-iOS/ForecastIO-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ForecastIO-iOS/ForecastIO-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ForecastIO-iOS/ForecastIO-iOS.modulemap";
-				PRODUCT_MODULE_NAME = ForecastIO;
-				PRODUCT_NAME = ForecastIO;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6DBA7C174AA34DA2DE25AD788390964F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4457FC2B366E46C7CBC53534C44FFE44 /* OHHTTPStubs-tvOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs-tvOS/OHHTTPStubs-tvOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs-tvOS/OHHTTPStubs-tvOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs-tvOS/OHHTTPStubs-tvOS.modulemap";
-				PRODUCT_MODULE_NAME = OHHTTPStubs;
-				PRODUCT_NAME = OHHTTPStubs;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		757551EE82260E55E26B26E32ED329AE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4457FC2B366E46C7CBC53534C44FFE44 /* OHHTTPStubs-tvOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs-tvOS/OHHTTPStubs-tvOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs-tvOS/OHHTTPStubs-tvOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs-tvOS/OHHTTPStubs-tvOS.modulemap";
-				PRODUCT_MODULE_NAME = OHHTTPStubs;
-				PRODUCT_NAME = OHHTTPStubs;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8EE0E7F8C97CDE2D9BDA8A7F236B61D8 /* Release */ = {
+		69B6717794A5ED8B804C195DA4688B6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 31E5EB9B06DE538159B18E20BA7B634D /* ForecastIO-tvOS.xcconfig */;
 			buildSettings = {
@@ -1457,6 +1376,100 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B5665D05BC95AE6F04FD5C052DD546B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31E5EB9B06DE538159B18E20BA7B634D /* ForecastIO-tvOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ForecastIO-tvOS/ForecastIO-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ForecastIO-tvOS/ForecastIO-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ForecastIO-tvOS/ForecastIO-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = ForecastIO;
+				PRODUCT_NAME = ForecastIO;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7735D4ECE541EBCB91625566EEF1BFB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4457FC2B366E46C7CBC53534C44FFE44 /* OHHTTPStubs-tvOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs-tvOS/OHHTTPStubs-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs-tvOS/OHHTTPStubs-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs-tvOS/OHHTTPStubs-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = OHHTTPStubs;
+				PRODUCT_NAME = OHHTTPStubs;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		786FD30379FEE695F8916EAD90C221E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EA37D75A34AABF4D12789E727156F39 /* ForecastIO-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ForecastIO-iOS/ForecastIO-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ForecastIO-iOS/ForecastIO-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ForecastIO-iOS/ForecastIO-iOS.modulemap";
+				PRODUCT_MODULE_NAME = ForecastIO;
+				PRODUCT_NAME = ForecastIO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1525,6 +1538,39 @@
 			};
 			name = Release;
 		};
+		A68C9F99A080B7BD75DB66A7665DC9B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 138957DB3560C51EA31D3DC64841B8E0 /* ForecastIO-macOS.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/ForecastIO-macOS/ForecastIO-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ForecastIO-macOS/ForecastIO-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/ForecastIO-macOS/ForecastIO-macOS.modulemap";
+				PRODUCT_MODULE_NAME = ForecastIO;
+				PRODUCT_NAME = ForecastIO;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		A8A743FC904D964E14D5C3B7D501419E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A711B444E2540BD59709ACC83874173 /* Pods-ForecastIO macOS Tests.debug.xcconfig */;
@@ -1555,70 +1601,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B7D63C402CF8CF99E1D37F89B85CF9ED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31E5EB9B06DE538159B18E20BA7B634D /* ForecastIO-tvOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ForecastIO-tvOS/ForecastIO-tvOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ForecastIO-tvOS/ForecastIO-tvOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ForecastIO-tvOS/ForecastIO-tvOS.modulemap";
-				PRODUCT_MODULE_NAME = ForecastIO;
-				PRODUCT_NAME = ForecastIO;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BD972CF22CD3FABE7DFE4D8046ABFC12 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 138957DB3560C51EA31D3DC64841B8E0 /* ForecastIO-macOS.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/ForecastIO-macOS/ForecastIO-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ForecastIO-macOS/ForecastIO-macOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/ForecastIO-macOS/ForecastIO-macOS.modulemap";
-				PRODUCT_MODULE_NAME = ForecastIO;
-				PRODUCT_NAME = ForecastIO;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1825,9 +1807,9 @@
 			};
 			name = Release;
 		};
-		E6A1854639C366069D1E662F405502E2 /* Release */ = {
+		E1CD622F57164F63B4412EB02C5EC989 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EA37D75A34AABF4D12789E727156F39 /* ForecastIO-iOS.xcconfig */;
+			baseConfigurationReference = 4457FC2B366E46C7CBC53534C44FFE44 /* OHHTTPStubs-tvOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1838,29 +1820,30 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ForecastIO-iOS/ForecastIO-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ForecastIO-iOS/ForecastIO-iOS-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs-tvOS/OHHTTPStubs-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs-tvOS/OHHTTPStubs-tvOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ForecastIO-iOS/ForecastIO-iOS.modulemap";
-				PRODUCT_MODULE_NAME = ForecastIO;
-				PRODUCT_NAME = ForecastIO;
-				SDKROOT = iphoneos;
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs-tvOS/OHHTTPStubs-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = OHHTTPStubs;
+				PRODUCT_NAME = OHHTTPStubs;
+				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		F8372D5AF50C8B45A9CD6E96F9B90820 /* Debug */ = {
+		EDDE83740D42FBDADA670EF78DCC5F75 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9ADD97CC12FB687546E137CCA74C0D74 /* OHHTTPStubs-macOS.xcconfig */;
+			baseConfigurationReference = 138957DB3560C51EA31D3DC64841B8E0 /* ForecastIO-macOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1872,14 +1855,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs-macOS/OHHTTPStubs-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs-macOS/OHHTTPStubs-macOS-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ForecastIO-macOS/ForecastIO-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ForecastIO-macOS/ForecastIO-macOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs-macOS/OHHTTPStubs-macOS.modulemap";
-				PRODUCT_MODULE_NAME = OHHTTPStubs;
-				PRODUCT_NAME = OHHTTPStubs;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/ForecastIO-macOS/ForecastIO-macOS.modulemap";
+				PRODUCT_MODULE_NAME = ForecastIO;
+				PRODUCT_NAME = ForecastIO;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1887,7 +1870,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		FD5A3E9D0C0E0508CE7F47CAD2B70CCB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1930,8 +1913,8 @@
 		166342AF26DA8666F895230ED54D8E73 /* Build configuration list for PBXNativeTarget "ForecastIO-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BD972CF22CD3FABE7DFE4D8046ABFC12 /* Debug */,
-				5313637C377AB0E1775608AFE71B976F /* Release */,
+				A68C9F99A080B7BD75DB66A7665DC9B1 /* Debug */,
+				EDDE83740D42FBDADA670EF78DCC5F75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1939,8 +1922,8 @@
 		2DFC4CADFD1E72BE9E8B2A170F200161 /* Build configuration list for PBXNativeTarget "ForecastIO-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				689A53BBB1D442E335C0DC542CB0FE49 /* Debug */,
-				E6A1854639C366069D1E662F405502E2 /* Release */,
+				260F3F2D9EB7D93108E76010EA034768 /* Debug */,
+				786FD30379FEE695F8916EAD90C221E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1966,8 +1949,8 @@
 		4994237FF70AC1B1B03055EEDD2326C6 /* Build configuration list for PBXNativeTarget "OHHTTPStubs-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F8372D5AF50C8B45A9CD6E96F9B90820 /* Debug */,
-				0E18B207A9AC1585F7FF9A8C5A00EC91 /* Release */,
+				41C40CCC641E85B413660ABE8775B796 /* Debug */,
+				61B040CF51EE6F702A8AC125169AD34E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1984,8 +1967,8 @@
 		6F861FA0CB229C0FDFE23C07F32E6A69 /* Build configuration list for PBXNativeTarget "ForecastIO-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B7D63C402CF8CF99E1D37F89B85CF9ED /* Debug */,
-				8EE0E7F8C97CDE2D9BDA8A7F236B61D8 /* Release */,
+				6B5665D05BC95AE6F04FD5C052DD546B /* Debug */,
+				69B6717794A5ED8B804C195DA4688B6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2011,8 +1994,8 @@
 		E84BDBC944A6B69EC011BB5D47C026B2 /* Build configuration list for PBXNativeTarget "OHHTTPStubs-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				757551EE82260E55E26B26E32ED329AE /* Debug */,
-				6DBA7C174AA34DA2DE25AD788390964F /* Release */,
+				7735D4ECE541EBCB91625566EEF1BFB8 /* Debug */,
+				E1CD622F57164F63B4412EB02C5EC989 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
