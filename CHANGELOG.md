@@ -2,6 +2,13 @@
 
 ForecastIO adheres to [Semantic Versioning](http://semver.org/).
 
+## 8.0.0
+
+Released on September 19, 2019.
+
+### Updated
+- `darkSkyUnavailable` on `Flag` is now a `String?` instead of a `Bool?`
+
 ## 7.0.0
 
 Released on September 4, 2019.
