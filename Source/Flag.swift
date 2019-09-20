@@ -12,7 +12,7 @@ import Foundation
 public struct Flag: Decodable {
     
     /// The presence of this property indicates that the Dark Sky data source supports the `Forecast`'s location, but a temporary error (such as a radar station being down for maintenance) has made the data unavailable.
-    public let darkSkyUnavailable: Bool?
+    public let darkSkyUnavailable: String?
     
     /// The distance to the nearest weather station that contributed data to this response. Note, however, that many other stations may have also been used; this value is primarily for debugging purposes.
     public let nearestStation: Double?
