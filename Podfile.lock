@@ -1,5 +1,5 @@
 PODS:
-  - ForecastIO (7.0.0)
+  - ForecastIO (8.0.0)
   - OHHTTPStubs (8.0.0):
     - OHHTTPStubs/Default (= 8.0.0)
   - OHHTTPStubs/Core (8.0.0)
@@ -30,7 +30,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  ForecastIO: 9cd94bb73de8c994ae63038c8366564f0a356473
+  ForecastIO: ca7c45ecdeff5273c06c36c1c420aaf9b4ab3d87
   OHHTTPStubs: 9cbce6364bec557cc3439aa6bb7514670d780881
 
 PODFILE CHECKSUM: 165177beaf033c9a2c8c9d78ea69c0cc2e04bbaa
